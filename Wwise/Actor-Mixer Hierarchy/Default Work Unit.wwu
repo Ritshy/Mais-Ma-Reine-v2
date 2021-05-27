@@ -3263,6 +3263,7 @@
 				</RandomSequenceContainer>
 				<Sound Name="Musique en jeu" ID="{707CCC32-92B0-4E36-B725-5A68BD4CB5AC}" ShortID="951373047">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-26</Value>
@@ -3293,6 +3294,7 @@
 				</Sound>
 				<Sound Name="Musique menu" ID="{1C26A82B-2E3C-4DA6-BC52-23E2C8A3927E}" ShortID="404020951">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-24</Value>
@@ -3323,6 +3325,7 @@
 				</Sound>
 				<Sound Name="Musique Territoire" ID="{E0CE4D83-7793-44E4-8356-62F0E40EF8AD}" ShortID="909922579">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-24</Value>

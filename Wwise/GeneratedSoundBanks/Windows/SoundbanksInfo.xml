@@ -559,32 +559,32 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="3675648883">
+		<SoundBank Id="3991942870" Language="SFX" Hash="1331007854">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="503339173" Name="Event_Musique_InGame" ObjectPath="\Events\Default Work Unit\Event_Musique_InGame" DurationType="OneShot" DurationMin="152.835709" DurationMax="152.835709">
+				<Event Id="503339173" Name="Event_Musique_InGame" ObjectPath="\Events\Default Work Unit\Event_Musique_InGame" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="109764714" Language="SFX">
 							<ShortName>Musique en jeu.wav</ShortName>
-							<Path>SFX\Musique en jeu_10C4C929.wem</Path>
+							<Path>SFX\Musique en jeu_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3273629223" Name="Event_Musique_Menu" ObjectPath="\Events\Default Work Unit\Event_Musique_Menu" DurationType="OneShot" DurationMin="63.146603" DurationMax="63.146603">
+				<Event Id="3273629223" Name="Event_Musique_Menu" ObjectPath="\Events\Default Work Unit\Event_Musique_Menu" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="957381255" Language="SFX">
 							<ShortName>Musique menu.wav</ShortName>
-							<Path>SFX\Musique menu_10C4C929.wem</Path>
+							<Path>SFX\Musique menu_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3665866047" Name="Event_Musique_Territoire" ObjectPath="\Events\Default Work Unit\Event_Musique_Territoire" DurationType="OneShot" DurationMin="202.608704" DurationMax="202.608704">
+				<Event Id="3665866047" Name="Event_Musique_Territoire" ObjectPath="\Events\Default Work Unit\Event_Musique_Territoire" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="467666371" Language="SFX">
 							<ShortName>Musique Territoire.wav</ShortName>
-							<Path>SFX\Musique Territoire_10C4C929.wem</Path>
+							<Path>SFX\Musique Territoire_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
