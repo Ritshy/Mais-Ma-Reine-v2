@@ -368,12 +368,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Event_Musique_Menu" ID="{F12F3C1E-BF2D-4BA1-81EE-1FFD9065C6D4}">
+				<Event Name="Event_Musique_Menu" ID="{1CCA630B-81AB-468E-83D0-EE3611C3F6C4}">
 					<ChildrenList>
-						<Action Name="" ID="{FB4C4A6D-64A4-427D-B569-AFD95D23AD7B}" ShortID="110916408">
+						<Action Name="" ID="{AA38FF35-93EA-47B1-A522-3768F7F266B4}" ShortID="1002856066">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Musique menu" ID="{CED72F64-0D97-485E-8651-E8A73B604F38}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+									<ObjectRef Name="Musique menu" ID="{1C26A82B-2E3C-4DA6-BC52-23E2C8A3927E}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
