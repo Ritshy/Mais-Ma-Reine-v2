@@ -1,0 +1,26 @@
+
+480x480_Moulin.png
+size: 1364,1060
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Toit
+  rotate: true
+  xy: 2, 2
+  size: 1056, 1360
+  orig: 1058, 1362
+  offset: 1, 1
+  index: -1
+
+480x480_Moulin2.png
+size: 1607,1563
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Palmes
+  rotate: false
+  xy: 2, 2
+  size: 1603, 1559
+  orig: 1607, 1565
+  offset: 3, 3
+  index: -1

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07039b594141dc642b930d80559726f4, type: 3}
+  m_Name: F2EF7302-65FA-4C2F-9747-FC30E7B712BA
+  m_EditorClassIdentifier: 
+  objectName: Event_Recrutement_Accepte
+  id: 1968642834
+  guid: F2EF7302-65FA-4C2F-9747-FC30E7B712BA

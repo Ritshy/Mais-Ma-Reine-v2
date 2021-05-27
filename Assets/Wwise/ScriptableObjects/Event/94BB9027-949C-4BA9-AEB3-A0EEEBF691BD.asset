@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07039b594141dc642b930d80559726f4, type: 3}
+  m_Name: 94BB9027-949C-4BA9-AEB3-A0EEEBF691BD
+  m_EditorClassIdentifier: 
+  objectName: Event_Mort
+  id: 1699538348
+  guid: 94BB9027-949C-4BA9-AEB3-A0EEEBF691BD

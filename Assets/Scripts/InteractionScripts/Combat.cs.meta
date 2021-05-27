@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 326d83745be2dca478cca91b9432d7ba
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - myCombatEffect: {fileID: 567848210934553576, guid: e08d03a051d37464bb6e6578c519bb01,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

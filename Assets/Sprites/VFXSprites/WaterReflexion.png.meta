@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: 450053c1db2cdf240b861fff979f90ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1873663028252990791
+    second: WaterReflexion_0
+  - first:
+      213: 7786566852118861286
+    second: WaterReflexion_1
+  - first:
+      213: -1121643053060850904
+    second: WaterReflexion_2
+  - first:
+      213: -2831900652666806176
+    second: WaterReflexion_3
+  - first:
+      213: 1234824079402858856
+    second: WaterReflexion_0
+  - first:
+      213: -4127082891566215636
+    second: WaterReflexion_1
+  - first:
+      213: -4331059531371497405
+    second: WaterReflexion_2
+  - first:
+      213: 4183197123871507920
+    second: WaterReflexion_3
+  - first:
+      213: 1809636027563260150
+    second: WaterReflexion_4
+  - first:
+      213: 437198366127033646
+    second: WaterReflexion_5
+  - first:
+      213: 8904458477455651206
+    second: WaterReflexion_6
+  - first:
+      213: -1423981731918293774
+    second: WaterReflexion_7
+  - first:
+      213: 8106017468118033578
+    second: WaterReflexion_8
+  - first:
+      213: 4291672470247423088
+    second: WaterReflexion_9
+  - first:
+      213: 361149409664812846
+    second: WaterReflexion_10
+  - first:
+      213: -2638912345468058824
+    second: WaterReflexion_11
+  - first:
+      213: -9154617723688771377
+    second: WaterReflexion_12
+  - first:
+      213: 7987971706827636483
+    second: WaterReflexion_13
+  - first:
+      213: 658415661738243740
+    second: WaterReflexion_14
+  - first:
+      213: -7107079885835593348
+    second: WaterReflexion_4
+  - first:
+      213: 3719885440073515251
+    second: WaterReflexion_5
+  - first:
+      213: 3944871703475108899
+    second: WaterReflexion_6
+  - first:
+      213: -8019256235310743218
+    second: WaterReflexion_7
+  - first:
+      213: -2877294286738184428
+    second: WaterReflexion_8
+  - first:
+      213: 4104362737799931527
+    second: WaterReflexion_9
+  - first:
+      213: -3611509292843513938
+    second: WaterReflexion_10
+  - first:
+      213: -2592725936130088278
+    second: WaterReflexion_11
+  - first:
+      213: -1721327970985451376
+    second: WaterReflexion_12
+  - first:
+      213: -8389870869354571438
+    second: WaterReflexion_13
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WaterReflexion_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 84
+        width: 65
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869f7e435f9f22110800000000000000
+      internalID: 1234824079402858856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterReflexion_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 80
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e8a91f9f7a9b6c0800000000000000
+      internalID: -4127082891566215636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterReflexion_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 84
+        width: 73
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348388b9d4cf4e3c0800000000000000
+      internalID: -4331059531371497405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterReflexion_3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 75
+        width: 77
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d50cc1ee93bd0a30800000000000000
+      internalID: 4183197123871507920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterReflexion_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 16
+        width: 57
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79127eaf749e5d90800000000000000
+      internalID: -7107079885835593348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterReflexion_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 11
+        width: 68
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0cab45910bf9330800000000000000
+      internalID: 3719885440073515251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterReflexion_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 12
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cbf1ad9effeb630800000000000000
+      internalID: 3944871703475108899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterReflexion_7
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 20
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41877b11f0e5b090800000000000000
+      internalID: -8019256235310743218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterReflexion_8
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 12
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4694290fb5e7070800000000000000
+      internalID: 8106017468118033578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterReflexion_9
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 77
+        width: 75
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07cbb699f551f8b30800000000000000
+      internalID: 4291672470247423088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
