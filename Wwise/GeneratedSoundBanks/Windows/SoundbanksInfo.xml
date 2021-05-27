@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="1749413395">
+		<SoundBank Id="393239870" Language="SFX" Hash="3036332495">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -424,14 +424,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="503339173" Name="Event_Musique_InGame" ObjectPath="\Events\Default Work Unit\Event_Musique_InGame" DurationType="OneShot" DurationMin="152.835709" DurationMax="152.835709">
-					<IncludedMemoryFiles>
-						<File Id="109764714" Language="SFX">
-							<ShortName>Musique en jeu.wav</ShortName>
-							<Path>SFX\Musique en jeu_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="164432226" Name="Event_Pause_Vent" ObjectPath="\Events\Default Work Unit\Event_Pause_Vent" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="556261491" Language="SFX">
@@ -566,6 +558,21 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="773743827">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="503339173" Name="Event_Musique_InGame" ObjectPath="\Events\Default Work Unit\Event_Musique_InGame" DurationType="OneShot" DurationMin="152.835709" DurationMax="152.835709">
+					<IncludedMemoryFiles>
+						<File Id="109764714" Language="SFX">
+							<ShortName>Musique en jeu.wav</ShortName>
+							<Path>SFX\Musique en jeu_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

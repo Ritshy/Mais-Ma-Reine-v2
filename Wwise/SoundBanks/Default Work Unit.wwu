@@ -29,12 +29,18 @@
 						<ObjectRef Name="Event_Recrutement_Accepte" ID="{F2EF7302-65FA-4C2F-9747-FC30E7B712BA}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_PNJ_Recrute" ID="{23AF503C-DC6C-4C5F-9FCD-E26B52D58EE5}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Fidele_Sans_Action" ID="{5216333F-8CC4-4D10-BD05-787D5C0EA839}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Event_Musique_InGame" ID="{74B929CB-037E-4D7B-9B78-640C099D9242}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Bandeau_Fidele_Righttoleft" ID="{B195C971-5B7C-4E6D-9329-9E57A1A7AF24}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Clique_Fidele_Combat" ID="{2C5EB5A9-C76E-4EB3-A246-2952446B7E4A}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Dialogue_To_Jeu" ID="{97207710-0139-4EBA-8779-CFE354561768}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Deplacement_Soldat" ID="{628FD362-90C6-4F64-9B3C-CB0373B36474}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Attaque_Epee" ID="{07ED981D-448E-4FAA-8FF4-FF0421DE8FE7}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music" ID="{88CBA448-4564-4390-B889-59201DC4D62B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Event_Musique_InGame" ID="{74B929CB-037E-4D7B-9B78-640C099D9242}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
