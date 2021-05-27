@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX" Hash="1749413395">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3811235563" Name="Event_Attaque_Epee" ObjectPath="\Events\Default Work Unit\Event_Attaque_Epee" DurationType="OneShot" DurationMin="1.617687" DurationMax="1.617687">
+					<IncludedMemoryFiles>
+						<File Id="344158329" Language="SFX">
+							<ShortName>attaque_épée.wav</ShortName>
+							<Path>SFX\attaque_épée_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2839960383" Name="Event_Clique_Bouton_Baston" ObjectPath="\Events\Default Work Unit\Event_Clique_Bouton_Baston" DurationType="OneShot" DurationMin="0.702336" DurationMax="0.702336">
+					<IncludedMemoryFiles>
+						<File Id="428292818" Language="SFX">
+							<ShortName>Interaction_Combat.wav</ShortName>
+							<Path>SFX\Interaction_Combat_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1488930380" Name="Event_Clique_Fidele_Bandeau" ObjectPath="\Events\Default Work Unit\Event_Clique_Fidele_Bandeau" DurationType="OneShot" DurationMin="0.611587" DurationMax="1.381587">
+					<IncludedMemoryFiles>
+						<File Id="51439636" Language="SFX">
+							<ShortName>Fidèle en action\Okay_2.wav</ShortName>
+							<Path>SFX\Fidèle en action\Okay_2_10C4C929.wem</Path>
+						</File>
+						<File Id="131443977" Language="SFX">
+							<ShortName>Fidèle en action\Okay_1.wav</ShortName>
+							<Path>SFX\Fidèle en action\Okay_1_10C4C929.wem</Path>
+						</File>
+						<File Id="313777509" Language="SFX">
+							<ShortName>Fidèle en action\Okay_3.wav</ShortName>
+							<Path>SFX\Fidèle en action\Okay_3_10C4C929.wem</Path>
+						</File>
+						<File Id="702113246" Language="SFX">
+							<ShortName>Fidèle en action\Okay_4.wav</ShortName>
+							<Path>SFX\Fidèle en action\Okay_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="756834820" Name="Event_Clique_Fidele_Combat" ObjectPath="\Events\Default Work Unit\Event_Clique_Fidele_Combat" DurationType="OneShot" DurationMin="0.285896" DurationMax="0.442630">
+					<IncludedMemoryFiles>
+						<File Id="137939270" Language="SFX">
+							<ShortName>Combat\Kiap_8.wav</ShortName>
+							<Path>SFX\Combat\Kiap_8_10C4C929.wem</Path>
+						</File>
+						<File Id="224137409" Language="SFX">
+							<ShortName>Combat\Kiap_14.wav</ShortName>
+							<Path>SFX\Combat\Kiap_14_10C4C929.wem</Path>
+						</File>
+						<File Id="242410005" Language="SFX">
+							<ShortName>Combat\Kiap_15.wav</ShortName>
+							<Path>SFX\Combat\Kiap_15_10C4C929.wem</Path>
+						</File>
+						<File Id="309873538" Language="SFX">
+							<ShortName>Combat\Kiap_4.wav</ShortName>
+							<Path>SFX\Combat\Kiap_4_10C4C929.wem</Path>
+						</File>
+						<File Id="333123384" Language="SFX">
+							<ShortName>Combat\Kiap_13.wav</ShortName>
+							<Path>SFX\Combat\Kiap_13_10C4C929.wem</Path>
+						</File>
+						<File Id="343104562" Language="SFX">
+							<ShortName>Combat\Kiap_12.wav</ShortName>
+							<Path>SFX\Combat\Kiap_12_10C4C929.wem</Path>
+						</File>
+						<File Id="496871747" Language="SFX">
+							<ShortName>Combat\Kiap_3.wav</ShortName>
+							<Path>SFX\Combat\Kiap_3_10C4C929.wem</Path>
+						</File>
+						<File Id="502392558" Language="SFX">
+							<ShortName>Combat\Kiap_6.wav</ShortName>
+							<Path>SFX\Combat\Kiap_6_10C4C929.wem</Path>
+						</File>
+						<File Id="596590025" Language="SFX">
+							<ShortName>Combat\Kiap_10.wav</ShortName>
+							<Path>SFX\Combat\Kiap_10_10C4C929.wem</Path>
+						</File>
+						<File Id="701919633" Language="SFX">
+							<ShortName>Combat\Kiap_7.wav</ShortName>
+							<Path>SFX\Combat\Kiap_7_10C4C929.wem</Path>
+						</File>
+						<File Id="807131667" Language="SFX">
+							<ShortName>Combat\Kiap_17.wav</ShortName>
+							<Path>SFX\Combat\Kiap_17_10C4C929.wem</Path>
+						</File>
+						<File Id="847630961" Language="SFX">
+							<ShortName>Combat\Kiap_11.wav</ShortName>
+							<Path>SFX\Combat\Kiap_11_10C4C929.wem</Path>
+						</File>
+						<File Id="865298652" Language="SFX">
+							<ShortName>Combat\Kiap_16.wav</ShortName>
+							<Path>SFX\Combat\Kiap_16_10C4C929.wem</Path>
+						</File>
+						<File Id="867799705" Language="SFX">
+							<ShortName>Combat\Kiap_5.wav</ShortName>
+							<Path>SFX\Combat\Kiap_5_10C4C929.wem</Path>
+						</File>
+						<File Id="949556494" Language="SFX">
+							<ShortName>Combat\Kiap_9.wav</ShortName>
+							<Path>SFX\Combat\Kiap_9_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3768621174" Name="Event_Clique_Fidele_Dialogue" ObjectPath="\Events\Default Work Unit\Event_Clique_Fidele_Dialogue" DurationType="OneShot" DurationMin="0.699864" DurationMax="0.850091">
+					<IncludedMemoryFiles>
+						<File Id="42566363" Language="SFX">
+							<ShortName>Clique sur fidèle\Yeh\Yeh_3.wav</ShortName>
+							<Path>SFX\Clique sur fidèle\Yeh\Yeh_3_10C4C929.wem</Path>
+						</File>
+						<File Id="407671757" Language="SFX">
+							<ShortName>Clique sur fidèle\Yeh\Yeh_4.wav</ShortName>
+							<Path>SFX\Clique sur fidèle\Yeh\Yeh_4_10C4C929.wem</Path>
+						</File>
+						<File Id="486329480" Language="SFX">
+							<ShortName>Clique sur fidèle\Yeh\Yeh_2.wav</ShortName>
+							<Path>SFX\Clique sur fidèle\Yeh\Yeh_2_10C4C929.wem</Path>
+						</File>
+						<File Id="928828322" Language="SFX">
+							<ShortName>Clique sur fidèle\Yeh\Yeh_1.wav</ShortName>
+							<Path>SFX\Clique sur fidèle\Yeh\Yeh_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1117462416" Name="Event_Clique_Fidele_Recrutement" ObjectPath="\Events\Default Work Unit\Event_Clique_Fidele_Recrutement" DurationType="OneShot" DurationMin="0.800884" DurationMax="1.404807">
+					<IncludedMemoryFiles>
+						<File Id="771884519" Language="SFX">
+							<ShortName>Clique sur fidèle\ahyo\Ahyo_3.wav</ShortName>
+							<Path>SFX\Clique sur fidèle\ahyo\Ahyo_3_10C4C929.wem</Path>
+						</File>
+						<File Id="829965586" Language="SFX">
+							<ShortName>Clique sur fidèle\ahyo\Ahyo_1.wav</ShortName>
+							<Path>SFX\Clique sur fidèle\ahyo\Ahyo_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1025276418" Language="SFX">
+							<ShortName>Clique sur fidèle\ahyo\Ahyo_2.wav</ShortName>
+							<Path>SFX\Clique sur fidèle\ahyo\Ahyo_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2630947717" Name="Event_Contre_Attaque_Epee" ObjectPath="\Events\Default Work Unit\Event_Contre_Attaque_Epee" DurationType="OneShot" DurationMin="0.111383" DurationMax="0.208481">
+					<IncludedMemoryFiles>
+						<File Id="327101926" Language="SFX">
+							<ShortName>Contre-attaque\swoosh 2.wav</ShortName>
+							<Path>SFX\Contre-attaque\swoosh 2_10C4C929.wem</Path>
+						</File>
+						<File Id="645763454" Language="SFX">
+							<ShortName>Contre-attaque\swoosh 1.wav</ShortName>
+							<Path>SFX\Contre-attaque\swoosh 1_10C4C929.wem</Path>
+						</File>
+						<File Id="946976605" Language="SFX">
+							<ShortName>Contre-attaque\swoosh 3.wav</ShortName>
+							<Path>SFX\Contre-attaque\swoosh 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="184803725" Name="Event_Deplacement_Bandit" ObjectPath="\Events\Default Work Unit\Event_Deplacement_Bandit" DurationType="OneShot" DurationMin="1.477483" DurationMax="2.902948">
+					<IncludedMemoryFiles>
+						<File Id="324157802" Language="SFX">
+							<ShortName>Déplacement_Bandit_2.wav</ShortName>
+							<Path>SFX\Déplacement_Bandit_2_10C4C929.wem</Path>
+						</File>
+						<File Id="399042507" Language="SFX">
+							<ShortName>Déplacement_Bandit.wav</ShortName>
+							<Path>SFX\Déplacement_Bandit_10C4C929.wem</Path>
+						</File>
+						<File Id="890718477" Language="SFX">
+							<ShortName>Déplacement_Bandit_4.wav</ShortName>
+							<Path>SFX\Déplacement_Bandit_4_10C4C929.wem</Path>
+						</File>
+						<File Id="916223357" Language="SFX">
+							<ShortName>Déplacement_Bandit_3.wav</ShortName>
+							<Path>SFX\Déplacement_Bandit_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3702838202" Name="Event_Deplacement_Soldat" ObjectPath="\Events\Default Work Unit\Event_Deplacement_Soldat" DurationType="OneShot" DurationMin="0.354104" DurationMax="0.545669">
+					<IncludedMemoryFiles>
+						<File Id="28146187" Language="SFX">
+							<ShortName>Déplacement_Solda_5.wav</ShortName>
+							<Path>SFX\Déplacement_Solda_5_10C4C929.wem</Path>
+						</File>
+						<File Id="65992091" Language="SFX">
+							<ShortName>Déplacement_Soldat.wav</ShortName>
+							<Path>SFX\Déplacement_Soldat_10C4C929.wem</Path>
+						</File>
+						<File Id="210736807" Language="SFX">
+							<ShortName>Déplacement_Solda_4.wav</ShortName>
+							<Path>SFX\Déplacement_Solda_4_10C4C929.wem</Path>
+						</File>
+						<File Id="525452010" Language="SFX">
+							<ShortName>Déplacement_Solda_3.wav</ShortName>
+							<Path>SFX\Déplacement_Solda_3_10C4C929.wem</Path>
+						</File>
+						<File Id="642800865" Language="SFX">
+							<ShortName>Déplacement_Solda_7.wav</ShortName>
+							<Path>SFX\Déplacement_Solda_7_10C4C929.wem</Path>
+						</File>
+						<File Id="687674998" Language="SFX">
+							<ShortName>Déplacement_Solda_2.wav</ShortName>
+							<Path>SFX\Déplacement_Solda_2_10C4C929.wem</Path>
+						</File>
+						<File Id="713865844" Language="SFX">
+							<ShortName>Déplacement_Solda_6.wav</ShortName>
+							<Path>SFX\Déplacement_Solda_6_10C4C929.wem</Path>
+						</File>
+						<File Id="841043309" Language="SFX">
+							<ShortName>Déplacement_Solda_8.wav</ShortName>
+							<Path>SFX\Déplacement_Solda_8_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1261669237" Name="Event_Dialogue_To_Jeu" ObjectPath="\Events\Default Work Unit\Event_Dialogue_To_Jeu" DurationType="OneShot" DurationMin="1.956667" DurationMax="1.956667">
+					<IncludedMemoryFiles>
+						<File Id="237412588" Language="SFX">
+							<ShortName>Dialogue to jeu.wav</ShortName>
+							<Path>SFX\Dialogue to jeu_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1779567033" Name="Event_Echec_Critique" ObjectPath="\Events\Default Work Unit\Event_Echec_Critique" DurationType="OneShot" DurationMin="3.614458" DurationMax="3.614458">
+					<IncludedMemoryFiles>
+						<File Id="615781091" Language="SFX">
+							<ShortName>echec_critique_2.wav</ShortName>
+							<Path>SFX\echec_critique_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="965117638" Name="Event_Fidele_Sans_Action" ObjectPath="\Events\Default Work Unit\Event_Fidele_Sans_Action" DurationType="OneShot" DurationMin="0.400544" DurationMax="1.381587">
+					<IncludedMemoryFiles>
+						<File Id="183227138" Language="SFX">
+							<ShortName>Fidèle sans action\Non_2.wav</ShortName>
+							<Path>SFX\Fidèle sans action\Non_2_10C4C929.wem</Path>
+						</File>
+						<File Id="264055602" Language="SFX">
+							<ShortName>Fidèle sans action\Non_8.wav</ShortName>
+							<Path>SFX\Fidèle sans action\Non_8_10C4C929.wem</Path>
+						</File>
+						<File Id="888621936" Language="SFX">
+							<ShortName>Fidèle sans action\Non_1.wav</ShortName>
+							<Path>SFX\Fidèle sans action\Non_1_10C4C929.wem</Path>
+						</File>
+						<File Id="950126130" Language="SFX">
+							<ShortName>Fidèle sans action\Non_4.wav</ShortName>
+							<Path>SFX\Fidèle sans action\Non_4_10C4C929.wem</Path>
+						</File>
+						<File Id="970295514" Language="SFX">
+							<ShortName>Fidèle sans action\Non_3.wav</ShortName>
+							<Path>SFX\Fidèle sans action\Non_3_10C4C929.wem</Path>
+						</File>
+						<File Id="988131641" Language="SFX">
+							<ShortName>Fidèle sans action\Non_5.wav</ShortName>
+							<Path>SFX\Fidèle sans action\Non_5_10C4C929.wem</Path>
+						</File>
+						<File Id="990402395" Language="SFX">
+							<ShortName>Fidèle sans action\Non_7.wav</ShortName>
+							<Path>SFX\Fidèle sans action\Non_7_10C4C929.wem</Path>
+						</File>
+						<File Id="1015702308" Language="SFX">
+							<ShortName>Fidèle sans action\Non_6.wav</ShortName>
+							<Path>SFX\Fidèle sans action\Non_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4092098687" Name="Event_Interaction_Recrutement" ObjectPath="\Events\Default Work Unit\Event_Interaction_Recrutement" DurationType="OneShot" DurationMin="0.372562" DurationMax="0.372562">
+					<IncludedMemoryFiles>
+						<File Id="62618195" Language="SFX">
+							<ShortName>Interaction_recrutement.wav</ShortName>
+							<Path>SFX\Interaction_recrutement_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1699538348" Name="Event_Mort" ObjectPath="\Events\Default Work Unit\Event_Mort" DurationType="OneShot" DurationMin="0.366893" DurationMax="1.449524">
+					<IncludedMemoryFiles>
+						<File Id="89893094" Language="SFX">
+							<ShortName>Mort\Cris_1.wav</ShortName>
+							<Path>SFX\Mort\Cris_1_10C4C929.wem</Path>
+						</File>
+						<File Id="117796181" Language="SFX">
+							<ShortName>Mort\Cris_11.wav</ShortName>
+							<Path>SFX\Mort\Cris_11_10C4C929.wem</Path>
+						</File>
+						<File Id="142978168" Language="SFX">
+							<ShortName>Mort\Cris_22.wav</ShortName>
+							<Path>SFX\Mort\Cris_22_10C4C929.wem</Path>
+						</File>
+						<File Id="158599574" Language="SFX">
+							<ShortName>Mort\Cris_15.wav</ShortName>
+							<Path>SFX\Mort\Cris_15_10C4C929.wem</Path>
+						</File>
+						<File Id="237506436" Language="SFX">
+							<ShortName>Mort\Cris_8.wav</ShortName>
+							<Path>SFX\Mort\Cris_8_10C4C929.wem</Path>
+						</File>
+						<File Id="274923845" Language="SFX">
+							<ShortName>Mort\Cris_2.wav</ShortName>
+							<Path>SFX\Mort\Cris_2_10C4C929.wem</Path>
+						</File>
+						<File Id="322335179" Language="SFX">
+							<ShortName>Mort\Cris_14.wav</ShortName>
+							<Path>SFX\Mort\Cris_14_10C4C929.wem</Path>
+						</File>
+						<File Id="343252937" Language="SFX">
+							<ShortName>Mort\Cris_13.wav</ShortName>
+							<Path>SFX\Mort\Cris_13_10C4C929.wem</Path>
+						</File>
+						<File Id="356655443" Language="SFX">
+							<ShortName>Mort\Cris_6.wav</ShortName>
+							<Path>SFX\Mort\Cris_6_10C4C929.wem</Path>
+						</File>
+						<File Id="420024905" Language="SFX">
+							<ShortName>Mort\Cris_4.wav</ShortName>
+							<Path>SFX\Mort\Cris_4_10C4C929.wem</Path>
+						</File>
+						<File Id="420858714" Language="SFX">
+							<ShortName>Mort\Cris_12.wav</ShortName>
+							<Path>SFX\Mort\Cris_12_10C4C929.wem</Path>
+						</File>
+						<File Id="447113972" Language="SFX">
+							<ShortName>Mort\Cris_16.wav</ShortName>
+							<Path>SFX\Mort\Cris_16_10C4C929.wem</Path>
+						</File>
+						<File Id="476125705" Language="SFX">
+							<ShortName>Mort\Cris_23.wav</ShortName>
+							<Path>SFX\Mort\Cris_23_10C4C929.wem</Path>
+						</File>
+						<File Id="579661265" Language="SFX">
+							<ShortName>Mort\Cris_24.wav</ShortName>
+							<Path>SFX\Mort\Cris_24_10C4C929.wem</Path>
+						</File>
+						<File Id="750295643" Language="SFX">
+							<ShortName>Mort\Cris_10.wav</ShortName>
+							<Path>SFX\Mort\Cris_10_10C4C929.wem</Path>
+						</File>
+						<File Id="814490929" Language="SFX">
+							<ShortName>Mort\Cris_18.wav</ShortName>
+							<Path>SFX\Mort\Cris_18_10C4C929.wem</Path>
+						</File>
+						<File Id="825208035" Language="SFX">
+							<ShortName>Mort\Cris_5.wav</ShortName>
+							<Path>SFX\Mort\Cris_5_10C4C929.wem</Path>
+						</File>
+						<File Id="874735293" Language="SFX">
+							<ShortName>Mort\Cris_20.wav</ShortName>
+							<Path>SFX\Mort\Cris_20_10C4C929.wem</Path>
+						</File>
+						<File Id="876065495" Language="SFX">
+							<ShortName>Mort\Cris_7.wav</ShortName>
+							<Path>SFX\Mort\Cris_7_10C4C929.wem</Path>
+						</File>
+						<File Id="889117939" Language="SFX">
+							<ShortName>Mort\Cris_19.wav</ShortName>
+							<Path>SFX\Mort\Cris_19_10C4C929.wem</Path>
+						</File>
+						<File Id="913603227" Language="SFX">
+							<ShortName>Mort\Cris_17.wav</ShortName>
+							<Path>SFX\Mort\Cris_17_10C4C929.wem</Path>
+						</File>
+						<File Id="914380911" Language="SFX">
+							<ShortName>Mort\Cris_9.wav</ShortName>
+							<Path>SFX\Mort\Cris_9_10C4C929.wem</Path>
+						</File>
+						<File Id="939575509" Language="SFX">
+							<ShortName>Mort\Cris_3.wav</ShortName>
+							<Path>SFX\Mort\Cris_3_10C4C929.wem</Path>
+						</File>
+						<File Id="941062096" Language="SFX">
+							<ShortName>Mort\Cris_21.wav</ShortName>
+							<Path>SFX\Mort\Cris_21_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="489201999" Name="Event_Mouv_Fidele_Attrape" ObjectPath="\Events\Default Work Unit\Event_Mouv_Fidele_Attrape" DurationType="OneShot" DurationMin="0.290249" DurationMax="0.552358">
+					<IncludedMemoryFiles>
+						<File Id="83271106" Language="SFX">
+							<ShortName>Mouv_attrape_5.wav</ShortName>
+							<Path>SFX\Mouv_attrape_5_10C4C929.wem</Path>
+						</File>
+						<File Id="171293753" Language="SFX">
+							<ShortName>Mouv_attrape_4.wav</ShortName>
+							<Path>SFX\Mouv_attrape_4_10C4C929.wem</Path>
+						</File>
+						<File Id="556743107" Language="SFX">
+							<ShortName>Mouv_attrape_2.wav</ShortName>
+							<Path>SFX\Mouv_attrape_2_10C4C929.wem</Path>
+						</File>
+						<File Id="839173070" Language="SFX">
+							<ShortName>Mouv_attrape_1.wav</ShortName>
+							<Path>SFX\Mouv_attrape_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1051043344" Language="SFX">
+							<ShortName>Mouv_attrape_3.wav</ShortName>
+							<Path>SFX\Mouv_attrape_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2880414047" Name="Event_Mouv_Fidele_Chute" ObjectPath="\Events\Default Work Unit\Event_Mouv_Fidele_Chute" DurationType="OneShot" DurationMin="0.402721" DurationMax="0.569433">
+					<IncludedMemoryFiles>
+						<File Id="288790028" Language="SFX">
+							<ShortName>bodyfallMED.wav</ShortName>
+							<Path>SFX\bodyfallMED_10C4C929.wem</Path>
+						</File>
+						<File Id="301505234" Language="SFX">
+							<ShortName>bodyfallHVY.wav</ShortName>
+							<Path>SFX\bodyfallHVY_10C4C929.wem</Path>
+						</File>
+						<File Id="861073420" Language="SFX">
+							<ShortName>bodyfallSML.wav</ShortName>
+							<Path>SFX\bodyfallSML_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="503339173" Name="Event_Musique_InGame" ObjectPath="\Events\Default Work Unit\Event_Musique_InGame" DurationType="OneShot" DurationMin="152.835709" DurationMax="152.835709">
+					<IncludedMemoryFiles>
+						<File Id="109764714" Language="SFX">
+							<ShortName>Musique en jeu.wav</ShortName>
+							<Path>SFX\Musique en jeu_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="164432226" Name="Event_Pause_Vent" ObjectPath="\Events\Default Work Unit\Event_Pause_Vent" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="556261491" Language="SFX">
+							<ShortName>Vent_Pause.wav</ShortName>
+							<Path>SFX\Vent_Pause_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1968642834" Name="Event_Recrutement_Accepte" ObjectPath="\Events\Default Work Unit\Event_Recrutement_Accepte" DurationType="OneShot" DurationMin="0.372562" DurationMax="0.372562">
+					<IncludedMemoryFiles>
+						<File Id="62618195" Language="SFX">
+							<ShortName>Interaction_recrutement.wav</ShortName>
+							<Path>SFX\Interaction_recrutement_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2644997053" Name="Event_Recrutement_Refuse" ObjectPath="\Events\Default Work Unit\Event_Recrutement_Refuse" DurationType="OneShot" DurationMin="0.777869" DurationMax="1.010068">
+					<IncludedMemoryFiles>
+						<File Id="2081404" Language="SFX">
+							<ShortName>Fidèle non recrutable\Nt nt nt_4.wav</ShortName>
+							<Path>SFX\Fidèle non recrutable\Nt nt nt_4_10C4C929.wem</Path>
+						</File>
+						<File Id="82763227" Language="SFX">
+							<ShortName>Fidèle non recrutable\Nt nt nt_5.wav</ShortName>
+							<Path>SFX\Fidèle non recrutable\Nt nt nt_5_10C4C929.wem</Path>
+						</File>
+						<File Id="104179137" Language="SFX">
+							<ShortName>Fidèle non recrutable\Nt nt nt_6.wav</ShortName>
+							<Path>SFX\Fidèle non recrutable\Nt nt nt_6_10C4C929.wem</Path>
+						</File>
+						<File Id="346599077" Language="SFX">
+							<ShortName>Fidèle non recrutable\Nt nt nt_2.wav</ShortName>
+							<Path>SFX\Fidèle non recrutable\Nt nt nt_2_10C4C929.wem</Path>
+						</File>
+						<File Id="595473903" Language="SFX">
+							<ShortName>Fidèle non recrutable\Nt nt nt_1.wav</ShortName>
+							<Path>SFX\Fidèle non recrutable\Nt nt nt_1_10C4C929.wem</Path>
+						</File>
+						<File Id="787574756" Language="SFX">
+							<ShortName>Fidèle non recrutable\Nt nt nt_7.wav</ShortName>
+							<Path>SFX\Fidèle non recrutable\Nt nt nt_7_10C4C929.wem</Path>
+						</File>
+						<File Id="789823497" Language="SFX">
+							<ShortName>Fidèle non recrutable\Nt nt nt_3.wav</ShortName>
+							<Path>SFX\Fidèle non recrutable\Nt nt nt_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4014485723" Name="Event_Reussite_Critique" ObjectPath="\Events\Default Work Unit\Event_Reussite_Critique" DurationType="OneShot" DurationMin="2.124490" DurationMax="2.124490">
+					<IncludedMemoryFiles>
+						<File Id="705916552" Language="SFX">
+							<ShortName>réussite_critique.wav</ShortName>
+							<Path>SFX\réussite_critique_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="349269192" Name="Event_UI_Bandeau_Fidele_Lefttoright" ObjectPath="\Events\Default Work Unit\Event_UI_Bandeau_Fidele_Lefttoright" DurationType="OneShot" DurationMin="2.036191" DurationMax="2.036191">
+					<IncludedMemoryFiles>
+						<File Id="307925096" Language="SFX">
+							<ShortName>Bandeau_fidele_lefttoright_.wav</ShortName>
+							<Path>SFX\Bandeau_fidele_lefttoright__10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="694759564" Name="Event_UI_Bandeau_Fidele_Righttoleft" ObjectPath="\Events\Default Work Unit\Event_UI_Bandeau_Fidele_Righttoleft" DurationType="OneShot" DurationMin="2.036191" DurationMax="2.036191">
+					<IncludedMemoryFiles>
+						<File Id="381637317" Language="SFX">
+							<ShortName>Bandeau_fidele_righttoleft.wav</ShortName>
+							<Path>SFX\Bandeau_fidele_righttoleft_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1387593318" Name="Event_UI_Clique_Bouton_Menu" ObjectPath="\Events\Default Work Unit\Event_UI_Clique_Bouton_Menu" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000">
+					<IncludedMemoryFiles>
+						<File Id="928294472" Language="SFX">
+							<ShortName>Souris-passe_Bouton_UI.wav</ShortName>
+							<Path>SFX\Souris-passe_Bouton_UI_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1051972340" Name="Event_UI_Clique_Territoire" ObjectPath="\Events\Default Work Unit\Event_UI_Clique_Territoire" DurationType="OneShot" DurationMin="1.600917" DurationMax="1.600917">
+					<IncludedMemoryFiles>
+						<File Id="404207655" Language="SFX">
+							<ShortName>Clique_territoire.wav</ShortName>
+							<Path>SFX\Clique_territoire_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3776204507" Name="Event_UI_Gain_Charisme" ObjectPath="\Events\Default Work Unit\Event_UI_Gain_Charisme" DurationType="OneShot" DurationMin="1.469184" DurationMax="1.469184">
+					<IncludedMemoryFiles>
+						<File Id="318337255" Language="SFX">
+							<ShortName>Gain_Charisme.wav</ShortName>
+							<Path>SFX\Gain_Charisme_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2059410396" Name="Event_UI_Obtention_quete" ObjectPath="\Events\Default Work Unit\Event_UI_Obtention_quete" DurationType="OneShot" DurationMin="1.200000" DurationMax="1.200000">
+					<IncludedMemoryFiles>
+						<File Id="1012457160" Language="SFX">
+							<ShortName>Obtention_Quête_2.wav</ShortName>
+							<Path>SFX\Obtention_Quête_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="777863556" Name="Event_UI_PNJ_Recrute" ObjectPath="\Events\Default Work Unit\Event_UI_PNJ_Recrute" DurationType="OneShot" DurationMin="1.432667" DurationMax="1.432667">
+					<IncludedMemoryFiles>
+						<File Id="863149676" Language="SFX">
+							<ShortName>PNJ_rejoint_camp.wav</ShortName>
+							<Path>SFX\PNJ_rejoint_camp_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="552716342" Name="Event_UI_Quete_Termine" ObjectPath="\Events\Default Work Unit\Event_UI_Quete_Termine" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000">
+					<IncludedMemoryFiles>
+						<File Id="543626787" Language="SFX">
+							<ShortName>Quête_terminée_2.wav</ShortName>
+							<Path>SFX\Quête_terminée_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3384763883" Name="Event_UI_Survole_Bouton" ObjectPath="\Events\Default Work Unit\Event_UI_Survole_Bouton" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000">
+					<IncludedMemoryFiles>
+						<File Id="928294472" Language="SFX">
+							<ShortName>Souris-passe_Bouton_UI.wav</ShortName>
+							<Path>SFX\Souris-passe_Bouton_UI_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1958929096">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

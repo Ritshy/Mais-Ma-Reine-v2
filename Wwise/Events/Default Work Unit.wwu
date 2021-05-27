@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Event_Clique_Fidele_Combat" ID="{2C5EB5A9-C76E-4EB3-A246-2952446B7E4A}">
+					<ChildrenList>
+						<Action Name="" ID="{CD9374C9-2118-4F45-9D49-364FCC5949CF}" ShortID="244895518">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clique_Fidele_Combat" ID="{1150461E-9304-406B-9982-4B5CD0BC45A4}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Clique_Fidele_Dialogue" ID="{247BB2C0-EFBC-4995-AEA8-65666304D342}">
+					<ChildrenList>
+						<Action Name="" ID="{7C2A0558-2239-4F5A-B8E7-92D15E1D7F81}" ShortID="507483964">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clique_Fidele_Dialogue" ID="{5DB7D6A5-D42D-46BE-BA14-8F5E01486C78}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Attaque_Epee" ID="{07ED981D-448E-4FAA-8FF4-FF0421DE8FE7}">
+					<ChildrenList>
+						<Action Name="" ID="{81D82B84-E370-4461-9F26-8F98DA4C7CC7}" ShortID="111741130">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="attaque_épée" ID="{25CDD60F-38D5-40B5-9F10-F5272183EF59}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Bandeau_Fidele_Lefttoright" ID="{A232F933-FD18-40A7-8217-37F0D0DC6927}">
+					<ChildrenList>
+						<Action Name="" ID="{AA0E5448-D06F-4724-BE1B-9AAEFB4457FF}" ShortID="37594664">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bandeau_fidele_lefttoright_" ID="{6DE343E6-12EB-44A8-87FD-F8773781130F}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Bandeau_Fidele_Righttoleft" ID="{B195C971-5B7C-4E6D-9329-9E57A1A7AF24}">
+					<ChildrenList>
+						<Action Name="" ID="{792C09AD-8F79-42AC-ABDC-99D0F4C239E3}" ShortID="705347593">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bandeau_fidele_righttoleft" ID="{FF70E904-603C-4F4C-A43B-CAC0DF470A54}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Fidele_Sans_Action" ID="{5216333F-8CC4-4D10-BD05-787D5C0EA839}">
+					<ChildrenList>
+						<Action Name="" ID="{664A88C2-E16A-4E2F-AECC-A9BA57D96903}" ShortID="334894464">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sans_action" ID="{61947912-FC06-4D6D-A8AB-D5A97028AB4F}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Clique_Bouton_Menu" ID="{F7D0FA07-5A35-4264-903B-7A4B34CD2418}">
+					<ChildrenList>
+						<Action Name="" ID="{AB647B3B-4FD3-4B19-A2EC-E9E904D5FD2B}" ShortID="771331205">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Souris-passe_Bouton_UI" ID="{32EB3E9E-0C44-4612-9B61-B98953ABCBD7}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Clique_Fidele_Bandeau" ID="{9F8E87B3-15F1-4957-89C1-41DAC347AD4C}">
+					<ChildrenList>
+						<Action Name="" ID="{70AC6A1A-797F-4202-A038-1A176EB2817E}" ShortID="423282031">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clique_Fidele_Bandeau" ID="{6E213F68-3CA3-4DD1-AF7C-4700DAD49714}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Gain_Charisme" ID="{4657E1C7-D933-4442-B168-794C8116455C}">
+					<ChildrenList>
+						<Action Name="" ID="{112239B7-1653-4A95-95E0-ACF6AFAAD029}" ShortID="537386035">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Gain_Charisme" ID="{58A9C359-A489-49B8-A65A-93B4F19239E6}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Clique_Bouton_Baston" ID="{0FE63E99-B5A7-4916-A347-E9A2E7F4DE3B}">
+					<ChildrenList>
+						<Action Name="" ID="{543811E7-AEB1-4316-89A5-9DF2FD52A629}" ShortID="337232269">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interaction_Combat" ID="{9F739AA5-9E1E-4EFD-B366-EAE9015E3AEC}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Interaction_Recrutement" ID="{FA66F64F-6EFC-4907-AE67-CBC5D059538D}">
+					<ChildrenList>
+						<Action Name="" ID="{35D298B4-5AE3-435E-8482-A7D7759B1707}" ShortID="303007256">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interaction_recrutement" ID="{FAEC6D99-9C30-46E5-AA17-B44041E06832}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Recrutement_Accepte" ID="{F2EF7302-65FA-4C2F-9747-FC30E7B712BA}">
+					<ChildrenList>
+						<Action Name="" ID="{44E39E8D-BD43-455F-992B-35608A3DA75E}" ShortID="25802470">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Interaction_recrutement" ID="{FAEC6D99-9C30-46E5-AA17-B44041E06832}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Recrutement_Refuse" ID="{6C4F71BB-2E9A-4261-9905-01D137039D3C}">
+					<ChildrenList>
+						<Action Name="" ID="{22050DC5-33B2-4B7A-9C0D-47F2DAC12CAF}" ShortID="1009266839">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Non_recrutable" ID="{A6EF2087-414F-4ABB-B364-D276F6DB9660}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Mort" ID="{94BB9027-949C-4BA9-AEB3-A0EEEBF691BD}">
+					<ChildrenList>
+						<Action Name="" ID="{30E4E190-E26C-41C3-A700-DB46185E0637}" ShortID="643817259">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mort" ID="{B9A08745-77FE-4161-88C6-4840F9924399}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Obtention_quete" ID="{B6FCAC04-2F90-414D-8114-6B360ABFD444}">
+					<ChildrenList>
+						<Action Name="" ID="{A68981B9-6E77-4B78-B3F1-895FCEEF8A02}" ShortID="221706266">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Obtention_Quête_2" ID="{BB6DB9E1-2A01-4B86-BD2F-55E00ED33769}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Quete_Termine" ID="{4F1C34AE-68FE-4394-AB00-AD381BBF6A33}">
+					<ChildrenList>
+						<Action Name="" ID="{5254E312-79A0-4314-8890-2A37679471D6}" ShortID="107890722">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Quête_terminée_2" ID="{82857320-C4FD-436B-8F5E-6CD4942E5E70}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_PNJ_Recrute" ID="{23AF503C-DC6C-4C5F-9FCD-E26B52D58EE5}">
+					<ChildrenList>
+						<Action Name="" ID="{A35014CB-0992-4C78-9D3A-87C6AEC509F4}" ShortID="846003117">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PNJ_rejoint_camp" ID="{5DB1D17C-3344-402C-A84E-4EA33945C593}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Reussite_Critique" ID="{9F91E2CC-A6DD-40BF-9AB7-8650B04C468F}">
+					<ChildrenList>
+						<Action Name="" ID="{A5085D44-6510-40F4-BF9F-BCBBE715D6BB}" ShortID="275881257">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="réussite_critique" ID="{710E13C5-B6EA-4FCF-A987-A61F7F122062}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Survole_Bouton" ID="{3C2E71C9-B65C-4726-B518-DE6121E59E35}">
+					<ChildrenList>
+						<Action Name="" ID="{1151D1CE-CCE7-460F-B5B0-76A119E466B2}" ShortID="416516359">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Souris-passe_Bouton_UI" ID="{32EB3E9E-0C44-4612-9B61-B98953ABCBD7}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Pause_Vent" ID="{D6E3D597-03A4-441F-B7B5-DC841AA69099}">
+					<ChildrenList>
+						<Action Name="" ID="{CED11F52-8E73-42CD-AAC8-63418ECC9C4E}" ShortID="637414992">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Vent_Pause" ID="{53A95AD8-2722-4EF7-96B2-BD6CDD5B0A11}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Contre_Attaque_Epee" ID="{EB563D33-34A2-432E-9F5C-962D15179D6F}">
+					<ChildrenList>
+						<Action Name="" ID="{701882E2-13CC-4093-9BB9-3A7F14CBAB0D}" ShortID="850027534">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Contre_Attaque" ID="{942B8299-1184-4630-99AA-A7F09C2F7BDC}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Clique_Fidele_Recrutement" ID="{8BC2F2F6-E113-4240-8DF9-08EA91E3A552}">
+					<ChildrenList>
+						<Action Name="" ID="{ED11E2AB-21CE-45D9-B2B2-0198B04BA682}" ShortID="599443681">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clique_Fidele_Recrutement" ID="{297033E6-7265-4C3F-8FF3-7351825D1A49}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Deplacement_Bandit" ID="{FFA57FB7-E24D-4751-9EBE-D4CD7BB8511D}">
+					<ChildrenList>
+						<Action Name="" ID="{5CCFE858-7B41-45C6-888F-5CA440C3D38C}" ShortID="814055478">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Deplacement_Bandit" ID="{C2A10ED6-42B2-4E28-B0E9-715F78C9B842}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Deplacement_Soldat" ID="{628FD362-90C6-4F64-9B3C-CB0373B36474}">
+					<ChildrenList>
+						<Action Name="" ID="{9FC19D5C-BF2B-4FF0-A4D2-8F9D56D3AC86}" ShortID="726015740">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Deplacement_Soldat" ID="{DE742C45-8C2C-4DF2-95EA-E645709900A2}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Deplacement_Calamite" ID="{636E58F7-0B06-4247-B4C4-46ACB2751218}"/>
+				<Event Name="Event_Mouv_Fidele_Chute" ID="{3A171EC5-569D-4015-9A9B-66B815C23A61}">
+					<ChildrenList>
+						<Action Name="" ID="{A16E398F-20F5-4509-9729-8B5342DB8EE2}" ShortID="304039771">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mouv_Chute" ID="{4E2C855A-104E-4C35-BE41-714534118048}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Mouv_Fidele_Attrape" ID="{79D7091C-FE68-488B-A733-81DF59A15DA3}">
+					<ChildrenList>
+						<Action Name="" ID="{E7FF6611-8580-487B-9726-4F114ED615C7}" ShortID="536625563">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mouv_Attrape" ID="{E5127CD6-68C1-459C-9BB6-BEE56F9D0958}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Clique_Discussion" ID="{01C9CE98-A258-4BFF-BC40-7DE4BC182D54}">
+					<ChildrenList>
+						<Action Name="" ID="{994CDBE0-4E06-486D-9C21-03058E48C0CC}" ShortID="506574063">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clique_Discu" ID="{7F7023CE-2A74-4FC6-8436-B1EC8405314B}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Dialogue_To_Jeu" ID="{97207710-0139-4EBA-8779-CFE354561768}">
+					<ChildrenList>
+						<Action Name="" ID="{8F51EB50-2F5C-4E40-95BA-F655095A77C6}" ShortID="1053011175">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dialogue to jeu" ID="{A34C16DE-CD27-43DF-B7D1-446110114FD4}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Clique_Territoire" ID="{65B96822-F0FC-401D-82A3-C2532FD03FB7}">
+					<ChildrenList>
+						<Action Name="" ID="{6F871AF7-67E2-41BF-992E-A7FA6DD44CD3}" ShortID="694086385">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clique_territoire" ID="{45ED4D8D-8E3A-45A8-AF06-655A7C1F714D}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Attaque_Ennemi" ID="{081CA9D9-4958-4CC5-AFB2-E2E995EC4918}">
+					<ChildrenList>
+						<Action Name="" ID="{7034D37E-A905-4CD8-9CAF-4B814CB18D7F}" ShortID="695641938">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="13"/>
+								<Property Name="Lowpass" Type="int16" Value="25"/>
+								<Property Name="Pitch" Type="int32" Value="-100"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clique_Fidele_Combat" ID="{1150461E-9304-406B-9982-4B5CD0BC45A4}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6358A59A-550A-4E8D-B443-D219B70BA4EC}" ShortID="634871425">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clique_Fidele_Combat" ID="{1150461E-9304-406B-9982-4B5CD0BC45A4}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Echec_Critique" ID="{0BE49B9D-890A-4510-BB60-D1980E99EA21}">
+					<ChildrenList>
+						<Action Name="" ID="{F1B21B64-AC5C-41E1-B979-1782463EAB74}" ShortID="731972939">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="echec_critique_2" ID="{5A1B646D-6CF7-4C4E-A02B-288786C93ED9}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Musique_InGame" ID="{74B929CB-037E-4D7B-9B78-640C099D9242}">
+					<ChildrenList>
+						<Action Name="" ID="{4442BF28-4D48-4398-86CE-340171FB7184}" ShortID="727403992">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Musique en jeu" ID="{707CCC32-92B0-4E36-B725-5A68BD4CB5AC}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

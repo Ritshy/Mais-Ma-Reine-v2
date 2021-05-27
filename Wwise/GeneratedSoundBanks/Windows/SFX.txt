@@ -1,0 +1,138 @@
+Event	ID	Name			Wwise Object Path	Notes
+	164432226	Event_Pause_Vent			\Default Work Unit\Event_Pause_Vent	
+	184803725	Event_Deplacement_Bandit			\Default Work Unit\Event_Deplacement_Bandit	
+	349269192	Event_UI_Bandeau_Fidele_Lefttoright			\Default Work Unit\Event_UI_Bandeau_Fidele_Lefttoright	
+	489201999	Event_Mouv_Fidele_Attrape			\Default Work Unit\Event_Mouv_Fidele_Attrape	
+	503339173	Event_Musique_InGame			\Default Work Unit\Event_Musique_InGame	
+	552716342	Event_UI_Quete_Termine			\Default Work Unit\Event_UI_Quete_Termine	
+	694759564	Event_UI_Bandeau_Fidele_Righttoleft			\Default Work Unit\Event_UI_Bandeau_Fidele_Righttoleft	
+	756834820	Event_Clique_Fidele_Combat			\Default Work Unit\Event_Clique_Fidele_Combat	
+	777863556	Event_UI_PNJ_Recrute			\Default Work Unit\Event_UI_PNJ_Recrute	
+	965117638	Event_Fidele_Sans_Action			\Default Work Unit\Event_Fidele_Sans_Action	
+	1051972340	Event_UI_Clique_Territoire			\Default Work Unit\Event_UI_Clique_Territoire	
+	1117462416	Event_Clique_Fidele_Recrutement			\Default Work Unit\Event_Clique_Fidele_Recrutement	
+	1261669237	Event_Dialogue_To_Jeu			\Default Work Unit\Event_Dialogue_To_Jeu	
+	1387593318	Event_UI_Clique_Bouton_Menu			\Default Work Unit\Event_UI_Clique_Bouton_Menu	
+	1488930380	Event_Clique_Fidele_Bandeau			\Default Work Unit\Event_Clique_Fidele_Bandeau	
+	1699538348	Event_Mort			\Default Work Unit\Event_Mort	
+	1779567033	Event_Echec_Critique			\Default Work Unit\Event_Echec_Critique	
+	1968642834	Event_Recrutement_Accepte			\Default Work Unit\Event_Recrutement_Accepte	
+	2059410396	Event_UI_Obtention_quete			\Default Work Unit\Event_UI_Obtention_quete	
+	2630947717	Event_Contre_Attaque_Epee			\Default Work Unit\Event_Contre_Attaque_Epee	
+	2644997053	Event_Recrutement_Refuse			\Default Work Unit\Event_Recrutement_Refuse	
+	2839960383	Event_Clique_Bouton_Baston			\Default Work Unit\Event_Clique_Bouton_Baston	
+	2880414047	Event_Mouv_Fidele_Chute			\Default Work Unit\Event_Mouv_Fidele_Chute	
+	3384763883	Event_UI_Survole_Bouton			\Default Work Unit\Event_UI_Survole_Bouton	
+	3702838202	Event_Deplacement_Soldat			\Default Work Unit\Event_Deplacement_Soldat	
+	3768621174	Event_Clique_Fidele_Dialogue			\Default Work Unit\Event_Clique_Fidele_Dialogue	
+	3776204507	Event_UI_Gain_Charisme			\Default Work Unit\Event_UI_Gain_Charisme	
+	3811235563	Event_Attaque_Epee			\Default Work Unit\Event_Attaque_Epee	
+	4014485723	Event_Reussite_Critique			\Default Work Unit\Event_Reussite_Critique	
+	4092098687	Event_Interaction_Recrutement			\Default Work Unit\Event_Interaction_Recrutement	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2081404	Nt nt nt_4	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_4		147520
+	28146187	Déplacement_Solda_5	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Solda_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_5		77888
+	42566363	Yeh_3	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Dialogue\Yeh_3		125068
+	51439636	Okay_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle en action\Okay_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Bandeau\Okay_2		134812
+	62618195	Interaction_recrutement	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Interaction_recrutement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction_recrutement		65784
+	65992091	Déplacement_Soldat	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Soldat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Soldat		75840
+	82763227	Nt nt nt_5	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_5		155712
+	83271106	Mouv_attrape_5	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mouv_attrape_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Attrape\Mouv_attrape_5		51264
+	89893094	Cris_1	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_1		83368
+	104179137	Nt nt nt_6	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_6		139328
+	109764714	Musique en jeu	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Musique en jeu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique en jeu		29344520
+	117796181	Cris_11	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_11		194728
+	131443977	Okay_1	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle en action\Okay_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Bandeau\Okay_1		243776
+	137939270	Kiap_8	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_8		53568
+	142978168	Cris_22	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_22_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_22		120964
+	158599574	Cris_15	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_15		255760
+	171293753	Mouv_attrape_4	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mouv_attrape_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Attrape\Mouv_attrape_4		97500
+	183227138	Non_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle sans action\Non_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_2		198720
+	210736807	Déplacement_Solda_4	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Solda_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_4		89152
+	224137409	Kiap_14	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_14		55360
+	237412588	Dialogue to jeu	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Dialogue to jeu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue to jeu		187904
+	237506436	Cris_8	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_8		118656
+	242410005	Kiap_15	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_15		50496
+	264055602	Non_8	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle sans action\Non_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_8		124992
+	274923845	Cris_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_2		114028
+	288790028	bodyfallMED	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\bodyfallMED_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Chute\bodyfallMED		17824
+	301505234	bodyfallHVY	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\bodyfallHVY_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Chute\bodyfallHVY		25176
+	307925096	Bandeau_fidele_lefttoright_	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Bandeau_fidele_lefttoright__10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bandeau_fidele_lefttoright_		359248
+	309873538	Kiap_4	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_4		61248
+	313777509	Okay_3	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle en action\Okay_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Bandeau\Okay_3		107948
+	318337255	Gain_Charisme	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Gain_Charisme_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gain_Charisme		259228
+	322335179	Cris_14	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_14		122704
+	324157802	Déplacement_Bandit_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Bandit_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Bandit\Déplacement_Bandit_2		260692
+	327101926	swoosh 2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Contre-attaque\swoosh 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Contre_Attaque\swoosh 2		4976
+	333123384	Kiap_13	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_13		55616
+	343104562	Kiap_12	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_12		76608
+	343252937	Cris_13	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_13		83364
+	344158329	attaque_épée	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\attaque_épée_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\attaque_épée		285424
+	346599077	Nt nt nt_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_2		145472
+	356655443	Cris_6	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_6		71796
+	381637317	Bandeau_fidele_righttoleft	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Bandeau_fidele_righttoleft_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bandeau_fidele_righttoleft		359248
+	399042507	Déplacement_Bandit	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Bandit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Bandit\Déplacement_Bandit		512144
+	404207655	Clique_territoire	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Clique_territoire_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_territoire		307440
+	407671757	Yeh_4	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Dialogue\Yeh_4		123520
+	420024905	Cris_4	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_4		147288
+	420858714	Cris_12	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_12		112004
+	428292818	Interaction_Combat	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Interaction_Combat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction_Combat		123956
+	447113972	Cris_16	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_16_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_16		223076
+	476125705	Cris_23	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_23_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_23		107952
+	486329480	Yeh_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Dialogue\Yeh_2		150020
+	496871747	Kiap_3	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_3		59712
+	502392558	Kiap_6	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_6		75840
+	525452010	Déplacement_Solda_3	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Solda_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_3		96320
+	543626787	Quête_terminée_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Quête_terminée_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Quête_terminée_2		176464
+	556261491	Vent_Pause	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Vent_Pause_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Vent_Pause		14692860
+	556743107	Mouv_attrape_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mouv_attrape_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Attrape\Mouv_attrape_2		64576
+	579661265	Cris_24	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_24_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_24		101300
+	595473903	Nt nt nt_1	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_1		178240
+	596590025	Kiap_10	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_10		55872
+	615781091	echec_critique_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\echec_critique_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\echec_critique_2		694040
+	642800865	Déplacement_Solda_7	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Solda_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_7		62528
+	645763454	swoosh 1	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Contre-attaque\swoosh 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Contre_Attaque\swoosh 1		9258
+	687674998	Déplacement_Solda_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Solda_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_2		92224
+	701919633	Kiap_7	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_7		78144
+	702113246	Okay_4	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle en action\Okay_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Bandeau\Okay_4		113688
+	705916552	réussite_critique	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\réussite_critique_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\réussite_critique		374824
+	713865844	Déplacement_Solda_6	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Solda_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_6		70720
+	750295643	Cris_10	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_10		81052
+	771884519	Ahyo_3	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Recrutement\Ahyo_3		247872
+	787574756	Nt nt nt_7	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_7		137280
+	789823497	Nt nt nt_3	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_3		139328
+	807131667	Kiap_17	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_17		64576
+	814490929	Cris_18	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_18_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_18		100432
+	825208035	Cris_5	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_5		127616
+	829965586	Ahyo_1	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Recrutement\Ahyo_1		176192
+	839173070	Mouv_attrape_1	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mouv_attrape_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Attrape\Mouv_attrape_1		79424
+	841043309	Déplacement_Solda_8	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Solda_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_8		73792
+	847630961	Kiap_11	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_11		55104
+	861073420	bodyfallSML	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\bodyfallSML_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Chute\bodyfallSML		23520
+	863149676	PNJ_rejoint_camp	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\PNJ_rejoint_camp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJ_rejoint_camp		275136
+	865298652	Kiap_16	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_16_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_16		58432
+	867799705	Kiap_5	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_5		58432
+	874735293	Cris_20	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_20_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_20		76132
+	876065495	Cris_7	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_7		155968
+	888621936	Non_1	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle sans action\Non_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_1		243776
+	889117939	Cris_19	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_19_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_19		103036
+	890718477	Déplacement_Bandit_4	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Bandit_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Bandit\Déplacement_Bandit_4		367524
+	913603227	Cris_17	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_17		94360
+	914380911	Cris_9	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_9		64784
+	916223357	Déplacement_Bandit_3	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Déplacement_Bandit_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Bandit\Déplacement_Bandit_3		336696
+	928294472	Souris-passe_Bouton_UI	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Souris-passe_Bouton_UI_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Souris-passe_Bouton_UI		88264
+	928828322	Yeh_1	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Dialogue\Yeh_1		141500
+	939575509	Cris_3	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_3		127616
+	941062096	Cris_21	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mort\Cris_21_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_21		74112
+	946976605	swoosh 3	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Contre-attaque\swoosh 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Contre_Attaque\swoosh 3		8178
+	949556494	Kiap_9	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Combat\Kiap_9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_9		55616
+	950126130	Non_4	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle sans action\Non_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_4		96156
+	970295514	Non_3	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle sans action\Non_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_3		86080
+	988131641	Non_5	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle sans action\Non_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_5		111680
+	990402395	Non_7	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle sans action\Non_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_7		77888
+	1012457160	Obtention_Quête_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Obtention_Quête_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Obtention_Quête_2		211744
+	1015702308	Non_6	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Fidèle sans action\Non_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_6		70720
+	1025276418	Ahyo_2	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Recrutement\Ahyo_2		141340
+	1051043344	Mouv_attrape_3	C:\Users\Utilisateur\Desktop\3eme_annee\MMR_B3G_Git\Wwise\.cache\Windows\SFX\Mouv_attrape_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Attrape\Mouv_attrape_3		83500
+
