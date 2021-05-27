@@ -379,6 +379,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Event_Musique_Territoire" ID="{0D367CC8-FD03-455D-AF40-E5E5502171B6}">
+					<ChildrenList>
+						<Action Name="" ID="{76053802-74FD-49B9-80C5-4777E15DC118}" ShortID="245069916">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Musique Territoire" ID="{E0CE4D83-7793-44E4-8356-62F0E40EF8AD}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

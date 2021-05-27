@@ -3292,6 +3292,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Musique menu" ID="{1C26A82B-2E3C-4DA6-BC52-23E2C8A3927E}" ShortID="404020951">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-24</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
@@ -3312,6 +3319,36 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Musique menu" ID="{484EE5EA-53CF-413D-9F70-41D0D4377A0A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Musique Territoire" ID="{E0CE4D83-7793-44E4-8356-62F0E40EF8AD}" ShortID="909922579">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-24</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Musique Territoire" ID="{8E7E1461-DE50-46E1-9623-3F0081CE168B}">
+							<Language>SFX</Language>
+							<AudioFile>Musique Territoire.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="467666371"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Musique Territoire" ID="{8E7E1461-DE50-46E1-9623-3F0081CE168B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
