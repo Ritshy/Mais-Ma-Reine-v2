@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	503339173	Event_Musique_InGame			\Default Work Unit\Event_Musique_InGame	
+	3273629223	Event_Musique_Menu			\Default Work Unit\Event_Musique_Menu	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	109764714	Musique en jeu	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Musique en jeu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique en jeu		29344520
+	957381255	Musique menu	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Musique menu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique menu		63783564
 

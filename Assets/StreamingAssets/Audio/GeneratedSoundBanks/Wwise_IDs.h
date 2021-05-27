@@ -30,6 +30,7 @@ namespace AK
         static const AkUniqueID EVENT_MOUV_FIDELE_ATTRAPE = 489201999U;
         static const AkUniqueID EVENT_MOUV_FIDELE_CHUTE = 2880414047U;
         static const AkUniqueID EVENT_MUSIQUE_INGAME = 503339173U;
+        static const AkUniqueID EVENT_MUSIQUE_MENU = 3273629223U;
         static const AkUniqueID EVENT_PAUSE_VENT = 164432226U;
         static const AkUniqueID EVENT_RECRUTEMENT_ACCEPTE = 1968642834U;
         static const AkUniqueID EVENT_RECRUTEMENT_REFUSE = 2644997053U;

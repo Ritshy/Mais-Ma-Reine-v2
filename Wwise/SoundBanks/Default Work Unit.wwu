@@ -40,6 +40,7 @@
 				</SoundBank>
 				<SoundBank Name="Music" ID="{88CBA448-4564-4390-B889-59201DC4D62B}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Event_Musique_Menu" ID="{F12F3C1E-BF2D-4BA1-81EE-1FFD9065C6D4}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Musique_InGame" ID="{74B929CB-037E-4D7B-9B78-640C099D9242}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

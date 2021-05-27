@@ -559,7 +559,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="773743827">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2625836736">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -569,6 +569,14 @@
 						<File Id="109764714" Language="SFX">
 							<ShortName>Musique en jeu.wav</ShortName>
 							<Path>SFX\Musique en jeu_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3273629223" Name="Event_Musique_Menu" ObjectPath="\Events\Default Work Unit\Event_Musique_Menu" DurationType="OneShot" DurationMin="332.205719" DurationMax="332.205719">
+					<IncludedMemoryFiles>
+						<File Id="957381255" Language="SFX">
+							<ShortName>Musique menu.wav</ShortName>
+							<Path>SFX\Musique menu_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
