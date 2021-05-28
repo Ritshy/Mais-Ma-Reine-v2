@@ -105,6 +105,7 @@ public class MovementEnemy : MonoBehaviour
         {
             myFideleManager.UpdateAttackableUnitInRange();
             CombatManager.Instance.EnemyLaunchCombat(myFideleManager, targetInteraction.GetComponentInParent<FideleManager>());
+
             StopMoving();
         }
     }

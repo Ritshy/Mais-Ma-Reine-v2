@@ -21,7 +21,9 @@ public class GameManager : MonoBehaviour
 
     public bool isGamePaused;
 
-    static public int charismeAmountStatic;
+    static public int charismeAmountStatic = 15;
+
+    static public bool isTerritoire01Completed;
 
     [Header ("Tuto")]
 
@@ -32,7 +34,6 @@ public class GameManager : MonoBehaviour
 
     public FideleManager firstFideleToInteractWith;
     public bool firstFideleToInteractWithHasInteracted;
-
 
     #region Singleton
     public static GameManager Instance;
@@ -55,8 +56,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         isGamePaused = false;
-        charismeAmount = charismeAmountStatic;
-       
+        charismeAmount = charismeAmountStatic;     
     }
 
     // Update is called once per frame
@@ -210,6 +210,7 @@ public class GameManager : MonoBehaviour
 
             foreach (FideleManager fm in allMapUnits)
             {
+                fm.GetComponent<AnimationManager>().HideInteractionIcon();
                 if (fm.myCamp == currentCampTurn)
                 {
                     fm.GetComponentInChildren<MovementEnemy>().hasMoved = false;

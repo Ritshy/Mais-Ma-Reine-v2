@@ -93,6 +93,7 @@ public class Movement : MonoBehaviour
                 hasMoved = true;
 
                 myAnimationManager.CheckActionsLeftAmout();
+                DragCamera2D.Instance.FollowTargetCamera(myFM.gameObject);
 
                 for (int i = 0; i < myInteraction.myCollideInteractionList.Count; i++)
                 {
@@ -108,11 +109,9 @@ public class Movement : MonoBehaviour
                 {
                     RaycastInteraction.Instance.SetFideleSelectedInteractionLauncher(myFM);
                 }
-                Debug.Log("Déplacement effectué");
             }
             else
             {
-                Debug.Log("Retour envoyeur");
                 transform.localPosition = Vector3.zero; if (GameManager.Instance.isMapTuto)
                 {
                     myFM.GetComponent<AnimationManager>().DesactivateCursorIndicator();

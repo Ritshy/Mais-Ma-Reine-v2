@@ -174,6 +174,9 @@ public class DialogueManager : MonoBehaviour
         {
             yield return new WaitForSeconds(.3f);
             myAnim.SetTrigger("triggerTerritoireFin");
+
+            yield return new WaitForSeconds(.9f);
+            SceneSwitcher.Instance.SwitchToMenuTerritoire();
         }
         else
         {

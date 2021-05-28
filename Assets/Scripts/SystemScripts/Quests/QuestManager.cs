@@ -340,6 +340,7 @@ public class QuestManager : MonoBehaviour
 
         if (mapQuests.Count == questCompletedCounter)
         {
+            GameManager.isTerritoire01Completed = true;
             DialogueManager.Instance.OpenDialogueWindow(territoireEndDialogue, null);
         }
     }

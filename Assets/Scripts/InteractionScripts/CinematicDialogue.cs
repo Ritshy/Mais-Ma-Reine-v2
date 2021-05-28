@@ -81,6 +81,12 @@ public class CinematicDialogue : MonoBehaviour
 
             firstCharacter.color = new Color(.5f, .5f, .5f, 1);
         }
+        else if (currentDialogue.characterName == "Humbre")
+        {
+            secondCharacter.color = new Color(1, 1, 1, 1);
+
+            firstCharacter.color = new Color(.5f, .5f, .5f, 1);
+        }
 
         lines.Clear();
 

@@ -68,4 +68,9 @@ public class SceneSwitcher : MonoBehaviour
         GameManager.Instance.LoadCharismeValueBetweenScenes();
         SceneManager.LoadScene("Territoire02_Scene");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

@@ -242,8 +242,11 @@ public class AnimationManager : MonoBehaviour
 
     public void DisplayInteractionIcon()
     {
-        myInteraction.myInteractionIcon.enabled = true;
-        UpdateInteractionIcon();
+        if (GameManager.Instance.currentCampTurn == GameCamps.Fidele)
+        {
+            myInteraction.myInteractionIcon.enabled = true;
+            UpdateInteractionIcon();
+        }
     }
 
     public void HideInteractionIcon()

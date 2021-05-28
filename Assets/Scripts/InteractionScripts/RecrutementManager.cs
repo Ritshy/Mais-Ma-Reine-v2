@@ -77,7 +77,14 @@ public class RecrutementManager : MonoBehaviour
     {
         myAnim = GetComponent<Animator>();
 
-        StartCoroutine(AddCharismeAmount(GameManager.Instance.charismeAmount));
+        //StartCoroutine(AddCharismeAmount(GameManager.Instance.charismeAmount));
+
+        LoadBaseCharisme();
+    }
+
+    public void LoadBaseCharisme()
+    {
+        totalCharismeAmountText.text = GameManager.charismeAmountStatic.ToString();
     }
 
     public IEnumerator AddCharismeAmount(int addedCharismeValue)

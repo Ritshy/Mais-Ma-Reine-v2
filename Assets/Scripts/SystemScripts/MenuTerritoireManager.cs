@@ -6,10 +6,46 @@ using UnityEngine;
 public class MenuTerritoireManager : MonoBehaviour
 {
     private Animator myAnim;
+
+    [Header("Territoire01")]
+
+    public GameObject myTerritoire01Disponible;
+    public GameObject myTerritoire01Verrouille;
+    public GameObject myTerritoire01Conquis;
+
+    [Header("Territoire01")]
+
+    public GameObject myTerritoire02Disponible;
+    public GameObject myTerritoire02Verrouille;
+    public GameObject myTerritoire02Conquis;
+
     // Start is called before the first frame update
     void Start()
     {
         myAnim = GetComponent<Animator>();
+
+        if (GameManager.isTerritoire01Completed)
+        {
+            myTerritoire01Disponible.SetActive(false);
+            myTerritoire01Verrouille.SetActive(false);
+            myTerritoire01Conquis.SetActive(true);
+
+            myTerritoire02Verrouille.SetActive(false);
+            myTerritoire02Disponible.SetActive(true);
+            myTerritoire02Conquis.SetActive(false);
+
+            Debug.Log("Territoire02 accessible !");
+        }
+        else
+        {
+            myTerritoire01Disponible.SetActive(true);
+            myTerritoire01Verrouille.SetActive(false);
+            myTerritoire01Conquis.SetActive(false);
+
+            myTerritoire02Verrouille.SetActive(true);
+            myTerritoire02Disponible.SetActive(false);
+            myTerritoire02Conquis.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -20,12 +56,18 @@ public class MenuTerritoireManager : MonoBehaviour
 
     public void StartTransitionToTerritoire01()
     {
-        StartCoroutine(DisplayTransitionTerritoire01());
+        if (GameManager.isTerritoire01Completed == false)
+        {
+            StartCoroutine(DisplayTransitionTerritoire01());
+        }
     }
 
     public void StartTransitionToTerritoire02()
     {
-        StartCoroutine(DisplayTransitionTerritoire02());
+        if (GameManager.isTerritoire01Completed)
+        {
+            StartCoroutine(DisplayTransitionTerritoire02());
+        }
     }
 
     public IEnumerator DisplayTransitionTerritoire01()

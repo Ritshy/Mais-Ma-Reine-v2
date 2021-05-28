@@ -121,7 +121,6 @@ public class CombatManager : MonoBehaviour
 
         criSFX.Post(gameObject);
 
-
         switch (atkFM.myCamp)
         {
             case GameCamps.Fidele:
@@ -259,56 +258,59 @@ public class CombatManager : MonoBehaviour
             defenseurAM = defenseurFM.GetComponentInParent<AnimationManager>();
         }
 
-        GameManager.Instance.isGamePaused = true;
-
-        myAnim.SetBool("OpenCombatBandeau", true);
-        isInFight = true;
-
-        attaquantFideleSprite.sprite = attaquantFM.currentFideleSprite.sprite;
-        defenseurFideleSprite.sprite = defenseurFM.currentFideleSprite.sprite;
-
-        attaquantHP.text = attaquantFM.currentHP.ToString();
-        defenseurHP.text = defenseurFM.currentHP.ToString();
-
-        defenseurAM.keepInteractionDisplayed = true;
-        defenseurAM.DisplayInteraction();
-
-        StartCoroutine(DragCamera2D.Instance.FollowTargetCamera(attaquantFM.gameObject));
-
-        attaquantAM.keepInteractionDisplayed = true;
-        attaquantAM.DisplayInteraction();
-
-        //defenseurDamageEffect = defenseurFM.GetComponentInChildren<ParticleSystem>();
-        //attaquantDamageEffect = attaquantFM.GetComponentInChildren<ParticleSystem>();
-
-        attaquantFM.isInteracting = true;
-        defenseurFM.isInteracting = true;
-
-        GameManager.Instance.LowerOpacityFeedback();
-
-        isCritical = Random.Range(0, 100);
-        if (isCritical <= attaquantFM.criticChances)
+        if (attaquantFM.isAlive && defenseurFM.isAlive)
         {
-            if (attaquantFM != null && defenseurFM != null)
-            {
-                StartCoroutine(CriticalHit());
-            }
-        }
-        else
-        {
-            isMissed = Random.Range(0, 100);
-            if (isMissed <= attaquantFM.missChances)
+            GameManager.Instance.isGamePaused = true;
+
+            myAnim.SetBool("OpenCombatBandeau", true);
+            isInFight = true;
+
+            attaquantFideleSprite.sprite = attaquantFM.currentFideleSprite.sprite;
+            defenseurFideleSprite.sprite = defenseurFM.currentFideleSprite.sprite;
+
+            attaquantHP.text = attaquantFM.currentHP.ToString();
+            defenseurHP.text = defenseurFM.currentHP.ToString();
+
+            defenseurAM.keepInteractionDisplayed = true;
+            defenseurAM.DisplayInteraction();
+
+            StartCoroutine(DragCamera2D.Instance.FollowTargetCamera(attaquantFM.gameObject));
+
+            attaquantAM.keepInteractionDisplayed = true;
+            attaquantAM.DisplayInteraction();
+
+            //defenseurDamageEffect = defenseurFM.GetComponentInChildren<ParticleSystem>();
+            //attaquantDamageEffect = attaquantFM.GetComponentInChildren<ParticleSystem>();
+
+            attaquantFM.isInteracting = true;
+            defenseurFM.isInteracting = true;
+
+            GameManager.Instance.LowerOpacityFeedback();
+
+            isCritical = Random.Range(0, 100);
+            if (isCritical <= attaquantFM.criticChances)
             {
                 if (attaquantFM != null && defenseurFM != null)
                 {
-                    StartCoroutine(Missed());
+                    StartCoroutine(CriticalHit());
                 }
             }
             else
             {
-                if (attaquantFM != null && defenseurFM != null)
+                isMissed = Random.Range(0, 100);
+                if (isMissed <= attaquantFM.missChances)
                 {
-                    StartCoroutine(Attack());
+                    if (attaquantFM != null && defenseurFM != null)
+                    {
+                        StartCoroutine(Missed());
+                    }
+                }
+                else
+                {
+                    if (attaquantFM != null && defenseurFM != null)
+                    {
+                        StartCoroutine(Attack());
+                    }
                 }
             }
         }
