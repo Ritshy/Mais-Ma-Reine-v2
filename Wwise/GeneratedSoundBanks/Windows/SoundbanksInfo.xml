@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MaisMaReine_Final\Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MaisMaReine_Final\Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MaisMaReine_Final\Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MaisMaReine_Final\Wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3036332495">
+		<SoundBank Id="393239870" Language="SFX" Hash="2532034765">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -559,7 +559,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="1331007854">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2897449466">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
