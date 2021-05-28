@@ -277,7 +277,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (campUnit[e].GetComponentInChildren<MovementEnemy>() != null)
                     {
-                        if (campUnit[e].GetComponentInChildren<MovementEnemy>().hasMoved == false)
+                        if (campUnit[e].GetComponentInChildren<MovementEnemy>().hasMoved == false && campUnit[e].isAlive)
                         {
                             campUnit[e].GetComponentInChildren<MovementEnemy>().MoveToTarget();
                             return;
