@@ -6,7 +6,7 @@ using UnityEngine;
 public class SceneSwitcher : MonoBehaviour
 {
     public static SceneSwitcher Instance;
-
+    public AkAmbient akAmbient;
 
     public void Awake()
     {
@@ -24,7 +24,7 @@ public class SceneSwitcher : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        akAmbient = FindObjectOfType<AkAmbient>();
     }
 
     // Update is called once per frame
@@ -35,36 +35,42 @@ public class SceneSwitcher : MonoBehaviour
 
     public void SwitchToMenuTerritoire()
     {
+        akAmbient.Stop(0);
         GameManager.Instance.LoadCharismeValueBetweenScenes();
         SceneManager.LoadScene("MenuTerritoire_Scene");
     }
 
     public void SwitchToFirstScreen()
     {
+        akAmbient.Stop(0);
         GameManager.Instance.LoadCharismeValueBetweenScenes();
         SceneManager.LoadScene("GameFirstScreen_Scene");
     }
 
     public void SwitchToTerritoire01Cinematique()
     {
+        akAmbient.Stop(0);
         GameManager.Instance.LoadCharismeValueBetweenScenes();
         SceneManager.LoadScene("Territoire01_Cinematic_Scene");
     }
 
     public void SwitchToTerritoire01()
     {
+        akAmbient.Stop(0);
         GameManager.Instance.LoadCharismeValueBetweenScenes();
         SceneManager.LoadScene("Territoire01_Scene");
     }
 
     public void SwitchToTerritoire02Cinematique()
     {
+        akAmbient.Stop(0);
         GameManager.Instance.LoadCharismeValueBetweenScenes();
         SceneManager.LoadScene("Territoire02_Cinematic_Scene");
     }
 
     public void SwitchToTerritoire02()
     {
+        akAmbient.Stop(0);
         GameManager.Instance.LoadCharismeValueBetweenScenes();
         SceneManager.LoadScene("Territoire02_Scene");
     }

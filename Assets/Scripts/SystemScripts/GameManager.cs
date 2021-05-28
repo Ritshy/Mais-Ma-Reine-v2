@@ -269,20 +269,14 @@ public class GameManager : MonoBehaviour
         //Ce fidèle effectue l'action, puis renvoie l'activation de la fonction. Si aucun fidèle ne correspondant au camp est capable de se déplacer, fin.
         for (int i = 0; i < allMapUnits.Count; i++)
         {
-            if (allMapUnits[i].myCamp == currentCampTurn)
+            if (allMapUnits[i].myCamp == currentCampTurn && allMapUnits[i].myCamp != GameCamps.Fidele)
             {
-                List<FideleManager> campUnit = new List<FideleManager>();
-                campUnit.Add(allMapUnits[i]);
-
-                for (int e = 0; e < campUnit.Count; e++)
+                if (allMapUnits[i].GetComponentInChildren<MovementEnemy>() != null)
                 {
-                    if (campUnit[e].GetComponentInChildren<MovementEnemy>() != null)
+                    if (allMapUnits[i].GetComponentInChildren<MovementEnemy>().hasMoved == false && allMapUnits[i].isAlive)
                     {
-                        if (campUnit[e].GetComponentInChildren<MovementEnemy>().hasMoved == false && campUnit[e].isAlive)
-                        {
-                            campUnit[e].GetComponentInChildren<MovementEnemy>().MoveToTarget();
-                            return;
-                        }
+                        allMapUnits[i].GetComponentInChildren<MovementEnemy>().MoveToTarget();
+                        return;
                     }
                 }
             }
@@ -343,10 +337,7 @@ public class GameManager : MonoBehaviour
             {
                 return;
             }
-            else
-            {
-                Debug.Log("Fin Du Territoire, Reine sans Fidele");
-            }
         }
+        Debug.Break();
     }
 }

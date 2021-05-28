@@ -9,6 +9,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI characterLines;
 
+    public Animator mapTransitionAnim;
+
     [Header("Dialogue début territoire")]
 
     public List<Dialogue> dialogueScenario;
@@ -60,6 +62,10 @@ public class DialogueManager : MonoBehaviour
     void Update()
     {
         //Debug.Log(currentDialogue.name);
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            myAnim.SetTrigger("triggerTerritoireFin");
+        }
     }
 
     public void OpenDialogueWindow(Dialogue dialogue, FideleManager talkedFM)
@@ -172,10 +178,16 @@ public class DialogueManager : MonoBehaviour
         }
         else if (currentDialogue.isPlayingFinTerritoireAnimation)
         {
+            GameManager.Instance.isGamePaused = true;
+
             yield return new WaitForSeconds(.3f);
             myAnim.SetTrigger("triggerTerritoireFin");
 
-            yield return new WaitForSeconds(.9f);
+            yield return new WaitForSeconds(4f);
+            mapTransitionAnim.SetTrigger("triggerMapSwitch");
+
+            yield return new WaitForSeconds(1f);
+            GameManager.Instance.isGamePaused = false;
             SceneSwitcher.Instance.SwitchToMenuTerritoire();
         }
         else
