@@ -67,11 +67,6 @@ public class CameraZooming : MonoBehaviour
             }
         }        
     }
-    
-    private void CheckCurrentZoomValue()
-    {
-        
-    }
 
     public void ActivatePauseScreen()
     {
