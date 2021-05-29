@@ -237,6 +237,7 @@ public class RecrutementManager : MonoBehaviour
         Destroy(myMovementScript.GetComponent<NavMeshAgent>());
 
         myFMToRecruit.currentHP = myFMToRecruit.maxHp;
+        myFMToRecruit.GetComponent<AnimationManager>().FillAmountHealth();
 
         myFMToRecruit.GetComponent<AnimationManager>().UpdateMyReferences();
 

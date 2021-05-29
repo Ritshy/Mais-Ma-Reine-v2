@@ -164,7 +164,10 @@ public class DialogueManager : MonoBehaviour
         {
             yield return new WaitForSeconds(.2f);
             QuestManager.Instance.SetupQuest(currentDialogue.questIndexToStart);
+        }
 
+        if (currentDialogue.unitsToSpawn.Count >= 1)
+        {
             foreach (FideleManager fmToSpawn in currentDialogue.unitsToSpawn)
             {
                 fmToSpawn.gameObject.SetActive(true);

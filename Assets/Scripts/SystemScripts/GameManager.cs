@@ -176,6 +176,8 @@ public class GameManager : MonoBehaviour
             currentCampTurn = campsInTerritoire.First();
         }
 
+        //Faire en sorte que si aucun personnage du camp qui va être joué n'est présent, passer encore au tour suivant.
+
         ResetTurn();
         TurnFeedbackManager.Instance.SwitchTurnFeedback(currentCampTurn);
 

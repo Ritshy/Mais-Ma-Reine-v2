@@ -645,6 +645,10 @@ public class CombatManager : MonoBehaviour
             attaquantFM.isInteracting = false;
             defenseurFM.isInteracting = false;
 
+            attaquantFM.GetComponentInChildren<Interaction>().OtherCampDisplayInteractionFeedbacks();
+            defenseurFM.GetComponentInChildren<Interaction>().OtherCampDisplayInteractionFeedbacks();
+            GameManager.Instance.ResetOpacityFeedback();
+
             SwitchInteractionType(deadFM);
 
             attaquantAM.keepInteractionDisplayed = false;
@@ -733,8 +737,8 @@ public class CombatManager : MonoBehaviour
         // ICI jouer SFX de mort
         // ICI jouer anim du Bandit qui change de camp
         // ICI changer graphisme du bandit qui change de camp
-        GetComponent<Interaction>().interactionType = InteractionType.Recrutement;
-        GetComponent<Interaction>().AnimationManagerUpdateIcon();
+        deadFM.GetComponentInChildren<Interaction>().interactionType = InteractionType.Recrutement;
+        deadFM.GetComponentInChildren<Interaction>().AnimationManagerUpdateIcon();
 
 
         deadFM.isAlive = false;
