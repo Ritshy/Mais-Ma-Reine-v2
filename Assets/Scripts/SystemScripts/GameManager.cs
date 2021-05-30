@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     static public int charismeAmountStatic = 15;
 
-    static public bool isTerritoire01Completed;
+    static public bool isTerritoire01Completed =true;
 
     [Header ("Tuto")]
 
@@ -62,11 +62,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SwitchTurn();
-        }
-
         if (isMapTuto)
         {
             if (firstFideleToMoveHasMoved)
