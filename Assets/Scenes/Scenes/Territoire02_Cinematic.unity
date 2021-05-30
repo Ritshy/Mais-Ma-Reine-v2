@@ -15150,8 +15150,8 @@ MonoBehaviour:
     unitsToSpawn: []
   - characterName: Humbre
     myDialogue:
-    - "Nous sommes pr\xE9par\xE9s \xE0 \xE7a, Ma Reine. D\xE8s l\u2019instant ou
-      nous vous avons jur\xE9 all\xE9geance, notre vie est devenue votre."
+    - "Nous sommes pr\xE9par\xE9s \xE0 \xE7a, Ma Reine. D\xE8s l\u2019instant o\xF9
+      nous vous avons jur\xE9 all\xE9geance, notre vie est devenue v\xF4tre."
     isStartingQuest: 0
     questIndexToStart: 0
     isStartingADialogue: 1
@@ -15177,7 +15177,7 @@ MonoBehaviour:
     unitsToSpawn: []
   - characterName: Humbre
     myDialogue:
-    - A vos ordre, Ma Reine !
+    - A vos ordres, Ma Reine !
     isStartingQuest: 0
     questIndexToStart: 0
     isStartingADialogue: 0

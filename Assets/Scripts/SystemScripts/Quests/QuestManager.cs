@@ -163,7 +163,7 @@ public class QuestManager : MonoBehaviour
             {
                 questsSetup[i].questDesc.text = mapQuests[questIdx].objectiveDesc;
                 questsSetup[i].questParent.SetActive(true);
-                foreach (FideleManager ofm in mapQuests[questIdx].specificUnitsToKill)
+                /*foreach (FideleManager ofm in mapQuests[questIdx].specificUnitsToKill)
                 {
                     ofm.questIcon.enabled = true;
                 }
@@ -178,7 +178,7 @@ public class QuestManager : MonoBehaviour
                 foreach (Interaction ifm in mapQuests[questIdx].specificUnitToReach)
                 {
                     ifm.GetComponentInParent<FideleManager>().questIcon.enabled = true;
-                }
+                }*/
                 break;
             }
         }
@@ -315,20 +315,20 @@ public class QuestManager : MonoBehaviour
                 {
                     if (ofm != null)
                     {
-                        ofm.questIcon.enabled = false;
+                        //ofm.questIcon.enabled = false;
                     }
                 }
                 foreach (FideleManager ofm in mapQuests[qIdx].specificUnitsToRecruit)
                 {
-                    ofm.questIcon.enabled = false;
+                    //ofm.questIcon.enabled = false;
                 }
                 foreach (FideleManager ofm in mapQuests[qIdx].specificUnitsToTalkTo)
                 {
-                    ofm.questIcon.enabled = false;
+                    //ofm.questIcon.enabled = false;
                 }
                 foreach (Interaction ifm in mapQuests[qIdx].specificUnitToReach)
                 {
-                    ifm.GetComponentInParent<FideleManager>().questIcon.enabled = false;
+                    //ifm.GetComponentInParent<FideleManager>().questIcon.enabled = false;
                 }
 
                 questCompletedCounter++;

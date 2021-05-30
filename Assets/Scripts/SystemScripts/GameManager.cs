@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     static public int charismeAmountStatic = 15;
 
-    static public bool isTerritoire01Completed =true;
+    static public bool isTerritoire01Completed;
 
     [Header ("Tuto")]
 
@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isGamePaused = false;
+        isGamePaused = true;
         charismeAmount = charismeAmountStatic;     
     }
 
