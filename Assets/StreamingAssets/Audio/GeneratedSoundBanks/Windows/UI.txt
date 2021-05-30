@@ -1,0 +1,21 @@
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	42566363	Yeh_3	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\Yeh_\Yeh_3		125068
+	62618195	Interaction_recrutement	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Interaction_recrutement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction_recrutement		65784
+	318337255	Gain_Charisme	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Gain_Charisme_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gain_Charisme		259228
+	344158329	attaque_épée	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\attaque_épée_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\attaque_épée		285424
+	344414263	Lancement_Recrutement	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Lancement_Recrutement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancement_Recrutement		126876
+	407671757	Yeh_4	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\Yeh_\Yeh_4		123520
+	428292818	Interaction_Combat	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Interaction_Combat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction_Combat		123956
+	486329480	Yeh_2	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\Yeh_\Yeh_2		150020
+	543626787	Quête_terminée_2	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Quête_terminée_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Quête_terminée_2		176464
+	556261491	Vent_Pause	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Vent_Pause_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Vent_Pause		14692860
+	705916552	réussite_critique	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\réussite_critique_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\réussite_critique		374824
+	771884519	Ahyo_3	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\ayho\Ahyo_3		247872
+	829965586	Ahyo_1	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\ayho\Ahyo_1		176192
+	863149676	PNJ_rejoint_camp	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\PNJ_rejoint_camp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJ_rejoint_camp		275136
+	874339176	click_bouton	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\click_bouton_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\click_bouton		46580
+	928294472	Souris-passe_Bouton_UI	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Souris-passe_Bouton_UI_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Souris-passe_Bouton_UI		88264
+	928828322	Yeh_1	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\Yeh_\Yeh_1		141500
+	1012457160	Obtention_Quête_2	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Obtention_Quête_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Obtention_Quête_2		211744
+	1025276418	Ahyo_2	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\ayho\Ahyo_2		141340
+

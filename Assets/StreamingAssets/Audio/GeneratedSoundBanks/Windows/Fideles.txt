@@ -1,0 +1,67 @@
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2081404	Nt nt nt_4	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_4		147520
+	42566363	Yeh_3	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\Yeh_\Yeh_3		125068
+	51439636	Okay_2	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle en action\Okay_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\En_action\Okay_2		134812
+	82763227	Nt nt nt_5	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_5		155712
+	89893094	Cris_1	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_1		83368
+	104179137	Nt nt nt_6	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_6		139328
+	117796181	Cris_11	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_11		194728
+	131443977	Okay_1	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle en action\Okay_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\En_action\Okay_1		243776
+	137939270	Kiap_8	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_8		53568
+	142978168	Cris_22	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_22_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_22		120964
+	158599574	Cris_15	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_15		255760
+	183227138	Non_2	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle sans action\Non_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_2		198720
+	224137409	Kiap_14	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_14		55360
+	237506436	Cris_8	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_8		118656
+	242410005	Kiap_15	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_15		50496
+	264055602	Non_8	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle sans action\Non_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_8		124992
+	274923845	Cris_2	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_2		114028
+	309873538	Kiap_4	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_4		61248
+	313777509	Okay_3	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle en action\Okay_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\En_action\Okay_3		107948
+	322335179	Cris_14	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_14		122704
+	333123384	Kiap_13	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_13		55616
+	343104562	Kiap_12	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_12		76608
+	343252937	Cris_13	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_13		83364
+	346599077	Nt nt nt_2	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_2		145472
+	356655443	Cris_6	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_6		71796
+	407671757	Yeh_4	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\Yeh_\Yeh_4		123520
+	420024905	Cris_4	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_4		147288
+	420858714	Cris_12	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_12		112004
+	447113972	Cris_16	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_16_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_16		223076
+	476125705	Cris_23	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_23_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_23		107952
+	486329480	Yeh_2	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\Yeh_\Yeh_2		150020
+	496871747	Kiap_3	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_3		59712
+	502392558	Kiap_6	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_6		75840
+	579661265	Cris_24	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_24_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_24		101300
+	595473903	Nt nt nt_1	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_1		178240
+	596590025	Kiap_10	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_10		55872
+	701919633	Kiap_7	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_7		78144
+	702113246	Okay_4	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle en action\Okay_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\En_action\Okay_4		113688
+	750295643	Cris_10	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_10		81052
+	771884519	Ahyo_3	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\ayho\Ahyo_3		247872
+	787574756	Nt nt nt_7	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_7		137280
+	789823497	Nt nt nt_3	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_3		139328
+	807131667	Kiap_17	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_17		64576
+	814490929	Cris_18	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_18_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_18		100432
+	825208035	Cris_5	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_5		127616
+	829965586	Ahyo_1	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\ayho\Ahyo_1		176192
+	847630961	Kiap_11	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_11		55104
+	865298652	Kiap_16	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_16_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_16		58432
+	867799705	Kiap_5	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_5		58432
+	874735293	Cris_20	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_20_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_20		76132
+	876065495	Cris_7	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_7		155968
+	888621936	Non_1	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle sans action\Non_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_1		243776
+	889117939	Cris_19	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_19_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_19		103036
+	913603227	Cris_17	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_17		94360
+	914380911	Cris_9	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_9		64784
+	928828322	Yeh_1	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\Yeh_\Yeh_1		141500
+	939575509	Cris_3	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_3		127616
+	941062096	Cris_21	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Mort\Cris_21_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_21		74112
+	949556494	Kiap_9	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Combat\Kiap_9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Combat\Kiap_9		55616
+	950126130	Non_4	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle sans action\Non_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_4		96156
+	970295514	Non_3	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle sans action\Non_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_3		86080
+	988131641	Non_5	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle sans action\Non_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_5		111680
+	990402395	Non_7	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle sans action\Non_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_7		77888
+	1015702308	Non_6	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Fidèle sans action\Non_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_6		70720
+	1025276418	Ahyo_2	C:\Users\Burea\OneDrive\Documents\WwiseProjects\Mais Ma Reine\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_fidèle\ayho\Ahyo_2		141340
+
