@@ -10,6 +10,9 @@ public class EnemyZone : MonoBehaviour
 
     public List<FideleManager> attackableFM;
 
+    public bool isScenarioDialogueLaunched = false;
+    public int indexDialogueToLaunch;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,12 +30,18 @@ public class EnemyZone : MonoBehaviour
         if (collision.GetComponentInParent<FideleManager>().myCamp == GameCamps.Fidele)
         {
             //ajouter un fidele à la liste des attaquables
-            attackableFM.Add(collision.GetComponentInParent<FideleManager>());
-            RefreshAttackableDetection();
+            //attackableFM.Add(collision.GetComponentInParent<FideleManager>());
+            if (isScenarioDialogueLaunched == false)
+            {
+                DialogueManager.Instance.OpenDialogueWindow(DialogueManager.Instance.dialogueScenario[indexDialogueToLaunch], null);
+                isScenarioDialogueLaunched = true;
+            }
+
+            //RefreshAttackableDetection();
         }
     }
 
-    public void OnTriggerExit2D(Collider2D collision)
+    /*public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.GetComponentInParent<FideleManager>().myCamp == GameCamps.Fidele)
         {
@@ -58,5 +67,5 @@ public class EnemyZone : MonoBehaviour
                 efm.GetComponentInChildren<MovementEnemy>().isAttackableUnitInMyZone = false;
             }
         }
-    }
+    }*/
 }

@@ -284,12 +284,12 @@ public class RecrutementManager : MonoBehaviour
 
             cam.HideInteraction();
 
-            cam.GetComponentInChildren<Interaction>().RemoveCollidingCharacterFromAMList(myFMToRecruit.GetComponent<AnimationManager>());
+            //cam.GetComponentInChildren<Interaction>().RemoveCollidingCharacterFromAMList(myFMToRecruit.GetComponent<AnimationManager>());
         }
 
         foreach (Interaction iam in myFMToRecruit.GetComponentInChildren<Interaction>().myCollideInteractionList)
         {
-            iam.RemoveCollidingCharacterFromInteractionList(myFMToRecruit.GetComponentInChildren<Interaction>());
+            //iam.RemoveCollidingCharacterFromInteractionList(myFMToRecruit.GetComponentInChildren<Interaction>());
 
             iam.FideleDisplayInteractionFeedbacks();
         }

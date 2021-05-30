@@ -249,14 +249,11 @@ public class CombatManager : MonoBehaviour
 
     public void EnemyLaunchCombat(FideleManager atkFM, FideleManager defFM)
     {
-        if (attaquantFM == null && defenseurFM == null)
-        {
-            attaquantFM = atkFM;
-            attaquantAM = attaquantFM.GetComponent<AnimationManager>();
+        attaquantFM = atkFM;
+        attaquantAM = attaquantFM.GetComponent<AnimationManager>();
 
-            defenseurFM = defFM;
-            defenseurAM = defenseurFM.GetComponentInParent<AnimationManager>();
-        }
+        defenseurFM = defFM;
+        defenseurAM = defenseurFM.GetComponentInParent<AnimationManager>();
 
         if (attaquantFM.isAlive && defenseurFM.isAlive)
         {
@@ -320,110 +317,126 @@ public class CombatManager : MonoBehaviour
     {    
         Debug.Log("Attack() " + defenseurFM.name + " " + " " + attaquantFM.name);
 
-        if (attaquantFM.isAlive && defenseurFM.isAlive)
+        if (attaquantFM != null && defenseurFM != null)
         {
-            int attackValue = Random.Range(attaquantFM.minAttackRange, attaquantFM.maxAttackRange);
-            defenseurFM.currentHP -= attackValue;
-
-            if (defenseurFM.currentHP <= 0)
+            if (attaquantFM.isAlive && defenseurFM.isAlive)
             {
-                defenseurFM.currentHP = 0;
-            }
+                int attackValue = Random.Range(attaquantFM.minAttackRange, attaquantFM.maxAttackRange);
+                defenseurFM.currentHP -= attackValue;
 
-            Debug.Log(attaquantFM.name + " inflige " + attackValue + " points de dégâts, laissant " + defenseurFM.name + " à " + defenseurFM.currentHP);
-
-            // ICI jouer VFX d'attaque simple
-            // ICI jouer SFX d'attaque simple
-
-            //myDamageFeedback.text = "-" + attackValue.ToString();
-
-            myAnim.SetTrigger("LaunchAttack");
-            attaqueEpeeSFX.Post(gameObject);
-
-            yield return new WaitForSeconds(0.3f);
-
-            myAnim.SetTrigger("DefenseurReceiveDamage");
-            //attaquantDamageEffect.Play();
-
-            yield return new WaitForSeconds(1f);
-
-            // Ici jouer Anim dégâts reçus sur defenseur
-            renderTextCombat.text = "- " + attackValue.ToString();
-            defenseurDamageTextPS.gameObject.SetActive(true);
-            defenseurAM.ReceiveDamage();
-            defenseurAM.FillAmountHealth();
-            
-            defenseurHP.text = defenseurFM.currentHP.ToString();
-
-            yield return new WaitForSeconds(1f);
-
-            CheckHP();
-            yield return new WaitForSeconds(0.5f);
-
-            defenseurDamageTextPS.gameObject.SetActive(false);
-
-            if (attaquantFM != null && defenseurFM != null)
-            {
-                if (attaquantFM.isAlive && defenseurFM.isAlive)
+                if (defenseurFM.currentHP <= 0)
                 {
-                    StartCoroutine(CounterAttack());
+                    defenseurFM.currentHP = 0;
+                }
+
+                Debug.Log(attaquantFM.name + " inflige " + attackValue + " points de dégâts, laissant " + defenseurFM.name + " à " + defenseurFM.currentHP);
+
+                // ICI jouer VFX d'attaque simple
+                // ICI jouer SFX d'attaque simple
+
+                //myDamageFeedback.text = "-" + attackValue.ToString();
+
+                myAnim.SetTrigger("LaunchAttack");
+                attaqueEpeeSFX.Post(gameObject);
+
+                yield return new WaitForSeconds(0.3f);
+
+                myAnim.SetTrigger("DefenseurReceiveDamage");
+                //attaquantDamageEffect.Play();
+
+                yield return new WaitForSeconds(1f);
+
+                // Ici jouer Anim dégâts reçus sur defenseur
+                renderTextCombat.text = "- " + attackValue.ToString();
+                defenseurDamageTextPS.gameObject.SetActive(true);
+                defenseurAM.ReceiveDamage();
+                defenseurAM.FillAmountHealth();
+
+                defenseurHP.text = defenseurFM.currentHP.ToString();
+
+                yield return new WaitForSeconds(1f);
+
+                Debug.Log("CheckHP()");
+                CheckHP();
+                yield return new WaitForSeconds(0.5f);
+
+                defenseurDamageTextPS.gameObject.SetActive(false);
+
+                if (attaquantFM != null && defenseurFM != null)
+                {
+                    if (attaquantFM.isAlive && defenseurFM.isAlive)
+                    {
+                        StartCoroutine(CounterAttack());
+                    }
                 }
             }
+        }
+        else
+        {
+            EndFightNoDead();
         }
     }
 
     public IEnumerator CounterAttack()
     {
         Debug.Log("CounterAttack() " + defenseurFM.name + " " + " " + attaquantFM.name);
-
-        int counterAttackValue = Random.Range(defenseurFM.minCounterAttackRange, defenseurFM.maxCounterAttackRange);
-        attaquantFM.currentHP -= counterAttackValue;
-
-        if (attaquantFM.currentHP <= 0)
-        {
-            attaquantFM.currentHP = 0;
-        }
-
-        Debug.Log("Le défenseur contre-attaque et inflige" + counterAttackValue + "points de dégâts, laissant son adversaire à " + attaquantFM.currentHP);
-
-
-        // ICI jouer VFX de contre-attaque simple
-        // ICI jouer SFX de contre-attaque simple
-        //myDamageFeedback.text = "-" + counterAttackValue.ToString();
-        myAnim.SetTrigger("LaunchCounterAttack");
-        contreAttaqueEpeeSFX.Post(gameObject);
-
-        yield return new WaitForSeconds(0.3f);
-
-        myAnim.SetTrigger("AttaquantReceiveDamage");
-
-        //defenseurDamageEffect.Play();
-
-        yield return new WaitForSeconds(1f);
-
-        // Ici jouer Anim dégâts reçus sur attaquant
-
-        renderTextCombat.text = "- " + counterAttackValue.ToString();
-        attaquantDamageTextPS.gameObject.SetActive(true);
-
-        attaquantAM.ReceiveDamage();
-        attaquantAM.FillAmountHealth();
-
-        attaquantHP.text = attaquantFM.currentHP.ToString();
-
-        yield return new WaitForSeconds(1f);
-
-        CheckHP();
-        yield return new WaitForSeconds(0.5f);
-
-        attaquantDamageTextPS.gameObject.SetActive(false);
-
         if (attaquantFM != null && defenseurFM != null)
         {
-            if (attaquantFM.isAlive && defenseurFM.isAlive)
+            int counterAttackValue = Random.Range(defenseurFM.minCounterAttackRange, defenseurFM.maxCounterAttackRange);
+            attaquantFM.currentHP -= counterAttackValue;
+
+            if (attaquantFM.currentHP <= 0)
             {
-                StartCoroutine(EndFightNoDead());
+                attaquantFM.currentHP = 0;
             }
+
+            Debug.Log("Le défenseur contre-attaque et inflige" + counterAttackValue + "points de dégâts, laissant son adversaire à " + attaquantFM.currentHP);
+
+
+            // ICI jouer VFX de contre-attaque simple
+            // ICI jouer SFX de contre-attaque simple
+            //myDamageFeedback.text = "-" + counterAttackValue.ToString();
+            myAnim.SetTrigger("LaunchCounterAttack");
+            contreAttaqueEpeeSFX.Post(gameObject);
+
+            yield return new WaitForSeconds(0.3f);
+
+            myAnim.SetTrigger("AttaquantReceiveDamage");
+
+            //defenseurDamageEffect.Play();
+
+            yield return new WaitForSeconds(1f);
+
+            // Ici jouer Anim dégâts reçus sur attaquant
+
+            renderTextCombat.text = "- " + counterAttackValue.ToString();
+            attaquantDamageTextPS.gameObject.SetActive(true);
+
+            attaquantAM.ReceiveDamage();
+            attaquantAM.FillAmountHealth();
+
+            attaquantHP.text = attaquantFM.currentHP.ToString();
+
+            yield return new WaitForSeconds(1f);
+
+            Debug.Log("CheckHP()");
+            CheckHP();
+
+            yield return new WaitForSeconds(0.5f);
+
+            attaquantDamageTextPS.gameObject.SetActive(false);
+
+            if (attaquantFM != null && defenseurFM != null)
+            {
+                if (attaquantFM.isAlive && defenseurFM.isAlive)
+                {
+                    StartCoroutine(EndFightNoDead());
+                }
+            }
+        }
+        else
+        {
+            EndFightNoDead();
         }
     }
 
@@ -450,52 +463,59 @@ public class CombatManager : MonoBehaviour
 
     public IEnumerator CriticalHit()
     {
-        Debug.Log("Critical() " + defenseurFM.name + " " + " " + attaquantFM.name);
-
-        defenseurFM.currentHP -= attaquantFM.maxAttackRange * 2;
-
-        if (defenseurFM.currentHP <= 0)
-        {
-            defenseurFM.currentHP = 0;
-        }
-
-        Debug.Log("OUH ! CRITIQUE !!");
-        Debug.Log("Avec un coup critique, " + attaquantFM.name + " inflige " + attaquantFM.maxAttackRange * 2 + " points de dégâts, laissant " + defenseurFM.name + " à " + defenseurFM.currentHP);
-
-
-        // ICI jouer VFX de coup critiique
-        // ICI jouer SFX de coup critique
-
-        //myDamageFeedback.text = "-" + (attaquantFM.maxAttackRange * 2).ToString() + (" !!");
-        //attaquantDamageEffect.Play();
-
-        myAnim.SetTrigger("DefenseurReceiveDamage");
-        myAnim.SetTrigger("LaunchCoupCritique");
-        coupCritiqueSFX.Post(gameObject);
-
-        yield return new WaitForSeconds(2f);
-
-        // ICI jouer Anim dégâts reçus sur defenseur
-        renderTextCombat.text = "- " + (attaquantFM.maxAttackRange * 2).ToString();
-        defenseurDamageTextPS.gameObject.SetActive(true);
-        defenseurAM.ReceiveDamage();
-        defenseurAM.FillAmountHealth();
-        
-        defenseurHP.text = defenseurFM.currentHP.ToString();
-
-        yield return new WaitForSeconds(2f);
-
-        CheckHP();
-        yield return new WaitForSeconds(0.5f);
-
-        defenseurDamageTextPS.gameObject.SetActive(false);
-
         if (attaquantFM != null && defenseurFM != null)
         {
-            if (attaquantFM.isAlive && defenseurFM.isAlive)
+            Debug.Log("Critical() " + defenseurFM.name + " " + " " + attaquantFM.name);
+
+            defenseurFM.currentHP -= attaquantFM.maxAttackRange * 2;
+
+            if (defenseurFM.currentHP <= 0)
             {
-                StartCoroutine(EndFightNoDead());
+                defenseurFM.currentHP = 0;
             }
+
+            Debug.Log("OUH ! CRITIQUE !!");
+            Debug.Log("Avec un coup critique, " + attaquantFM.name + " inflige " + attaquantFM.maxAttackRange * 2 + " points de dégâts, laissant " + defenseurFM.name + " à " + defenseurFM.currentHP);
+
+
+            // ICI jouer VFX de coup critiique
+            // ICI jouer SFX de coup critique
+
+            //myDamageFeedback.text = "-" + (attaquantFM.maxAttackRange * 2).ToString() + (" !!");
+            //attaquantDamageEffect.Play();
+
+            myAnim.SetTrigger("DefenseurReceiveDamage");
+            myAnim.SetTrigger("LaunchCoupCritique");
+            coupCritiqueSFX.Post(gameObject);
+
+            yield return new WaitForSeconds(2f);
+
+            // ICI jouer Anim dégâts reçus sur defenseur
+            renderTextCombat.text = "- " + (attaquantFM.maxAttackRange * 2).ToString();
+            defenseurDamageTextPS.gameObject.SetActive(true);
+            defenseurAM.ReceiveDamage();
+            defenseurAM.FillAmountHealth();
+
+            defenseurHP.text = defenseurFM.currentHP.ToString();
+
+            yield return new WaitForSeconds(2f);
+
+            CheckHP();
+            yield return new WaitForSeconds(0.5f);
+
+            defenseurDamageTextPS.gameObject.SetActive(false);
+
+            if (attaquantFM != null && defenseurFM != null)
+            {
+                if (attaquantFM.isAlive && defenseurFM.isAlive)
+                {
+                    StartCoroutine(EndFightNoDead());
+                }
+            }
+        }
+        else
+        {
+            EndFightNoDead();
         }
     }
 
@@ -551,6 +571,10 @@ public class CombatManager : MonoBehaviour
                     StartCoroutine(EndFightNoDead());
                 }
             }
+        }
+        else
+        {
+            EndFightNoDead();
         }
     }
 
@@ -660,13 +684,15 @@ public class CombatManager : MonoBehaviour
 
         mortSFX.Post(gameObject);
 
-        yield return new WaitForSeconds(0.4f);
+        isInFight = false;
 
         if (deadFM.myCamp == GameCamps.Fidele)
         {
-            GameManager.Instance.CheckIfPlayerLost();
+            StartCoroutine(GameManager.Instance.CheckIfPlayerLost());
         }
 
+        yield return new WaitForSeconds(0.4f);
+        
         attaquantFideleSprite.sprite = null;
         defenseurFideleSprite.sprite = null;
 
@@ -675,8 +701,6 @@ public class CombatManager : MonoBehaviour
 
         defenseurFM = null;
         defenseurAM = null;
-
-        isInFight = false;
 
         GameManager.Instance.MoveUnit();
     }

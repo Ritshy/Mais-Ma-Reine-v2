@@ -72,17 +72,14 @@ public class MovementEnemy : MonoBehaviour
 
             agent.SetDestination(myTarget.GetComponentInChildren<Interaction>().transform.position);
         }
-        else if (myFideleManager.GetComponentInChildren<Interaction>().myCollideInteractionList.Contains(targetInteraction))
+        else if (myFideleManager.GetComponentInChildren<Interaction>().myCollideInteractionList.Contains(targetInteraction) && CombatManager.Instance.isInFight == false)
         {
+            Debug.Log("Lance un combat");
             myFideleManager.UpdateAttackableUnitInRange();
             CombatManager.Instance.EnemyLaunchCombat(myFideleManager, targetInteraction.GetComponentInParent<FideleManager>());
 
             StopMoving();
         }
-
-        /*if (isAttackableUnitInMyZone)
-        {
-        }*/
     }
 
     public void StopMoving()
@@ -101,7 +98,7 @@ public class MovementEnemy : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision == targetInteractionZone && myFideleManager.myCamp == GameManager.Instance.currentCampTurn)
+        if (collision == targetInteractionZone && myFideleManager.myCamp == GameManager.Instance.currentCampTurn && CombatManager.Instance.isInFight == false)
         {
             myFideleManager.UpdateAttackableUnitInRange();
             CombatManager.Instance.EnemyLaunchCombat(myFideleManager, targetInteraction.GetComponentInParent<FideleManager>());

@@ -62,6 +62,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SwitchTurn();
+        }
+
         if (isMapTuto)
         {
             if (firstFideleToMoveHasMoved)
@@ -164,19 +169,37 @@ public class GameManager : MonoBehaviour
                 allMapUnits[i].isAllActionsDone = false;
             }
         }
-        
-        int ccti = (int)currentCampTurn+1;
 
-        if (currentCampTurn < campsInTerritoire.Last())
+        if ((int)currentCampTurn+1 < campsInTerritoire.Count())
         {
-            currentCampTurn = campsInTerritoire[ccti];
+            currentCampTurn++;
         }
-        else if (currentCampTurn == campsInTerritoire.Last())
+        else if ((int)currentCampTurn+1 >= campsInTerritoire.Count())
         {
-            currentCampTurn = campsInTerritoire.First();
+            currentCampTurn = 0;
         }
 
-        //Faire en sorte que si aucun personnage du camp qui va être joué n'est présent, passer encore au tour suivant.
+        List<FideleManager> cclfm = new List<FideleManager>();
+
+        if (currentCampTurn == GameCamps.Bandit || currentCampTurn == GameCamps.BanditCalamiteux || currentCampTurn == GameCamps.Roi || currentCampTurn == GameCamps.Fidele)
+        {
+            foreach (FideleManager fmocc in allMapUnits)
+            {
+                if (fmocc.myCamp == currentCampTurn && fmocc.GetComponentInChildren<Interaction>().interactionType != InteractionType.Recrutement)
+                {
+                    cclfm.Add(fmocc);
+                }
+            }
+
+            if (cclfm.Count == 0)
+            {
+                SwitchTurn();
+            }
+        }
+        else
+        {
+            SwitchTurn();
+        }
 
         ResetTurn();
         TurnFeedbackManager.Instance.SwitchTurnFeedback(currentCampTurn);
@@ -275,6 +298,16 @@ public class GameManager : MonoBehaviour
             {
                 if (allMapUnits[i].GetComponentInChildren<MovementEnemy>() != null)
                 {
+                    if (allMapUnits[i].waitForUnitToEnterZone)
+                    {
+                        if (allMapUnits[i].isAlive && allMapUnits[i].GetComponentInChildren<MovementEnemy>().hasMoved == false)
+                        {
+                            if (true)
+                            {
+                                //Je sais plus
+                            }
+                        }
+                    }
                     if (allMapUnits[i].GetComponentInChildren<MovementEnemy>().hasMoved == false && allMapUnits[i].isAlive)
                     {
                         allMapUnits[i].GetComponentInChildren<MovementEnemy>().MoveToTarget();
@@ -331,15 +364,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void CheckIfPlayerLost()
+    public IEnumerator CheckIfPlayerLost()
     {
         for (int i = 0; i < allMapUnits.Count; i++)
         {
             if (allMapUnits[i].myCamp == GameCamps.Fidele)
             {
-                return;
+                yield break;
             }
         }
-        Debug.Break();
+        DialogueManager.Instance.myAnim.SetTrigger("triggerDefaiteFin");
+
+        yield return new WaitForSeconds(2f);
+
+        SceneSwitcher.Instance.SwitchToMenuTerritoire();
     }
 }

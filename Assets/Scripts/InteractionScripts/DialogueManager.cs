@@ -19,7 +19,7 @@ public class DialogueManager : MonoBehaviour
 
     private Dialogue currentDialogue;
 
-    private Animator myAnim;
+    public Animator myAnim;
     private FideleManager talkingFM;
 
     private Queue<string> lines;
@@ -61,11 +61,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(currentDialogue.name);
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            myAnim.SetTrigger("triggerTerritoireFin");
-        }
+
     }
 
     public void OpenDialogueWindow(Dialogue dialogue, FideleManager talkedFM)
