@@ -294,6 +294,8 @@ public class RecrutementManager : MonoBehaviour
             iam.FideleDisplayInteractionFeedbacks();
         }
 
+        myFMToRecruit.GetComponentInChildren<Interaction>().interactionType = InteractionType.Combat;
+
         myFMToRecruit.GetComponentInChildren<Interaction>().myCollideAnimationManagerList.Clear();
         myFMToRecruit.GetComponentInChildren<Interaction>().myCollideInteractionList.Clear();
 

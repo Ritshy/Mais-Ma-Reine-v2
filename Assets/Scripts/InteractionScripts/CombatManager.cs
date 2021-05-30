@@ -255,6 +255,8 @@ public class CombatManager : MonoBehaviour
         defenseurFM = defFM;
         defenseurAM = defenseurFM.GetComponentInParent<AnimationManager>();
 
+        attaquantFM.hasFought = true;
+
         if (attaquantFM.isAlive && defenseurFM.isAlive)
         {
             GameManager.Instance.isGamePaused = true;
@@ -596,9 +598,6 @@ public class CombatManager : MonoBehaviour
         DragCamera2D.Instance.UnfollowTargetCamera();
         QuestManager.Instance.OnKillUnit(deadFM);
 
-        defenseurAM.CheckActionsLeftAmout();
-        attaquantAM.CheckActionsLeftAmout();
-
         if (deadFM.myCamp != GameCamps.Bandit)
         {
             deadFM.GetComponent<AnimationManager>().Dying();
@@ -693,6 +692,8 @@ public class CombatManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.4f);
         
+        attaquantAM.CheckActionsLeftAmout();
+
         attaquantFideleSprite.sprite = null;
         defenseurFideleSprite.sprite = null;
 
@@ -713,8 +714,7 @@ public class CombatManager : MonoBehaviour
 
         //Debug.Log("Combat terminé");
         myAnim.SetBool("OpenCombatBandeau", false);
-
-        defenseurAM.CheckActionsLeftAmout();
+        
         attaquantAM.CheckActionsLeftAmout();
 
         attaquantFM.GetComponentInChildren<Interaction>().OtherCampDisplayInteractionFeedbacks();

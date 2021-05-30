@@ -6295,19 +6295,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCamp: 0
+  waitForUnitToEnterZone: 0
+  hasFought: 0
   fideleNom: Aaron
   fidelePrenom: 
-  maxHp: 19
-  currentHP: 0
+  maxHp: 17
+  currentHP: 17
   isAlive: 0
   moveZoneValue: 0
-  maxAttackRange: 14
-  minAttackRange: 6
-  maxCounterAttackRange: 4
-  minCounterAttackRange: 2
+  maxAttackRange: 8
+  minAttackRange: 3
+  maxCounterAttackRange: 2
+  minCounterAttackRange: 1
   isInteracting: 0
-  criticChances: 5
-  missChances: 20
+  criticChances: 4
+  missChances: 10
   charismaCost: 0
   fidelePeuple: 0
   currentFideleSprite: {fileID: 9036168572895459297}
@@ -6725,7 +6727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b445a06ff2fb74cbc35e4f99eaaeb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionType: 2
+  interactionType: 3
   interactionTimer: 2
   canInteract: 0
   hasInteract: 0

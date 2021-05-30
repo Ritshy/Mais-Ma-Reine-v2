@@ -239,6 +239,7 @@ public class GameManager : MonoBehaviour
                 if (fm.myCamp == currentCampTurn)
                 {
                     fm.GetComponentInChildren<MovementEnemy>().hasMoved = false;
+                    fm.hasFought = false;
                 }
             }
             MoveUnit();
@@ -290,8 +291,6 @@ public class GameManager : MonoBehaviour
 
     public void MoveUnit()
     {
-        //Cette fonction envoie au premier fidele de la liste correspondante au camp et n'ayant pas encore été déplacé l'ordre de se déplacer. 
-        //Ce fidèle effectue l'action, puis renvoie l'activation de la fonction. Si aucun fidèle ne correspondant au camp est capable de se déplacer, fin.
         for (int i = 0; i < allMapUnits.Count; i++)
         {
             if (allMapUnits[i].myCamp == currentCampTurn && allMapUnits[i].myCamp != GameCamps.Fidele)
@@ -302,13 +301,10 @@ public class GameManager : MonoBehaviour
                     {
                         if (allMapUnits[i].isAlive && allMapUnits[i].GetComponentInChildren<MovementEnemy>().hasMoved == false)
                         {
-                            if (true)
-                            {
-                                //Je sais plus
-                            }
+                            allMapUnits[i].GetComponentInChildren<MovementEnemy>().MoveToTarget();
                         }
                     }
-                    if (allMapUnits[i].GetComponentInChildren<MovementEnemy>().hasMoved == false && allMapUnits[i].isAlive)
+                    else if (allMapUnits[i].GetComponentInChildren<MovementEnemy>().hasMoved == false && allMapUnits[i].isAlive)
                     {
                         allMapUnits[i].GetComponentInChildren<MovementEnemy>().MoveToTarget();
                         return;

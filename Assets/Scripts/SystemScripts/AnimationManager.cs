@@ -296,13 +296,15 @@ public class AnimationManager : MonoBehaviour
             {
                 if (myMovement.hasMoved)
                 {
-                    if (myInteraction.myCollideInteractionList.Count == 0)
+                    if (myInteraction.myCollideInteractionList.Count == 0 && isSelectable == false)
                     {
+                        Debug.Log("Liste d'interaction vide");
                         myFM.isAllActionsDone = true;
                         GameManager.Instance.IsAllCampActionsDone();
                     }
-                    else if (myInteraction.alreadyInteractedList.Count >= myInteraction.myCollideInteractionList.Count)
+                    else if (myInteraction.alreadyInteractedList.Count >= myInteraction.myCollideInteractionList.Count && isSelectable == false)
                     {
+                        Debug.Log("Plus d'interaction effectuée que de collision");
                         myFM.isAllActionsDone = true;
                         GameManager.Instance.IsAllCampActionsDone();
                     }
@@ -314,6 +316,7 @@ public class AnimationManager : MonoBehaviour
             }
             else
             {
+                Debug.Log("Pas du camp Fidele");
                 myFM.isAllActionsDone = true;
                 GameManager.Instance.IsAllCampActionsDone();
             }

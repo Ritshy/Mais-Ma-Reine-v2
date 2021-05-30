@@ -49,7 +49,6 @@ public class SceneSwitcher : MonoBehaviour
 
     public void SwitchToTerritoire01Cinematique()
     {
-        akAmbient.Stop(0);
         GameManager.Instance.LoadCharismeValueBetweenScenes();
         SceneManager.LoadScene("Territoire01_Cinematic_Scene");
     }
@@ -63,7 +62,6 @@ public class SceneSwitcher : MonoBehaviour
 
     public void SwitchToTerritoire02Cinematique()
     {
-        akAmbient.Stop(0);
         GameManager.Instance.LoadCharismeValueBetweenScenes();
         SceneManager.LoadScene("Territoire02_Cinematic_Scene");
     }

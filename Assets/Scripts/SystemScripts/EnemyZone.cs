@@ -25,7 +25,7 @@ public class EnemyZone : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    /*public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponentInParent<FideleManager>().myCamp == GameCamps.Fidele)
         {
@@ -38,6 +38,15 @@ public class EnemyZone : MonoBehaviour
             }
 
             //RefreshAttackableDetection();
+        }
+    }*/
+
+    public void FideleEnteredEnemyZone()
+    {
+        if (isScenarioDialogueLaunched == false)
+        {
+            DialogueManager.Instance.OpenDialogueWindow(DialogueManager.Instance.dialogueScenario[indexDialogueToLaunch], null);
+            isScenarioDialogueLaunched = true;
         }
     }
 

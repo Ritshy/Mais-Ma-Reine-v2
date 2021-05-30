@@ -9,6 +9,7 @@ public class FideleManager : MonoBehaviour
     public GameCamps myCamp;
 
     public bool waitForUnitToEnterZone;
+    public bool hasFought = false;
 
     [Header("Caractéristiques")]
     public string fideleNom;

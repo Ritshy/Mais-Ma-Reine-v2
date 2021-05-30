@@ -17,6 +17,9 @@ public class Movement : MonoBehaviour
 
     private bool isLanbable = false;
 
+    private bool isInEnemyZone = false;
+    private EnemyZone collidingEnemyZone;
+
     //public Sprite testDlcmtSprite;
 
     //public GameObject myCollideZone;
@@ -108,6 +111,11 @@ public class Movement : MonoBehaviour
                 if (myAnimationManager.isSelectable)
                 {
                     RaycastInteraction.Instance.SetFideleSelectedInteractionLauncher(myFM);
+                }
+
+                if (isInEnemyZone)
+                {
+                    collidingEnemyZone.FideleEnteredEnemyZone();
                 }
             }
             else
@@ -211,6 +219,14 @@ public class Movement : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<EnemyZone>() != null)
+        {
+            collidingEnemyZone = collision.GetComponent<EnemyZone>();
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (GameManager.Instance.isMapTuto)
@@ -227,6 +243,10 @@ public class Movement : MonoBehaviour
             }
             else
             {
+                if (collision.GetComponent<EnemyZone>() != null)
+                {
+                    isInEnemyZone = false;
+                }
                 if (collision.gameObject == myMoveZone)
                 {
                     isLanbable = false;
@@ -248,6 +268,11 @@ public class Movement : MonoBehaviour
         }
         else
         {
+            if (collision.GetComponent<EnemyZone>() != null)
+            {
+                isInEnemyZone = false;
+                collidingEnemyZone = null;
+            }
             if (collision.gameObject == myMoveZone)
             {
                 isLanbable = false;
@@ -283,6 +308,10 @@ public class Movement : MonoBehaviour
             }
             else
             {
+                if (collision.GetComponent<EnemyZone>() != null)
+                {
+                    isInEnemyZone = true;
+                }
                 if (collision.tag == ("Obstacle"))
                 {
                     isInAnObstacle = true;
@@ -310,6 +339,10 @@ public class Movement : MonoBehaviour
         }
         else
         {
+            if (collision.GetComponent<EnemyZone>() != null)
+            {
+                isInEnemyZone = true;
+            }
             if (collision.tag == ("Obstacle"))
             {
                 isInAnObstacle = true;
