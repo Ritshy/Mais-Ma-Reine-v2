@@ -5434,8 +5434,8 @@ MonoBehaviour:
     unitsToSpawn: []
   - characterName: Elya
     myDialogue:
-    - Mes excuses
-    - "Nous arrivons \xE0 l\u2019\xEEle du c\u0153ur et aucun fid\xE8les du Roi n'est
+    - Mes excuses.
+    - "Nous arrivons \xE0 l\u2019\xEEle du c\u0153ur et aucun fid\xE8le du Roi n'est
       \xE0 nos trousses."
     - "On a l\u2019impression qu'il n'a m\xEAme pas remarqu\xE9 votre disparition,
       Ma Reine..."
@@ -5478,7 +5478,7 @@ MonoBehaviour:
     - "Elya\u2026 Je sais que tu te fais du souci, mais j\u2019ai pris ma d\xE9cision."
     - "Je vais prouver \xE0 ce bon Roi qui je suis ! Et pour \xE7a, il me faut une
       arm\xE9e."
-    - "Malheureusement, mes Fid\xE8les Aaron et Humbre ne suffiront pas, aussi braves
+    - "Malheureusement, mes fid\xE8les Aaron et Humbre ne suffiront pas, aussi braves
       soient-ils."
     isStartingQuest: 0
     questIndexToStart: 0
