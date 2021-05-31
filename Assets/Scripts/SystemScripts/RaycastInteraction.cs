@@ -217,7 +217,7 @@ public class RaycastInteraction : MonoBehaviour
         }
     }
 
-    public void CheckInteractionLauncherState()
+    /*public void CheckInteractionLauncherState()
     {
         if (interactionLauncherFM != null)
         {
@@ -248,5 +248,5 @@ public class RaycastInteraction : MonoBehaviour
                 ResetLauncherInteraction();
             }
         }
-    }
+    }*/
 }

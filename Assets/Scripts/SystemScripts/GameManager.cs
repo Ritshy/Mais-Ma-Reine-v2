@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     public int charismeAmount;
 
+    private int territoryBeginCharisme;
+
     public bool isGamePaused;
 
     static public int charismeAmountStatic = 15;
@@ -56,7 +58,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         isGamePaused = true;
-        charismeAmount = charismeAmountStatic;     
+        charismeAmount = charismeAmountStatic;
+
+        territoryBeginCharisme = charismeAmount;
     }
 
     // Update is called once per frame
@@ -367,6 +371,8 @@ public class GameManager : MonoBehaviour
         DialogueManager.Instance.myAnim.SetTrigger("triggerDefaiteFin");
 
         yield return new WaitForSeconds(2f);
+
+        charismeAmountStatic = territoryBeginCharisme;
 
         SceneSwitcher.Instance.SwitchToMenuTerritoire();
     }
