@@ -316,7 +316,7 @@ public class RecrutementManager : MonoBehaviour
             GameManager.Instance.firstFideleToInteractWith.GetComponent<AnimationManager>().DesactivateCursorIndicator();
         }
 
-        RaycastInteraction.Instance.CheckInteractionLauncherState();
+        //RaycastInteraction.Instance.CheckInteractionLauncherState();
 
         idleRecruitedSprite = null;
         movingRecruitedSprite = null;
