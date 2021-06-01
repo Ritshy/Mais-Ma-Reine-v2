@@ -164,6 +164,9 @@ public class Movement : MonoBehaviour
                         // ICI jouer VFX de début de déplacement
                         // ICI jouer SFX de début de déplacement
                         // ICI jouer Anim de déplacement
+
+                        EffectManager.Instance.LaunchDeplacementSystem(myFM.transform, isMoving);
+
                         isMoving = true;
                         myFM.GetComponent<AnimationManager>().DesactivateCursorIndicator();
 
@@ -185,6 +188,9 @@ public class Movement : MonoBehaviour
                     // ICI jouer VFX de début de déplacement
                     // ICI jouer SFX de début de déplacement
                     // ICI jouer Anim de déplacement
+
+                    EffectManager.Instance.LaunchDeplacementSystem(myFM.transform, isMoving);
+
                     isMoving = true;
 
                     // ICI utiliser Coroutine pour attendre la fin des effets pour déplacer
