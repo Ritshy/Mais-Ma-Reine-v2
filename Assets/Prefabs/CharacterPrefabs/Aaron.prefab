@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 38115605596842373}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
+  m_LocalScale: {x: 0.88, y: 0.88, z: 0.88}
   m_Children: []
   m_Father: {fileID: 3876599288442570274}
   m_RootOrder: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4efeb36026d643b48a4048c508f0711c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42c026641b4f51a458f9a2eb07519d00, type: 3}
   m_Type: 3
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -397,7 +397,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 999
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 908f5c3ddfce83d46b378320e97457ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -681,7 +681,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.93, y: 2.7}
+    oldSize: {x: 7.18, y: 2.96}
     newSize: {x: 6.93, y: 2.7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -763,8 +763,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 81c2d9d8c3dc57843bab61311ccd5d87, type: 3}
-  m_Color: {r: 0.6037736, g: 0.504094, b: 0.504094, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8057cd364aee22f448eae66b06434b5d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -926,7 +926,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 81c2d9d8c3dc57843bab61311ccd5d87, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cf592727f7ceb4347851410e07bbf376, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1000,8 +1000,8 @@ MonoBehaviour:
   currentHP: 20
   isAlive: 0
   moveZoneValue: 0
-  maxAttackRange: 6
-  minAttackRange: 3
+  maxAttackRange: 10
+  minAttackRange: 4
   maxCounterAttackRange: 4
   minCounterAttackRange: 1
   isInteracting: 0
@@ -1185,7 +1185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3843901937911340760
 Transform:
   m_ObjectHideFlags: 0
@@ -1478,7 +1478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3843901938405189152
 Transform:
   m_ObjectHideFlags: 0
