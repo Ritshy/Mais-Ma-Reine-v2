@@ -390,6 +390,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Event_UI_Victoire" ID="{EFD41A4D-0D24-484A-AB8B-759A49FE11B1}">
+					<ChildrenList>
+						<Action Name="" ID="{5D2F13E0-FFA1-48A4-9B7A-E8E0AE38F56F}" ShortID="378582071">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victoire" ID="{BAEE8E6E-8CD6-4608-9B71-054FEBF9FF6F}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Defaite" ID="{6945E875-269B-4421-BCBF-EB701EFBCF5E}">
+					<ChildrenList>
+						<Action Name="" ID="{21B4B307-E208-4540-AD0C-F9C548B63726}" ShortID="236582111">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Défaite" ID="{735434CD-CC39-4418-97F7-47E5A13A498E}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Bouton_Jouer" ID="{7F011BF8-A72E-4297-9F1E-B16E6CC6B436}">
+					<ChildrenList>
+						<Action Name="" ID="{D18D908F-D0FF-4D7C-BEEF-8DCE6B4C74B8}" ShortID="1015851598">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="click_bouton_Jouer" ID="{E02E01F9-35FB-4D57-87A2-2034AEAB0C76}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

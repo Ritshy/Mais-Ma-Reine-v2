@@ -116,6 +116,11 @@
 								<Value>-7</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -144,6 +149,11 @@
 						<Property Name="MakeUpGain" Type="Real64">
 							<ValueList>
 								<Value>-6</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -2749,6 +2759,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Clique_territoire" ID="{45ED4D8D-8E3A-45A8-AF06-655A7C1F714D}" ShortID="727313045">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
@@ -2772,6 +2789,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Clique_Discu" ID="{7F7023CE-2A74-4FC6-8436-B1EC8405314B}" ShortID="23045529">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
@@ -3352,6 +3376,75 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="Musique Territoire" ID="{8E7E1461-DE50-46E1-9623-3F0081CE168B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Victoire" ID="{BAEE8E6E-8CD6-4608-9B71-054FEBF9FF6F}" ShortID="945193523">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Victoire" ID="{22D87820-E352-49DA-AB26-7775367875A9}">
+							<Language>SFX</Language>
+							<AudioFile>Victoire.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="586531358"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Victoire" ID="{22D87820-E352-49DA-AB26-7775367875A9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Défaite" ID="{735434CD-CC39-4418-97F7-47E5A13A498E}" ShortID="575557780">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Défaite" ID="{5C13EA67-7C88-49A5-BA7A-E89FA6D8D91D}">
+							<Language>SFX</Language>
+							<AudioFile>Défaite.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="429559082"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Défaite" ID="{5C13EA67-7C88-49A5-BA7A-E89FA6D8D91D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="click_bouton_Jouer" ID="{E02E01F9-35FB-4D57-87A2-2034AEAB0C76}" ShortID="833082027">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="click_bouton_Jouer" ID="{42E7AE44-942A-42FF-B621-21FF4697EBC2}">
+							<Language>SFX</Language>
+							<AudioFile>click_bouton_Jouer.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="293727232"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="click_bouton_Jouer" ID="{42E7AE44-942A-42FF-B621-21FF4697EBC2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3036332495">
+		<SoundBank Id="393239870" Language="SFX" Hash="1837033143">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -512,6 +512,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2023487047" Name="Event_UI_Defaite" ObjectPath="\Events\Default Work Unit\Event_UI_Defaite" DurationType="OneShot" DurationMin="2.569433" DurationMax="2.569433">
+					<IncludedMemoryFiles>
+						<File Id="429559082" Language="SFX">
+							<ShortName>Défaite.wav</ShortName>
+							<Path>SFX\Défaite_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3776204507" Name="Event_UI_Gain_Charisme" ObjectPath="\Events\Default Work Unit\Event_UI_Gain_Charisme" DurationType="OneShot" DurationMin="1.469184" DurationMax="1.469184">
 					<IncludedMemoryFiles>
 						<File Id="318337255" Language="SFX">
@@ -549,6 +557,14 @@
 						<File Id="928294472" Language="SFX">
 							<ShortName>Souris-passe_Bouton_UI.wav</ShortName>
 							<Path>SFX\Souris-passe_Bouton_UI_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2031836382" Name="Event_UI_Victoire" ObjectPath="\Events\Default Work Unit\Event_UI_Victoire" DurationType="OneShot" DurationMin="4.143401" DurationMax="4.143401">
+					<IncludedMemoryFiles>
+						<File Id="586531358" Language="SFX">
+							<ShortName>Victoire.wav</ShortName>
+							<Path>SFX\Victoire_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
