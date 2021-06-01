@@ -40,11 +40,13 @@ namespace AK
         static const AkUniqueID EVENT_UI_BANDEAU_FIDELE_RIGHTTOLEFT = 694759564U;
         static const AkUniqueID EVENT_UI_CLIQUE_BOUTON_MENU = 1387593318U;
         static const AkUniqueID EVENT_UI_CLIQUE_TERRITOIRE = 1051972340U;
+        static const AkUniqueID EVENT_UI_DEFAITE = 2023487047U;
         static const AkUniqueID EVENT_UI_GAIN_CHARISME = 3776204507U;
         static const AkUniqueID EVENT_UI_OBTENTION_QUETE = 2059410396U;
         static const AkUniqueID EVENT_UI_PNJ_RECRUTE = 777863556U;
         static const AkUniqueID EVENT_UI_QUETE_TERMINE = 552716342U;
         static const AkUniqueID EVENT_UI_SURVOLE_BOUTON = 3384763883U;
+        static const AkUniqueID EVENT_UI_VICTOIRE = 2031836382U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

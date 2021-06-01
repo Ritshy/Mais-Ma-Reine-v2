@@ -16,10 +16,12 @@
 						<ObjectRef Name="Event_Contre_Attaque_Epee" ID="{EB563D33-34A2-432E-9F5C-962D15179D6F}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Quete_Termine" ID="{4F1C34AE-68FE-4394-AB00-AD381BBF6A33}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Pause_Vent" ID="{D6E3D597-03A4-441F-B7B5-DC841AA69099}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_UI_Defaite" ID="{6945E875-269B-4421-BCBF-EB701EFBCF5E}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Gain_Charisme" ID="{4657E1C7-D933-4442-B168-794C8116455C}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Echec_Critique" ID="{0BE49B9D-890A-4510-BB60-D1980E99EA21}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Survole_Bouton" ID="{3C2E71C9-B65C-4726-B518-DE6121E59E35}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Deplacement_Bandit" ID="{FFA57FB7-E24D-4751-9EBE-D4CD7BB8511D}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_UI_Victoire" ID="{EFD41A4D-0D24-484A-AB8B-759A49FE11B1}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Mouv_Fidele_Attrape" ID="{79D7091C-FE68-488B-A733-81DF59A15DA3}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Interaction_Recrutement" ID="{FA66F64F-6EFC-4907-AE67-CBC5D059538D}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Clique_Bouton_Baston" ID="{0FE63E99-B5A7-4916-A347-E9A2E7F4DE3B}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
