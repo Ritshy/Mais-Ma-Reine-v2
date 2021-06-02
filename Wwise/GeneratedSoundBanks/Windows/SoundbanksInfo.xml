@@ -11,11 +11,35 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="1837033143">
+		<SoundBank Id="393239870" Language="SFX" Hash="2650510870">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1161747339" Name="Degats_Bandits" ObjectPath="\Events\Default Work Unit\Degats_Bandits" DurationType="OneShot" DurationMin="0.417959" DurationMax="0.547392">
+					<IncludedMemoryFiles>
+						<File Id="187438864" Language="SFX">
+							<ShortName>Dégats_bandit_1.wav</ShortName>
+							<Path>SFX\Dégats_bandit_1_10C4C929.wem</Path>
+						</File>
+						<File Id="551908250" Language="SFX">
+							<ShortName>Dégats_bandit_5.wav</ShortName>
+							<Path>SFX\Dégats_bandit_5_10C4C929.wem</Path>
+						</File>
+						<File Id="611543906" Language="SFX">
+							<ShortName>Dégats_bandit_3.wav</ShortName>
+							<Path>SFX\Dégats_bandit_3_10C4C929.wem</Path>
+						</File>
+						<File Id="624355959" Language="SFX">
+							<ShortName>Dégats_bandit_4.wav</ShortName>
+							<Path>SFX\Dégats_bandit_4_10C4C929.wem</Path>
+						</File>
+						<File Id="999707036" Language="SFX">
+							<ShortName>Dégats_bandit_2.wav</ShortName>
+							<Path>SFX\Dégats_bandit_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3811235563" Name="Event_Attaque_Epee" ObjectPath="\Events\Default Work Unit\Event_Attaque_Epee" DurationType="OneShot" DurationMin="1.617687" DurationMax="1.617687">
 					<IncludedMemoryFiles>
 						<File Id="344158329" Language="SFX">
@@ -410,6 +434,10 @@
 				</Event>
 				<Event Id="2880414047" Name="Event_Mouv_Fidele_Chute" ObjectPath="\Events\Default Work Unit\Event_Mouv_Fidele_Chute" DurationType="OneShot" DurationMin="0.402721" DurationMax="0.569433">
 					<IncludedMemoryFiles>
+						<File Id="104075332" Language="SFX">
+							<ShortName>Ouh_3.wav</ShortName>
+							<Path>SFX\Ouh_3_10C4C929.wem</Path>
+						</File>
 						<File Id="288790028" Language="SFX">
 							<ShortName>bodyfallMED.wav</ShortName>
 							<Path>SFX\bodyfallMED_10C4C929.wem</Path>
@@ -417,6 +445,22 @@
 						<File Id="301505234" Language="SFX">
 							<ShortName>bodyfallHVY.wav</ShortName>
 							<Path>SFX\bodyfallHVY_10C4C929.wem</Path>
+						</File>
+						<File Id="665195516" Language="SFX">
+							<ShortName>Ouh_4.wav</ShortName>
+							<Path>SFX\Ouh_4_10C4C929.wem</Path>
+						</File>
+						<File Id="684273681" Language="SFX">
+							<ShortName>Ouh_5.wav</ShortName>
+							<Path>SFX\Ouh_5_10C4C929.wem</Path>
+						</File>
+						<File Id="704709977" Language="SFX">
+							<ShortName>Ouh_1.wav</ShortName>
+							<Path>SFX\Ouh_1_10C4C929.wem</Path>
+						</File>
+						<File Id="786232075" Language="SFX">
+							<ShortName>Ouh_2.wav</ShortName>
+							<Path>SFX\Ouh_2_10C4C929.wem</Path>
 						</File>
 						<File Id="861073420" Language="SFX">
 							<ShortName>bodyfallSML.wav</ShortName>
@@ -496,7 +540,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1387593318" Name="Event_UI_Clique_Bouton_Menu" ObjectPath="\Events\Default Work Unit\Event_UI_Clique_Bouton_Menu" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000">
+				<Event Id="1387593318" Name="Event_UI_Clique_Bouton_Menu" ObjectPath="\Events\Default Work Unit\Event_UI_Clique_Bouton_Menu" DurationType="OneShot" DurationMin="0.225542" DurationMax="0.225542">
 					<IncludedMemoryFiles>
 						<File Id="928294472" Language="SFX">
 							<ShortName>Souris-passe_Bouton_UI.wav</ShortName>
@@ -552,7 +596,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3384763883" Name="Event_UI_Survole_Bouton" ObjectPath="\Events\Default Work Unit\Event_UI_Survole_Bouton" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000">
+				<Event Id="3384763883" Name="Event_UI_Survole_Bouton" ObjectPath="\Events\Default Work Unit\Event_UI_Survole_Bouton" DurationType="OneShot" DurationMin="0.225542" DurationMax="0.225542">
 					<IncludedMemoryFiles>
 						<File Id="928294472" Language="SFX">
 							<ShortName>Souris-passe_Bouton_UI.wav</ShortName>

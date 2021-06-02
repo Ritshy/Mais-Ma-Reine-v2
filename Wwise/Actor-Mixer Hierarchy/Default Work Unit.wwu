@@ -2641,100 +2641,6 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Mouv_Chute" ID="{4E2C855A-104E-4C35-BE41-714534118048}" ShortID="319187118">
-					<PropertyList>
-						<Property Name="Lowpass" Type="int16">
-							<ValueList>
-								<Value>17</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-9</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="bodyfallHVY" ID="{E693B270-32CE-410A-B69B-11B429447566}" ShortID="1015784546">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="bodyfallHVY" ID="{D7A7E2AC-1C42-4133-A9F7-882DBB27709C}">
-									<Language>SFX</Language>
-									<AudioFile>bodyfallHVY.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="301505234"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="bodyfallHVY" ID="{D7A7E2AC-1C42-4133-A9F7-882DBB27709C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="bodyfallMED" ID="{CA66CB6B-C42F-4D11-BA79-F537A796B76C}" ShortID="263743630">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="bodyfallMED" ID="{E60CD0FD-8DF5-4F60-9363-1E77811BC0B6}">
-									<Language>SFX</Language>
-									<AudioFile>bodyfallMED.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="288790028"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="bodyfallMED" ID="{E60CD0FD-8DF5-4F60-9363-1E77811BC0B6}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="bodyfallSML" ID="{5F060914-73F0-43FF-8990-866075669EBA}" ShortID="583535365">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="bodyfallSML" ID="{80D851C1-9B28-4775-B19E-B54BE25C5BC6}">
-									<Language>SFX</Language>
-									<AudioFile>bodyfallSML.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="861073420"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="bodyfallSML" ID="{80D851C1-9B28-4775-B19E-B54BE25C5BC6}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-					<ObjectLists/>
-				</RandomSequenceContainer>
 				<Sound Name="echec_critique_2" ID="{5A1B646D-6CF7-4C4E-A02B-288786C93ED9}" ShortID="1052975523">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -3447,6 +3353,407 @@
 						<ActiveSource Name="click_bouton_Jouer" ID="{42E7AE44-942A-42FF-B621-21FF4697EBC2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Cadena Territoire 2" ID="{8C16534F-8E71-4D4B-BFB0-7C1A37190805}" ShortID="44399697">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Cadena Territoire 2" ID="{E8C3C986-5B61-4C88-A868-1328BB610C2B}">
+							<Language>SFX</Language>
+							<AudioFile>Cadena Territoire 2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1021016572"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Cadena Territoire 2" ID="{E8C3C986-5B61-4C88-A868-1328BB610C2B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Degats_Bandits" ID="{C4E1B148-40D1-4B8F-8D57-0DC7913998B2}" ShortID="637404938">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Dégats_bandit_1" ID="{0A6DDC04-8533-4FE4-B606-5A691F4CD988}" ShortID="539974500">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dégats_bandit_1" ID="{35B87BE8-6EC8-476C-987A-09217EE47457}">
+									<Language>SFX</Language>
+									<AudioFile>Dégats_bandit_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="187438864"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dégats_bandit_1" ID="{35B87BE8-6EC8-476C-987A-09217EE47457}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dégats_bandit_2" ID="{7908D904-5998-4DA0-B5F7-A4D4A344EF55}" ShortID="929920173">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dégats_bandit_2" ID="{BD01D370-CB47-4053-9426-343CDEE226B1}">
+									<Language>SFX</Language>
+									<AudioFile>Dégats_bandit_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="999707036"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dégats_bandit_2" ID="{BD01D370-CB47-4053-9426-343CDEE226B1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dégats_bandit_3" ID="{FCE11D5A-E197-4A5B-AB3C-051EBD6CF85A}" ShortID="620066643">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dégats_bandit_3" ID="{981FC5FE-5CD8-4AC3-B79A-57998C72816B}">
+									<Language>SFX</Language>
+									<AudioFile>Dégats_bandit_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="611543906"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dégats_bandit_3" ID="{981FC5FE-5CD8-4AC3-B79A-57998C72816B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dégats_bandit_4" ID="{1191B719-414E-47E5-ACA5-57E50993C18F}" ShortID="127553664">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dégats_bandit_4" ID="{41750AEC-336D-4F12-8FD7-63D9693C6FBC}">
+									<Language>SFX</Language>
+									<AudioFile>Dégats_bandit_4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="624355959"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dégats_bandit_4" ID="{41750AEC-336D-4F12-8FD7-63D9693C6FBC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dégats_bandit_5" ID="{00B5637F-4AE9-4B55-A9EE-7E16CED25F08}" ShortID="219168454">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dégats_bandit_5" ID="{158C64D3-0EDA-4C1D-B1B8-049535BEEEBB}">
+									<Language>SFX</Language>
+									<AudioFile>Dégats_bandit_5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="551908250"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dégats_bandit_5" ID="{158C64D3-0EDA-4C1D-B1B8-049535BEEEBB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Mouv_Chute" ID="{4E2C855A-104E-4C35-BE41-714534118048}" ShortID="319187118">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>17</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="bodyfallHVY" ID="{E693B270-32CE-410A-B69B-11B429447566}" ShortID="1015784546">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="bodyfallHVY" ID="{D7A7E2AC-1C42-4133-A9F7-882DBB27709C}">
+									<Language>SFX</Language>
+									<AudioFile>bodyfallHVY.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="301505234"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="bodyfallHVY" ID="{D7A7E2AC-1C42-4133-A9F7-882DBB27709C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="bodyfallMED" ID="{CA66CB6B-C42F-4D11-BA79-F537A796B76C}" ShortID="263743630">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="bodyfallMED" ID="{E60CD0FD-8DF5-4F60-9363-1E77811BC0B6}">
+									<Language>SFX</Language>
+									<AudioFile>bodyfallMED.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="288790028"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="bodyfallMED" ID="{E60CD0FD-8DF5-4F60-9363-1E77811BC0B6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="bodyfallSML" ID="{5F060914-73F0-43FF-8990-866075669EBA}" ShortID="583535365">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="bodyfallSML" ID="{80D851C1-9B28-4775-B19E-B54BE25C5BC6}">
+									<Language>SFX</Language>
+									<AudioFile>bodyfallSML.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="861073420"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="bodyfallSML" ID="{80D851C1-9B28-4775-B19E-B54BE25C5BC6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Mouv_Ouh" ID="{76681461-EF1E-4CC1-97A3-AE70A8527388}" ShortID="867245460">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ouh_1" ID="{99458B03-ACF5-4D1A-86E9-00A6ADFE13D4}" ShortID="645583249">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ouh_1" ID="{8F8D405B-0C29-48B8-886F-5DC7A8843B50}">
+									<Language>SFX</Language>
+									<AudioFile>Ouh_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="704709977"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ouh_1" ID="{8F8D405B-0C29-48B8-886F-5DC7A8843B50}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ouh_2" ID="{4D2579F6-5C40-490B-9934-A2921EE98EF2}" ShortID="105064843">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ouh_2" ID="{DF70F9CB-5F59-4201-AF9B-B222AB06D21F}">
+									<Language>SFX</Language>
+									<AudioFile>Ouh_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="786232075"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ouh_2" ID="{DF70F9CB-5F59-4201-AF9B-B222AB06D21F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ouh_3" ID="{924448E0-C224-43C6-864D-C9AAD384C444}" ShortID="997941343">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ouh_3" ID="{F58A02D9-1B63-47F4-8C76-C6E801238DDD}">
+									<Language>SFX</Language>
+									<AudioFile>Ouh_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="104075332"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ouh_3" ID="{F58A02D9-1B63-47F4-8C76-C6E801238DDD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ouh_4" ID="{01D8F5B5-145A-48F4-B0F7-3F6BBA6A158A}" ShortID="665985227">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ouh_4" ID="{A38F5AF4-7342-46AD-8200-C2150F1146BE}">
+									<Language>SFX</Language>
+									<AudioFile>Ouh_4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="665195516"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ouh_4" ID="{A38F5AF4-7342-46AD-8200-C2150F1146BE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ouh_5" ID="{8BC57395-EEBD-40E8-A636-1BB3B319B441}" ShortID="569159703">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ouh_5" ID="{872A0C3E-DF01-4386-A43D-3764B451BB05}">
+									<Language>SFX</Language>
+									<AudioFile>Ouh_5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="684273681"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Ouh_5" ID="{872A0C3E-DF01-4386-A43D-3764B451BB05}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

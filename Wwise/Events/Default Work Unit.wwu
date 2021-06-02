@@ -270,10 +270,17 @@
 				<Event Name="Event_Deplacement_Calamite" ID="{636E58F7-0B06-4247-B4C4-46ACB2751218}"/>
 				<Event Name="Event_Mouv_Fidele_Chute" ID="{3A171EC5-569D-4015-9A9B-66B815C23A61}">
 					<ChildrenList>
-						<Action Name="" ID="{A16E398F-20F5-4509-9729-8B5342DB8EE2}" ShortID="304039771">
+						<Action Name="" ID="{13BDDBB1-0B66-49CB-9488-88A28F6C9D6D}" ShortID="14326460">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Mouv_Chute" ID="{4E2C855A-104E-4C35-BE41-714534118048}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2970D194-E9DA-4C43-948D-2B0FADD09889}" ShortID="114905493">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mouv_Ouh" ID="{76681461-EF1E-4CC1-97A3-AE70A8527388}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -418,6 +425,18 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="click_bouton_Jouer" ID="{E02E01F9-35FB-4D57-87A2-2034AEAB0C76}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_UI_Cadena_Territoire" ID="{E8CD6A11-1D44-4D6E-A944-3E0898B580FC}"/>
+				<Event Name="Degats_Bandits" ID="{3BA3BFEE-BDE4-4CC8-801C-0E605FF07ED5}">
+					<ChildrenList>
+						<Action Name="" ID="{DBF04FFB-B8A4-441E-8F4D-5722DC08CF14}" ShortID="12498376">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Degats_Bandits" ID="{C4E1B148-40D1-4B8F-8D57-0DC7913998B2}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

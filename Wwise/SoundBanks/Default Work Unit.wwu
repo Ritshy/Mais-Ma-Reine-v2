@@ -30,6 +30,7 @@
 						<ObjectRef Name="Event_Mort" ID="{94BB9027-949C-4BA9-AEB3-A0EEEBF691BD}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Recrutement_Accepte" ID="{F2EF7302-65FA-4C2F-9747-FC30E7B712BA}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_PNJ_Recrute" ID="{23AF503C-DC6C-4C5F-9FCD-E26B52D58EE5}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Degats_Bandits" ID="{3BA3BFEE-BDE4-4CC8-801C-0E605FF07ED5}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Fidele_Sans_Action" ID="{5216333F-8CC4-4D10-BD05-787D5C0EA839}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Bandeau_Fidele_Righttoleft" ID="{B195C971-5B7C-4E6D-9329-9E57A1A7AF24}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Clique_Fidele_Combat" ID="{2C5EB5A9-C76E-4EB3-A246-2952446B7E4A}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
