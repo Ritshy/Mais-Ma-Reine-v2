@@ -6,7 +6,7 @@ public class EffectManager : MonoBehaviour
 {
     [Header ("Movement Effects")]
     public List<ParticleSystem> launchDeplacementPS;
-    public ParticleSystem endDeplacementPS;
+    public List<ParticleSystem> endDeplacementPS;
 
     public AK.Wwise.Event lancementDeplacementSFX;
     public AK.Wwise.Event finDeplacementSFX;
@@ -46,6 +46,7 @@ public class EffectManager : MonoBehaviour
         if (isEffectAlreadyPlaying == false)
         {
             lancementDeplacementSFX.Post(gameObject);
+
             int rndm = Random.Range(0, launchDeplacementPS.Count);
             launchDeplacementPS[rndm].transform.position = locationToPlayEffect.position;
             launchDeplacementPS[rndm].Play();
@@ -61,7 +62,8 @@ public class EffectManager : MonoBehaviour
     {
         finDeplacementSFX.Post(gameObject);
 
-        endDeplacementPS.transform.position = locationToPlayEffect.position;
-        endDeplacementPS.Play();
+        int rndm = Random.Range(0, endDeplacementPS.Count);
+        endDeplacementPS[rndm].transform.position = locationToPlayEffect.position;
+        endDeplacementPS[rndm].Play();
     }
 }
