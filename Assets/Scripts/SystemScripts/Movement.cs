@@ -93,10 +93,12 @@ public class Movement : MonoBehaviour
             {
                 transform.parent.position = transform.position;
                 transform.localPosition = Vector3.zero;
-                hasMoved = true;
+                //hasMoved = true;
 
                 myAnimationManager.CheckActionsLeftAmout();
                 DragCamera2D.Instance.FollowTargetCamera(myFM.gameObject);
+
+                EffectManager.Instance.EndDeplacement(myFM.transform);
 
                 for (int i = 0; i < myInteraction.myCollideInteractionList.Count; i++)
                 {
@@ -165,7 +167,7 @@ public class Movement : MonoBehaviour
                         // ICI jouer SFX de début de déplacement
                         // ICI jouer Anim de déplacement
 
-                        EffectManager.Instance.LaunchDeplacementSystem(myFM.transform, isMoving);
+                        EffectManager.Instance.LaunchDeplacement(myFM.transform, isMoving);
 
                         isMoving = true;
                         myFM.GetComponent<AnimationManager>().DesactivateCursorIndicator();
@@ -189,7 +191,7 @@ public class Movement : MonoBehaviour
                     // ICI jouer SFX de début de déplacement
                     // ICI jouer Anim de déplacement
 
-                    EffectManager.Instance.LaunchDeplacementSystem(myFM.transform, isMoving);
+                    EffectManager.Instance.LaunchDeplacement(myFM.transform, isMoving);
 
                     isMoving = true;
 

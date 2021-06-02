@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class EffectManager : MonoBehaviour
 {
-    public List<ParticleSystem> launchDeplacementSystem;
+    [Header ("Movement Effects")]
+    public List<ParticleSystem> launchDeplacementPS;
+    public ParticleSystem endDeplacementPS;
+
+    public AK.Wwise.Event lancementDeplacementSFX;
+    public AK.Wwise.Event finDeplacementSFX;
 
     #region Singleton
 
@@ -36,18 +41,27 @@ public class EffectManager : MonoBehaviour
         
     }
 
-    public void LaunchDeplacementSystem(Transform locationToPlayEffect, bool isEffectAlreadyPlaying)
+    public void LaunchDeplacement(Transform locationToPlayEffect, bool isEffectAlreadyPlaying)
     {
         if (isEffectAlreadyPlaying == false)
         {
-            int rndm = Random.Range(0, launchDeplacementSystem.Count);
-            launchDeplacementSystem[rndm].transform.position = locationToPlayEffect.position;
-            launchDeplacementSystem[rndm].Play();
+            lancementDeplacementSFX.Post(gameObject);
+            int rndm = Random.Range(0, launchDeplacementPS.Count);
+            launchDeplacementPS[rndm].transform.position = locationToPlayEffect.position;
+            launchDeplacementPS[rndm].Play();
 
         }
         else
         {
             return;
         }
+    }
+
+    public void EndDeplacement(Transform locationToPlayEffect)
+    {
+        finDeplacementSFX.Post(gameObject);
+
+        endDeplacementPS.transform.position = locationToPlayEffect.position;
+        endDeplacementPS.Play();
     }
 }
