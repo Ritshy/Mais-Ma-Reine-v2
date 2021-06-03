@@ -11,6 +11,11 @@ public class EffectManager : MonoBehaviour
     public AK.Wwise.Event lancementDeplacementSFX;
     public AK.Wwise.Event finDeplacementSFX;
 
+    [Header("Combat Effects")]
+
+    public ParticleSystem coupCritiqueSlashEffect;
+    public ParticleSystem coupCritiqueImpactEffect;
+
     #region Singleton
 
     public static EffectManager Instance;
@@ -65,5 +70,17 @@ public class EffectManager : MonoBehaviour
         int rndm = Random.Range(0, endDeplacementPS.Count);
         endDeplacementPS[rndm].transform.position = locationToPlayEffect.position;
         endDeplacementPS[rndm].Play();
+    }
+
+    public IEnumerator PlayCriticalEffects()
+    {
+        yield return new WaitForSeconds(.3f);
+
+        coupCritiqueSlashEffect.Play();
+
+        yield return new WaitForSeconds(2.1f);
+
+        coupCritiqueImpactEffect.Play();
+        CameraZooming.Instance.ShakeScreen();
     }
 }

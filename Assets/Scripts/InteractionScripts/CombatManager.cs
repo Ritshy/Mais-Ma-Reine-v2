@@ -488,9 +488,11 @@ public class CombatManager : MonoBehaviour
 
             myAnim.SetTrigger("DefenseurReceiveDamage");
             myAnim.SetTrigger("LaunchCoupCritique");
-            coupCritiqueSFX.Post(gameObject);
 
-            yield return new WaitForSeconds(2f);
+            coupCritiqueSFX.Post(gameObject);
+            LaunchCritiqueEffects();
+
+            yield return new WaitForSeconds(2.4f);
 
             // ICI jouer Anim dégâts reçus sur defenseur
             renderTextCombat.text = "- " + (attaquantFM.maxAttackRange * 2).ToString();
@@ -500,9 +502,10 @@ public class CombatManager : MonoBehaviour
 
             defenseurHP.text = defenseurFM.currentHP.ToString();
 
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
 
             CheckHP();
+
             yield return new WaitForSeconds(0.5f);
 
             defenseurDamageTextPS.gameObject.SetActive(false);
@@ -519,6 +522,11 @@ public class CombatManager : MonoBehaviour
         {
             EndFightNoDead();
         }
+    }
+
+    public void LaunchCritiqueEffects()
+    {
+        StartCoroutine(EffectManager.Instance.PlayCriticalEffects());
     }
 
     public IEnumerator Missed()
@@ -682,6 +690,7 @@ public class CombatManager : MonoBehaviour
         }
 
         mortSFX.Post(gameObject);
+        CameraZooming.Instance.ShakeScreen();
 
         isInFight = false;
 

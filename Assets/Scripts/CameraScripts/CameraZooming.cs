@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using MilkShake;
 
 public class CameraZooming : MonoBehaviour
 {
@@ -14,20 +15,43 @@ public class CameraZooming : MonoBehaviour
 
     private bool isMenuPauseOpenByEscape;
 
+    private Shaker myShaker;
+
+    public ShakePreset shakePreset;
+
+    #region Singleton
+
+    public static CameraZooming Instance;
+
     private void Awake()
     {
-        myCamera = GetComponent<CinemachineVirtualCamera>();
+        if (Instance != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
     }
+
+    #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        myCamera = GetComponentInChildren<CinemachineVirtualCamera>();
+        myShaker = GetComponentInChildren<Shaker>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ShakeScreen();
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (mapScreenPause == false)
@@ -78,5 +102,11 @@ public class CameraZooming : MonoBehaviour
     {
         mapScreen.SetActive(false);
         mapScreenPause = false;
+    }
+
+    public void ShakeScreen()
+    {
+        Debug.Log("Screen shaking !");
+        myShaker.Shake(shakePreset);
     }
 }
