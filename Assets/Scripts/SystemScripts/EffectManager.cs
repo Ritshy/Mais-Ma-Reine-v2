@@ -11,10 +11,19 @@ public class EffectManager : MonoBehaviour
     public AK.Wwise.Event lancementDeplacementSFX;
     public AK.Wwise.Event finDeplacementSFX;
 
-    [Header("Combat Effects")]
+    [Header("Critical Effects")]
 
     public ParticleSystem coupCritiqueSlashEffect;
     public ParticleSystem coupCritiqueImpactEffect;
+
+    public ParticleSystem coupCritiqueTextEffect;
+
+    [Header("Miss Effects")]
+
+    public ParticleSystem echecEpeeFreineEffect;
+    public ParticleSystem echecImpactEffect;
+
+    public ParticleSystem echecTextEffect;
 
     #region Singleton
 
@@ -74,13 +83,29 @@ public class EffectManager : MonoBehaviour
 
     public IEnumerator PlayCriticalEffects()
     {
-        yield return new WaitForSeconds(.3f);
+        coupCritiqueTextEffect.Play();
+
+        yield return new WaitForSeconds(.8f);
 
         coupCritiqueSlashEffect.Play();
 
         yield return new WaitForSeconds(2.1f);
 
         coupCritiqueImpactEffect.Play();
+        CameraZooming.Instance.ShakeScreen();
+    }
+
+    public IEnumerator PlayMissEffects()
+    {
+        echecTextEffect.Play();
+
+        yield return new WaitForSeconds(1.1f);
+
+        echecEpeeFreineEffect.Play();
+
+        yield return new WaitForSeconds(1.8f);
+
+        echecImpactEffect.Play();
         CameraZooming.Instance.ShakeScreen();
     }
 }

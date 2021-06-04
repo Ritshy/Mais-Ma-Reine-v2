@@ -486,11 +486,14 @@ public class CombatManager : MonoBehaviour
             //myDamageFeedback.text = "-" + (attaquantFM.maxAttackRange * 2).ToString() + (" !!");
             //attaquantDamageEffect.Play();
 
+            LaunchCritiqueEffects();
+
+            yield return new WaitForSeconds(.4f);
+
             myAnim.SetTrigger("DefenseurReceiveDamage");
             myAnim.SetTrigger("LaunchCoupCritique");
 
             coupCritiqueSFX.Post(gameObject);
-            LaunchCritiqueEffects();
 
             yield return new WaitForSeconds(2.4f);
 
@@ -549,12 +552,17 @@ public class CombatManager : MonoBehaviour
             // ICI jouer VFX d'echec critiique
             // ICI jouer SFX d'echec critique
 
-            myAnim.SetTrigger("AttaquantReceiveDamage");
-            myAnim.SetTrigger("LaunchEchecCritique");
-            //echecCritiqueSFX.Post(gameObject);
-
             //myDamageFeedback.text = "-" + defenseurFM.maxCounterAttackRange.ToString() + " !!";
             //defenseurDamageEffect.Play();
+
+            LaunchEchecEffects();
+
+            yield return new WaitForSeconds(.4f);
+
+            myAnim.SetTrigger("AttaquantReceiveDamage");
+            myAnim.SetTrigger("LaunchEchecCritique");
+
+            echecCritiqueSFX.Post(gameObject);
 
             yield return new WaitForSeconds(2f);
 
@@ -586,6 +594,11 @@ public class CombatManager : MonoBehaviour
         {
             EndFightNoDead();
         }
+    }
+
+    public void LaunchEchecEffects()
+    {
+        StartCoroutine(EffectManager.Instance.PlayMissEffects());
     }
 
     public IEnumerator Die(FideleManager deadFM, FideleManager winFM)
