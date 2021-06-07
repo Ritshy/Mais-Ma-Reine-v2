@@ -370,7 +370,7 @@ public class GameManager : MonoBehaviour
         }
         DialogueManager.Instance.myAnim.SetTrigger("triggerDefaiteFin");
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         charismeAmountStatic = territoryBeginCharisme;
 
