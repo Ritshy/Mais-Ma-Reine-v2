@@ -175,6 +175,7 @@ public class RecrutementManager : MonoBehaviour
             GameManager.Instance.isGamePaused = false;
             myAnim.SetBool("isOpen", false);
 
+            myRecruiterFM.GetComponentInChildren<Interaction>().alreadyInteractedList.Remove(myFMToRecruit.GetComponentInChildren<Interaction>());
             myRecruiterFM.GetComponent<AnimationManager>().CheckActionsLeftAmout();
 
             myFMToRecruit = null;
@@ -196,6 +197,7 @@ public class RecrutementManager : MonoBehaviour
                 GameManager.Instance.isGamePaused = false;
                 myAnim.SetBool("isOpen", false);
 
+                myRecruiterFM.GetComponentInChildren<Interaction>().alreadyInteractedList.Remove(myFMToRecruit.GetComponentInChildren<Interaction>());
                 myRecruiterFM.GetComponent<AnimationManager>().CheckActionsLeftAmout();
 
                 myFMToRecruit = null;
@@ -209,6 +211,7 @@ public class RecrutementManager : MonoBehaviour
             GameManager.Instance.isGamePaused = false;
             myAnim.SetBool("isOpen", false);
 
+            myRecruiterFM.GetComponentInChildren<Interaction>().alreadyInteractedList.Remove(myFMToRecruit.GetComponentInChildren<Interaction>());
             myRecruiterFM.GetComponent<AnimationManager>().CheckActionsLeftAmout();
 
             myFMToRecruit = null;

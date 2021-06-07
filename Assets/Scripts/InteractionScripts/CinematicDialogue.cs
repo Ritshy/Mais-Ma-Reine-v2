@@ -95,6 +95,11 @@ public class CinematicDialogue : MonoBehaviour
             lines.Enqueue(line);
         }
 
+        if (currentDialogue.particleToPlay != null)
+        {
+            currentDialogue.particleToPlay.Play();
+        }
+
         StartCoroutine(DisplayNextLine());
     }
 

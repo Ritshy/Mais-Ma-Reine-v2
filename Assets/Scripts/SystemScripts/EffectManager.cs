@@ -25,6 +25,18 @@ public class EffectManager : MonoBehaviour
 
     public ParticleSystem echecTextEffect;
 
+    [Header("Attack Effects")]
+
+    public ParticleSystem attackEpeeSlashEffect;
+
+    public ParticleSystem attackTextEffect;
+
+    [Header("CounterAttack Effects")]
+
+    public ParticleSystem counterAttackEpeeSlashEffect;
+
+    public ParticleSystem counterAttackTextEffect;
+
     #region Singleton
 
     public static EffectManager Instance;
@@ -107,5 +119,23 @@ public class EffectManager : MonoBehaviour
 
         echecImpactEffect.Play();
         CameraZooming.Instance.ShakeScreen();
+    }
+
+    public IEnumerator PlayAttackEffect()
+    {
+        attackTextEffect.Play();
+
+        yield return new WaitForSeconds(1.2f);
+
+        attackEpeeSlashEffect.Play();
+    }
+
+    public IEnumerator PlayCounterAttackEffect()
+    {
+        counterAttackTextEffect.Play();
+
+        yield return new WaitForSeconds(1.7f);
+
+        counterAttackEpeeSlashEffect.Play();
     }
 }

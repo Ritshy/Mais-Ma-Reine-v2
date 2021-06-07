@@ -30,6 +30,10 @@ public class DialogueManager : MonoBehaviour
 
     public bool isInDialogue = false;
 
+    public AK.Wwise.Event territoireWinSFX;
+    public AK.Wwise.Event territoireLooseSFX;
+
+
     #region Singleton
     public static DialogueManager Instance;
 
@@ -103,6 +107,11 @@ public class DialogueManager : MonoBehaviour
         foreach (string line in currentDialogue.myDialogue)
         {
             lines.Enqueue(line);
+        }
+
+        if (currentDialogue.particleToPlay != null)
+        {
+            currentDialogue.particleToPlay.Play();
         }
 
         DisplayNextLine();
@@ -195,5 +204,15 @@ public class DialogueManager : MonoBehaviour
             currentDialogue = null;
         }
         isInDialogue = false;
+    }
+
+    public void PlayWinSFX()
+    {
+        territoireWinSFX.Post(gameObject);
+    }
+
+    public void PlayLooseSFX()
+    {
+        territoireLooseSFX.Post(gameObject);
     }
 }

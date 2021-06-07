@@ -96,7 +96,7 @@ public class Movement : MonoBehaviour
                 //hasMoved = true;
 
                 myAnimationManager.CheckActionsLeftAmout();
-                DragCamera2D.Instance.FollowTargetCamera(myFM.gameObject);
+                StartCoroutine(DragCamera2D.Instance.FollowTargetCamera(myFM.gameObject));
 
                 EffectManager.Instance.EndDeplacement(myFM.transform);
 

@@ -341,12 +341,14 @@ public class CombatManager : MonoBehaviour
                 myAnim.SetTrigger("LaunchAttack");
                 attaqueEpeeSFX.Post(gameObject);
 
+                StartCoroutine(EffectManager.Instance.PlayAttackEffect());
+
                 yield return new WaitForSeconds(0.3f);
 
                 myAnim.SetTrigger("DefenseurReceiveDamage");
                 //attaquantDamageEffect.Play();
 
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(1.2f);
 
                 // Ici jouer Anim dégâts reçus sur defenseur
                 renderTextCombat.text = "- " + attackValue.ToString();
@@ -401,13 +403,15 @@ public class CombatManager : MonoBehaviour
             myAnim.SetTrigger("LaunchCounterAttack");
             contreAttaqueEpeeSFX.Post(gameObject);
 
+            StartCoroutine(EffectManager.Instance.PlayCounterAttackEffect());
+
             yield return new WaitForSeconds(0.3f);
 
             myAnim.SetTrigger("AttaquantReceiveDamage");
 
             //defenseurDamageEffect.Play();
 
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1.2f);
 
             // Ici jouer Anim dégâts reçus sur attaquant
 
