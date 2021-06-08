@@ -707,12 +707,12 @@ public class CombatManager : MonoBehaviour
         }
 
         mortSFX.Post(gameObject);
-        CameraZooming.Instance.ShakeScreen();
 
         isInFight = false;
 
         if (deadFM.myCamp == GameCamps.Fidele)
         {
+            CameraZooming.Instance.ShakeScreen();
             StartCoroutine(GameManager.Instance.CheckIfPlayerLost());
         }
 
