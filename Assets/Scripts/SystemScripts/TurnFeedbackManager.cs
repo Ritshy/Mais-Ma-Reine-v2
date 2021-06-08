@@ -12,27 +12,22 @@ public class TurnFeedbackManager : MonoBehaviour
     private Animator myAnim;
 
     public Image bandeauBG;
-    public Image boutonBG;
-    public Image boutonIcon;
+    public Image boutonTour;
 
     [Header ("Reine")]
-    public Sprite boutonBGReine;
-    public Sprite boutonIconReine;
+    public Sprite boutonTourReine;
     public Sprite bandeauBGReine;
 
     [Header("Roi")]
-    public Sprite boutonBGRoi;
-    public Sprite boutonIconRoi;
+    public Sprite boutonTourRoi;
     public Sprite bandeauBGRoi;
 
     [Header("Bandits")]
-    public Sprite boutonBGBandit;
-    public Sprite boutonIconBandit;
+    public Sprite boutonTourBandit;
     public Sprite bandeauBGBandit;
 
     [Header("Calamité")]
-    public Sprite boutonBGCalamite;
-    public Sprite boutonIconCalamite;
+    public Sprite boutonTourCalamite;
     public Sprite bandeauBGCalamite;
 
     #region Singleton
@@ -72,8 +67,7 @@ public class TurnFeedbackManager : MonoBehaviour
                 myQuestText.enabled = true;
 
                 bandeauBG.sprite = bandeauBGReine;
-                boutonBG.sprite = boutonBGReine;
-                boutonIcon.sprite = boutonIconReine;
+                boutonTour.sprite = boutonTourReine;
 
                 StartCoroutine(ResetFeedback());
                 break;
@@ -83,8 +77,7 @@ public class TurnFeedbackManager : MonoBehaviour
                 myQuestText.enabled = false;
 
                 bandeauBG.sprite = bandeauBGRoi;
-                boutonBG.sprite = boutonBGRoi;
-                boutonIcon.sprite = boutonIconRoi;
+                boutonTour.sprite = boutonTourRoi;
 
                 StartCoroutine(ResetFeedback());
                 break;
@@ -94,8 +87,7 @@ public class TurnFeedbackManager : MonoBehaviour
                 myQuestText.enabled = false;
 
                 bandeauBG.sprite = bandeauBGBandit;
-                boutonBG.sprite = boutonBGBandit;
-                boutonIcon.sprite = boutonIconBandit;
+                boutonTour.sprite = boutonTourBandit;
 
                 StartCoroutine(ResetFeedback());
                 break;
@@ -105,8 +97,7 @@ public class TurnFeedbackManager : MonoBehaviour
                 myQuestText.enabled = false;
 
                 bandeauBG.sprite = bandeauBGBandit;
-                boutonBG.sprite = boutonBGBandit;
-                boutonIcon.sprite = boutonIconBandit;
+                boutonTour.sprite = boutonTourBandit;
 
                 StartCoroutine(ResetFeedback());
                 break;
