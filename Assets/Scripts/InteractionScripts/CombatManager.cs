@@ -53,11 +53,15 @@ public class CombatManager : MonoBehaviour
     public TextMeshProUGUI attaquantHP;
     public ParticleSystem attaquantDamageTextPS;
 
+    public Image attaquantBrasImage;
+
     [Header("Défenseur Bandeau")]
 
     public Image defenseurFideleSprite;
     public TextMeshProUGUI defenseurHP;
     public ParticleSystem defenseurDamageTextPS;
+
+    public Image defenseurBrasImage;
 
     [Header("Effects & Icones")]
 
@@ -65,6 +69,10 @@ public class CombatManager : MonoBehaviour
     public Sprite roiSprite;
     public Sprite calamiteSprite;
     public Sprite banditSprite;
+
+    public Color reineColor;
+    public Color roiColor;
+    public Color banditColor;
 
     //private ParticleSystem myCombatEffect;
 
@@ -199,6 +207,60 @@ public class CombatManager : MonoBehaviour
         attaquantHP.text = attaquantFM.currentHP.ToString();
         defenseurHP.text = defenseurFM.currentHP.ToString();
 
+        switch (attaquantFM.myCamp)
+        {
+            case GameCamps.Fidele:
+                attaquantBrasImage.color = reineColor;
+                break;
+            case GameCamps.Roi:
+                attaquantBrasImage.color = roiColor;
+                break;
+            case GameCamps.Bandit:
+                attaquantBrasImage.color = banditColor;
+                break;
+            case GameCamps.BanditCalamiteux:
+                attaquantBrasImage.color = banditColor;
+                break;
+            case GameCamps.Calamite:
+                attaquantBrasImage.color = banditColor;
+                break;
+            case GameCamps.Villageois:
+                attaquantBrasImage.color = reineColor;
+                break;
+            case GameCamps.Converti:
+                attaquantBrasImage.color = banditColor;
+                break;
+            default:
+                break;
+        }
+
+        switch (defenseurFM.myCamp)
+        {
+            case GameCamps.Fidele:
+                defenseurBrasImage.color = reineColor;
+                break;
+            case GameCamps.Roi:
+                defenseurBrasImage.color = roiColor;
+                break;
+            case GameCamps.Bandit:
+                defenseurBrasImage.color = banditColor;
+                break;
+            case GameCamps.BanditCalamiteux:
+                defenseurBrasImage.color = banditColor;
+                break;
+            case GameCamps.Calamite:
+                defenseurBrasImage.color = banditColor;
+                break;
+            case GameCamps.Villageois:
+                defenseurBrasImage.color = reineColor;
+                break;
+            case GameCamps.Converti:
+                defenseurBrasImage.color = banditColor;
+                break;
+            default:
+                break;
+        }
+
         myAnim.SetBool("OpenCombatBandeau", true);
 
         uiBoutonBastonSFX.Post(gameObject);
@@ -260,6 +322,59 @@ public class CombatManager : MonoBehaviour
         if (attaquantFM.isAlive && defenseurFM.isAlive)
         {
             GameManager.Instance.isGamePaused = true;
+            switch (attaquantFM.myCamp)
+            {
+                case GameCamps.Fidele:
+                    attaquantBrasImage.color = reineColor;
+                    break;
+                case GameCamps.Roi:
+                    attaquantBrasImage.color = roiColor;
+                    break;
+                case GameCamps.Bandit:
+                    attaquantBrasImage.color = banditColor;
+                    break;
+                case GameCamps.BanditCalamiteux:
+                    attaquantBrasImage.color = banditColor;
+                    break;
+                case GameCamps.Calamite:
+                    attaquantBrasImage.color = banditColor;
+                    break;
+                case GameCamps.Villageois:
+                    attaquantBrasImage.color = reineColor;
+                    break;
+                case GameCamps.Converti:
+                    attaquantBrasImage.color = banditColor;
+                    break;
+                default:
+                    break;
+            }
+
+            switch (defenseurFM.myCamp)
+            {
+                case GameCamps.Fidele:
+                    defenseurBrasImage.color = reineColor;
+                    break;
+                case GameCamps.Roi:
+                    defenseurBrasImage.color = roiColor;
+                    break;
+                case GameCamps.Bandit:
+                    defenseurBrasImage.color = banditColor;
+                    break;
+                case GameCamps.BanditCalamiteux:
+                    defenseurBrasImage.color = banditColor;
+                    break;
+                case GameCamps.Calamite:
+                    defenseurBrasImage.color = banditColor;
+                    break;
+                case GameCamps.Villageois:
+                    defenseurBrasImage.color = reineColor;
+                    break;
+                case GameCamps.Converti:
+                    defenseurBrasImage.color = banditColor;
+                    break;
+                default:
+                    break;
+            }
 
             myAnim.SetBool("OpenCombatBandeau", true);
             isInFight = true;
