@@ -235,6 +235,7 @@ public class GameManager : MonoBehaviour
             foreach (FideleManager fm in allMapUnits)
             {
                 fm.GetComponent<AnimationManager>().HideInteractionIcon();
+                fm.GetComponent<AnimationManager>().DarkInteractionIcon();
                 if (fm.myCamp == currentCampTurn)
                 {
                     fm.GetComponentInChildren<MovementEnemy>().hasMoved = false;

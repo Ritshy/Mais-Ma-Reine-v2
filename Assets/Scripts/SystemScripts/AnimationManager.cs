@@ -48,6 +48,7 @@ public class AnimationManager : MonoBehaviour
     void Start()
     {
         UpdateMyReferences();
+        DarkInteractionIcon();
     }
 
     // Update is called once per frame
@@ -266,6 +267,16 @@ public class AnimationManager : MonoBehaviour
         myFM.currentFideleSprite.color = new Color(1f, 1f, 1f, 1f);
     }
     #endregion
+
+    public void DarkInteractionIcon()
+    {
+        myInteraction.myInteractionIcon.color = Color.gray;
+    }
+
+    public void WhiteInteractionIcon()
+    {
+        myInteraction.myInteractionIcon.color = Color.white;
+    }
 
     public void FillAmountHealth()
     {

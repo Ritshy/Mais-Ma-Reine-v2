@@ -167,6 +167,7 @@ public class RaycastInteraction : MonoBehaviour
             foreach (AnimationManager cam in interactionLauncherInteraction.myCollideAnimationManagerList)
             {
                 cam.keepInteractionDisplayed = false;
+                cam.DarkInteractionIcon();
             }
 
             interactionLauncherInteraction.FideleDisplayInteractionFeedbacks();
@@ -212,6 +213,7 @@ public class RaycastInteraction : MonoBehaviour
                     myCollideInteraction.GetComponentInParent<AnimationManager>().ActivateReceiverSelection();
                     myCollideInteraction.GetComponentInParent<AnimationManager>().keepInteractionDisplayed = true;
                     myCollideInteraction.GetComponentInParent<AnimationManager>().DisplayInteraction();
+                    myCollideInteraction.GetComponentInParent<AnimationManager>().WhiteInteractionIcon();
                 }
             }
         }
