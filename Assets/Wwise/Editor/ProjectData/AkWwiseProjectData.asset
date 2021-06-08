@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b311a2bd52a23c4dbdcf8844b631cdf1
     GuidInternal: 
-    m_lastTime: -8585794768975508186
+    m_lastTime: -8585789529230451908
     List:
     - name: Music
       guid: 48a4cb8864459043b88959201dc4d62b
@@ -387,8 +387,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: af4625c0e4e9ed43a62873aec7c92b52
     GuidInternal: 
-    m_lastTime: -8585794768987490512
+    m_lastTime: -8585789529236784536
     List:
+    - name: Degats_Bandits
+      guid: eebfa33be4bdc84c801c0e605ff07ed5
+      id: 1161747339
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Degats_Bandits
+        ObjectType: 3
+        guid: eebfa33be4bdc84c801c0e605ff07ed5
+      Path: Events\Default Work Unit\Degats_Bandits
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Event_Attaque_Ennemi
       guid: d9a91c085849c54cafb2e2e995ec4918
       id: 1367752278
@@ -848,6 +865,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Event_UI_Bouton_Jouer
+      guid: f81b017f2ea797429f1eb16e6cc6b436
+      id: 2850458628
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Event_UI_Bouton_Jouer
+        ObjectType: 3
+        guid: f81b017f2ea797429f1eb16e6cc6b436
+      Path: Events\Default Work Unit\Event_UI_Bouton_Jouer
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_UI_Cadena_Territoire
+      guid: 116acde8441d6e4da9443e0898b580fc
+      id: 2283136221
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Event_UI_Cadena_Territoire
+        ObjectType: 3
+        guid: 116acde8441d6e4da9443e0898b580fc
+      Path: Events\Default Work Unit\Event_UI_Cadena_Territoire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Event_UI_Clique_Bouton_Menu
       guid: 07fad0f7355a6442903b7a4b34cd2418
       id: 1387593318
@@ -896,6 +947,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2268b965fcf01d4082a3c2532fd03fb7
       Path: Events\Default Work Unit\Event_UI_Clique_Territoire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_UI_Defaite
+      guid: 75e845699b262144bcbfeb701efbcf5e
+      id: 2023487047
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Event_UI_Defaite
+        ObjectType: 3
+        guid: 75e845699b262144bcbfeb701efbcf5e
+      Path: Events\Default Work Unit\Event_UI_Defaite
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -981,6 +1049,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: c9712e3c5cb62647b518de6121e59e35
       Path: Events\Default Work Unit\Event_UI_Survole_Bouton
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_UI_Victoire
+      guid: 4d1ad4ef240d4a48ab8b759a49fe11b1
+      id: 2031836382
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Event_UI_Victoire
+        ObjectType: 3
+        guid: 4d1ad4ef240d4a48ab8b759a49fe11b1
+      Path: Events\Default Work Unit\Event_UI_Victoire
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
