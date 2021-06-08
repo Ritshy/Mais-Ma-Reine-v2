@@ -21,8 +21,11 @@ public class ButtonOnOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     {
         defaultImage = GetComponent<Image>().sprite;
 
-        buttonText = GetComponentInChildren<TextMeshProUGUI>();
-        initialTextColor = buttonText.color;
+        if (isTextColorChanging)
+        {
+            buttonText = GetComponentInChildren<TextMeshProUGUI>();
+            initialTextColor = buttonText.color;
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)

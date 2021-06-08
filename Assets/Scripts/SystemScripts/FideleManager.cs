@@ -50,7 +50,7 @@ public class FideleManager : MonoBehaviour
 
     public bool isAllActionsDone = false;
 
-    private List<GameCamps> attackableUnits = new List<GameCamps>();
+    public List<GameCamps> attackableUnits = new List<GameCamps>();
 
 
     private Interaction myInteraction;
