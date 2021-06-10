@@ -10,7 +10,6 @@ public class MenuTerritoireManager : MonoBehaviour
     [Header("Territoire01")]
 
     public GameObject myTerritoire01Disponible;
-    public GameObject myTerritoire01Verrouille;
     public GameObject myTerritoire01Conquis;
 
     [Header("Territoire01")]
@@ -27,7 +26,6 @@ public class MenuTerritoireManager : MonoBehaviour
         if (GameManager.isTerritoire01Completed)
         {
             myTerritoire01Disponible.SetActive(false);
-            myTerritoire01Verrouille.SetActive(false);
             myTerritoire01Conquis.SetActive(true);
 
             myTerritoire02Verrouille.SetActive(false);
@@ -39,7 +37,6 @@ public class MenuTerritoireManager : MonoBehaviour
         else
         {
             myTerritoire01Disponible.SetActive(true);
-            myTerritoire01Verrouille.SetActive(false);
             myTerritoire01Conquis.SetActive(false);
 
             myTerritoire02Verrouille.SetActive(true);

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1104,7 +1104,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1
+    scalar: 0.3
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -6167,7 +6167,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1
+    scalar: 0.3
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -11443,7 +11443,7 @@ ParticleSystem:
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 0
   useUnscaledTime: 0
@@ -11452,7 +11452,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1
+    scalar: 0.3
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -16442,7 +16442,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1
+    scalar: 0.3
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -24722,7 +24722,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1
+    scalar: 0.3
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -30843,7 +30843,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1
+    scalar: 0.3
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -37174,7 +37174,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1
+    scalar: 0.3
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -42869,7 +42869,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1
+    scalar: 0.3
     minScalar: 0
     maxCurve:
       serializedVersion: 2

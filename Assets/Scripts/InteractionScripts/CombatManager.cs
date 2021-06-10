@@ -263,6 +263,9 @@ public class CombatManager : MonoBehaviour
 
         myAnim.SetBool("OpenCombatBandeau", true);
 
+        EffectManager.Instance.versusEffect.Play();
+        CameraZooming.Instance.ShakeScreen();
+
         uiBoutonBastonSFX.Post(gameObject);
 
         defenseurAM.keepInteractionDisplayed = true;
@@ -377,6 +380,10 @@ public class CombatManager : MonoBehaviour
             }
 
             myAnim.SetBool("OpenCombatBandeau", true);
+
+            EffectManager.Instance.versusEffect.Play();
+            CameraZooming.Instance.ShakeScreen();
+
             isInFight = true;
 
             attaquantFideleSprite.sprite = attaquantFM.currentFideleSprite.sprite;
@@ -453,6 +460,12 @@ public class CombatManager : MonoBehaviour
 
                 //myDamageFeedback.text = "-" + attackValue.ToString();
 
+                yield return new WaitForSeconds(.7f);
+
+                EffectManager.Instance.attackTextEffect.Play();
+
+                yield return new WaitForSeconds(.5f);
+
                 myAnim.SetTrigger("LaunchAttack");
                 attaqueEpeeSFX.Post(gameObject);
 
@@ -515,6 +528,13 @@ public class CombatManager : MonoBehaviour
             // ICI jouer VFX de contre-attaque simple
             // ICI jouer SFX de contre-attaque simple
             //myDamageFeedback.text = "-" + counterAttackValue.ToString();
+
+            yield return new WaitForSeconds(.7f);
+
+            EffectManager.Instance.counterAttackTextEffect.Play();
+
+            yield return new WaitForSeconds(.5f);
+
             myAnim.SetTrigger("LaunchCounterAttack");
             contreAttaqueEpeeSFX.Post(gameObject);
 
@@ -605,7 +625,13 @@ public class CombatManager : MonoBehaviour
             //myDamageFeedback.text = "-" + (attaquantFM.maxAttackRange * 2).ToString() + (" !!");
             //attaquantDamageEffect.Play();
 
-            LaunchCritiqueEffects();
+            yield return new WaitForSeconds(.7f);
+
+            EffectManager.Instance.coupCritiqueTextEffect.Play();
+
+            yield return new WaitForSeconds(.5f);
+
+            StartCoroutine(EffectManager.Instance.PlayCriticalEffects());
 
             yield return new WaitForSeconds(.4f);
 
@@ -646,11 +672,6 @@ public class CombatManager : MonoBehaviour
         }
     }
 
-    public void LaunchCritiqueEffects()
-    {
-        StartCoroutine(EffectManager.Instance.PlayCriticalEffects());
-    }
-
     public IEnumerator Missed()
     {
         Debug.Log("Missed " + defenseurFM.name + " " + " " + attaquantFM.name);
@@ -674,7 +695,13 @@ public class CombatManager : MonoBehaviour
             //myDamageFeedback.text = "-" + defenseurFM.maxCounterAttackRange.ToString() + " !!";
             //defenseurDamageEffect.Play();
 
-            LaunchEchecEffects();
+            yield return new WaitForSeconds(.7f);
+
+            EffectManager.Instance.echecTextEffect.Play();
+
+            yield return new WaitForSeconds(.5f);
+
+            StartCoroutine(EffectManager.Instance.PlayMissEffects());
 
             yield return new WaitForSeconds(.4f);
 
@@ -713,11 +740,6 @@ public class CombatManager : MonoBehaviour
         {
             EndFightNoDead();
         }
-    }
-
-    public void LaunchEchecEffects()
-    {
-        StartCoroutine(EffectManager.Instance.PlayMissEffects());
     }
 
     public IEnumerator Die(FideleManager deadFM, FideleManager winFM)

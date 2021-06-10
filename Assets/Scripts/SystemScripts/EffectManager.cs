@@ -11,6 +11,10 @@ public class EffectManager : MonoBehaviour
     public AK.Wwise.Event lancementDeplacementSFX;
     public AK.Wwise.Event finDeplacementSFX;
 
+    [Header("Launching Combat Effect")]
+
+    public ParticleSystem versusEffect;
+
     [Header("Critical Effects")]
 
     public ParticleSystem coupCritiqueSlashEffect;
@@ -95,7 +99,7 @@ public class EffectManager : MonoBehaviour
 
     public IEnumerator PlayCriticalEffects()
     {
-        coupCritiqueTextEffect.Play();
+        //coupCritiqueTextEffect.Play();
 
         yield return new WaitForSeconds(.8f);
 
@@ -109,7 +113,7 @@ public class EffectManager : MonoBehaviour
 
     public IEnumerator PlayMissEffects()
     {
-        echecTextEffect.Play();
+        //echecTextEffect.Play();
 
         yield return new WaitForSeconds(1.1f);
 
@@ -123,7 +127,7 @@ public class EffectManager : MonoBehaviour
 
     public IEnumerator PlayAttackEffect()
     {
-        attackTextEffect.Play();
+        //attackTextEffect.Play();
 
         yield return new WaitForSeconds(1.2f);
 
@@ -132,7 +136,7 @@ public class EffectManager : MonoBehaviour
 
     public IEnumerator PlayCounterAttackEffect()
     {
-        counterAttackTextEffect.Play();
+        //counterAttackTextEffect.Play();
 
         yield return new WaitForSeconds(1.7f);
 
