@@ -179,36 +179,6 @@
 						<ActiveSource Name="Quête_terminée_2" ID="{26EF3BD2-60AD-4BAA-A34A-61A0A20255B9}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Souris-passe_Bouton_UI" ID="{32EB3E9E-0C44-4612-9B61-B98953ABCBD7}" ShortID="901520367">
-					<PropertyList>
-						<Property Name="MakeUpGain" Type="Real64">
-							<ValueList>
-								<Value>-4</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Souris-passe_Bouton_UI" ID="{5BB70D6B-9039-4A61-B698-EB0C9EE113D3}">
-							<Language>SFX</Language>
-							<AudioFile>Souris-passe_Bouton_UI.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="928294472"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Souris-passe_Bouton_UI" ID="{5BB70D6B-9039-4A61-B698-EB0C9EE113D3}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Vent_Pause" ID="{53A95AD8-2722-4EF7-96B2-BD6CDD5B0A11}" ShortID="222478192">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -261,80 +231,6 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="attaque_épée" ID="{138B080B-B63B-471C-BB95-692603A46B9B}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="click_bouton" ID="{F6E6D110-3AE7-48B7-AE9F-713310D93889}" ShortID="749730338">
-					<PropertyList>
-						<Property Name="MakeUpGain" Type="Real64">
-							<ValueList>
-								<Value>-15</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="click_bouton" ID="{35A0CF25-AF3E-4C5D-A5A4-60F986259AE5}">
-							<Language>SFX</Language>
-							<AudioFile>click_bouton.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="874339176"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="Bandeau_fidele_lefttoright_" ID="{3DC60343-9417-4C64-828C-2BA8B6FCEA4E}">
-							<Language>SFX</Language>
-							<AudioFile>Bandeau_fidele_lefttoright_.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="307925096"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="Bandeau_fidele_righttoleft" ID="{5D499EFA-EA0D-4472-90F3-EBF2C03CFDA4}">
-							<Language>SFX</Language>
-							<AudioFile>Bandeau_fidele_righttoleft.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="381637317"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="click_bouton" ID="{35A0CF25-AF3E-4C5D-A5A4-60F986259AE5}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="réussite_critique" ID="{710E13C5-B6EA-4FCF-A987-A61F7F122062}" ShortID="416488793">
-					<PropertyList>
-						<Property Name="MakeUpGain" Type="Real64">
-							<ValueList>
-								<Value>-7</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="réussite_critique" ID="{D76E0E2C-5E69-4D43-913F-7450B431A2D6}">
-							<Language>SFX</Language>
-							<AudioFile>réussite_critique.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="705916552"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="réussite_critique" ID="{D76E0E2C-5E69-4D43-913F-7450B431A2D6}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="PNJ_rejoint_camp" ID="{5DB1D17C-3344-402C-A84E-4EA33945C593}" ShortID="782999640">
@@ -2641,29 +2537,6 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</RandomSequenceContainer>
-				<Sound Name="echec_critique_2" ID="{5A1B646D-6CF7-4C4E-A02B-288786C93ED9}" ShortID="1052975523">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="echec_critique_2" ID="{706842FD-164E-4936-B987-A02DBEADFDB8}">
-							<Language>SFX</Language>
-							<AudioFile>echec_critique_2.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="615781091"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="echec_critique_2" ID="{706842FD-164E-4936-B987-A02DBEADFDB8}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Clique_territoire" ID="{45ED4D8D-8E3A-45A8-AF06-655A7C1F714D}" ShortID="727313045">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
@@ -3284,29 +3157,6 @@
 						<ActiveSource Name="Musique Territoire" ID="{8E7E1461-DE50-46E1-9623-3F0081CE168B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Victoire" ID="{BAEE8E6E-8CD6-4608-9B71-054FEBF9FF6F}" ShortID="945193523">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Victoire" ID="{22D87820-E352-49DA-AB26-7775367875A9}">
-							<Language>SFX</Language>
-							<AudioFile>Victoire.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="586531358"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Victoire" ID="{22D87820-E352-49DA-AB26-7775367875A9}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Défaite" ID="{735434CD-CC39-4418-97F7-47E5A13A498E}" ShortID="575557780">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -3754,6 +3604,1043 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</RandomSequenceContainer>
+				<Sound Name="Survol_Bouton" ID="{E8C92A8B-AA02-4EB5-9648-C9627ADFC6F9}" ShortID="622592543">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Survol_Bouton" ID="{2CF72DF5-9610-4387-B20E-E527FEEEF9F0}">
+							<Language>SFX</Language>
+							<AudioFile>Survol_Bouton.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="218474570"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Survol_Bouton" ID="{2CF72DF5-9610-4387-B20E-E527FEEEF9F0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Folder Name="Echec_Critique" ID="{AD373472-34B6-4C32-93EC-B1CA997C020B}" ShortID="194545212">
+					<ChildrenList>
+						<Sound Name="Choqué" ID="{1F8E3260-52C9-4B91-9DAE-1BB41EBF0BA4}" ShortID="621004650">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Choqué" ID="{2B992898-EA0F-4390-A846-134532C816D3}">
+									<Language>SFX</Language>
+									<AudioFile>Choqué.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="331702358"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Choqué" ID="{2B992898-EA0F-4390-A846-134532C816D3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="frein" ID="{1B7D9224-3606-46E0-ACF6-BE7059C89B1B}" ShortID="610017965">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="frein" ID="{A0546C00-F31D-474C-8C2C-FBCD1CFF993A}">
+									<Language>SFX</Language>
+									<AudioFile>frein.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="246005697"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="frein" ID="{A0546C00-F31D-474C-8C2C-FBCD1CFF993A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Lancement_Epee" ID="{8AD587F2-045F-4985-B5B5-4D9E2462A646}" ShortID="599381915">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lancement_Epee" ID="{A6DACA47-6525-47D7-A2E5-57EF96DB99C8}">
+									<Language>SFX</Language>
+									<AudioFile>Lancement_Epee.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="498663839"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Lancement_Epee" ID="{A6DACA47-6525-47D7-A2E5-57EF96DB99C8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Virages_Epee" ID="{0EF53A84-0AF7-4443-B806-346F7088FFBD}" ShortID="952546658">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Virages_Epee" ID="{9729DF07-FA8E-48CA-AB04-78412376547E}">
+									<Language>SFX</Language>
+									<AudioFile>Virages_Epee.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="783263973"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Virages_Epee" ID="{9729DF07-FA8E-48CA-AB04-78412376547E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Degats_Critique" ID="{6B37C61C-DAC5-4CA6-9600-4A16BF87EE7A}" ShortID="742937235">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Attaque-Critique_1" ID="{5048362A-642C-44E6-8D64-1B5F9FCA7DEE}" ShortID="839339736">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Attaque-Critique_1" ID="{E0FC9BB5-BC0A-465E-941F-91B2E7FD7D61}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque-Critique_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="441120118"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Attaque-Critique_1" ID="{E0FC9BB5-BC0A-465E-941F-91B2E7FD7D61}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Attaque-Critique_2" ID="{6A1E7860-1421-40EC-9816-5D643020935F}" ShortID="622532018">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Attaque-Critique_2" ID="{F24C1EE0-CA2C-4E59-BACE-3CFF44725611}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque-Critique_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="788123215"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Attaque-Critique_2" ID="{F24C1EE0-CA2C-4E59-BACE-3CFF44725611}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Attaque-Critique_3" ID="{7F51BC39-C952-4F74-A7D8-FE21477992C3}" ShortID="156642159">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Attaque-Critique_3" ID="{4F64275E-465A-4D5B-9DB5-F32F407C8E1D}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque-Critique_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1018571755"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Attaque-Critique_3" ID="{4F64275E-465A-4D5B-9DB5-F32F407C8E1D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Attaque-Critique_4" ID="{2E60F4D4-A760-4633-BC4B-1695C2C831C5}" ShortID="57565568">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Attaque-Critique_4" ID="{69098854-3B1F-41F8-95DC-3BC79AFB3303}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque-Critique_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="584103997"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Attaque-Critique_4" ID="{69098854-3B1F-41F8-95DC-3BC79AFB3303}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Attaque-Critique_5" ID="{F01084F5-C416-474C-96CC-9D635DD2A0AA}" ShortID="1044090949">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Attaque-Critique_5" ID="{2DB06BFE-C493-44DF-A9F1-31DA74FAD850}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque-Critique_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="93719553"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Attaque-Critique_5" ID="{2DB06BFE-C493-44DF-A9F1-31DA74FAD850}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Attaque-Critique_6" ID="{A90C8DC7-3AD6-4176-8EC0-9EED3B93A84A}" ShortID="848709275">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Attaque-Critique_6" ID="{20B1C632-05FC-46AC-915A-3E71C7EE696F}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque-Critique_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="111717080"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Attaque-Critique_6" ID="{20B1C632-05FC-46AC-915A-3E71C7EE696F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Reussite_Critique" ID="{A9152A8A-19A1-4A89-8A05-3B4C3C22F4E2}" ShortID="916057275">
+					<ChildrenList>
+						<Sound Name="ReussiteCritique_BackDash" ID="{4169DA83-8D0B-4C98-9547-5D3290C9FB4F}" ShortID="562597376">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ReussiteCritique_BackDash" ID="{77FD4598-6431-4A20-85D6-1904A916766F}">
+									<Language>SFX</Language>
+									<AudioFile>ReussiteCritique_BackDash.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="35933807"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ReussiteCritique_BackDash" ID="{77FD4598-6431-4A20-85D6-1904A916766F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ReussiteCritique_DegatsEnnemi" ID="{A4A4FEC5-5C68-4819-A59D-7DD85E2881FB}" ShortID="520717293">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ReussiteCritique_DegatsEnnemi" ID="{B86B7093-F878-401F-9861-FB9557108E6A}">
+									<Language>SFX</Language>
+									<AudioFile>ReussiteCritique_DegatsEnnemi.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="517059369"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ReussiteCritique_DegatsEnnemi" ID="{B86B7093-F878-401F-9861-FB9557108E6A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ReussiteCritique_slash" ID="{D7F3173C-987A-4727-B35A-5DB751564647}" ShortID="92347525">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ReussiteCritique_slash" ID="{3ADA54B6-113A-4ECE-85A0-1E141A1E2C14}">
+									<Language>SFX</Language>
+									<AudioFile>ReussiteCritique_slash.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1068584603"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ReussiteCritique_slash" ID="{3ADA54B6-113A-4ECE-85A0-1E141A1E2C14}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Victoire" ID="{CD73887D-6AA2-4A9D-BF19-2F7360854ACB}" ShortID="656265528">
+					<ChildrenList>
+						<Sound Name="Victoire_Confettis" ID="{CE753ECD-690A-41D6-844F-DDEE92ACB782}" ShortID="979826910">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Victoire_Confettis" ID="{9082AB86-B52C-4270-9DF3-781DA5DA3683}">
+									<Language>SFX</Language>
+									<AudioFile>Victoire_Confettis.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="565371858"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Victoire_Confettis" ID="{9082AB86-B52C-4270-9DF3-781DA5DA3683}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Victoire_Trompette" ID="{93CD3884-2F70-42EB-9045-D63711B30AEA}" ShortID="47421917">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Victoire_Trompette" ID="{F7BDDA05-9BA5-449F-8D3A-1303CEAC49E9}">
+									<Language>SFX</Language>
+									<AudioFile>Victoire_Trompette.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="821400292"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Victoire_Trompette" ID="{F7BDDA05-9BA5-449F-8D3A-1303CEAC49E9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Yaourt" ID="{C0740D1B-9956-4D94-A437-C3D67DFB6399}" ShortID="746229956">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Elya" ID="{7DE1FE88-3C70-4376-BA4C-C9F8819EC2CB}" ShortID="325882133">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Yaourt_Elya_1" ID="{FA93A598-2F11-4FB8-AFB4-ED312BDFB578}" ShortID="780160282">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Elya_1" ID="{F31C3D5C-CC09-4E86-B674-146EBFB4521D}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Elya_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="229046659"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Elya_1" ID="{F31C3D5C-CC09-4E86-B674-146EBFB4521D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Elya_2" ID="{23B9A037-9DFB-4500-B416-AB88D2BB68D7}" ShortID="468824447">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Elya_2" ID="{DFBCC11B-3772-493F-BB58-CDAF0062E6BE}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Elya_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="826899008"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Elya_2" ID="{DFBCC11B-3772-493F-BB58-CDAF0062E6BE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Elya_3" ID="{5B88E90A-EC13-489D-9F99-A19D7423D29A}" ShortID="809557691">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Elya_3" ID="{AE63AD2A-6F07-416F-83B4-9E486F9D9635}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Elya_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="598799149"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Elya_3" ID="{AE63AD2A-6F07-416F-83B4-9E486F9D9635}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Elya_4" ID="{11B5AD37-1BA9-41DB-9431-D38381A692E5}" ShortID="694881594">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Elya_4" ID="{E9F1F1D4-511D-47CC-B889-75B321677774}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Elya_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="916249214"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Elya_4" ID="{E9F1F1D4-511D-47CC-B889-75B321677774}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Elya_5" ID="{7D262D45-8527-4682-A898-5E871F970E99}" ShortID="583798288">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Elya_5" ID="{C160C5F1-D3C0-49E1-AA1B-4EB26F7B505B}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Elya_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="196553810"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Elya_5" ID="{C160C5F1-D3C0-49E1-AA1B-4EB26F7B505B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Reine" ID="{507629AF-2324-4FCF-8119-9F175ECB99A6}" ShortID="234019211">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Yaourt_Reine_1" ID="{21A76954-AF0E-43A3-9D5B-4F54230ECB0E}" ShortID="206442894">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Reine_1" ID="{7E8483F7-F9B1-4EE7-B80F-10338997105E}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Reine_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="26331471"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Reine_1" ID="{7E8483F7-F9B1-4EE7-B80F-10338997105E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Reine_2" ID="{31B06034-D74C-4DEF-99E0-EC64271D0DDC}" ShortID="1060238374">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Reine_2" ID="{DCCEB681-9B89-4AF0-966D-7361635214D8}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Reine_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="85998294"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Reine_2" ID="{DCCEB681-9B89-4AF0-966D-7361635214D8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Reine_3" ID="{2F3BFF9F-DE03-4877-8F48-E3B5D7538636}" ShortID="339605516">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Reine_3" ID="{30F26A91-6875-4303-8A0E-387162F9BAA6}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Reine_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="564535459"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Reine_3" ID="{30F26A91-6875-4303-8A0E-387162F9BAA6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Reine_4" ID="{069DD10C-A72E-4D23-9DA4-2660F1A4622D}" ShortID="602582817">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Reine_4" ID="{2EBBC535-447E-46BC-AE90-BA3D897A4198}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Reine_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="267852050"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Reine_4" ID="{2EBBC535-447E-46BC-AE90-BA3D897A4198}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Reine_5" ID="{CBBD121E-20D1-4345-8232-6B656F7A0E0C}" ShortID="1041487994">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Reine_5" ID="{4EC76096-D547-4AD9-8C81-D1CFB90BD12F}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Reine_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="981145953"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Reine_5" ID="{4EC76096-D547-4AD9-8C81-D1CFB90BD12F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Bandit" ID="{97C22324-24A3-40B2-86A2-965E3A960EFC}" ShortID="686719501">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Yaourt_Bandit_1" ID="{09BCB9A7-52AB-40BD-A913-DDF9415F642E}" ShortID="729001431">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Bandit_1" ID="{C1285952-B17B-42BA-91AF-4922849F194E}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Bandit_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="928171190"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Bandit_1" ID="{C1285952-B17B-42BA-91AF-4922849F194E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Bandit_2" ID="{A1C69B82-96C7-4105-84E8-FBAD40205730}" ShortID="991231000">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Bandit_2" ID="{18E57F58-79C5-4DA0-ABB6-863BC6721ECE}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Bandit_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="219315311"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Bandit_2" ID="{18E57F58-79C5-4DA0-ABB6-863BC6721ECE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Bandit_3" ID="{561E8828-2DB6-40EF-BADA-F508FB3CDBD1}" ShortID="854619815">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Bandit_3" ID="{AE0825C5-DDF9-4CDE-AE43-7F5524149C96}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Bandit_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="973317841"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Bandit_3" ID="{AE0825C5-DDF9-4CDE-AE43-7F5524149C96}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Bandit_4" ID="{C79C5685-A82D-4C7E-B845-FE475331FAC1}" ShortID="718707725">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Bandit_4" ID="{C6E5913F-7F72-420B-89D3-4140B29C0075}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Bandit_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="400437196"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Bandit_4" ID="{C6E5913F-7F72-420B-89D3-4140B29C0075}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Bandit_5" ID="{4EAE181F-21DD-421F-B8CF-55D117C869BA}" ShortID="557539847">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Bandit_5" ID="{8230D4F1-6370-490D-9D41-262CCE0611B2}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Bandit_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="301909348"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Bandit_5" ID="{8230D4F1-6370-490D-9D41-262CCE0611B2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Soldat" ID="{00C70A77-F642-4958-B735-CF22B149726E}" ShortID="356894171">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Yaourt_Soldat_1" ID="{971FAE88-F7DF-4006-BE6B-32F07EE6F57C}" ShortID="20385619">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Soldat_1" ID="{FAF6F47F-1BAB-4602-870A-F39F98B1F065}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Soldat_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="358868356"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Soldat_1" ID="{FAF6F47F-1BAB-4602-870A-F39F98B1F065}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Soldat_2" ID="{89FE81CE-48F5-4088-B6DA-EBBFD1C69B53}" ShortID="318911708">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Soldat_2" ID="{A8B673C1-509F-4AC6-8430-83E4BDDA8CA0}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Soldat_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="798676643"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Soldat_2" ID="{A8B673C1-509F-4AC6-8430-83E4BDDA8CA0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Soldat_3" ID="{2B26A79F-C5D1-4F00-AB09-AE87DA994681}" ShortID="827154155">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Soldat_3" ID="{CBF8B315-3162-4837-BD36-29207003F29B}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Soldat_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="231610154"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Soldat_3" ID="{CBF8B315-3162-4837-BD36-29207003F29B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Soldat_4" ID="{200E3B8A-5857-4161-9862-239CC3F8CD88}" ShortID="100324046">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Soldat_4" ID="{DF052FA9-33C5-44D8-9B16-ACE4BE4C168A}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Soldat_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="461361420"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Soldat_4" ID="{DF052FA9-33C5-44D8-9B16-ACE4BE4C168A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Fidele" ID="{D79D0510-5820-44CD-8597-5942ABEEFD6E}" ShortID="101862062">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Yaourt_Fidele_1" ID="{7BE335C3-70D0-466F-9218-2095640CCC71}" ShortID="937596035">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Fidele_1" ID="{15BA9AB4-0450-45BB-B39C-F89AC7ED6925}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Fidele_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="661699739"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Fidele_1" ID="{15BA9AB4-0450-45BB-B39C-F89AC7ED6925}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Fidele_2" ID="{4B466E83-C2AE-41A9-9185-37AF073510DF}" ShortID="291052301">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Fidele_2" ID="{1C6C130B-320B-4157-8CA7-4E2499AD9E8B}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Fidele_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="214736096"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Fidele_2" ID="{1C6C130B-320B-4157-8CA7-4E2499AD9E8B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Fidele_3" ID="{73708B26-4B23-4DEA-9D98-19578EC2E3BB}" ShortID="818213325">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Fidele_3" ID="{14365CE1-C614-4817-AA92-36D72B7FAB96}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Fidele_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="173663893"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Fidele_3" ID="{14365CE1-C614-4817-AA92-36D72B7FAB96}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Fidele_4" ID="{5A1FF3A0-5055-42E2-AC4E-C4945446F642}" ShortID="83261867">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Fidele_4" ID="{FFA36CB8-D067-4290-B6BF-9D632B1FFADE}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Fidele_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="129428457"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Fidele_4" ID="{FFA36CB8-D067-4290-B6BF-9D632B1FFADE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Fidele_5" ID="{F3D69AD2-04D4-40BE-9BA8-DC247630C98D}" ShortID="813172296">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Fidele_5" ID="{E6767270-3227-4966-AE8D-CFEDFB864C15}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Fidele_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="721737697"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Fidele_5" ID="{E6767270-3227-4966-AE8D-CFEDFB864C15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Sound Name="click_bouton" ID="{F65A91BA-7E65-409B-8DD6-D12FA4F39C02}" ShortID="53379557">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="click_bouton" ID="{5C68F919-07E8-4BCE-AC6B-9081EEF16D2E}">
+							<Language>SFX</Language>
+							<AudioFile>click_bouton.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="874339176"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="click_bouton" ID="{5C68F919-07E8-4BCE-AC6B-9081EEF16D2E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

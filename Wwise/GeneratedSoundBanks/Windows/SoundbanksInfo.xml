@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="2650510870">
+		<SoundBank Id="393239870" Language="SFX" Hash="3522452689">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -256,11 +256,63 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1779567033" Name="Event_Echec_Critique" ObjectPath="\Events\Default Work Unit\Event_Echec_Critique" DurationType="OneShot" DurationMin="3.614458" DurationMax="3.614458">
+				<Event Id="1024705842" Name="Event_Echec_Choque" ObjectPath="\Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Choque" DurationType="OneShot" DurationMin="1.101995" DurationMax="1.101995">
 					<IncludedMemoryFiles>
-						<File Id="615781091" Language="SFX">
-							<ShortName>echec_critique_2.wav</ShortName>
-							<Path>SFX\echec_critique_2_10C4C929.wem</Path>
+						<File Id="331702358" Language="SFX">
+							<ShortName>Choqué.wav</ShortName>
+							<Path>SFX\Choqué_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2334563671" Name="Event_Echec_Degats" ObjectPath="\Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Degats" DurationType="OneShot" DurationMin="0.504399" DurationMax="1.321179">
+					<IncludedMemoryFiles>
+						<File Id="93719553" Language="SFX">
+							<ShortName>Attaque-Critique_5.wav</ShortName>
+							<Path>SFX\Attaque-Critique_5_10C4C929.wem</Path>
+						</File>
+						<File Id="111717080" Language="SFX">
+							<ShortName>Attaque-Critique_6.wav</ShortName>
+							<Path>SFX\Attaque-Critique_6_10C4C929.wem</Path>
+						</File>
+						<File Id="441120118" Language="SFX">
+							<ShortName>Attaque-Critique_1.wav</ShortName>
+							<Path>SFX\Attaque-Critique_1_10C4C929.wem</Path>
+						</File>
+						<File Id="584103997" Language="SFX">
+							<ShortName>Attaque-Critique_4.wav</ShortName>
+							<Path>SFX\Attaque-Critique_4_10C4C929.wem</Path>
+						</File>
+						<File Id="788123215" Language="SFX">
+							<ShortName>Attaque-Critique_2.wav</ShortName>
+							<Path>SFX\Attaque-Critique_2_10C4C929.wem</Path>
+						</File>
+						<File Id="1018571755" Language="SFX">
+							<ShortName>Attaque-Critique_3.wav</ShortName>
+							<Path>SFX\Attaque-Critique_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2292456063" Name="Event_Echec_Frein" ObjectPath="\Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Frein" DurationType="OneShot" DurationMin="0.652993" DurationMax="0.652993">
+					<IncludedMemoryFiles>
+						<File Id="246005697" Language="SFX">
+							<ShortName>frein.wav</ShortName>
+							<Path>SFX\frein_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1411219000" Name="Event_Echec_Lancement_Epee" ObjectPath="\Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Lancement_Epee" DurationType="OneShot" DurationMin="0.420045" DurationMax="0.420045">
+					<IncludedMemoryFiles>
+						<File Id="498663839" Language="SFX">
+							<ShortName>Lancement_Epee.wav</ShortName>
+							<Path>SFX\Lancement_Epee_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3142964213" Name="Event_Echec_Virage_Epee" ObjectPath="\Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Virage_Epee" DurationType="OneShot" DurationMin="0.407347" DurationMax="0.407347">
+					<IncludedMemoryFiles>
+						<File Id="783263973" Language="SFX">
+							<ShortName>Virages_Epee.wav</ShortName>
+							<Path>SFX\Virages_Epee_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -516,11 +568,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4014485723" Name="Event_Reussite_Critique" ObjectPath="\Events\Default Work Unit\Event_Reussite_Critique" DurationType="OneShot" DurationMin="2.124490" DurationMax="2.124490">
+				<Event Id="540293294" Name="Event_Reussite_BackDash" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_BackDash" DurationType="OneShot" DurationMin="0.140998" DurationMax="0.140998">
 					<IncludedMemoryFiles>
-						<File Id="705916552" Language="SFX">
-							<ShortName>réussite_critique.wav</ShortName>
-							<Path>SFX\réussite_critique_10C4C929.wem</Path>
+						<File Id="35933807" Language="SFX">
+							<ShortName>ReussiteCritique_BackDash.wav</ShortName>
+							<Path>SFX\ReussiteCritique_BackDash_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3702005869" Name="Event_Reussite_DegatsEnnemi" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_DegatsEnnemi" DurationType="OneShot" DurationMin="2.671995" DurationMax="2.671995">
+					<IncludedMemoryFiles>
+						<File Id="517059369" Language="SFX">
+							<ShortName>ReussiteCritique_DegatsEnnemi.wav</ShortName>
+							<Path>SFX\ReussiteCritique_DegatsEnnemi_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4292435174" Name="Event_Reussite_Slash" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_Slash" DurationType="OneShot" DurationMin="0.878005" DurationMax="0.878005">
+					<IncludedMemoryFiles>
+						<File Id="1068584603" Language="SFX">
+							<ShortName>ReussiteCritique_slash.wav</ShortName>
+							<Path>SFX\ReussiteCritique_slash_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -540,11 +608,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1387593318" Name="Event_UI_Clique_Bouton_Menu" ObjectPath="\Events\Default Work Unit\Event_UI_Clique_Bouton_Menu" DurationType="OneShot" DurationMin="0.225542" DurationMax="0.225542">
+				<Event Id="2850458628" Name="Event_UI_Bouton_Jouer" ObjectPath="\Events\Default Work Unit\Event_UI_Bouton_Jouer" DurationType="OneShot" DurationMin="2.210408" DurationMax="2.210408">
 					<IncludedMemoryFiles>
-						<File Id="928294472" Language="SFX">
-							<ShortName>Souris-passe_Bouton_UI.wav</ShortName>
-							<Path>SFX\Souris-passe_Bouton_UI_10C4C929.wem</Path>
+						<File Id="293727232" Language="SFX">
+							<ShortName>click_bouton_Jouer.wav</ShortName>
+							<Path>SFX\click_bouton_Jouer_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2283136221" Name="Event_UI_Cadena_Territoire" ObjectPath="\Events\Default Work Unit\Event_UI_Cadena_Territoire" DurationType="OneShot" DurationMin="1.450292" DurationMax="1.450292">
+					<IncludedMemoryFiles>
+						<File Id="1021016572" Language="SFX">
+							<ShortName>Cadena Territoire 2.wav</ShortName>
+							<Path>SFX\Cadena Territoire 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3804404592" Name="Event_UI_Clique_Bouton" ObjectPath="\Events\Default Work Unit\Event_UI_Clique_Bouton" DurationType="OneShot" DurationMin="1.450292" DurationMax="1.450292">
+					<IncludedMemoryFiles>
+						<File Id="874339176" Language="SFX">
+							<ShortName>click_bouton.wav</ShortName>
+							<Path>SFX\click_bouton_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -596,19 +680,143 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3384763883" Name="Event_UI_Survole_Bouton" ObjectPath="\Events\Default Work Unit\Event_UI_Survole_Bouton" DurationType="OneShot" DurationMin="0.225542" DurationMax="0.225542">
+				<Event Id="3384763883" Name="Event_UI_Survole_Bouton" ObjectPath="\Events\Default Work Unit\Event_UI_Survole_Bouton" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000">
 					<IncludedMemoryFiles>
-						<File Id="928294472" Language="SFX">
-							<ShortName>Souris-passe_Bouton_UI.wav</ShortName>
-							<Path>SFX\Souris-passe_Bouton_UI_10C4C929.wem</Path>
+						<File Id="218474570" Language="SFX">
+							<ShortName>Survol_Bouton.wav</ShortName>
+							<Path>SFX\Survol_Bouton_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2031836382" Name="Event_UI_Victoire" ObjectPath="\Events\Default Work Unit\Event_UI_Victoire" DurationType="OneShot" DurationMin="4.143401" DurationMax="4.143401">
+				<Event Id="3729609441" Name="Event_Victoire_Confettis" ObjectPath="\Events\Default Work Unit\Folder_Victoire\Event_Victoire_Confettis" DurationType="OneShot" DurationMin="3.195374" DurationMax="3.195374">
 					<IncludedMemoryFiles>
-						<File Id="586531358" Language="SFX">
-							<ShortName>Victoire.wav</ShortName>
-							<Path>SFX\Victoire_10C4C929.wem</Path>
+						<File Id="565371858" Language="SFX">
+							<ShortName>Victoire_Confettis.wav</ShortName>
+							<Path>SFX\Victoire_Confettis_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3917464674" Name="Event_Victoire_Trompette" ObjectPath="\Events\Default Work Unit\Folder_Victoire\Event_Victoire_Trompette" DurationType="OneShot" DurationMin="1.772404" DurationMax="1.772404">
+					<IncludedMemoryFiles>
+						<File Id="821400292" Language="SFX">
+							<ShortName>Victoire_Trompette.wav</ShortName>
+							<Path>SFX\Victoire_Trompette_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4256429855" Name="Event_Yaourt_Bandit" ObjectPath="\Events\Default Work Unit\Event_Yaourt_Bandit" DurationType="OneShot" DurationMin="1.190227" DurationMax="3.105850">
+					<IncludedMemoryFiles>
+						<File Id="219315311" Language="SFX">
+							<ShortName>Yaourt_Bandit_2.wav</ShortName>
+							<Path>SFX\Yaourt_Bandit_2_10C4C929.wem</Path>
+						</File>
+						<File Id="301909348" Language="SFX">
+							<ShortName>Yaourt_Bandit_5.wav</ShortName>
+							<Path>SFX\Yaourt_Bandit_5_10C4C929.wem</Path>
+						</File>
+						<File Id="400437196" Language="SFX">
+							<ShortName>Yaourt_Bandit_4.wav</ShortName>
+							<Path>SFX\Yaourt_Bandit_4_10C4C929.wem</Path>
+						</File>
+						<File Id="928171190" Language="SFX">
+							<ShortName>Yaourt_Bandit_1.wav</ShortName>
+							<Path>SFX\Yaourt_Bandit_1_10C4C929.wem</Path>
+						</File>
+						<File Id="973317841" Language="SFX">
+							<ShortName>Yaourt_Bandit_3.wav</ShortName>
+							<Path>SFX\Yaourt_Bandit_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1791947516" Name="Event_Yaourt_Elya" ObjectPath="\Events\Default Work Unit\Event_Yaourt_Elya" DurationType="OneShot" DurationMin="1.420159" DurationMax="2.485760">
+					<IncludedMemoryFiles>
+						<File Id="196553810" Language="SFX">
+							<ShortName>Yaourt_Elya_5.wav</ShortName>
+							<Path>SFX\Yaourt_Elya_5_10C4C929.wem</Path>
+						</File>
+						<File Id="229046659" Language="SFX">
+							<ShortName>Yaourt_Elya_1.wav</ShortName>
+							<Path>SFX\Yaourt_Elya_1_10C4C929.wem</Path>
+						</File>
+						<File Id="598799149" Language="SFX">
+							<ShortName>Yaourt_Elya_3.wav</ShortName>
+							<Path>SFX\Yaourt_Elya_3_10C4C929.wem</Path>
+						</File>
+						<File Id="826899008" Language="SFX">
+							<ShortName>Yaourt_Elya_2.wav</ShortName>
+							<Path>SFX\Yaourt_Elya_2_10C4C929.wem</Path>
+						</File>
+						<File Id="916249214" Language="SFX">
+							<ShortName>Yaourt_Elya_4.wav</ShortName>
+							<Path>SFX\Yaourt_Elya_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1826551178" Name="Event_Yaourt_Fidele" ObjectPath="\Events\Default Work Unit\Event_Yaourt_Fidele" DurationType="OneShot" DurationMin="0.997846" DurationMax="1.728821">
+					<IncludedMemoryFiles>
+						<File Id="129428457" Language="SFX">
+							<ShortName>Yaourt_Fidele_4.wav</ShortName>
+							<Path>SFX\Yaourt_Fidele_4_10C4C929.wem</Path>
+						</File>
+						<File Id="173663893" Language="SFX">
+							<ShortName>Yaourt_Fidele_3.wav</ShortName>
+							<Path>SFX\Yaourt_Fidele_3_10C4C929.wem</Path>
+						</File>
+						<File Id="214736096" Language="SFX">
+							<ShortName>Yaourt_Fidele_2.wav</ShortName>
+							<Path>SFX\Yaourt_Fidele_2_10C4C929.wem</Path>
+						</File>
+						<File Id="661699739" Language="SFX">
+							<ShortName>Yaourt_Fidele_1.wav</ShortName>
+							<Path>SFX\Yaourt_Fidele_1_10C4C929.wem</Path>
+						</File>
+						<File Id="721737697" Language="SFX">
+							<ShortName>Yaourt_Fidele_5.wav</ShortName>
+							<Path>SFX\Yaourt_Fidele_5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3810860044" Name="Event_Yaourt_Reine" ObjectPath="\Events\Default Work Unit\Event_Yaourt_Reine" DurationType="OneShot" DurationMin="1.064943" DurationMax="1.864150">
+					<IncludedMemoryFiles>
+						<File Id="26331471" Language="SFX">
+							<ShortName>Yaourt_Reine_1.wav</ShortName>
+							<Path>SFX\Yaourt_Reine_1_10C4C929.wem</Path>
+						</File>
+						<File Id="85998294" Language="SFX">
+							<ShortName>Yaourt_Reine_2.wav</ShortName>
+							<Path>SFX\Yaourt_Reine_2_10C4C929.wem</Path>
+						</File>
+						<File Id="267852050" Language="SFX">
+							<ShortName>Yaourt_Reine_4.wav</ShortName>
+							<Path>SFX\Yaourt_Reine_4_10C4C929.wem</Path>
+						</File>
+						<File Id="564535459" Language="SFX">
+							<ShortName>Yaourt_Reine_3.wav</ShortName>
+							<Path>SFX\Yaourt_Reine_3_10C4C929.wem</Path>
+						</File>
+						<File Id="981145953" Language="SFX">
+							<ShortName>Yaourt_Reine_5.wav</ShortName>
+							<Path>SFX\Yaourt_Reine_5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1268849612" Name="Event_Yaourt_Soldat" ObjectPath="\Events\Default Work Unit\Event_Yaourt_Soldat" DurationType="OneShot" DurationMin="1.311996" DurationMax="2.543016">
+					<IncludedMemoryFiles>
+						<File Id="231610154" Language="SFX">
+							<ShortName>Yaourt_Soldat_3.wav</ShortName>
+							<Path>SFX\Yaourt_Soldat_3_10C4C929.wem</Path>
+						</File>
+						<File Id="358868356" Language="SFX">
+							<ShortName>Yaourt_Soldat_1.wav</ShortName>
+							<Path>SFX\Yaourt_Soldat_1_10C4C929.wem</Path>
+						</File>
+						<File Id="461361420" Language="SFX">
+							<ShortName>Yaourt_Soldat_4.wav</ShortName>
+							<Path>SFX\Yaourt_Soldat_4_10C4C929.wem</Path>
+						</File>
+						<File Id="798676643" Language="SFX">
+							<ShortName>Yaourt_Soldat_2.wav</ShortName>
+							<Path>SFX\Yaourt_Soldat_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
