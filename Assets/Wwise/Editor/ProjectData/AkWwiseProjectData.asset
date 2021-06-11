@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b311a2bd52a23c4dbdcf8844b631cdf1
     GuidInternal: 
-    m_lastTime: -8585789529230451908
+    m_lastTime: -8585782502466639089
     List:
     - name: Music
       guid: 48a4cb8864459043b88959201dc4d62b
@@ -387,7 +387,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: af4625c0e4e9ed43a62873aec7c92b52
     GuidInternal: 
-    m_lastTime: -8585789529236784536
+    m_lastTime: -8585782502473321547
     List:
     - name: Degats_Bandits
       guid: eebfa33be4bdc84c801c0e605ff07ed5
@@ -610,9 +610,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Event_Echec_Critique
-      guid: 9d9be40b0a891045bb60d1980e99ea21
-      id: 1779567033
+    - name: Event_Echec_Choque
+      guid: e78a7f248e6b0445a5d1df6c66925e2d
+      id: 1024705842
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -620,10 +620,93 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: af4625c0e4e9ed43a62873aec7c92b52
-      - ElementName: Event_Echec_Critique
+      - ElementName: Folder_Echec_Critique
+        ObjectType: 4
+        guid: 9ae159a4fc7dbe46a887e7f240eb60fd
+      - ElementName: Event_Echec_Choque
         ObjectType: 3
-        guid: 9d9be40b0a891045bb60d1980e99ea21
-      Path: Events\Default Work Unit\Event_Echec_Critique
+        guid: e78a7f248e6b0445a5d1df6c66925e2d
+      Path: Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Choque
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Echec_Degats
+      guid: 38d477e25fa2664f842d3c7861b1bcaa
+      id: 2334563671
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Folder_Echec_Critique
+        ObjectType: 4
+        guid: 9ae159a4fc7dbe46a887e7f240eb60fd
+      - ElementName: Event_Echec_Degats
+        ObjectType: 3
+        guid: 38d477e25fa2664f842d3c7861b1bcaa
+      Path: Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Degats
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Echec_Frein
+      guid: 02a3978ae81f334aaeeb6fdc197b017e
+      id: 2292456063
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Folder_Echec_Critique
+        ObjectType: 4
+        guid: 9ae159a4fc7dbe46a887e7f240eb60fd
+      - ElementName: Event_Echec_Frein
+        ObjectType: 3
+        guid: 02a3978ae81f334aaeeb6fdc197b017e
+      Path: Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Frein
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Echec_Lancement_Epee
+      guid: 93541f0127f2534b9bd6855843c021ae
+      id: 1411219000
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Folder_Echec_Critique
+        ObjectType: 4
+        guid: 9ae159a4fc7dbe46a887e7f240eb60fd
+      - ElementName: Event_Echec_Lancement_Epee
+        ObjectType: 3
+        guid: 93541f0127f2534b9bd6855843c021ae
+      Path: Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Lancement_Epee
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Echec_Virage_Epee
+      guid: de61df2947ad3b4fa2ec06d8822637bd
+      id: 3142964213
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Folder_Echec_Critique
+        ObjectType: 4
+        guid: 9ae159a4fc7dbe46a887e7f240eb60fd
+      - ElementName: Event_Echec_Virage_Epee
+        ObjectType: 3
+        guid: de61df2947ad3b4fa2ec06d8822637bd
+      Path: Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Virage_Epee
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -814,9 +897,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Event_Reussite_Critique
-      guid: cce2919fdda6bf409ab78650b04c468f
-      id: 4014485723
+    - name: Event_Reussite_BackDash
+      guid: cf4d40f9750b43478cd99d6a0c9c982f
+      id: 540293294
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -824,10 +907,53 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: af4625c0e4e9ed43a62873aec7c92b52
-      - ElementName: Event_Reussite_Critique
+      - ElementName: Folder_Reussite_Critique
+        ObjectType: 4
+        guid: 91e5afb94cf96c4bb645184f4c7eee64
+      - ElementName: Event_Reussite_BackDash
         ObjectType: 3
-        guid: cce2919fdda6bf409ab78650b04c468f
-      Path: Events\Default Work Unit\Event_Reussite_Critique
+        guid: cf4d40f9750b43478cd99d6a0c9c982f
+      Path: Events\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_BackDash
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Reussite_DegatsEnnemi
+      guid: d40fd46548cfe441b1dce68382615a5d
+      id: 3702005869
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Folder_Reussite_Critique
+        ObjectType: 4
+        guid: 91e5afb94cf96c4bb645184f4c7eee64
+      - ElementName: Event_Reussite_DegatsEnnemi
+        ObjectType: 3
+        guid: d40fd46548cfe441b1dce68382615a5d
+      Path: Events\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_DegatsEnnemi
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Reussite_Slash
+      guid: 43a5bf299c91b24da31687081f4aa57e
+      id: 4292435174
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Folder_Reussite_Critique
+        ObjectType: 4
+        guid: 91e5afb94cf96c4bb645184f4c7eee64
+      - ElementName: Event_Reussite_Slash
+        ObjectType: 3
+        guid: 43a5bf299c91b24da31687081f4aa57e
+      Path: Events\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_Slash
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -899,9 +1025,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Event_UI_Clique_Bouton_Menu
+    - name: Event_UI_Clique_Bouton
       guid: 07fad0f7355a6442903b7a4b34cd2418
-      id: 1387593318
+      id: 3804404592
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -909,10 +1035,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: af4625c0e4e9ed43a62873aec7c92b52
-      - ElementName: Event_UI_Clique_Bouton_Menu
+      - ElementName: Event_UI_Clique_Bouton
         ObjectType: 3
         guid: 07fad0f7355a6442903b7a4b34cd2418
-      Path: Events\Default Work Unit\Event_UI_Clique_Bouton_Menu
+      Path: Events\Default Work Unit\Event_UI_Clique_Bouton
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1052,9 +1178,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Event_UI_Victoire
-      guid: 4d1ad4ef240d4a48ab8b759a49fe11b1
-      id: 2031836382
+    - name: Event_Victoire_Confettis
+      guid: e6204b77304ba143ae33a1b2a1e1fbc7
+      id: 3729609441
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1062,10 +1188,169 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: af4625c0e4e9ed43a62873aec7c92b52
-      - ElementName: Event_UI_Victoire
+      - ElementName: Folder_Victoire
+        ObjectType: 4
+        guid: 4485e0033b2b5f468b5078485180e431
+      - ElementName: Event_Victoire_Confettis
         ObjectType: 3
-        guid: 4d1ad4ef240d4a48ab8b759a49fe11b1
-      Path: Events\Default Work Unit\Event_UI_Victoire
+        guid: e6204b77304ba143ae33a1b2a1e1fbc7
+      Path: Events\Default Work Unit\Folder_Victoire\Event_Victoire_Confettis
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Victoire_Trompette
+      guid: 3e5760aa8ef3714a917883929c6cd0b2
+      id: 3917464674
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Folder_Victoire
+        ObjectType: 4
+        guid: 4485e0033b2b5f468b5078485180e431
+      - ElementName: Event_Victoire_Trompette
+        ObjectType: 3
+        guid: 3e5760aa8ef3714a917883929c6cd0b2
+      Path: Events\Default Work Unit\Folder_Victoire\Event_Victoire_Trompette
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Yaourt_Bandit
+      guid: 33cf388128a1574b9c516f3da9f63948
+      id: 4256429855
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Event_Yaourt_Bandit
+        ObjectType: 3
+        guid: 33cf388128a1574b9c516f3da9f63948
+      Path: Events\Default Work Unit\Event_Yaourt_Bandit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Yaourt_Elya
+      guid: 0d7d84d4c60fd0419193a9bfe018735f
+      id: 1791947516
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Event_Yaourt_Elya
+        ObjectType: 3
+        guid: 0d7d84d4c60fd0419193a9bfe018735f
+      Path: Events\Default Work Unit\Event_Yaourt_Elya
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Yaourt_Fidele
+      guid: 720b340e30b7b8438f2c32328e7c0029
+      id: 1826551178
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Event_Yaourt_Fidele
+        ObjectType: 3
+        guid: 720b340e30b7b8438f2c32328e7c0029
+      Path: Events\Default Work Unit\Event_Yaourt_Fidele
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Yaourt_Reine
+      guid: cf4c09ff3cd72441a90c66796ab47813
+      id: 3810860044
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Event_Yaourt_Reine
+        ObjectType: 3
+        guid: cf4c09ff3cd72441a90c66796ab47813
+      Path: Events\Default Work Unit\Event_Yaourt_Reine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Event_Yaourt_Soldat
+      guid: 1a7d6b71b03714458318fb11356fb9e2
+      id: 1268849612
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Event_Yaourt_Soldat
+        ObjectType: 3
+        guid: 1a7d6b71b03714458318fb11356fb9e2
+      Path: Events\Default Work Unit\Event_Yaourt_Soldat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Folder_Echec_Critique
+      guid: 9ae159a4fc7dbe46a887e7f240eb60fd
+      id: 3931910735
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Folder_Echec_Critique
+        ObjectType: 4
+        guid: 9ae159a4fc7dbe46a887e7f240eb60fd
+      Path: Events\Default Work Unit\Folder_Echec_Critique
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Folder_Reussite_Critique
+      guid: 91e5afb94cf96c4bb645184f4c7eee64
+      id: 1559782449
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Folder_Reussite_Critique
+        ObjectType: 4
+        guid: 91e5afb94cf96c4bb645184f4c7eee64
+      Path: Events\Default Work Unit\Folder_Reussite_Critique
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Folder_Victoire
+      guid: 4485e0033b2b5f468b5078485180e431
+      id: 2645486013
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: af4625c0e4e9ed43a62873aec7c92b52
+      - ElementName: Folder_Victoire
+        ObjectType: 4
+        guid: 4485e0033b2b5f468b5078485180e431
+      Path: Events\Default Work Unit\Folder_Victoire
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1319,9 +1604,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585794788513892707
     List: []
-  ExpandedFileSystemItemIds: 0100000002000000030000000400000005000000060000002b0000002c000000
-  ExpandedWaapiItemIds: 010000000200000003000000040000000700000008000000190000001a000000
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000050000000600000014000000250000002b0000002c00000033000000
+  ExpandedWaapiItemIds: 01000000020000000300000004000000060000000700000008000000190000001a0000002300000024000000320000004f0000005000000051000000
   AutoSyncSelection: 1
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 
