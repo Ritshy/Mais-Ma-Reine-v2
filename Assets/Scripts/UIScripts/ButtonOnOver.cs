@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -8,11 +9,15 @@ using TMPro;
 public class ButtonOnOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public AK.Wwise.Event uiMouseOverSFX;
+    public AK.Wwise.Event clicOnButtonSFX;
 
     public Sprite myMouseOverImage;
     private Sprite defaultImage;
 
     public bool isTextColorChanging = false;
+    public bool emitSpecificSoundOnClick = false;
+    public bool isButtonSwitchingScene = false;
+
     public Color overTextColor;
     private Color initialTextColor;
     private TextMeshProUGUI buttonText;
@@ -56,4 +61,11 @@ public class ButtonOnOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         }
     }
 
+    public void PlayClickSound()
+    {
+        if (emitSpecificSoundOnClick)
+        {
+            clicOnButtonSFX.Post(gameObject);
+        }
+    }
 }

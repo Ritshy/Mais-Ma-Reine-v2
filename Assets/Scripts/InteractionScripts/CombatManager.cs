@@ -18,10 +18,27 @@ public class CombatManager : MonoBehaviour
 
     public AK.Wwise.Event attaqueEpeeSFX;
     public AK.Wwise.Event contreAttaqueEpeeSFX;
-    public AK.Wwise.Event coupCritiqueSFX;
-    public AK.Wwise.Event echecCritiqueSFX;
+
     public AK.Wwise.Event criSFX;
     public AK.Wwise.Event mortSFX;
+
+    [Space]
+
+    public AK.Wwise.Event samuraiSlashSFX;
+    public AK.Wwise.Event sautArriereSFX;
+    public AK.Wwise.Event explosionEnnemiSFX;
+
+    [Space]
+
+    public AK.Wwise.Event publicChocSFX;
+    public AK.Wwise.Event degatsSubitsSFX;
+
+    public AK.Wwise.Event freinageEpeeSFX;
+    public AK.Wwise.Event lancementEpeeSFX;
+    public AK.Wwise.Event virageEpeeSFX;
+
+    [Space]
+
 
     [Header("Attaquant Fenetre")]
 
@@ -638,9 +655,17 @@ public class CombatManager : MonoBehaviour
             myAnim.SetTrigger("DefenseurReceiveDamage");
             myAnim.SetTrigger("LaunchCoupCritique");
 
-            coupCritiqueSFX.Post(gameObject);
+            samuraiSlashSFX.Post(gameObject);
 
-            yield return new WaitForSeconds(2.4f);
+            yield return new WaitForSeconds(1f);
+
+            sautArriereSFX.Post(gameObject);
+
+            yield return new WaitForSeconds(.5f);
+
+            explosionEnnemiSFX.Post(gameObject);
+
+            yield return new WaitForSeconds(.5f);
 
             // ICI jouer Anim dégâts reçus sur defenseur
             renderTextCombat.text = "- " + (attaquantFM.maxAttackRange * 2).ToString();
@@ -698,6 +723,7 @@ public class CombatManager : MonoBehaviour
             yield return new WaitForSeconds(.7f);
 
             EffectManager.Instance.echecTextEffect.Play();
+            publicChocSFX.Post(gameObject);
 
             yield return new WaitForSeconds(.5f);
 
@@ -708,9 +734,29 @@ public class CombatManager : MonoBehaviour
             myAnim.SetTrigger("AttaquantReceiveDamage");
             myAnim.SetTrigger("LaunchEchecCritique");
 
-            echecCritiqueSFX.Post(gameObject);
+            yield return new WaitForSeconds(.1f);
 
-            yield return new WaitForSeconds(2f);
+            lancementEpeeSFX.Post(gameObject);
+
+            yield return new WaitForSeconds(.3f);
+
+            freinageEpeeSFX.Post(gameObject);
+
+            yield return new WaitForSeconds(.6f);
+
+            virageEpeeSFX.Post(gameObject);
+
+            yield return new WaitForSeconds(.3f);
+
+            virageEpeeSFX.Post(gameObject);
+
+            yield return new WaitForSeconds(.3f);
+
+            virageEpeeSFX.Post(gameObject);
+
+            yield return new WaitForSeconds(1f);
+
+            degatsSubitsSFX.Post(gameObject);
 
             // ICI jouer Anim dégâts reçus sur attaquant
             renderTextCombat.text = "- " + (defenseurFM.maxCounterAttackRange).ToString();

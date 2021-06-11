@@ -17,6 +17,8 @@ public class Dialogue
 
     public ParticleSystem particleToPlay;
 
+    public AK.Wwise.Event characterVoiceSFX;
+
     public bool isPlayingFinTerritoireAnimation;
 
     public InteractionType nextInteractionType;

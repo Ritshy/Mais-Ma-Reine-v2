@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -572,6 +572,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 457735046}
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &457735044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,7 +636,16 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d7b6c68fcb75e8540b5e5e03f73c47cd,
       type: 2}
+  clicOnButtonSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 05ee740b86407e84b94ff789fac0a40d,
+      type: 2}
   myMouseOverImage: {fileID: 21300000, guid: 1c15cfa7ceb03314c95872f672303a62, type: 3}
+  isTextColorChanging: 0
+  emitSpecificSoundOnClick: 1
+  isButtonSwitchingScene: 0
+  overTextColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &463703972
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,7 +793,15 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d7b6c68fcb75e8540b5e5e03f73c47cd,
       type: 2}
+  clicOnButtonSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   myMouseOverImage: {fileID: 21300000, guid: 1c15cfa7ceb03314c95872f672303a62, type: 3}
+  isTextColorChanging: 0
+  emitSpecificSoundOnClick: 0
+  isButtonSwitchingScene: 0
+  overTextColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &506307720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1671,7 +1699,15 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d7b6c68fcb75e8540b5e5e03f73c47cd,
       type: 2}
+  clicOnButtonSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   myMouseOverImage: {fileID: 21300000, guid: 1c15cfa7ceb03314c95872f672303a62, type: 3}
+  isTextColorChanging: 0
+  emitSpecificSoundOnClick: 0
+  isButtonSwitchingScene: 0
+  overTextColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &976302464
 GameObject:
   m_ObjectHideFlags: 0

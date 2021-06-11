@@ -30,7 +30,9 @@ public class DialogueManager : MonoBehaviour
 
     public bool isInDialogue = false;
 
-    public AK.Wwise.Event territoireWinSFX;
+    public AK.Wwise.Event territoireWinTrompettesfx;
+    public AK.Wwise.Event territoireWinConfetisfx;
+
     public AK.Wwise.Event territoireLooseSFX;
 
 
@@ -119,6 +121,8 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextLine()
     {
+        currentDialogue.characterVoiceSFX.Stop(gameObject);
+
         if (lines.Count == 0)
         {
             StartCoroutine(EndDialogue());
@@ -127,6 +131,7 @@ public class DialogueManager : MonoBehaviour
         else
         {
             // ICI jouer SFX de dialogue qui passe à l'étape suivante
+            currentDialogue.characterVoiceSFX.Post(gameObject);
         }
 
         string line = lines.Dequeue();
@@ -206,9 +211,13 @@ public class DialogueManager : MonoBehaviour
         isInDialogue = false;
     }
 
-    public void PlayWinSFX()
+    public IEnumerator PlayWinSFX()
     {
-        territoireWinSFX.Post(gameObject);
+        territoireWinConfetisfx.Post(gameObject);
+
+        yield return new WaitForSeconds(1.5f);
+
+        territoireWinTrompettesfx.Post(gameObject);
     }
 
     public void PlayLooseSFX()
