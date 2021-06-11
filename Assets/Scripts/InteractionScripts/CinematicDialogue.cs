@@ -116,8 +116,11 @@ public class CinematicDialogue : MonoBehaviour
         lineIsDisplayed = false;
         myAnim.SetBool("isTextDisplayed", false);
 
+        currentDialogue.characterVoiceSFX.Post(gameObject);
+
         if (lines.Count == 0)
         {
+            currentDialogue.characterVoiceSFX.Stop(gameObject);
             if (currentDialogue.isStartingADialogue == true)
             {
                 OpenDialogueWindow(dialogueScenario[currentDialogue.dialogueIndexToStart]);

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -15118,6 +15118,12 @@ MonoBehaviour:
     questIndexToStart: 0
     isStartingADialogue: 1
     dialogueIndexToStart: 1
+    particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 885c78f41dcc1144aa259143379ff50a,
+        type: 2}
     isPlayingFinTerritoireAnimation: 0
     nextInteractionType: 0
     cameraStartPos: {fileID: 0}
@@ -15130,6 +15136,12 @@ MonoBehaviour:
     questIndexToStart: 0
     isStartingADialogue: 1
     dialogueIndexToStart: 2
+    particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b94c146fb3c0c6d46813176c5c512379,
+        type: 2}
     isPlayingFinTerritoireAnimation: 0
     nextInteractionType: 0
     cameraStartPos: {fileID: 0}
@@ -15143,6 +15155,12 @@ MonoBehaviour:
     questIndexToStart: 0
     isStartingADialogue: 1
     dialogueIndexToStart: 3
+    particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 885c78f41dcc1144aa259143379ff50a,
+        type: 2}
     isPlayingFinTerritoireAnimation: 0
     nextInteractionType: 0
     cameraStartPos: {fileID: 0}
@@ -15156,6 +15174,12 @@ MonoBehaviour:
     questIndexToStart: 0
     isStartingADialogue: 1
     dialogueIndexToStart: 4
+    particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b94c146fb3c0c6d46813176c5c512379,
+        type: 2}
     isPlayingFinTerritoireAnimation: 0
     nextInteractionType: 0
     cameraStartPos: {fileID: 0}
@@ -15170,6 +15194,12 @@ MonoBehaviour:
     questIndexToStart: 0
     isStartingADialogue: 1
     dialogueIndexToStart: 5
+    particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 885c78f41dcc1144aa259143379ff50a,
+        type: 2}
     isPlayingFinTerritoireAnimation: 0
     nextInteractionType: 0
     cameraStartPos: {fileID: 0}
@@ -15182,6 +15212,12 @@ MonoBehaviour:
     questIndexToStart: 0
     isStartingADialogue: 0
     dialogueIndexToStart: 0
+    particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b94c146fb3c0c6d46813176c5c512379,
+        type: 2}
     isPlayingFinTerritoireAnimation: 0
     nextInteractionType: 0
     cameraStartPos: {fileID: 0}

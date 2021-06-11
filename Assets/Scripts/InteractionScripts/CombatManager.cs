@@ -80,7 +80,7 @@ public class CombatManager : MonoBehaviour
 
     public Image defenseurBrasImage;
 
-    [Header("Effects & Icones")]
+    /*[Header("Effects & Icones")]
 
     public Sprite reineSprite;
     public Sprite roiSprite;
@@ -90,6 +90,7 @@ public class CombatManager : MonoBehaviour
     public Color reineColor;
     public Color roiColor;
     public Color banditColor;
+    */
 
     //private ParticleSystem myCombatEffect;
 
@@ -146,7 +147,7 @@ public class CombatManager : MonoBehaviour
 
         criSFX.Post(gameObject);
 
-        switch (atkFM.myCamp)
+        /*switch (atkFM.myCamp)
         {
             case GameCamps.Fidele:
                 attaquantIcone.sprite = reineSprite;
@@ -198,7 +199,7 @@ public class CombatManager : MonoBehaviour
                 break;
             default:
                 break;
-        }
+        }*/
 
         attaquantName.text = atkFM.fideleNom + (" ") + atkFM.fidelePrenom;
 
@@ -224,7 +225,7 @@ public class CombatManager : MonoBehaviour
         attaquantHP.text = attaquantFM.currentHP.ToString();
         defenseurHP.text = defenseurFM.currentHP.ToString();
 
-        switch (attaquantFM.myCamp)
+        /*switch (attaquantFM.myCamp)
         {
             case GameCamps.Fidele:
                 attaquantBrasImage.color = reineColor;
@@ -276,9 +277,13 @@ public class CombatManager : MonoBehaviour
                 break;
             default:
                 break;
-        }
+        }*/
 
         myAnim.SetBool("OpenCombatBandeau", true);
+
+
+        attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
+        defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;
 
         EffectManager.Instance.versusEffect.Play();
         CameraZooming.Instance.ShakeScreen();
@@ -342,7 +347,7 @@ public class CombatManager : MonoBehaviour
         if (attaquantFM.isAlive && defenseurFM.isAlive)
         {
             GameManager.Instance.isGamePaused = true;
-            switch (attaquantFM.myCamp)
+            /*switch (attaquantFM.myCamp)
             {
                 case GameCamps.Fidele:
                     attaquantBrasImage.color = reineColor;
@@ -394,9 +399,12 @@ public class CombatManager : MonoBehaviour
                     break;
                 default:
                     break;
-            }
+            }*/
 
             myAnim.SetBool("OpenCombatBandeau", true);
+
+            attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
+            defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;
 
             EffectManager.Instance.versusEffect.Play();
             CameraZooming.Instance.ShakeScreen();
@@ -496,10 +504,14 @@ public class CombatManager : MonoBehaviour
                 yield return new WaitForSeconds(1.2f);
 
                 // Ici jouer Anim dégâts reçus sur defenseur
+
                 renderTextCombat.text = "- " + attackValue.ToString();
                 defenseurDamageTextPS.gameObject.SetActive(true);
                 defenseurAM.ReceiveDamage();
                 defenseurAM.FillAmountHealth();
+
+                attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
+                defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;
 
                 defenseurHP.text = defenseurFM.currentHP.ToString();
 
@@ -572,6 +584,9 @@ public class CombatManager : MonoBehaviour
 
             attaquantAM.ReceiveDamage();
             attaquantAM.FillAmountHealth();
+
+            attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
+            defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;
 
             attaquantHP.text = attaquantFM.currentHP.ToString();
 
@@ -673,6 +688,9 @@ public class CombatManager : MonoBehaviour
             defenseurAM.ReceiveDamage();
             defenseurAM.FillAmountHealth();
 
+            attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
+            defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;
+
             defenseurHP.text = defenseurFM.currentHP.ToString();
 
             yield return new WaitForSeconds(1f);
@@ -764,6 +782,9 @@ public class CombatManager : MonoBehaviour
 
             attaquantAM.ReceiveDamage();
             attaquantAM.FillAmountHealth();
+
+            attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
+            defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;
 
             attaquantHP.text = attaquantFM.currentHP.ToString();
 
