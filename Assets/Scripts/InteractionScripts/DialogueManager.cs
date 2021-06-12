@@ -173,7 +173,11 @@ public class DialogueManager : MonoBehaviour
         if (currentDialogue.isStartingQuest)
         {
             yield return new WaitForSeconds(.2f);
-            QuestManager.Instance.SetupQuest(currentDialogue.questIndexToStart);
+
+            for (int i = 0; i < currentDialogue.questIndexToStart.Count; i++)
+            {
+                QuestManager.Instance.SetupQuest(currentDialogue.questIndexToStart[i]);
+            }
         }
 
         if (currentDialogue.unitsToSpawn.Count >= 1)

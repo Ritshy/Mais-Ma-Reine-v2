@@ -10,7 +10,7 @@ public class Dialogue
     public string[] myDialogue;
 
     public bool isStartingQuest;
-    public int questIndexToStart;
+    public List<int> questIndexToStart;
 
     public bool isStartingADialogue;
     public int dialogueIndexToStart;
