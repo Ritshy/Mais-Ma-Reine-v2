@@ -14,7 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID DEGATS_BANDITS = 1161747339U;
-        static const AkUniqueID EVENT_ATTAQUE_EPEE = 3811235563U;
+        static const AkUniqueID EVENT_ATTAQUE_COUP_DIRECT = 1636597489U;
+        static const AkUniqueID EVENT_ATTAQUE_MOUVEMENT_EPEE = 3412755326U;
         static const AkUniqueID EVENT_CLIQUE_BOUTON_BASTON = 2839960383U;
         static const AkUniqueID EVENT_CLIQUE_FIDELE_BANDEAU = 1488930380U;
         static const AkUniqueID EVENT_CLIQUE_FIDELE_COMBAT = 756834820U;

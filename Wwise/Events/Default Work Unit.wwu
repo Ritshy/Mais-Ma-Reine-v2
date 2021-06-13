@@ -25,17 +25,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Event_Attaque_Epee" ID="{07ED981D-448E-4FAA-8FF4-FF0421DE8FE7}">
-					<ChildrenList>
-						<Action Name="" ID="{81D82B84-E370-4461-9F26-8F98DA4C7CC7}" ShortID="111741130">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="attaque_épée" ID="{25CDD60F-38D5-40B5-9F10-F5272183EF59}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Event_UI_Bandeau_Fidele_Lefttoright" ID="{A232F933-FD18-40A7-8217-37F0D0DC6927}">
 					<ChildrenList>
 						<Action Name="" ID="{AA0E5448-D06F-4724-BE1B-9AAEFB4457FF}" ShortID="37594664">
@@ -596,6 +585,32 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Attaque" ID="{4514D2ED-76FC-43AB-AA6B-4BFC89952563}" ShortID="108069233">
+					<ChildrenList>
+						<Event Name="Event_Attaque_Mouvement_Epee" ID="{8371E24C-9F31-4082-A8BF-83F739511EF3}">
+							<ChildrenList>
+								<Action Name="" ID="{79472FE4-E417-42A1-9369-39D5382599D9}" ShortID="118299798">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mouvement_Epee" ID="{DCFFB6AD-4D6B-497F-8158-BB2DC6A19F4D}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Event_Attaque_Coup_Direct" ID="{30763E44-6AD4-4BCC-AEA0-F8796B4EDE88}">
+							<ChildrenList>
+								<Action Name="" ID="{2BD534E5-793F-4432-9178-43E3A9BE217C}" ShortID="351332849">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Coup_Direct" ID="{43C1A6EC-0D7A-4926-A32F-66CDC7119E91}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

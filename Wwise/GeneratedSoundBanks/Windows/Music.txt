@@ -4,7 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3665866047	Event_Musique_Territoire			\Default Work Unit\Event_Musique_Territoire	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	109764714	Musique en jeu	C:\Users\Utilisateur\Desktop\3eme_annee\MaisMaReine_Final\Wwise\.cache\Windows\SFX\Musique en jeu_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique en jeu		29344520
-	467666371	Musique Territoire	C:\Users\Utilisateur\Desktop\3eme_annee\MaisMaReine_Final\Wwise\.cache\Windows\SFX\Musique Territoire_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique Territoire		38900936
-	957381255	Musique menu	C:\Users\Utilisateur\Desktop\3eme_annee\MaisMaReine_Final\Wwise\.cache\Windows\SFX\Musique menu_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique menu		12124212
+	109764714	Musique en jeu	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Musique en jeu_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique en jeu		29344520
+	467666371	Musique Territoire	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Musique Territoire_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique Territoire		38900936
+	957381255	Musique menu	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Musique menu_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Musique menu		12124212
 

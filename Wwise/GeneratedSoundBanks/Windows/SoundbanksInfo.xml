@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MaisMaReine_Final\Wwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MaisMaReine_Final\Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MaisMaReine_Final\Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Utilisateur\Desktop\3eme_annee\MaisMaReine_Final\Wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="1247477044">
+		<SoundBank Id="393239870" Language="SFX" Hash="3196899">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -40,11 +40,55 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3811235563" Name="Event_Attaque_Epee" ObjectPath="\Events\Default Work Unit\Event_Attaque_Epee" DurationType="OneShot" DurationMin="1.617687" DurationMax="1.617687">
+				<Event Id="1636597489" Name="Event_Attaque_Coup_Direct" ObjectPath="\Events\Default Work Unit\Attaque\Event_Attaque_Coup_Direct" DurationType="OneShot" DurationMin="0.375624" DurationMax="0.516508">
 					<IncludedMemoryFiles>
-						<File Id="344158329" Language="SFX">
-							<ShortName>attaque_épée.wav</ShortName>
-							<Path>SFX\attaque_épée_10C4C929.wem</Path>
+						<File Id="249120498" Language="SFX">
+							<ShortName>Attaque\Coup_direct\coup_7.wav</ShortName>
+							<Path>SFX\Attaque\Coup_direct\coup_7_10C4C929.wem</Path>
+						</File>
+						<File Id="443914185" Language="SFX">
+							<ShortName>Attaque\Coup_direct\coup_8.wav</ShortName>
+							<Path>SFX\Attaque\Coup_direct\coup_8_10C4C929.wem</Path>
+						</File>
+						<File Id="452522537" Language="SFX">
+							<ShortName>Attaque\Coup_direct\coup_6.wav</ShortName>
+							<Path>SFX\Attaque\Coup_direct\coup_6_10C4C929.wem</Path>
+						</File>
+						<File Id="485939464" Language="SFX">
+							<ShortName>Attaque\Coup_direct\coup_5.wav</ShortName>
+							<Path>SFX\Attaque\Coup_direct\coup_5_10C4C929.wem</Path>
+						</File>
+						<File Id="651409433" Language="SFX">
+							<ShortName>Attaque\Coup_direct\coup_2.wav</ShortName>
+							<Path>SFX\Attaque\Coup_direct\coup_2_10C4C929.wem</Path>
+						</File>
+						<File Id="843844534" Language="SFX">
+							<ShortName>Attaque\Coup_direct\coup_4.wav</ShortName>
+							<Path>SFX\Attaque\Coup_direct\coup_4_10C4C929.wem</Path>
+						</File>
+						<File Id="898465481" Language="SFX">
+							<ShortName>Attaque\Coup_direct\coup_1.wav</ShortName>
+							<Path>SFX\Attaque\Coup_direct\coup_1_10C4C929.wem</Path>
+						</File>
+						<File Id="923200957" Language="SFX">
+							<ShortName>Attaque\Coup_direct\coup_3.wav</ShortName>
+							<Path>SFX\Attaque\Coup_direct\coup_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3412755326" Name="Event_Attaque_Mouvement_Epee" ObjectPath="\Events\Default Work Unit\Attaque\Event_Attaque_Mouvement_Epee" DurationType="OneShot" DurationMin="0.805229" DurationMax="0.913604">
+					<IncludedMemoryFiles>
+						<File Id="97478536" Language="SFX">
+							<ShortName>Attaque\Mouvement_épée\SWSH_Whoosh 8 (ID 1801)_LS.wav</ShortName>
+							<Path>SFX\Attaque\Mouvement_épée\SWSH_Whoosh 8 (ID 1801)_LS_10C4C929.wem</Path>
+						</File>
+						<File Id="525439974" Language="SFX">
+							<ShortName>Attaque\Mouvement_épée\SWSH_Whoosh 3 (ID 1795)_LS.wav</ShortName>
+							<Path>SFX\Attaque\Mouvement_épée\SWSH_Whoosh 3 (ID 1795)_LS_10C4C929.wem</Path>
+						</File>
+						<File Id="1031128169" Language="SFX">
+							<ShortName>Attaque\Mouvement_épée\SWSH_Whoosh 7 (ID 1800)_LS.wav</ShortName>
+							<Path>SFX\Attaque\Mouvement_épée\SWSH_Whoosh 7 (ID 1800)_LS_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -827,7 +871,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2897449466">
+		<SoundBank Id="3991942870" Language="SFX" Hash="1331007854">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>

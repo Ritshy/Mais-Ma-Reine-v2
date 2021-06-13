@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Event_Mouv_Fidele_Chute" ID="{3A171EC5-569D-4015-9A9B-66B815C23A61}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Clique_Territoire" ID="{65B96822-F0FC-401D-82A3-C2532FD03FB7}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Attaque_Mouvement_Epee" ID="{8371E24C-9F31-4082-A8BF-83F739511EF3}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Bandeau_Fidele_Lefttoright" ID="{A232F933-FD18-40A7-8217-37F0D0DC6927}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Yaourt_Reine" ID="{FF094CCF-D73C-4124-A90C-66796AB47813}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Obtention_quete" ID="{B6FCAC04-2F90-414D-8114-6B360ABFD444}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
@@ -38,6 +39,7 @@
 						<ObjectRef Name="Event_Echec_Lancement_Epee" ID="{011F5493-F227-4B53-9BD6-855843C021AE}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Yaourt_Bandit" ID="{8138CF33-A128-4B57-9C51-6F3DA9F63948}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Mort" ID="{94BB9027-949C-4BA9-AEB3-A0EEEBF691BD}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Attaque_Coup_Direct" ID="{30763E44-6AD4-4BCC-AEA0-F8796B4EDE88}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Recrutement_Accepte" ID="{F2EF7302-65FA-4C2F-9747-FC30E7B712BA}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_PNJ_Recrute" ID="{23AF503C-DC6C-4C5F-9FCD-E26B52D58EE5}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Degats_Bandits" ID="{3BA3BFEE-BDE4-4CC8-801C-0E605FF07ED5}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>

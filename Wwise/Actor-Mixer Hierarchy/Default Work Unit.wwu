@@ -210,29 +210,6 @@
 						<ActiveSource Name="Vent_Pause" ID="{F277DAD7-7422-400F-A1D6-4BA3243C3E96}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="attaque_épée" ID="{25CDD60F-38D5-40B5-9F10-F5272183EF59}" ShortID="430936659">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="attaque_épée" ID="{138B080B-B63B-471C-BB95-692603A46B9B}">
-							<Language>SFX</Language>
-							<AudioFile>attaque_épée.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="344158329"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="attaque_épée" ID="{138B080B-B63B-471C-BB95-692603A46B9B}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="PNJ_rejoint_camp" ID="{5DB1D17C-3344-402C-A84E-4EA33945C593}" ShortID="782999640">
 					<PropertyList>
 						<Property Name="MakeUpGain" Type="Real64">
@@ -4641,6 +4618,289 @@
 						<ActiveSource Name="click_bouton" ID="{5C68F919-07E8-4BCE-AC6B-9081EEF16D2E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="Attaque" ID="{9727FAB7-2764-4948-BF18-7831F451CC45}" ShortID="596241104">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Coup_Direct" ID="{43C1A6EC-0D7A-4926-A32F-66CDC7119E91}" ShortID="4931856">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="coup_6" ID="{2C7EB6DE-9DA9-4DA7-BAEF-2E0017E734AF}" ShortID="676606363">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="coup_6" ID="{3ABE7610-F87F-4B15-B12A-5BAB8FD5898A}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque\Coup_direct\coup_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="452522537"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="coup_6" ID="{3ABE7610-F87F-4B15-B12A-5BAB8FD5898A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="coup_2" ID="{2FA80DF7-0B1F-4FBC-BBD8-724D0FF6FC8A}" ShortID="160880353">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="coup_2" ID="{1C52CDE9-D0A2-4406-94E6-99ADC5E82BC0}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque\Coup_direct\coup_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="651409433"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="coup_2" ID="{1C52CDE9-D0A2-4406-94E6-99ADC5E82BC0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="coup_7" ID="{78DAAB0F-259C-4335-871A-3E968DBC04B0}" ShortID="289657614">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="coup_7" ID="{ABAC67C1-4E74-4009-9037-16A33AC79959}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque\Coup_direct\coup_7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="249120498"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="coup_7" ID="{ABAC67C1-4E74-4009-9037-16A33AC79959}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="coup_4" ID="{42C46605-1D58-45AB-BE82-85527E4550D6}" ShortID="747282434">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="coup_4" ID="{EAFBCA52-BC9C-46F6-8880-D1238BDFAEA9}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque\Coup_direct\coup_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="843844534"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="coup_4" ID="{EAFBCA52-BC9C-46F6-8880-D1238BDFAEA9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="coup_5" ID="{2D4C7D91-53D2-493F-9203-C36C83F37C1B}" ShortID="891121185">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="coup_5" ID="{5FFC2F96-C8C2-4C3A-B6CF-9EEE0A1B6AB0}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque\Coup_direct\coup_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="485939464"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="coup_5" ID="{5FFC2F96-C8C2-4C3A-B6CF-9EEE0A1B6AB0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="coup_1" ID="{EF43510B-AE3C-437B-9737-118694EC72CD}" ShortID="582079021">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="coup_1" ID="{6F2E26A2-DD21-4B3D-AC0C-F0CCDB5EF976}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque\Coup_direct\coup_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="898465481"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="coup_1" ID="{6F2E26A2-DD21-4B3D-AC0C-F0CCDB5EF976}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="coup_3" ID="{C3A962C9-9488-4B2E-8150-71B141D8FA68}" ShortID="625641884">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="coup_3" ID="{5C2A6F54-5FEE-48A3-9194-89DC1907DAB6}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque\Coup_direct\coup_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="923200957"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="coup_3" ID="{5C2A6F54-5FEE-48A3-9194-89DC1907DAB6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="coup_8" ID="{504B0E64-F4D8-422C-A7AE-7DBF1DE5919E}" ShortID="645901960">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="coup_8" ID="{831EAC76-20C2-4FF3-B33B-1FF062F6924F}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque\Coup_direct\coup_8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="443914185"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="coup_8" ID="{831EAC76-20C2-4FF3-B33B-1FF062F6924F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Mouvement_Epee" ID="{DCFFB6AD-4D6B-497F-8158-BB2DC6A19F4D}" ShortID="525284087">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SWSH_Whoosh 8 (ID 1801)_LS" ID="{64EEA1B2-92A8-4C1C-BDD9-633140EE123F}" ShortID="274193919">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SWSH_Whoosh 8 (ID 1801)_LS" ID="{C787827F-C4F6-497D-B4C0-6CC2E001A038}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque\Mouvement_épée\SWSH_Whoosh 8 (ID 1801)_LS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="97478536"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SWSH_Whoosh 8 (ID 1801)_LS" ID="{C787827F-C4F6-497D-B4C0-6CC2E001A038}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SWSH_Whoosh 7 (ID 1800)_LS" ID="{96575B77-1943-47D9-84FA-E3044084DD58}" ShortID="683117340">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SWSH_Whoosh 7 (ID 1800)_LS" ID="{7FD17904-CF8D-4CFE-9EFC-AB566A2FF655}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque\Mouvement_épée\SWSH_Whoosh 7 (ID 1800)_LS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1031128169"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SWSH_Whoosh 7 (ID 1800)_LS" ID="{7FD17904-CF8D-4CFE-9EFC-AB566A2FF655}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SWSH_Whoosh 3 (ID 1795)_LS" ID="{A0A5C6A7-6BFC-4153-8227-F3226664D086}" ShortID="902520305">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SWSH_Whoosh 3 (ID 1795)_LS" ID="{BF675EE5-786F-4EC9-96CF-275C4CE0E545}">
+											<Language>SFX</Language>
+											<AudioFile>Attaque\Mouvement_épée\SWSH_Whoosh 3 (ID 1795)_LS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="525439974"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SWSH_Whoosh 3 (ID 1795)_LS" ID="{BF675EE5-786F-4EC9-96CF-275C4CE0E545}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
