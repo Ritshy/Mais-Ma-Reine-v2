@@ -16,8 +16,8 @@ public class CombatManager : MonoBehaviour
 
     [Header("Sounds Combat")]
 
-    public AK.Wwise.Event attaqueEpeeSFX;
-    public AK.Wwise.Event contreAttaqueEpeeSFX;
+    public AK.Wwise.Event attaqueSimpleImpactSFX;
+    public AK.Wwise.Event attaqueSimpleSlashSFX;
 
     public AK.Wwise.Event criSFX;
     public AK.Wwise.Event mortSFX;
@@ -492,11 +492,16 @@ public class CombatManager : MonoBehaviour
                 yield return new WaitForSeconds(.5f);
 
                 myAnim.SetTrigger("LaunchAttack");
-                attaqueEpeeSFX.Post(gameObject);
 
                 StartCoroutine(EffectManager.Instance.PlayAttackEffect());
 
-                yield return new WaitForSeconds(0.3f);
+                yield return new WaitForSeconds(0.7f);
+
+                attaqueSimpleSlashSFX.Post(gameObject);
+
+                yield return new WaitForSeconds(.6f);
+
+                attaqueSimpleImpactSFX.Post(gameObject);
 
                 myAnim.SetTrigger("DefenseurReceiveDamage");
                 //attaquantDamageEffect.Play();
@@ -565,11 +570,16 @@ public class CombatManager : MonoBehaviour
             yield return new WaitForSeconds(.5f);
 
             myAnim.SetTrigger("LaunchCounterAttack");
-            contreAttaqueEpeeSFX.Post(gameObject);
 
             StartCoroutine(EffectManager.Instance.PlayCounterAttackEffect());
 
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.7f);
+
+            attaqueSimpleSlashSFX.Post(gameObject);
+
+            yield return new WaitForSeconds(.5f);
+
+            attaqueSimpleImpactSFX.Post(gameObject);
 
             myAnim.SetTrigger("AttaquantReceiveDamage");
 
