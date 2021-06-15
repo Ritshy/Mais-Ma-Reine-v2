@@ -55,6 +55,7 @@ namespace AK
         static const AkUniqueID EVENT_UI_OBTENTION_QUETE = 2059410396U;
         static const AkUniqueID EVENT_UI_PNJ_RECRUTE = 777863556U;
         static const AkUniqueID EVENT_UI_QUETE_TERMINE = 552716342U;
+        static const AkUniqueID EVENT_UI_SURVOL_TERRITOIRE = 3401590952U;
         static const AkUniqueID EVENT_UI_SURVOLE_BOUTON = 3384763883U;
         static const AkUniqueID EVENT_VICTOIRE_CONFETTIS = 3729609441U;
         static const AkUniqueID EVENT_VICTOIRE_TROMPETTE = 3917464674U;

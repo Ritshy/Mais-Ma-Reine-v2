@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3196899">
+		<SoundBank Id="393239870" Language="SFX" Hash="1473480043">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -660,11 +660,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2283136221" Name="Event_UI_Cadena_Territoire" ObjectPath="\Events\Default Work Unit\Event_UI_Cadena_Territoire" DurationType="OneShot" DurationMin="1.450292" DurationMax="1.450292">
+				<Event Id="2283136221" Name="Event_UI_Cadena_Territoire" ObjectPath="\Events\Default Work Unit\Event_UI_Cadena_Territoire" DurationType="OneShot" DurationMin="0.969333" DurationMax="0.969333">
 					<IncludedMemoryFiles>
-						<File Id="1021016572" Language="SFX">
-							<ShortName>Cadena Territoire 2.wav</ShortName>
-							<Path>SFX\Cadena Territoire 2_10C4C929.wem</Path>
+						<File Id="142458830" Language="SFX">
+							<ShortName>Cadena Territoire.wav</ShortName>
+							<Path>SFX\Cadena Territoire_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -700,11 +700,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2059410396" Name="Event_UI_Obtention_quete" ObjectPath="\Events\Default Work Unit\Event_UI_Obtention_quete" DurationType="OneShot" DurationMin="1.200000" DurationMax="1.200000">
+				<Event Id="2059410396" Name="Event_UI_Obtention_Quete" ObjectPath="\Events\Default Work Unit\Event_UI_Obtention_Quete" DurationType="OneShot" DurationMin="2.753167" DurationMax="2.753167">
 					<IncludedMemoryFiles>
-						<File Id="1012457160" Language="SFX">
-							<ShortName>Obtention_Quête_2.wav</ShortName>
-							<Path>SFX\Obtention_Quête_2_10C4C929.wem</Path>
+						<File Id="16541006" Language="SFX">
+							<ShortName>Obtention quête v2.wav</ShortName>
+							<Path>SFX\Obtention quête v2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -721,6 +721,14 @@
 						<File Id="543626787" Language="SFX">
 							<ShortName>Quête_terminée_2.wav</ShortName>
 							<Path>SFX\Quête_terminée_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3401590952" Name="Event_UI_Survol_Territoire" ObjectPath="\Events\Default Work Unit\Event_UI_Survol_Territoire" DurationType="OneShot" DurationMin="1.986667" DurationMax="1.986667">
+					<IncludedMemoryFiles>
+						<File Id="406540450" Language="SFX">
+							<ShortName>Survole_Territoire.wav</ShortName>
+							<Path>SFX\Survole_Territoire_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
