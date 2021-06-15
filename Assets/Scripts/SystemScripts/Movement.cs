@@ -77,7 +77,7 @@ public class Movement : MonoBehaviour
                 {
                     fmir.GetComponent<AnimationManager>().DisplayInteraction();
                     fmir.GetComponent<AnimationManager>().DisplayInteractionIcon();
-                    fmir.GetComponent<AnimationManager>().NoMoreInteractionColor();
+                    fmir.GetComponent<AnimationManager>().DarkInteractionIcon();
                 }
             }
 
@@ -140,7 +140,7 @@ public class Movement : MonoBehaviour
                 {
                     fmir.GetComponent<AnimationManager>().HideInteraction();
                     fmir.GetComponent<AnimationManager>().HideInteractionIcon();
-                    fmir.GetComponentInChildren<Interaction>().myInteractionIcon.color = Color.white;
+                    //fmir.GetComponent<AnimationManager>().WhiteInteractionIcon();
 
                     fmir.GetComponent<AnimationManager>().DesactivateReceiverSelection();
 

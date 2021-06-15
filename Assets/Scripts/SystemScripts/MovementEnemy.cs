@@ -65,18 +65,27 @@ public class MovementEnemy : MonoBehaviour
 
         StartCoroutine(DragCamera2D.Instance.FollowTargetCamera(myFideleManager.gameObject));
 
-        if (!myFideleManager.GetComponentInChildren<Interaction>().myCollideInteractionList.Contains(targetInteraction))
+        if (!myFideleManager.GetComponentInChildren<Interaction>().myCollideInteractionList.Contains(targetInteraction) && myFideleManager.GetComponentInChildren<Interaction>().myCollideInteractionList.Count == 0)
         {
             isMoving = true;
             agent.isStopped = false;
 
             agent.SetDestination(myTarget.GetComponentInChildren<Interaction>().transform.position);
         }
-        else if (myFideleManager.GetComponentInChildren<Interaction>().myCollideInteractionList.Count >= 1 && CombatManager.Instance.isInFight == false && myFideleManager.hasFought == false)
+        else if (myFideleManager.GetComponentInChildren<Interaction>().myCollideInteractionList.Count >= 1  && !myFideleManager.GetComponentInChildren<Interaction>().myCollideInteractionList.Contains(targetInteraction) 
+            && CombatManager.Instance.isInFight == false && myFideleManager.hasFought == false)
         {
             Debug.Log("Lance un combat");
             myFideleManager.UpdateAttackableUnitInRange();
             CombatManager.Instance.EnemyLaunchCombat(myFideleManager, myFideleManager.GetComponentInChildren<Interaction>().myCollideInteractionList[0].GetComponentInParent<FideleManager>());
+
+            StopMoving();
+        }
+        else if (myFideleManager.GetComponentInChildren<Interaction>().myCollideInteractionList.Contains(targetInteraction) && CombatManager.Instance.isInFight == false && myFideleManager.hasFought == false)
+        {
+            Debug.Log("Lance un combat");
+            myFideleManager.UpdateAttackableUnitInRange();
+            CombatManager.Instance.EnemyLaunchCombat(myFideleManager, targetInteraction.GetComponentInParent<FideleManager>());
 
             StopMoving();
         }
