@@ -14,7 +14,7 @@ public class QuestManager : MonoBehaviour
     {
         public GameObject questParent;
         public TextMeshProUGUI questDesc;
-
+        public QuestButton questButton;
     }
 
     [Serializable]
@@ -28,6 +28,7 @@ public class QuestManager : MonoBehaviour
     public struct QuestObjective
     {
         public string objectiveDesc;
+        public GameObject objectivePosition;
 
         [Space]
 
@@ -162,6 +163,7 @@ public class QuestManager : MonoBehaviour
             if (questsSetup[i].questDesc.text.Length == 0)
             {
                 questsSetup[i].questDesc.text = mapQuests[questIdx].objectiveDesc;
+                questsSetup[i].questButton.questFocusPosition = mapQuests[questIdx].objectivePosition;
                 questsSetup[i].questParent.SetActive(true);
                 /*foreach (FideleManager ofm in mapQuests[questIdx].specificUnitsToKill)
                 {

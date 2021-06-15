@@ -586,6 +586,7 @@ GameObject:
   - component: {fileID: 8004344578662774698}
   - component: {fileID: 3762048443785804316}
   - component: {fileID: 3762048443785804314}
+  - component: {fileID: 2812671646200231585}
   - component: {fileID: 3762048443785804313}
   m_Layer: 0
   m_Name: Villageois
@@ -651,6 +652,7 @@ MonoBehaviour:
   questIcon: {fileID: 8978395567147061106}
   myTarget: {fileID: 0}
   isAllActionsDone: 0
+  attackableUnits: 
   unitsInRange: []
 --- !u!114 &8004344578662774698
 MonoBehaviour:
@@ -706,6 +708,32 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.5}
   m_Size: {x: 3, y: 4.25}
   m_Direction: 0
+--- !u!61 &2812671646200231585
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3762048443785804311}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 3.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!95 &3762048443785804313
 Animator:
   serializedVersion: 3
@@ -903,10 +931,14 @@ MonoBehaviour:
     - "Vous \xEAtes peu nombreux... Allez enr\xF4ler Rojis ! C'est un vaillant coeur,
       il vous aidera pour s\xFBr."
     isStartingQuest: 0
-    questIndexToStart: 0
+    questIndexToStart: 
     isStartingADialogue: 0
     dialogueIndexToStart: 0
     particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
     isPlayingFinTerritoireAnimation: 0
     nextInteractionType: 2
     cameraStartPos: {fileID: 0}

@@ -129,7 +129,14 @@ public class CombatManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (isInFight && Input.GetMouseButton(0))
+        {
+            Time.timeScale = 3;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
     }
 
     public void OpenCombatWindow(FideleManager atkFM, FideleManager defFM)
@@ -219,6 +226,8 @@ public class CombatManager : MonoBehaviour
         myAnim.SetBool("OpenCombatWindow", false);
         isInFight = true;
 
+        CameraZooming.Instance.ShakeScreen();
+
         attaquantFideleSprite.sprite = attaquantFM.currentFideleSprite.sprite;
         defenseurFideleSprite.sprite = defenseurFM.currentFideleSprite.sprite;
 
@@ -281,6 +290,7 @@ public class CombatManager : MonoBehaviour
 
         myAnim.SetBool("OpenCombatBandeau", true);
 
+        CameraZooming.Instance.ShakeScreen();
 
         attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
         defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;

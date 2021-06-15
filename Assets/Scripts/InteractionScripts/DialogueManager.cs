@@ -35,6 +35,7 @@ public class DialogueManager : MonoBehaviour
 
     public AK.Wwise.Event territoireLooseSFX;
 
+    private bool isTypingLine;
 
     #region Singleton
     public static DialogueManager Instance;

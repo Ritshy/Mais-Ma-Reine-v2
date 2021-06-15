@@ -32,6 +32,8 @@ public class Movement : MonoBehaviour
 
     private Collider2D myMapLimit;
 
+    private bool isInTutoZone;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,7 +77,7 @@ public class Movement : MonoBehaviour
                 {
                     fmir.GetComponent<AnimationManager>().DisplayInteraction();
                     fmir.GetComponent<AnimationManager>().DisplayInteractionIcon();
-                    fmir.GetComponentInChildren<Interaction>().myInteractionIcon.color = Color.gray;
+                    fmir.GetComponent<AnimationManager>().NoMoreInteractionColor();
                 }
             }
 
@@ -148,6 +150,10 @@ public class Movement : MonoBehaviour
 
             myInteraction.FideleDisplayInteractionFeedbacks();
             myInteraction.CheckForAvaibleInteractions();
+
+            isInsideMapLimits = true;
+            isInAnObstacle = false;
+            isInDeadZone = true;
 
             isMoving = false;
         }
@@ -229,9 +235,23 @@ public class Movement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<EnemyZone>() != null)
+        if (GameManager.Instance.isMapTuto)
         {
-            collidingEnemyZone = collision.GetComponent<EnemyZone>();
+            if (GameManager.Instance.firstFideleToMoveHasMoved == false)
+            {
+                if (collision.tag == ("TutoZone"))
+                {
+                    isInTutoZone = true;
+                    //myAnimationManager.AbleToLand();
+                }
+            }
+        }
+        else
+        {
+            if (collision.GetComponent<EnemyZone>() != null)
+            {
+                collidingEnemyZone = collision.GetComponent<EnemyZone>();
+            }
         }
     }
 
@@ -244,6 +264,12 @@ public class Movement : MonoBehaviour
                 isLanbable = false;
                 myAnimationManager.UnableToLand();
                 if (collision.tag == ("TutoZone"))
+                {
+                    isInTutoZone = false;
+                    isLanbable = false;
+                    myAnimationManager.UnableToLand();
+                }
+                if (collision.gameObject == myMoveZone)
                 {
                     isLanbable = false;
                     myAnimationManager.UnableToLand();
@@ -308,7 +334,7 @@ public class Movement : MonoBehaviour
         {
             if (GameManager.Instance.firstFideleToMoveHasMoved == false)
             {
-                if (collision.tag == ("TutoZone"))
+                if (collision.gameObject == myMoveZone && isInTutoZone)
                 {
                     isLanbable = true;
                     myAnimationManager.AbleToLand();
