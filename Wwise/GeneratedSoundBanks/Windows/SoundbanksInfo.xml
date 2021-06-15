@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="1473480043">
+		<SoundBank Id="393239870" Language="SFX" Hash="3590283217">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -692,11 +692,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3776204507" Name="Event_UI_Gain_Charisme" ObjectPath="\Events\Default Work Unit\Event_UI_Gain_Charisme" DurationType="OneShot" DurationMin="1.469184" DurationMax="1.469184">
+				<Event Id="3776204507" Name="Event_UI_Gain_Charisme" ObjectPath="\Events\Default Work Unit\Event_UI_Gain_Charisme" DurationType="OneShot" DurationMin="0.941146" DurationMax="0.941146">
 					<IncludedMemoryFiles>
-						<File Id="318337255" Language="SFX">
-							<ShortName>Gain_Charisme.wav</ShortName>
-							<Path>SFX\Gain_Charisme_10C4C929.wem</Path>
+						<File Id="53900135" Language="SFX">
+							<ShortName>Gain_Charisme_v2.wav</ShortName>
+							<Path>SFX\Gain_Charisme_v2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -708,6 +708,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2534332070" Name="Event_UI_Perte_Charisme" ObjectPath="\Events\Default Work Unit\Event_UI_Perte_Charisme" DurationType="OneShot" DurationMin="1.015354" DurationMax="1.015354">
+					<IncludedMemoryFiles>
+						<File Id="1059629775" Language="SFX">
+							<ShortName>Perte_Charisme.wav</ShortName>
+							<Path>SFX\Perte_Charisme_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="777863556" Name="Event_UI_PNJ_Recrute" ObjectPath="\Events\Default Work Unit\Event_UI_PNJ_Recrute" DurationType="OneShot" DurationMin="1.432667" DurationMax="1.432667">
 					<IncludedMemoryFiles>
 						<File Id="863149676" Language="SFX">
@@ -716,11 +724,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="552716342" Name="Event_UI_Quete_Termine" ObjectPath="\Events\Default Work Unit\Event_UI_Quete_Termine" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000">
+				<Event Id="552716342" Name="Event_UI_Quete_Termine" ObjectPath="\Events\Default Work Unit\Event_UI_Quete_Termine" DurationType="OneShot" DurationMin="1.507417" DurationMax="1.507417">
 					<IncludedMemoryFiles>
-						<File Id="543626787" Language="SFX">
-							<ShortName>Quête_terminée_2.wav</ShortName>
-							<Path>SFX\Quête_terminée_2_10C4C929.wem</Path>
+						<File Id="114572867" Language="SFX">
+							<ShortName>Quête terminée v2.wav</ShortName>
+							<Path>SFX\Quête terminée v2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -745,6 +753,14 @@
 						<File Id="565371858" Language="SFX">
 							<ShortName>Victoire_Confettis.wav</ShortName>
 							<Path>SFX\Victoire_Confettis_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4098473549" Name="Event_Victoire_Roulement" ObjectPath="\Events\Default Work Unit\Folder_Victoire\Event_Victoire_Roulement" DurationType="OneShot" DurationMin="3.880250" DurationMax="3.880250">
+					<IncludedMemoryFiles>
+						<File Id="728304187" Language="SFX">
+							<ShortName>Victoire_Roulement_Tambour.wav</ShortName>
+							<Path>SFX\Victoire_Roulement_Tambour_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

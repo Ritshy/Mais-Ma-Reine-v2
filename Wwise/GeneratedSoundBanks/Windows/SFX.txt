@@ -27,6 +27,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2283136221	Event_UI_Cadena_Territoire			\Default Work Unit\Event_UI_Cadena_Territoire	
 	2292456063	Event_Echec_Frein			\Default Work Unit\Folder_Echec_Critique\Event_Echec_Frein	
 	2334563671	Event_Echec_Degats			\Default Work Unit\Folder_Echec_Critique\Event_Echec_Degats	
+	2534332070	Event_UI_Perte_Charisme			\Default Work Unit\Event_UI_Perte_Charisme	
 	2630947717	Event_Contre_Attaque_Epee			\Default Work Unit\Event_Contre_Attaque_Epee	
 	2644997053	Event_Recrutement_Refuse			\Default Work Unit\Event_Recrutement_Refuse	
 	2839960383	Event_Clique_Bouton_Baston			\Default Work Unit\Event_Clique_Bouton_Baston	
@@ -45,6 +46,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3810860044	Event_Yaourt_Reine			\Default Work Unit\Event_Yaourt_Reine	
 	3917464674	Event_Victoire_Trompette			\Default Work Unit\Folder_Victoire\Event_Victoire_Trompette	
 	4092098687	Event_Interaction_Recrutement			\Default Work Unit\Event_Interaction_Recrutement	
+	4098473549	Event_Victoire_Roulement			\Default Work Unit\Folder_Victoire\Event_Victoire_Roulement	
 	4256429855	Event_Yaourt_Bandit			\Default Work Unit\Event_Yaourt_Bandit	
 	4292435174	Event_Reussite_Slash			\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_Slash	
 
@@ -56,6 +58,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	35933807	ReussiteCritique_BackDash	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\ReussiteCritique_BackDash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Reussite_Critique\ReussiteCritique_BackDash		24936
 	42566363	Yeh_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Dialogue\Yeh_3		125068
 	51439636	Okay_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle en action\Okay_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Bandeau\Okay_2		134812
+	53900135	Gain_Charisme_v2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Gain_Charisme_v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gain_Charisme_v2		180764
 	62618195	Interaction_recrutement	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Interaction_recrutement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction_recrutement		65784
 	65992091	Déplacement_Soldat	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Déplacement_Soldat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Soldat		75840
 	82763227	Nt nt nt_5	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_5		155712
@@ -67,6 +70,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	104075332	Ouh_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Ouh_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Ouh\Ouh_3		76796
 	104179137	Nt nt nt_6	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_6		139328
 	111717080	Attaque-Critique_6	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Attaque-Critique_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Echec_Critique\Degats_Critique\Attaque-Critique_6		233120
+	114572867	Quête terminée v2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Quête terminée v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Quête terminée v2		289488
 	117796181	Cris_11	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_11		194728
 	129428457	Yaourt_Fidele_4	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Fidele_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Fidele\Yaourt_Fidele_4		256152
 	131443977	Okay_1	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle en action\Okay_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Bandeau\Okay_1		243776
@@ -101,7 +105,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	307925096	Bandeau_fidele_lefttoright_	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Bandeau_fidele_lefttoright__10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bandeau_fidele_lefttoright_		359248
 	309873538	Kiap_4	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Combat\Kiap_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_4		61248
 	313777509	Okay_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle en action\Okay_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Bandeau\Okay_3		107948
-	318337255	Gain_Charisme	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Gain_Charisme_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gain_Charisme		259228
 	322335179	Cris_14	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_14		122704
 	324157802	Déplacement_Bandit_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Déplacement_Bandit_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Bandit\Déplacement_Bandit_2		260692
 	327101926	swoosh 2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Contre-attaque\swoosh 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Contre_Attaque\swoosh 2		4976
@@ -136,7 +139,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	517059369	ReussiteCritique_DegatsEnnemi	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\ReussiteCritique_DegatsEnnemi_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Reussite_Critique\ReussiteCritique_DegatsEnnemi		471404
 	525439974	SWSH_Whoosh 3 (ID 1795)_LS	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Attaque\Mouvement_épée\SWSH_Whoosh 3 (ID 1795)_LS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Attaque\Mouvement_Epee\SWSH_Whoosh 3 (ID 1795)_LS		175476
 	525452010	Déplacement_Solda_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Déplacement_Solda_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_3		96320
-	543626787	Quête_terminée_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Quête_terminée_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Quête_terminée_2		176464
 	551908250	Dégats_bandit_5	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Dégats_bandit_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Degats_Bandits\Dégats_bandit_5		75840
 	556261491	Vent_Pause	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Vent_Pause_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Vent_Pause		14692860
 	556743107	Mouv_attrape_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mouv_attrape_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Attrape\Mouv_attrape_2		64576
@@ -161,6 +163,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	704709977	Ouh_1	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Ouh_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Ouh\Ouh_1		48008
 	713865844	Déplacement_Solda_6	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Déplacement_Solda_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_6		70720
 	721737697	Yaourt_Fidele_5	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Fidele_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Fidele\Yaourt_Fidele_5		272168
+	728304187	Victoire_Roulement_Tambour	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Victoire_Roulement_Tambour_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Victoire_Roulement_Tambour		745072
 	750295643	Cris_10	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_10		81052
 	771884519	Ahyo_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Recrutement\Ahyo_3		247872
 	783263973	Virages_Epee	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Virages_Epee_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Echec_Critique\Virages_Epee		18028
@@ -213,5 +216,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1025276418	Ahyo_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Recrutement\Ahyo_2		141340
 	1031128169	SWSH_Whoosh 7 (ID 1800)_LS	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Attaque\Mouvement_épée\SWSH_Whoosh 7 (ID 1800)_LS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Attaque\Mouvement_Epee\SWSH_Whoosh 7 (ID 1800)_LS		170316
 	1051043344	Mouv_attrape_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mouv_attrape_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Attrape\Mouv_attrape_3		83500
+	1059629775	Perte_Charisme	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Perte_Charisme_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Perte_Charisme		195012
 	1068584603	ReussiteCritique_slash	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\ReussiteCritique_slash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Reussite_Critique\ReussiteCritique_slash		154944
 
