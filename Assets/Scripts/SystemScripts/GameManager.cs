@@ -236,6 +236,7 @@ public class GameManager : MonoBehaviour
             {
                 fm.GetComponent<AnimationManager>().HideInteractionIcon();
                 fm.GetComponent<AnimationManager>().DarkInteractionIcon();
+                fm.GetComponent<AnimationManager>().LowOpacityInteractionIcon();
                 if (fm.myCamp == currentCampTurn)
                 {
                     fm.GetComponentInChildren<MovementEnemy>().hasMoved = false;

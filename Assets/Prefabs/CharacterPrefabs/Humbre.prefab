@@ -6297,7 +6297,7 @@ MonoBehaviour:
   myCamp: 0
   waitForUnitToEnterZone: 0
   hasFought: 0
-  fideleNom: Aaron
+  fideleNom: Humbre
   fidelePrenom: 
   maxHp: 16
   currentHP: 16
@@ -6318,6 +6318,7 @@ MonoBehaviour:
   questIcon: {fileID: 7630423011758364264}
   myTarget: {fileID: 0}
   isAllActionsDone: 0
+  attackableUnits: 
   unitsInRange: []
 --- !u!114 &9036168571735273838
 MonoBehaviour:

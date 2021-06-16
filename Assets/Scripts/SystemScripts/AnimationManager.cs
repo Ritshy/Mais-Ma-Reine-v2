@@ -48,7 +48,8 @@ public class AnimationManager : MonoBehaviour
     void Start()
     {
         UpdateMyReferences();
-        DarkInteractionIcon();
+        UpdateInteractionIcon();
+        HideInteractionIcon();
     }
 
     // Update is called once per frame
@@ -228,13 +229,13 @@ public class AnimationManager : MonoBehaviour
         switch (myInteraction.interactionType)
         {
             case InteractionType.Dialogue:
-                myInteraction.myInteractionIcon.sprite = myInteraction.dialogueIcon;
+                myInteraction.myInteractionIcon.sprite = myInteraction.dialogueIconDark;
                 break;
             case InteractionType.Recrutement:
-                myInteraction.myInteractionIcon.sprite = myInteraction.recrutementIcon;
+                myInteraction.myInteractionIcon.sprite = myInteraction.recrutementIconDark;
                 break;
             case InteractionType.Combat:
-                myInteraction.myInteractionIcon.sprite = myInteraction.combatIcon;
+                myInteraction.myInteractionIcon.sprite = myInteraction.combatIconDark;
                 break;
             default:
                 break;
@@ -270,12 +271,53 @@ public class AnimationManager : MonoBehaviour
 
     public void DarkInteractionIcon()
     {
-        myInteraction.myInteractionIcon.color = Color.gray;
+        switch (myInteraction.interactionType)
+        {
+            case InteractionType.Aucun:
+                break;
+            case InteractionType.Dialogue:
+                myInteraction.myInteractionIcon.sprite = myInteraction.dialogueIconDark;
+                break;
+            case InteractionType.Recrutement:
+                myInteraction.myInteractionIcon.sprite = myInteraction.recrutementIconDark;
+                break;
+            case InteractionType.Combat:
+                myInteraction.myInteractionIcon.sprite = myInteraction.combatIconDark;
+                break;
+            default:
+                break;
+        }
     }
 
     public void WhiteInteractionIcon()
     {
-        myInteraction.myInteractionIcon.color = Color.white;
+        switch (myInteraction.interactionType)
+        {
+            case InteractionType.Aucun:
+                break;
+            case InteractionType.Dialogue:
+                myInteraction.myInteractionIcon.sprite = myInteraction.dialogueIconWhite;
+                break;
+            case InteractionType.Recrutement:
+                myInteraction.myInteractionIcon.sprite = myInteraction.recrutementIconWhite;
+                break;
+            case InteractionType.Combat:
+                myInteraction.myInteractionIcon.sprite = myInteraction.combatIconWhite;
+                break;
+            default:
+                break;
+        }
+        myInteraction.myInteractionIcon.color = new Color(1f, 1f, 1f, 1f);
+    }
+
+    public void LowOpacityInteractionIcon()
+    {
+        myInteraction.myInteractionIcon.color = new Color(1f, 1f, 1f, .4f);
+    }
+
+    public void NormalOpacityInteractionIcon()
+    {
+        myInteraction.myInteractionIcon.color = new Color(1f, 1f, 1f, 1f);
     }
 
     public void FillAmountHealth()

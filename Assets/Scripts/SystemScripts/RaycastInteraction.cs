@@ -109,17 +109,20 @@ public class RaycastInteraction : MonoBehaviour
                 {
                     case InteractionType.Dialogue:
                         //interactionLauncherInteraction.alreadyInteractedList.Add(interactionReceiverInteraction);
+                        InfoCharacter.Instance.CloseInformationWindow();
                         interactionReceiverInteraction.GetComponent<DialogueInteraction>().StartDialogue(interactionReceiverFM);
                         dialogueLancementInteractionSFX.Post(gameObject);
                         //Debug.Log("Dialogue");
                         break;
                     case InteractionType.Recrutement:
+                        InfoCharacter.Instance.CloseInformationWindow();
                         interactionLauncherInteraction.alreadyInteractedList.Add(interactionReceiverInteraction);
                         interactionReceiverInteraction.GetComponent<Recrutement>().LaunchRecruitement(interactionReceiverFM, interactionLauncherFM);
                         recrutementLancementInteractionSFX.Post(gameObject);
                         //Debug.Log("Recrutement");
                         break;
                     case InteractionType.Combat:
+                        InfoCharacter.Instance.CloseInformationWindow();
                         interactionLauncherInteraction.alreadyInteractedList.Add(interactionReceiverInteraction);
                         CombatManager.Instance.OpenCombatWindow(interactionLauncherFM, interactionReceiverFM);
                         combatLancementInteractionSFX.Post(gameObject);
@@ -168,6 +171,7 @@ public class RaycastInteraction : MonoBehaviour
             {
                 cam.keepInteractionDisplayed = false;
                 cam.DarkInteractionIcon();
+                cam.LowOpacityInteractionIcon();
             }
 
             interactionLauncherInteraction.FideleDisplayInteractionFeedbacks();
@@ -213,7 +217,9 @@ public class RaycastInteraction : MonoBehaviour
                     myCollideInteraction.GetComponentInParent<AnimationManager>().ActivateReceiverSelection();
                     myCollideInteraction.GetComponentInParent<AnimationManager>().keepInteractionDisplayed = true;
                     myCollideInteraction.GetComponentInParent<AnimationManager>().DisplayInteraction();
-                    myCollideInteraction.GetComponentInParent<AnimationManager>().WhiteInteractionIcon();
+
+                    myCollideInteraction.GetComponentInParent<AnimationManager>().DarkInteractionIcon();
+                    myCollideInteraction.GetComponentInParent<AnimationManager>().NormalOpacityInteractionIcon();
                 }
             }
         }

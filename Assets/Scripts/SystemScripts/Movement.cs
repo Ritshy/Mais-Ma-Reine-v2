@@ -61,6 +61,7 @@ public class Movement : MonoBehaviour
         if (isMoving && Input.GetMouseButton(0) && hasMoved == false)
         {
             CursorManager.Instance.SetCursorToMovement();
+            InfoCharacter.Instance.CloseInformationWindow();
             myFM.currentFideleSprite.sprite = myFM.movingFideleSprite;
             myDeadZone.SetActive(true);
             // ICI jouer VFX de déplacement en cours
@@ -78,6 +79,7 @@ public class Movement : MonoBehaviour
                     fmir.GetComponent<AnimationManager>().DisplayInteraction();
                     fmir.GetComponent<AnimationManager>().DisplayInteractionIcon();
                     fmir.GetComponent<AnimationManager>().DarkInteractionIcon();
+                    fmir.GetComponent<AnimationManager>().LowOpacityInteractionIcon();
                 }
             }
 
@@ -129,7 +131,7 @@ public class Movement : MonoBehaviour
                     myFM.GetComponent<AnimationManager>().DesactivateCursorIndicator();
                 }
             }
-
+            
             myFM.currentFideleSprite.sprite = myFM.idleFideleSprite;
             myAnimationManager.HideMovement();
             myAnimationManager.HideInteraction();

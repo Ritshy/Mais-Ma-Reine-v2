@@ -23,9 +23,14 @@ public class Interaction : MonoBehaviour
     private AnimationManager myAnimationManager;
     public FideleManager myFideleManager;
 
-    public Sprite combatIcon;
-    public Sprite dialogueIcon;
-    public Sprite recrutementIcon;
+    public Sprite combatIconWhite;
+    public Sprite combatIconDark;
+
+    public Sprite dialogueIconWhite;
+    public Sprite dialogueIconDark;
+
+    public Sprite recrutementIconWhite;
+    public Sprite recrutementIconDark;
 
     public SpriteRenderer myInteractionIcon;
 

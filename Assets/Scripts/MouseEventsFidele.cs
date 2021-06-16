@@ -85,23 +85,14 @@ public class MouseEventsFidele : MonoBehaviour
 
     public void OnMouseOver()
     {
-        if (GameManager.Instance.isGamePaused == false)
+        if (GameManager.Instance.isGamePaused == false && GameManager.Instance.currentCampTurn == GameCamps.Fidele)
         {
             #region InformationDisplaying
 
-            if (Input.GetMouseButtonDown(2) && myAnimManager.isInfoDisplayed == false)
+            if (Input.GetMouseButtonDown(1))
             {
-                myAnimManager.DisplayMovement();
-                myAnimManager.DisplayStats();
-                myAnimManager.isInfoDisplayed = true;
+                InfoCharacter.Instance.OpenInformationWindow(myFideleManager);
             }
-            else if (Input.GetMouseButtonDown(2) && myAnimManager.isInfoDisplayed)
-            {
-                myAnimManager.HideMovement();
-                myAnimManager.HideStats();
-                myAnimManager.isInfoDisplayed = false;
-            }
-
             #endregion
         }
     }
