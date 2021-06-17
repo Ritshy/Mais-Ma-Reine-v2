@@ -68,6 +68,14 @@ public class Interaction : MonoBehaviour
                 CheckForAvaibleInteractions();
                 collision.GetComponentInParent<AnimationManager>().ActivateReceiverSelection();
             }
+
+            if (myFideleManager.myCamp == GameCamps.Fidele && myFideleManager.GetComponentInChildren<Movement>().isMoving)
+            {
+                foreach (AnimationManager collindingAM in myCollideAnimationManagerList)
+                {
+                    collindingAM.DisplayInteraction();
+                }
+            }
         }
     }
 

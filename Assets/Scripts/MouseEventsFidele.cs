@@ -39,7 +39,7 @@ public class MouseEventsFidele : MonoBehaviour
     {
         if (GameManager.Instance.isGamePaused == false)
         {
-            if (myMovement.isMoving == false)
+            if (myMovement.isMoving == false && myFideleManager.isAllActionsDone == false)
             {
                 myAnimManager.DisplayInteraction();
                 foreach (AnimationManager am in myInteraction.myCollideAnimationManagerList)
