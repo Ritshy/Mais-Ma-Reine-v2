@@ -18,10 +18,15 @@ public class MenuTerritoireManager : MonoBehaviour
     public GameObject myTerritoire02Verrouille;
     public GameObject myTerritoire02Conquis;
 
+    public GameObject myMongolfiereToMove;
+
+    private Canvas myCanvas;
+
     // Start is called before the first frame update
     void Start()
     {
         myAnim = GetComponent<Animator>();
+        myCanvas = GetComponentInParent<Canvas>();
 
         if (GameManager.isTerritoire01Completed)
         {
@@ -48,7 +53,7 @@ public class MenuTerritoireManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void StartTransitionToTerritoire01()
@@ -84,4 +89,21 @@ public class MenuTerritoireManager : MonoBehaviour
 
         SceneSwitcher.Instance.SwitchToTerritoire02Cinematique();
     }
+
+    /*public void AddNewDestinationPoint(Vector3 destination)
+    {
+        myMongolfiereToMove.transform.position = Vector2.Lerp(transform.position, destination, 5f);
+
+        Vector2 pos;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(myCanvas.transform as RectTransform, Input.mousePosition, myCanvas.worldCamera, out pos);
+        myMongolfiereToMove.transform.position = Vector2.Lerp(myMongolfiereToMove.transform.position, myCanvas.transform.TransformPoint(pos), 500000f);
+
+        if (Input.GetMouseButton(0))
+        {
+            Vector3 mousePosition = Input.mousePosition;
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            AddNewDestinationPoint(mousePosition);
+            
+        }
+    }*/
 }

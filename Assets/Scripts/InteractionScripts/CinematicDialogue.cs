@@ -154,9 +154,8 @@ public class CinematicDialogue : MonoBehaviour
 
         myAnim.SetTrigger("triggerBoiteDialogueDisparition");
         myAnim.SetTrigger("triggerEndCinematic");
-        levelDesignAnimator.SetTrigger("triggerEndCinematicLD");
 
-        yield return new WaitForSeconds(2.3f);
+        yield return new WaitForSeconds(2f);
 
         switch (currentTerritoire)
         {
