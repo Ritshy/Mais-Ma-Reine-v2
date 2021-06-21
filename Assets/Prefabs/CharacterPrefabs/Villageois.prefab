@@ -588,6 +588,7 @@ GameObject:
   - component: {fileID: 3762048443785804314}
   - component: {fileID: 2812671646200231585}
   - component: {fileID: 3762048443785804313}
+  - component: {fileID: 1391876707046825054}
   m_Layer: 0
   m_Name: Villageois
   m_TagString: Obstacle
@@ -633,6 +634,7 @@ MonoBehaviour:
   hasFought: 0
   fideleNom: Mexima
   fidelePrenom: Gnifique
+  isStatRandomize: 0
   maxHp: 13
   currentHP: 0
   isAlive: 0
@@ -705,8 +707,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
-  m_Size: {x: 3, y: 4.25}
+  m_Offset: {x: 0, y: -0.9}
+  m_Size: {x: 3.35, y: 4.5}
   m_Direction: 0
 --- !u!61 &2812671646200231585
 BoxCollider2D:
@@ -753,6 +755,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1391876707046825054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3762048443785804311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5369810f1b30e74086b48645b9b40b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minRandomHp: 10
+  maxRandomHp: 21
+  minRandomLowAttackRange: 1
+  maxRandomLowAttackRange: 5
+  minRandomHighAttackRange: 5
+  maxRandomHighAttackRange: 8
+  minRandomLowCounterAttackRange: 1
+  maxRandomLowCounterAttackRange: 3
+  minRandomHighCounterAttackRange: 3
+  maxRandomHighCounterAttackRange: 5
+  minRandomCriticChances: 0
+  maxRandomCriticChances: 26
+  minRandomMissChances: 0
+  maxRandomMissChances: 26
+  minRandomCharismaCost: 5
+  maxRandomCharismaCost: 21
+  finalHP: 0
+  finalMinAtkRange: 0
+  finalMaxAtkRange: 0
+  finalMinCounterAtkRange: 0
+  finalMaxCounterAtkRange: 0
+  finalCritChance: 0
+  finalMissChance: 0
+  finalCharismaCost: 0
 --- !u!1 &3762048443970847429
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,9 +923,12 @@ MonoBehaviour:
   myCollideAnimationManagerList: []
   alreadyInteractedList: []
   myFideleManager: {fileID: 0}
-  combatIcon: {fileID: 21300000, guid: 7a130709de3d495448461800752bc9e3, type: 3}
-  dialogueIcon: {fileID: 21300000, guid: 25753b9ab7a12914793d8ad4d41c0ee1, type: 3}
-  recrutementIcon: {fileID: 21300000, guid: 68e84c1598127f641b706b816c881779, type: 3}
+  combatIconWhite: {fileID: 0}
+  combatIconDark: {fileID: 0}
+  dialogueIconWhite: {fileID: 0}
+  dialogueIconDark: {fileID: 0}
+  recrutementIconWhite: {fileID: 0}
+  recrutementIconDark: {fileID: 0}
   myInteractionIcon: {fileID: 3762048444923076440}
 --- !u!114 &5021025420042276074
 MonoBehaviour:
@@ -1140,6 +1181,7 @@ Transform:
   - {fileID: 3762048444459125173}
   - {fileID: 3762048443970847430}
   - {fileID: 3762048444096906474}
+  - {fileID: 6164652578107022466}
   m_Father: {fileID: 3762048443785804312}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1203,6 +1245,7 @@ MonoBehaviour:
   hasMoved: 0
   isMoving: 0
   targetLanded: 0
+  myShadow: {fileID: 5126492293055014165}
   deadZonetmp: {fileID: 0}
 --- !u!61 &8765058864160843814
 BoxCollider2D:
@@ -1934,6 +1977,87 @@ MonoBehaviour:
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &5036552273820821019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6164652578107022466}
+  - component: {fileID: 5126492293055014165}
+  m_Layer: 2
+  m_Name: ShadowSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6164652578107022466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5036552273820821019}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3762048444326783641}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &5126492293055014165
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5036552273820821019}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3d164196e1434a845a648a55443c3433, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.64705884}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.19, y: 0.42}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &5377467510671164180
 GameObject:
   m_ObjectHideFlags: 0
@@ -2111,7 +2235,7 @@ Transform:
   m_GameObject: {fileID: 8449275757486991785}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 3762048444616664543}
   m_RootOrder: 1

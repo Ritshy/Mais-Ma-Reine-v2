@@ -26,6 +26,7 @@ public class Movement : MonoBehaviour
     private FideleManager myFM;
     public GameObject myMoveZone;
     public GameObject myDeadZone;
+    public SpriteRenderer myShadow;
     private Collider2D myInteractionZoneCollider;
     private AnimationManager myAnimationManager;
     private Interaction myInteraction;
@@ -60,6 +61,7 @@ public class Movement : MonoBehaviour
 
         if (isMoving && Input.GetMouseButton(0) && hasMoved == false)
         {
+            myShadow.enabled = true;
             CursorManager.Instance.SetCursorToMovement();
             InfoCharacter.Instance.CloseInformationWindow();
             myFM.currentFideleSprite.sprite = myFM.movingFideleSprite;
@@ -131,7 +133,8 @@ public class Movement : MonoBehaviour
                     myFM.GetComponent<AnimationManager>().DesactivateCursorIndicator();
                 }
             }
-            
+
+            myShadow.enabled = false;
             myFM.currentFideleSprite.sprite = myFM.idleFideleSprite;
             myAnimationManager.HideMovement();
             myAnimationManager.HideInteraction();
@@ -354,19 +357,20 @@ public class Movement : MonoBehaviour
                     isLanbable = false;
                     myAnimationManager.UnableToLand();
                 }
-                else if (collision.tag == ("MapLimit"))
+                if (collision.tag == ("MapLimit"))
                 {
                     isInsideMapLimits = false;
                     isLanbable = false;
                     myAnimationManager.UnableToLand();
                 }
-                else if (collision.gameObject == myDeadZone)
+                if (collision.gameObject == myDeadZone)
                 {
                     isInDeadZone = true;
                     isLanbable = false;
                     myAnimationManager.UnableToLand();
                 }
-                else if (collision.gameObject == myMoveZone && isInAnObstacle == false && isInsideMapLimits && isInDeadZone == false)
+
+                if (collision.gameObject == myMoveZone && isInAnObstacle == false && isInsideMapLimits && isInDeadZone == false)
                 {
                     isLanbable = true;
                     myAnimationManager.AbleToLand();
@@ -385,19 +389,19 @@ public class Movement : MonoBehaviour
                 isLanbable = false;
                 myAnimationManager.UnableToLand();
             }
-            else if (collision.tag == ("MapLimit"))
+            if (collision.tag == ("MapLimit"))
             {
                 isInsideMapLimits = false;
                 isLanbable = false;
                 myAnimationManager.UnableToLand();
             }
-            else if (collision.gameObject == myDeadZone)
+            if (collision.gameObject == myDeadZone)
             {
                 isInDeadZone = true;
                 isLanbable = false;
                 myAnimationManager.UnableToLand();
             }
-            else if (collision.gameObject == myMoveZone && isInAnObstacle == false && isInsideMapLimits && isInDeadZone == false)
+            if (collision.gameObject == myMoveZone && isInAnObstacle == false && isInsideMapLimits && isInDeadZone == false)
             {
                 isLanbable = true;
                 myAnimationManager.AbleToLand();

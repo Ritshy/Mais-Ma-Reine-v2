@@ -30,6 +30,8 @@ public class TurnFeedbackManager : MonoBehaviour
     public Sprite boutonTourCalamite;
     public Sprite bandeauBGCalamite;
 
+    public bool isFirstTurnPassed;
+
     #region Singleton
     public static TurnFeedbackManager Instance;
 
@@ -47,9 +49,9 @@ public class TurnFeedbackManager : MonoBehaviour
         #endregion
         // Start is called before the first frame update
         void Start()
-    {
-        myAnim = GetComponent<Animator>();
-    }
+        {
+            myAnim = GetComponent<Animator>();
+        }
 
     // Update is called once per frame
     void Update()
@@ -116,5 +118,13 @@ public class TurnFeedbackManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         mySwitchTurnText.text = "";
+    }
+
+    public void TriggerCursorIndication()
+    {
+        if (isFirstTurnPassed == false)
+        {
+            myAnim.SetTrigger("DisplayCursor");
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
 
 public class RecrutementManager : MonoBehaviour
@@ -12,14 +13,11 @@ public class RecrutementManager : MonoBehaviour
 
     public GameObject myFideleParent;
 
+    public Button cancelRecruitButton;
+
     public bool isRecruiting = false;
-
-    #region Nom et Camp
-    [Header("Nom et Camp")]
+    
     public TextMeshProUGUI characterNom;
-
-    public TextMeshProUGUI characterCamp;
-    #endregion
 
     #region Caractéristiques
     [Header("Caractéristiques")]
@@ -129,6 +127,11 @@ public class RecrutementManager : MonoBehaviour
             if (GameManager.Instance.firstFideleToInteractWithHasInteracted == false)
             {
                 myAnim.SetBool("isCursorVisible", true);
+                cancelRecruitButton.interactable = false;
+            }
+            else
+            {
+                cancelRecruitButton.interactable = true;
             }
         }
 
@@ -136,7 +139,6 @@ public class RecrutementManager : MonoBehaviour
         movingRecruitedSprite = fmtrMovingSprite;
 
         characterNom.text = fmToRecruit.fidelePrenom + " " + fmToRecruit.fideleNom;
-        characterCamp.text = fmToRecruit.myCamp.ToString();
 
         hpValue.text = fmToRecruit.maxHp.ToString();
 
@@ -235,6 +237,7 @@ public class RecrutementManager : MonoBehaviour
         myFMToRecruit.gameObject.AddComponent<MouseEventsFidele>();
 
         myMovementScript.gameObject.AddComponent<Movement>();
+        myMovementScript.gameObject.GetComponent<Movement>().myShadow = myMovementScript.myShadow;
 
         Destroy(myMovementScript);
         Destroy(myMovementScript.GetComponent<NavMeshAgent>());
@@ -317,6 +320,7 @@ public class RecrutementManager : MonoBehaviour
         {
             GameManager.Instance.firstFideleToInteractWithHasInteracted = true;
             GameManager.Instance.firstFideleToInteractWith.GetComponent<AnimationManager>().DesactivateCursorIndicator();
+            TurnFeedbackManager.Instance.TriggerCursorIndication();
         }
 
         //RaycastInteraction.Instance.CheckInteractionLauncherState();

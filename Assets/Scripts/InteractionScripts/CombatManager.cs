@@ -513,6 +513,11 @@ public class CombatManager : MonoBehaviour
 
                 attaqueSimpleImpactSFX.Post(gameObject);
 
+                yield return new WaitForSeconds(.15f);
+
+                criSFX.Post(gameObject);
+                CameraZooming.Instance.ShakeScreen();
+
                 myAnim.SetTrigger("DefenseurReceiveDamage");
                 //attaquantDamageEffect.Play();
 
@@ -590,6 +595,11 @@ public class CombatManager : MonoBehaviour
             yield return new WaitForSeconds(.5f);
 
             attaqueSimpleImpactSFX.Post(gameObject);
+
+            yield return new WaitForSeconds(.15f);
+
+            criSFX.Post(gameObject);
+            CameraZooming.Instance.ShakeScreen();
 
             myAnim.SetTrigger("AttaquantReceiveDamage");
 

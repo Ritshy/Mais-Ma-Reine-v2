@@ -20,6 +20,8 @@ public class MovementEnemy : MonoBehaviour
     public bool isMoving = false;
     public bool targetLanded = false;
 
+    public SpriteRenderer myShadow;
+
     public GameObject deadZonetmp;
 
     // Start is called before the first frame update

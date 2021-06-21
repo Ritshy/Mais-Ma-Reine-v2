@@ -202,6 +202,8 @@ public class GameManager : MonoBehaviour
 
         ResetTurn();
         TurnFeedbackManager.Instance.SwitchTurnFeedback(currentCampTurn);
+        TurnFeedbackManager.Instance.TriggerCursorIndication();
+        TurnFeedbackManager.Instance.isFirstTurnPassed = true;
 
         if (currentCampTurn == GameCamps.Fidele)
         {
