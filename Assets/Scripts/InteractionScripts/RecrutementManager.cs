@@ -202,6 +202,8 @@ public class RecrutementManager : MonoBehaviour
                 myRecruiterFM.GetComponentInChildren<Interaction>().alreadyInteractedList.Remove(myFMToRecruit.GetComponentInChildren<Interaction>());
                 myRecruiterFM.GetComponent<AnimationManager>().CheckActionsLeftAmout();
 
+                myRecruiterFM.GetComponentInChildren<Interaction>().OtherCampDisplayInteractionFeedbacks();
+
                 myFMToRecruit = null;
                 idleRecruitedSprite = null;
                 movingRecruitedSprite = null;
@@ -215,6 +217,8 @@ public class RecrutementManager : MonoBehaviour
 
             myRecruiterFM.GetComponentInChildren<Interaction>().alreadyInteractedList.Remove(myFMToRecruit.GetComponentInChildren<Interaction>());
             myRecruiterFM.GetComponent<AnimationManager>().CheckActionsLeftAmout();
+
+            myRecruiterFM.GetComponentInChildren<Interaction>().OtherCampDisplayInteractionFeedbacks();
 
             myFMToRecruit = null;
             idleRecruitedSprite = null;
