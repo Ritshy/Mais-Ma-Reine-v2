@@ -119,8 +119,6 @@ public class InfoCharacter : MonoBehaviour
     {
         myAnim.SetBool("OpenInformation", false);
         isInformationDisplayed = false;
-
-        Debug.Log("Information du fidèle cachée");
     }
 
     private void CheckForClosingWindow()

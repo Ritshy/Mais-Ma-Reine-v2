@@ -12,11 +12,13 @@ public class FideleManager : MonoBehaviour
     public bool hasFought = false;
 
     [Header("Caractéristiques")]
-
+    
     public string fideleNom;
     public string fidelePrenom;
 
     public bool isStatRandomize;
+
+    public Classes fideleClasse;
 
     public int maxHp;
     public int currentHP;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StatRandomizer : MonoBehaviour
 {
-    [Header ("Randomizer Settings")]
+    [Header("Randomizer Settings")]
 
     [Range(1, 50)]
     public int minRandomHp;
@@ -45,7 +45,9 @@ public class StatRandomizer : MonoBehaviour
     public int maxRandomCharismaCost;
 
     [Space]
-    [Header ("Randomizer Results")]
+    [Header("Randomizer Results")]
+
+    public Classes finalClass;
 
     public int finalHP;
 
@@ -80,6 +82,25 @@ public class StatRandomizer : MonoBehaviour
 
     public void GenerateStatistics(FideleManager receivingStatFM)
     {
+        /*int rnd = Random.Range(0, 3);
+
+        switch (rnd)
+        {
+            case 0:
+                finalClass = Classes.Epeiste;
+                break;
+            case 1:
+                finalClass = Classes.Lancier;
+                break;
+            case 2:
+                finalClass = Classes.Magicien;
+                break;
+            default:
+                break;
+        }*/
+
+        finalClass = (Classes)Random.Range(0, 3);
+
         finalHP = RandomizeStat(minRandomHp, maxRandomHp);
 
         finalMinAtkRange = RandomizeStat(minRandomLowAttackRange, maxRandomLowAttackRange);
@@ -93,6 +114,7 @@ public class StatRandomizer : MonoBehaviour
 
         finalCharismaCost = RandomizeStat(minRandomCharismaCost, maxRandomCharismaCost);
 
+        receivingStatFM.fideleClasse = finalClass;
         receivingStatFM.maxHp = finalHP;
         receivingStatFM.minAttackRange = finalMinAtkRange;
         receivingStatFM.maxAttackRange = finalMaxAtkRange;
@@ -101,6 +123,8 @@ public class StatRandomizer : MonoBehaviour
         receivingStatFM.criticChances = finalCritChance;
         receivingStatFM.missChances = finalMissChance;
         receivingStatFM.charismaCost = finalCharismaCost;
+
+        receivingStatFM.currentHP = receivingStatFM.maxHp;
     }
 
     public int RandomizeStat(int minimumStatValue, int maximumStatValue)

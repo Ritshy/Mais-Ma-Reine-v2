@@ -106,7 +106,6 @@ public class CameraZooming : MonoBehaviour
 
     public void ShakeScreen()
     {
-        Debug.Log("Screen shaking !");
         myShaker.Shake(shakePreset);
     }
 }

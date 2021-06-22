@@ -5,6 +5,7 @@ using System.Linq;
 
 
 public enum GameCamps { Fidele, Roi, Bandit, BanditCalamiteux, Calamite, Villageois, Converti}
+public enum Classes { Epeiste, Magicien, Lancier }
 
 public class GameManager : MonoBehaviour
 {

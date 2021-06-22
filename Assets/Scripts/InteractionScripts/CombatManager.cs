@@ -4,11 +4,18 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum Vulnerability { Faible, Neutre, Resistant }
+
 public class CombatManager : MonoBehaviour
 {
     private Animator myAnim;
     public bool isInFight = false;
     public TextMeshProUGUI renderTextCombat;
+
+    public int vulnerabilityMultiplier;
+
+    public float criticalMultiplier;
+    public float missMultiplier;
 
     [Header("Sounds Interface")]
 
@@ -80,27 +87,13 @@ public class CombatManager : MonoBehaviour
 
     public Image defenseurBrasImage;
 
-    /*[Header("Effects & Icones")]
-
-    public Sprite reineSprite;
-    public Sprite roiSprite;
-    public Sprite calamiteSprite;
-    public Sprite banditSprite;
-
-    public Color reineColor;
-    public Color roiColor;
-    public Color banditColor;
-    */
-
-    //private ParticleSystem myCombatEffect;
-
-    //private ParticleSystem defenseurDamageEffect;
-    //private ParticleSystem attaquantDamageEffect;
-
     private int isCritical;
     private int isMissed;
+    
+    private Vulnerability attaquantVulnerability;
+    private Vulnerability defenseurVulnerability;
 
-    //private TextMeshProUGUI myDamageFeedback;
+    private float currentAttackValue;
 
     #region Singleton
 
@@ -149,64 +142,11 @@ public class CombatManager : MonoBehaviour
         defenseurFM = defFM;
         defenseurAM = defenseurFM.GetComponentInParent<AnimationManager>();
 
+        DetermineVulnerability(atkFM, defFM);
 
         myAnim.SetBool("OpenCombatWindow", true);
 
         criSFX.Post(gameObject);
-
-        /*switch (atkFM.myCamp)
-        {
-            case GameCamps.Fidele:
-                attaquantIcone.sprite = reineSprite;
-                break;
-            case GameCamps.Roi:
-                attaquantIcone.sprite = roiSprite;
-                break;
-            case GameCamps.Bandit:
-                attaquantIcone.sprite = banditSprite;
-                break;
-            case GameCamps.BanditCalamiteux:
-                attaquantIcone.sprite = banditSprite;
-                break;
-            case GameCamps.Calamite:
-                attaquantIcone.sprite = calamiteSprite;
-                break;
-            case GameCamps.Villageois:
-                attaquantIcone.sprite = reineSprite;
-                break;
-            case GameCamps.Converti:
-                attaquantIcone.sprite = roiSprite;
-                break;
-            default:
-                break;
-        }
-
-        switch (defFM.myCamp)
-        {
-            case GameCamps.Fidele:
-                defenseurIcone.sprite = reineSprite;
-                break;
-            case GameCamps.Roi:
-                defenseurIcone.sprite = roiSprite;
-                break;
-            case GameCamps.Bandit:
-                defenseurIcone.sprite = banditSprite;
-                break;
-            case GameCamps.BanditCalamiteux:
-                defenseurIcone.sprite = banditSprite;
-                break;
-            case GameCamps.Calamite:
-                defenseurIcone.sprite = calamiteSprite;
-                break;
-            case GameCamps.Villageois:
-                defenseurIcone.sprite = reineSprite;
-                break;
-            case GameCamps.Converti:
-                defenseurIcone.sprite = roiSprite;
-                break;
-            default:
-                break;
-        }*/
 
         attaquantName.text = atkFM.fideleNom + (" ") + atkFM.fidelePrenom;
 
@@ -234,60 +174,6 @@ public class CombatManager : MonoBehaviour
         attaquantHP.text = attaquantFM.currentHP.ToString();
         defenseurHP.text = defenseurFM.currentHP.ToString();
 
-        /*switch (attaquantFM.myCamp)
-        {
-            case GameCamps.Fidele:
-                attaquantBrasImage.color = reineColor;
-                break;
-            case GameCamps.Roi:
-                attaquantBrasImage.color = roiColor;
-                break;
-            case GameCamps.Bandit:
-                attaquantBrasImage.color = banditColor;
-                break;
-            case GameCamps.BanditCalamiteux:
-                attaquantBrasImage.color = banditColor;
-                break;
-            case GameCamps.Calamite:
-                attaquantBrasImage.color = banditColor;
-                break;
-            case GameCamps.Villageois:
-                attaquantBrasImage.color = reineColor;
-                break;
-            case GameCamps.Converti:
-                attaquantBrasImage.color = banditColor;
-                break;
-            default:
-                break;
-        }
-
-        switch (defenseurFM.myCamp)
-        {
-            case GameCamps.Fidele:
-                defenseurBrasImage.color = reineColor;
-                break;
-            case GameCamps.Roi:
-                defenseurBrasImage.color = roiColor;
-                break;
-            case GameCamps.Bandit:
-                defenseurBrasImage.color = banditColor;
-                break;
-            case GameCamps.BanditCalamiteux:
-                defenseurBrasImage.color = banditColor;
-                break;
-            case GameCamps.Calamite:
-                defenseurBrasImage.color = banditColor;
-                break;
-            case GameCamps.Villageois:
-                defenseurBrasImage.color = reineColor;
-                break;
-            case GameCamps.Converti:
-                defenseurBrasImage.color = banditColor;
-                break;
-            default:
-                break;
-        }*/
-
         myAnim.SetBool("OpenCombatBandeau", true);
 
         CameraZooming.Instance.ShakeScreen();
@@ -307,9 +193,6 @@ public class CombatManager : MonoBehaviour
 
         attaquantAM.keepInteractionDisplayed = true;
         attaquantAM.DisplayInteraction();
-
-        //defenseurDamageEffect = defenseurFM.GetComponentInChildren<ParticleSystem>();
-        //attaquantDamageEffect = attaquantFM.GetComponentInChildren<ParticleSystem>();
 
         attaquantFM.isInteracting = true;
         defenseurFM.isInteracting = true;
@@ -357,59 +240,6 @@ public class CombatManager : MonoBehaviour
         if (attaquantFM.isAlive && defenseurFM.isAlive)
         {
             GameManager.Instance.isGamePaused = true;
-            /*switch (attaquantFM.myCamp)
-            {
-                case GameCamps.Fidele:
-                    attaquantBrasImage.color = reineColor;
-                    break;
-                case GameCamps.Roi:
-                    attaquantBrasImage.color = roiColor;
-                    break;
-                case GameCamps.Bandit:
-                    attaquantBrasImage.color = banditColor;
-                    break;
-                case GameCamps.BanditCalamiteux:
-                    attaquantBrasImage.color = banditColor;
-                    break;
-                case GameCamps.Calamite:
-                    attaquantBrasImage.color = banditColor;
-                    break;
-                case GameCamps.Villageois:
-                    attaquantBrasImage.color = reineColor;
-                    break;
-                case GameCamps.Converti:
-                    attaquantBrasImage.color = banditColor;
-                    break;
-                default:
-                    break;
-            }
-
-            switch (defenseurFM.myCamp)
-            {
-                case GameCamps.Fidele:
-                    defenseurBrasImage.color = reineColor;
-                    break;
-                case GameCamps.Roi:
-                    defenseurBrasImage.color = roiColor;
-                    break;
-                case GameCamps.Bandit:
-                    defenseurBrasImage.color = banditColor;
-                    break;
-                case GameCamps.BanditCalamiteux:
-                    defenseurBrasImage.color = banditColor;
-                    break;
-                case GameCamps.Calamite:
-                    defenseurBrasImage.color = banditColor;
-                    break;
-                case GameCamps.Villageois:
-                    defenseurBrasImage.color = reineColor;
-                    break;
-                case GameCamps.Converti:
-                    defenseurBrasImage.color = banditColor;
-                    break;
-                default:
-                    break;
-            }*/
 
             myAnim.SetBool("OpenCombatBandeau", true);
 
@@ -434,9 +264,6 @@ public class CombatManager : MonoBehaviour
 
             attaquantAM.keepInteractionDisplayed = true;
             attaquantAM.DisplayInteraction();
-
-            //defenseurDamageEffect = defenseurFM.GetComponentInChildren<ParticleSystem>();
-            //attaquantDamageEffect = attaquantFM.GetComponentInChildren<ParticleSystem>();
 
             attaquantFM.isInteracting = true;
             defenseurFM.isInteracting = true;
@@ -472,23 +299,117 @@ public class CombatManager : MonoBehaviour
         }
     }
 
-    public IEnumerator Attack()
-    {    
-        Debug.Log("Attack() " + defenseurFM.name + " " + " " + attaquantFM.name);
+    public void DetermineVulnerability(FideleManager atkFM, FideleManager defFM)
+    {
+        switch (atkFM.fideleClasse)
+        {
+            case Classes.Epeiste:
+                switch (defenseurFM.fideleClasse)
+                {
+                    case Classes.Epeiste:
+                        defenseurVulnerability = Vulnerability.Neutre;
+                        attaquantVulnerability = Vulnerability.Neutre;
+                        break;
+                    case Classes.Magicien:
+                        defenseurVulnerability = Vulnerability.Resistant;
+                        attaquantVulnerability = Vulnerability.Faible;
+                        break;
+                    case Classes.Lancier:
+                        defenseurVulnerability = Vulnerability.Faible;
+                        attaquantVulnerability = Vulnerability.Resistant;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case Classes.Magicien:
+                switch (defenseurFM.fideleClasse)
+                {
+                    case Classes.Epeiste:
+                        defenseurVulnerability = Vulnerability.Faible;
+                        attaquantVulnerability = Vulnerability.Resistant;
+                        break;
+                    case Classes.Magicien:
+                        defenseurVulnerability = Vulnerability.Neutre;
+                        attaquantVulnerability = Vulnerability.Neutre;
+                        break;
+                    case Classes.Lancier:
+                        defenseurVulnerability = Vulnerability.Resistant;
+                        attaquantVulnerability = Vulnerability.Faible;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case Classes.Lancier:
+                switch (defenseurFM.fideleClasse)
+                {
+                    case Classes.Epeiste:
+                        defenseurVulnerability = Vulnerability.Resistant;
+                        attaquantVulnerability = Vulnerability.Faible;
+                        break;
+                    case Classes.Magicien:
+                        defenseurVulnerability = Vulnerability.Faible;
+                        attaquantVulnerability = Vulnerability.Resistant;
+                        break;
+                    case Classes.Lancier:
+                        defenseurVulnerability = Vulnerability.Neutre;
+                        attaquantVulnerability = Vulnerability.Neutre;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            default:
+                break;
+        }
+    }
 
+    public IEnumerator Attack()
+    {
         if (attaquantFM != null && defenseurFM != null)
         {
             if (attaquantFM.isAlive && defenseurFM.isAlive)
             {
-                int attackValue = Random.Range(attaquantFM.minAttackRange, attaquantFM.maxAttackRange);
-                defenseurFM.currentHP -= attackValue;
+                switch (defenseurVulnerability)
+                {
+                    case Vulnerability.Faible:
+                        currentAttackValue = Random.Range(attaquantFM.minAttackRange, attaquantFM.maxAttackRange);
+                        Debug.Log("Valeur d'attaque avant modification : " + currentAttackValue);
+
+                        currentAttackValue = currentAttackValue + vulnerabilityMultiplier;
+                        Debug.Log("Coup puissant infligé ! Nouvelle valeur d'attaque : " + currentAttackValue);
+                        break;
+                    case Vulnerability.Neutre:
+                        currentAttackValue = Random.Range(attaquantFM.minAttackRange, attaquantFM.maxAttackRange);
+                        Debug.Log("Coup neutre infligé !");
+                        break;
+                    case Vulnerability.Resistant:
+                        currentAttackValue = Random.Range(attaquantFM.minAttackRange, attaquantFM.maxAttackRange);
+                        Debug.Log("Valeur d'attaque avant modification : " + currentAttackValue);
+
+                        currentAttackValue = currentAttackValue - vulnerabilityMultiplier;
+                        Debug.Log("Coup faible infligé ! Nouvelle valeur d'attaque : " + currentAttackValue);
+                        break;
+                    default:
+                        break;
+                }
+
+                currentAttackValue = Mathf.RoundToInt(currentAttackValue);
+
+                if (currentAttackValue <= 0)
+                {
+                    currentAttackValue = 1;
+                }
+
+                defenseurFM.currentHP -= (int)currentAttackValue;
 
                 if (defenseurFM.currentHP <= 0)
                 {
                     defenseurFM.currentHP = 0;
                 }
 
-                Debug.Log(attaquantFM.name + " inflige " + attackValue + " points de dégâts, laissant " + defenseurFM.name + " à " + defenseurFM.currentHP);
+                //Debug.Log(attaquantFM.name + " inflige " + attackValue + " points de dégâts, laissant " + defenseurFM.name + " à " + defenseurFM.currentHP);
 
                 // ICI jouer VFX d'attaque simple
                 // ICI jouer SFX d'attaque simple
@@ -525,7 +446,7 @@ public class CombatManager : MonoBehaviour
 
                 // Ici jouer Anim dégâts reçus sur defenseur
 
-                renderTextCombat.text = "- " + attackValue.ToString();
+                renderTextCombat.text = "- " + currentAttackValue.ToString();
                 defenseurDamageTextPS.gameObject.SetActive(true);
                 defenseurAM.ReceiveDamage();
                 defenseurAM.FillAmountHealth();
@@ -536,8 +457,7 @@ public class CombatManager : MonoBehaviour
                 defenseurHP.text = defenseurFM.currentHP.ToString();
 
                 yield return new WaitForSeconds(1f);
-
-                Debug.Log("CheckHP()");
+                
                 CheckHP();
                 yield return new WaitForSeconds(0.5f);
 
@@ -560,19 +480,46 @@ public class CombatManager : MonoBehaviour
 
     public IEnumerator CounterAttack()
     {
-        Debug.Log("CounterAttack() " + defenseurFM.name + " " + " " + attaquantFM.name);
         if (attaquantFM != null && defenseurFM != null)
         {
-            int counterAttackValue = Random.Range(defenseurFM.minCounterAttackRange, defenseurFM.maxCounterAttackRange);
-            attaquantFM.currentHP -= counterAttackValue;
+            switch (attaquantVulnerability)
+            {
+                case Vulnerability.Faible:
+                    currentAttackValue = Random.Range(defenseurFM.minCounterAttackRange, defenseurFM.maxCounterAttackRange);
+                    Debug.Log("Valeur d'attaque avant modification : " + currentAttackValue);
+
+                    currentAttackValue = currentAttackValue + vulnerabilityMultiplier;
+                    Debug.Log("Coup puissant infligé, Valeur d'attaque après modification : " + currentAttackValue);
+                    break;
+                case Vulnerability.Neutre:
+                    currentAttackValue = Random.Range(defenseurFM.minCounterAttackRange, defenseurFM.maxCounterAttackRange);
+                    Debug.Log("Coup neutre infligé !");
+                    break;
+                case Vulnerability.Resistant:
+                    currentAttackValue = Random.Range(defenseurFM.minCounterAttackRange, defenseurFM.maxCounterAttackRange);
+                    Debug.Log("Valeur d'attaque avant modification : " + currentAttackValue);
+
+                    currentAttackValue = currentAttackValue - vulnerabilityMultiplier;
+                    Debug.Log("Coup faible infligé, Valeur d'attaque après modification : " + currentAttackValue);
+                    break;
+                default:
+                    break;
+            }
+
+            currentAttackValue = Mathf.RoundToInt(currentAttackValue);
+
+            if (currentAttackValue <= 0)
+            {
+                currentAttackValue = 1;
+            }
+
+            attaquantFM.currentHP -= (int)currentAttackValue;
+
 
             if (attaquantFM.currentHP <= 0)
             {
                 attaquantFM.currentHP = 0;
             }
-
-            Debug.Log("Le défenseur contre-attaque et inflige" + counterAttackValue + "points de dégâts, laissant son adversaire à " + attaquantFM.currentHP);
-
 
             // ICI jouer VFX de contre-attaque simple
             // ICI jouer SFX de contre-attaque simple
@@ -609,7 +556,7 @@ public class CombatManager : MonoBehaviour
 
             // Ici jouer Anim dégâts reçus sur attaquant
 
-            renderTextCombat.text = "- " + counterAttackValue.ToString();
+            renderTextCombat.text = "- " + currentAttackValue.ToString();
             attaquantDamageTextPS.gameObject.SetActive(true);
 
             attaquantAM.ReceiveDamage();
@@ -621,8 +568,7 @@ public class CombatManager : MonoBehaviour
             attaquantHP.text = attaquantFM.currentHP.ToString();
 
             yield return new WaitForSeconds(1f);
-
-            Debug.Log("CheckHP()");
+            
             CheckHP();
 
             yield return new WaitForSeconds(0.5f);
@@ -650,14 +596,12 @@ public class CombatManager : MonoBehaviour
             if (attaquantFM.currentHP <= 0)
             {
                 attaquantFM.isAlive = false;
-                Debug.Log("L'attaquant est vaincu !");
 
                 StartCoroutine(Die(attaquantFM, defenseurFM));
             }
             else if (defenseurFM.currentHP <= 0)
             {
                 defenseurFM.isAlive = false;
-                Debug.Log("Le défenseur est vaincu !");
 
                 StartCoroutine(Die(defenseurFM, attaquantFM));
             }
@@ -668,18 +612,39 @@ public class CombatManager : MonoBehaviour
     {
         if (attaquantFM != null && defenseurFM != null)
         {
-            Debug.Log("Critical() " + defenseurFM.name + " " + " " + attaquantFM.name);
+            switch (defenseurVulnerability)
+            {
+                case Vulnerability.Faible:
+                    Debug.Log("Valeur d'attaque avant modification de critique : " + (attaquantFM.maxAttackRange + vulnerabilityMultiplier));
+                    currentAttackValue = (attaquantFM.maxAttackRange + vulnerabilityMultiplier) * criticalMultiplier;
+                    Debug.Log("Coup puissant infligé, valeur d'attaque après modification de critique : " + currentAttackValue);
+                    break;
+                case Vulnerability.Neutre:
+                    currentAttackValue = attaquantFM.maxAttackRange * criticalMultiplier;
+                    Debug.Log("Coup neutre infligé !");
+                    break;
+                case Vulnerability.Resistant:
+                    Debug.Log("Valeur d'attaque avant modification de critique : " + (attaquantFM.maxAttackRange - vulnerabilityMultiplier));
+                    currentAttackValue = (attaquantFM.maxAttackRange - vulnerabilityMultiplier) * criticalMultiplier;
+                    Debug.Log("Coup puissant infligé, valeur d'attaque après modification de critique : " + currentAttackValue);
+                    break;
+                default:
+                    break;
+            }
 
-            defenseurFM.currentHP -= attaquantFM.maxAttackRange * 2;
+            currentAttackValue = Mathf.RoundToInt(currentAttackValue);
+
+            if (currentAttackValue <= 0)
+            {
+                currentAttackValue = 1;
+            }
+
+            defenseurFM.currentHP -= (int)currentAttackValue;
 
             if (defenseurFM.currentHP <= 0)
             {
                 defenseurFM.currentHP = 0;
             }
-
-            Debug.Log("OUH ! CRITIQUE !!");
-            Debug.Log("Avec un coup critique, " + attaquantFM.name + " inflige " + attaquantFM.maxAttackRange * 2 + " points de dégâts, laissant " + defenseurFM.name + " à " + defenseurFM.currentHP);
-
 
             // ICI jouer VFX de coup critiique
             // ICI jouer SFX de coup critique
@@ -713,7 +678,7 @@ public class CombatManager : MonoBehaviour
             yield return new WaitForSeconds(.5f);
 
             // ICI jouer Anim dégâts reçus sur defenseur
-            renderTextCombat.text = "- " + (attaquantFM.maxAttackRange * 2).ToString();
+            renderTextCombat.text = "- " + currentAttackValue.ToString();
             defenseurDamageTextPS.gameObject.SetActive(true);
             defenseurAM.ReceiveDamage();
             defenseurAM.FillAmountHealth();
@@ -747,20 +712,23 @@ public class CombatManager : MonoBehaviour
 
     public IEnumerator Missed()
     {
-        Debug.Log("Missed " + defenseurFM.name + " " + " " + attaquantFM.name);
-
         if (attaquantFM != null && defenseurFM != null)
         {
-            attaquantFM.currentHP -= defenseurFM.maxCounterAttackRange;
+            currentAttackValue = attaquantFM.maxCounterAttackRange * missMultiplier;
+
+            currentAttackValue = Mathf.RoundToInt(currentAttackValue);
+
+            if (currentAttackValue <= 0)
+            {
+                currentAttackValue = 1;
+            }
+
+            attaquantFM.currentHP -= (int)currentAttackValue;
 
             if (attaquantFM.currentHP <= 0)
             {
                 attaquantFM.currentHP = 0;
             }
-
-            Debug.Log("Loupé !! Aie aie aie !!");
-            Debug.Log("Avec un l'échec critique de l'attaquant, le défenseur contre attaque et inflige " + defenseurFM.maxCounterAttackRange + "points de dégâts, laissant son adversaire à " + attaquantFM.currentHP);
-
 
             // ICI jouer VFX d'echec critiique
             // ICI jouer SFX d'echec critique
@@ -807,7 +775,7 @@ public class CombatManager : MonoBehaviour
             degatsSubitsSFX.Post(gameObject);
 
             // ICI jouer Anim dégâts reçus sur attaquant
-            renderTextCombat.text = "- " + (defenseurFM.maxCounterAttackRange).ToString();
+            renderTextCombat.text = "- " + currentAttackValue.ToString();
             attaquantDamageTextPS.gameObject.SetActive(true);
 
             attaquantAM.ReceiveDamage();
@@ -841,8 +809,6 @@ public class CombatManager : MonoBehaviour
 
     public IEnumerator Die(FideleManager deadFM, FideleManager winFM)
     {
-        Debug.Log("Die() " + defenseurFM.name + " " + " " + attaquantFM.name);
-
         //Debug.Log("On Tue quelqu'un");
         myAnim.SetBool("OpenCombatBandeau", false);
 
@@ -968,8 +934,6 @@ public class CombatManager : MonoBehaviour
 
     public IEnumerator EndFightNoDead()
     {
-        Debug.Log("EndFightNoDead " + defenseurFM.name + " " + " " + attaquantFM.name);
-
         DragCamera2D.Instance.UnfollowTargetCamera();
 
         //Debug.Log("Combat terminé");
