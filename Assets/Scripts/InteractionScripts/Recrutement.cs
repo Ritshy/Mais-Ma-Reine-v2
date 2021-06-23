@@ -8,6 +8,7 @@ public class Recrutement : MonoBehaviour
 {
     private FideleManager myFM;
     private MovementEnemy myMovementEnemy;
+    private int idleSpriteIndex;
 
     [Serializable]
     public struct RecrutementSprites
@@ -35,7 +36,21 @@ public class Recrutement : MonoBehaviour
     {
         GameManager.Instance.isGamePaused = true;
 
-        int idleSpriteIndex = UnityEngine.Random.Range(0, myRecruitedSprites.Count);
+
+        switch (fmToRecruit.fideleClasse)
+        {
+            case Classes.Epeiste:
+                idleSpriteIndex = 2;
+                break;
+            case Classes.Magicien:
+                idleSpriteIndex = 0;
+                break;
+            case Classes.Lancier:
+                idleSpriteIndex = 1;
+                break;
+            default:
+                break;
+        }
         RecrutementManager.Instance.OpenRecruitementWindow(fmToRecruit, myRecruitedSprites[idleSpriteIndex].idleSprite, myRecruitedSprites[idleSpriteIndex].movingSprite, recruiterFM);
     }
 }

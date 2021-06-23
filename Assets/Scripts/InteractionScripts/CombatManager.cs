@@ -46,6 +46,9 @@ public class CombatManager : MonoBehaviour
 
     [Space]
 
+    [Header("Particles")]
+
+    public ParticleSystem fireballCanalisation;
 
     [Header("Attaquant Fenetre")]
 
@@ -420,26 +423,67 @@ public class CombatManager : MonoBehaviour
 
                 EffectManager.Instance.attackTextEffect.Play();
 
-                yield return new WaitForSeconds(.5f);
+                switch (attaquantFM.fideleClasse)
+                {
+                    case Classes.Epeiste:
 
-                myAnim.SetTrigger("LaunchAttack");
+                        yield return new WaitForSeconds(.5f);
 
-                StartCoroutine(EffectManager.Instance.PlayAttackEffect());
+                        myAnim.SetTrigger("LaunchAttack");
 
-                yield return new WaitForSeconds(0.7f);
+                        StartCoroutine(EffectManager.Instance.PlayEpeisteAttackEffect());
 
-                attaqueSimpleSlashSFX.Post(gameObject);
+                        yield return new WaitForSeconds(0.7f);
 
-                yield return new WaitForSeconds(.6f);
+                        attaqueSimpleSlashSFX.Post(gameObject);
 
-                attaqueSimpleImpactSFX.Post(gameObject);
+                        yield return new WaitForSeconds(.6f);
 
-                yield return new WaitForSeconds(.15f);
+                        attaqueSimpleImpactSFX.Post(gameObject);
 
-                criSFX.Post(gameObject);
-                CameraZooming.Instance.ShakeScreen();
+                        yield return new WaitForSeconds(.15f);
 
-                myAnim.SetTrigger("DefenseurReceiveDamage");
+                        criSFX.Post(gameObject);
+                        CameraZooming.Instance.ShakeScreen();
+
+                        myAnim.SetTrigger("DefenseurReceiveDamage");
+
+                        break;
+                    case Classes.Magicien:
+
+                        yield return new WaitForSeconds(.5f);
+
+                        myAnim.SetTrigger("LaunchAttack");
+
+                        StartCoroutine(EffectManager.Instance.PlayMagicianAttackEffect());
+
+                        yield return new WaitForSeconds(4.2f);
+
+                        criSFX.Post(gameObject);
+                        CameraZooming.Instance.ShakeScreen();
+
+                        myAnim.SetTrigger("DefenseurReceiveDamage");
+
+                        break;
+                    case Classes.Lancier:
+
+                        yield return new WaitForSeconds(.5f);
+
+                        myAnim.SetTrigger("LaunchAttack");
+
+                        StartCoroutine(EffectManager.Instance.PlayMagicianAttackEffect());
+
+                        yield return new WaitForSeconds(4.2f);
+
+                        criSFX.Post(gameObject);
+                        CameraZooming.Instance.ShakeScreen();
+
+                        myAnim.SetTrigger("DefenseurReceiveDamage");
+                        break;
+                    default:
+                        break;
+                }
+
                 //attaquantDamageEffect.Play();
 
                 yield return new WaitForSeconds(1.2f);
@@ -533,7 +577,7 @@ public class CombatManager : MonoBehaviour
 
             myAnim.SetTrigger("LaunchCounterAttack");
 
-            StartCoroutine(EffectManager.Instance.PlayCounterAttackEffect());
+            StartCoroutine(EffectManager.Instance.PlayEpeisteCounterAttackEffect());
 
             yield return new WaitForSeconds(0.7f);
 
@@ -658,7 +702,7 @@ public class CombatManager : MonoBehaviour
 
             yield return new WaitForSeconds(.5f);
 
-            StartCoroutine(EffectManager.Instance.PlayCriticalEffects());
+            StartCoroutine(EffectManager.Instance.PlayEpeisteCriticalEffects());
 
             yield return new WaitForSeconds(.4f);
 
@@ -743,7 +787,7 @@ public class CombatManager : MonoBehaviour
 
             yield return new WaitForSeconds(.5f);
 
-            StartCoroutine(EffectManager.Instance.PlayMissEffects());
+            StartCoroutine(EffectManager.Instance.PlayEpeisteMissEffects());
 
             yield return new WaitForSeconds(.4f);
 

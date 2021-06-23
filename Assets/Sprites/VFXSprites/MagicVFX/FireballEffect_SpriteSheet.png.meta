@@ -11,6 +11,15 @@ TextureImporter:
   - first:
       213: -2848318362199220994
     second: FireballEffect_SpriteSheet_2
+  - first:
+      213: 4415832030214027723
+    second: FireballEffect_SpriteSheet_3
+  - first:
+      213: 3913904775447078557
+    second: FireballEffect_SpriteSheet_4
+  - first:
+      213: -3368191422398977327
+    second: FireballEffect_SpriteSheet_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -103,7 +112,7 @@ TextureImporter:
         width: 107
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -124,7 +133,7 @@ TextureImporter:
         width: 107
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +149,12 @@ TextureImporter:
       name: FireballEffect_SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 268
-        y: 8
-        width: 107
-        height: 30
+        x: 260
+        y: 5
+        width: 115
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,6 +162,69 @@ TextureImporter:
       bones: []
       spriteID: efc94e56a8db878d0800000000000000
       internalID: -2848318362199220994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireballEffect_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 55
+        width: 105
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9f2bcd5df284d30800000000000000
+      internalID: 4415832030214027723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireballEffect_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 56
+        width: 106
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d966a3118abf05630800000000000000
+      internalID: 3913904775447078557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireballEffect_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 57
+        width: 112
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da246c2fb7c141d0800000000000000
+      internalID: -3368191422398977327
       vertices: []
       indices: 
       edges: []

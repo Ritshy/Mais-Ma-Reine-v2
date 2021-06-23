@@ -15,31 +15,46 @@ public class EffectManager : MonoBehaviour
 
     public ParticleSystem versusEffect;
 
+
+    public ParticleSystem attackTextEffect;
+
+    public ParticleSystem counterAttackTextEffect;
+
+    public ParticleSystem echecTextEffect;
+
+    public ParticleSystem coupCritiqueTextEffect;
+
+    [Header("Epeiste Effects")]
+
     [Header("Critical Effects")]
 
     public ParticleSystem coupCritiqueSlashEffect;
     public ParticleSystem coupCritiqueImpactEffect;
-
-    public ParticleSystem coupCritiqueTextEffect;
 
     [Header("Miss Effects")]
 
     public ParticleSystem echecEpeeFreineEffect;
     public ParticleSystem echecImpactEffect;
 
-    public ParticleSystem echecTextEffect;
-
     [Header("Attack Effects")]
 
     public ParticleSystem attackEpeeSlashEffect;
-
-    public ParticleSystem attackTextEffect;
 
     [Header("CounterAttack Effects")]
 
     public ParticleSystem counterAttackEpeeSlashEffect;
 
-    public ParticleSystem counterAttackTextEffect;
+    [Space]
+
+    [Header("Magician Effects")]
+
+    [Header("Attack Effects")]
+
+    public ParticleSystem fireballSpinningCanalisation;
+    public ParticleSystem fireballInitialBall;
+    public ParticleSystem fireballThrowing;
+
+    public ParticleSystem fireballImpact;
 
     #region Singleton
 
@@ -97,7 +112,8 @@ public class EffectManager : MonoBehaviour
         endDeplacementPS[rndm].Play();
     }
 
-    public IEnumerator PlayCriticalEffects()
+    #region Combat Epeiste Effects
+    public IEnumerator PlayEpeisteCriticalEffects()
     {
         //coupCritiqueTextEffect.Play();
 
@@ -111,7 +127,7 @@ public class EffectManager : MonoBehaviour
         CameraZooming.Instance.ShakeScreen();
     }
 
-    public IEnumerator PlayMissEffects()
+    public IEnumerator PlayEpeisteMissEffects()
     {
         //echecTextEffect.Play();
 
@@ -125,7 +141,7 @@ public class EffectManager : MonoBehaviour
         CameraZooming.Instance.ShakeScreen();
     }
 
-    public IEnumerator PlayAttackEffect()
+    public IEnumerator PlayEpeisteAttackEffect()
     {
         //attackTextEffect.Play();
 
@@ -134,7 +150,7 @@ public class EffectManager : MonoBehaviour
         attackEpeeSlashEffect.Play();
     }
 
-    public IEnumerator PlayCounterAttackEffect()
+    public IEnumerator PlayEpeisteCounterAttackEffect()
     {
         //counterAttackTextEffect.Play();
 
@@ -142,4 +158,23 @@ public class EffectManager : MonoBehaviour
 
         counterAttackEpeeSlashEffect.Play();
     }
+    #endregion
+
+    #region Combat Magician Effects
+
+    public IEnumerator PlayMagicianAttackEffect()
+    {
+        fireballSpinningCanalisation.Play();
+        fireballInitialBall.Play();
+
+        yield return new WaitForSeconds(3.5f);
+
+        fireballThrowing.Play();
+
+        yield return new WaitForSeconds(.5f);
+
+        fireballImpact.Play();
+    }
+
+    #endregion
 }
