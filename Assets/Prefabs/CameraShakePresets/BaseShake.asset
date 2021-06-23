@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: BaseShake
   m_EditorClassIdentifier: 
   shakeType: 0
-  strength: 8
-  roughness: 8
+  strength: 10
+  roughness: 10
   fadeIn: 0
-  fadeOut: 0.2
+  fadeOut: 0.3
   positionInfluence: {x: 0.2, y: 0.2, z: 0}
   rotationInfluence: {x: 0, y: 0, z: 0.2}

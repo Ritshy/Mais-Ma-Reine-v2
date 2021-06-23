@@ -167,7 +167,7 @@ public class EffectManager : MonoBehaviour
         fireballSpinningCanalisation.Play();
         fireballInitialBall.Play();
 
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(2.5f);
 
         fireballThrowing.Play();
 

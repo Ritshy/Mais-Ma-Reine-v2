@@ -453,11 +453,11 @@ public class CombatManager : MonoBehaviour
 
                         yield return new WaitForSeconds(.5f);
 
-                        myAnim.SetTrigger("LaunchAttack");
+                        //myAnim.SetTrigger("LaunchAttack");
 
                         StartCoroutine(EffectManager.Instance.PlayMagicianAttackEffect());
 
-                        yield return new WaitForSeconds(4.2f);
+                        yield return new WaitForSeconds(3.2f);
 
                         criSFX.Post(gameObject);
                         CameraZooming.Instance.ShakeScreen();
@@ -473,7 +473,7 @@ public class CombatManager : MonoBehaviour
 
                         StartCoroutine(EffectManager.Instance.PlayMagicianAttackEffect());
 
-                        yield return new WaitForSeconds(4.2f);
+                        yield return new WaitForSeconds(3.2f);
 
                         criSFX.Post(gameObject);
                         CameraZooming.Instance.ShakeScreen();
