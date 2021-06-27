@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: 4bcc312c1f429db479d5a33be12bb684
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6652657274310988901
+    second: LightningEffect_SpriteSheet_0
+  - first:
+      213: -8114886809606639299
+    second: LightningEffect_SpriteSheet_1
+  - first:
+      213: 549669079505837330
+    second: LightningEffect_SpriteSheet_2
+  - first:
+      213: -4993238207257809002
+    second: LightningEffect_SpriteSheet_3
+  - first:
+      213: 4190274070375297152
+    second: LightningEffect_SpriteSheet_4
+  - first:
+      213: -6342680318871488870
+    second: LightningEffect_SpriteSheet_5
+  - first:
+      213: 2354168672346175540
+    second: LightningEffect_SpriteSheet_6
+  - first:
+      213: 6978487444492705584
+    second: LightningEffect_SpriteSheet_7
+  - first:
+      213: 9132949761571156456
+    second: LightningEffect_SpriteSheet_8
+  - first:
+      213: 6370229993415916716
+    second: LightningEffect_SpriteSheet_9
+  - first:
+      213: -8589687217693064585
+    second: LightningEffect_SpriteSheet_10
+  - first:
+      213: 4270372481975893939
+    second: LightningEffect_SpriteSheet_11
+  - first:
+      213: -6730324476936021917
+    second: LightningEffect_SpriteSheet_12
+  - first:
+      213: -3040391603925183188
+    second: LightningEffect_SpriteSheet_13
+  - first:
+      213: 517125559606479351
+    second: LightningEffect_SpriteSheet_14
+  - first:
+      213: -394200904942847455
+    second: LightningEffect_SpriteSheet_15
+  - first:
+      213: -1172516853283331225
+    second: LightningEffect_SpriteSheet_16
+  - first:
+      213: 4592422761584864486
+    second: LightningEffect_SpriteSheet_17
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LightningEffect_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 104
+        height: 294
+      alignment: 9
+      pivot: {x: 0.9965316, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b6640d4730da3a0800000000000000
+      internalID: -6652657274310988901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningEffect_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 122
+        height: 299
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31b4e0f071226f80800000000000000
+      internalID: -8114886809606639299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningEffect_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 0
+        width: 112
+        height: 299
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d16f39d11d0a700800000000000000
+      internalID: 549669079505837330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningEffect_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 0
+        width: 105
+        height: 296
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f6d794e4474bab0800000000000000
+      internalID: -4993238207257809002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningEffect_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 0
+        width: 101
+        height: 296
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080ff34e018d62a30800000000000000
+      internalID: 4190274070375297152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -56,6 +56,11 @@ public class EffectManager : MonoBehaviour
 
     public ParticleSystem fireballImpact;
 
+    [Header("Critical Effects")]
+
+    public ParticleSystem lightningFalling;
+    public ParticleSystem staticElectricity;
+
     #region Singleton
 
     public static EffectManager Instance;
@@ -113,7 +118,7 @@ public class EffectManager : MonoBehaviour
     }
 
     #region Combat Epeiste Effects
-    public IEnumerator PlayEpeisteCriticalEffects()
+    public IEnumerator PlayEpeisteCriticalEffect()
     {
         //coupCritiqueTextEffect.Play();
 
@@ -127,7 +132,7 @@ public class EffectManager : MonoBehaviour
         CameraZooming.Instance.ShakeScreen();
     }
 
-    public IEnumerator PlayEpeisteMissEffects()
+    public IEnumerator PlayEpeisteMissEffect()
     {
         //echecTextEffect.Play();
 
@@ -174,6 +179,15 @@ public class EffectManager : MonoBehaviour
         yield return new WaitForSeconds(.5f);
 
         fireballImpact.Play();
+    }
+
+    public IEnumerator PlayMagicianCriticalEffect()
+    {
+        lightningFalling.Play();
+
+        yield return new WaitForSeconds(1f);
+
+        staticElectricity.Play();
     }
 
     #endregion

@@ -690,36 +690,73 @@ public class CombatManager : MonoBehaviour
                 defenseurFM.currentHP = 0;
             }
 
+            yield return new WaitForSeconds(.7f);
+
+            EffectManager.Instance.coupCritiqueTextEffect.Play();
+
+
+            switch (attaquantFM.fideleClasse)
+            {
+                case Classes.Epeiste:
+
+                    yield return new WaitForSeconds(.5f);
+
+                    StartCoroutine(EffectManager.Instance.PlayEpeisteCriticalEffect());
+
+                    yield return new WaitForSeconds(.4f);
+
+                    myAnim.SetTrigger("DefenseurReceiveDamage");
+                    myAnim.SetTrigger("LaunchCoupCritique");
+
+                    samuraiSlashSFX.Post(gameObject);
+
+                    yield return new WaitForSeconds(1f);
+
+                    sautArriereSFX.Post(gameObject);
+
+                    yield return new WaitForSeconds(.5f);
+
+                    explosionEnnemiSFX.Post(gameObject);
+
+                    yield return new WaitForSeconds(.5f);
+
+                    break;
+                case Classes.Magicien:
+
+                    yield return new WaitForSeconds(.5f);
+
+                    StartCoroutine(EffectManager.Instance.PlayMagicianCriticalEffect());
+
+                    yield return new WaitForSeconds(.4f);
+
+                    myAnim.SetTrigger("DefenseurReceiveDamage");
+
+                    yield return new WaitForSeconds(.5f);
+
+                    break;
+                case Classes.Lancier:
+
+                    yield return new WaitForSeconds(.5f);
+
+                    StartCoroutine(EffectManager.Instance.PlayMagicianCriticalEffect());
+
+                    yield return new WaitForSeconds(.4f);
+
+                    myAnim.SetTrigger("DefenseurReceiveDamage");
+
+                    yield return new WaitForSeconds(.5f);
+
+                    break;
+                default:
+                    break;
+            }
+
             // ICI jouer VFX de coup critiique
             // ICI jouer SFX de coup critique
 
             //myDamageFeedback.text = "-" + (attaquantFM.maxAttackRange * 2).ToString() + (" !!");
             //attaquantDamageEffect.Play();
 
-            yield return new WaitForSeconds(.7f);
-
-            EffectManager.Instance.coupCritiqueTextEffect.Play();
-
-            yield return new WaitForSeconds(.5f);
-
-            StartCoroutine(EffectManager.Instance.PlayEpeisteCriticalEffects());
-
-            yield return new WaitForSeconds(.4f);
-
-            myAnim.SetTrigger("DefenseurReceiveDamage");
-            myAnim.SetTrigger("LaunchCoupCritique");
-
-            samuraiSlashSFX.Post(gameObject);
-
-            yield return new WaitForSeconds(1f);
-
-            sautArriereSFX.Post(gameObject);
-
-            yield return new WaitForSeconds(.5f);
-
-            explosionEnnemiSFX.Post(gameObject);
-
-            yield return new WaitForSeconds(.5f);
 
             // ICI jouer Anim dégâts reçus sur defenseur
             renderTextCombat.text = "- " + currentAttackValue.ToString();
@@ -787,7 +824,7 @@ public class CombatManager : MonoBehaviour
 
             yield return new WaitForSeconds(.5f);
 
-            StartCoroutine(EffectManager.Instance.PlayEpeisteMissEffects());
+            StartCoroutine(EffectManager.Instance.PlayEpeisteMissEffect());
 
             yield return new WaitForSeconds(.4f);
 
