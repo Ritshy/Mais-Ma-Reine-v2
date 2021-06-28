@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3590283217">
+		<SoundBank Id="393239870" Language="SFX" Hash="114580352">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -40,7 +40,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1636597489" Name="Event_Attaque_Coup_Direct" ObjectPath="\Events\Default Work Unit\Attaque\Event_Attaque_Coup_Direct" DurationType="OneShot" DurationMin="0.375624" DurationMax="0.516508">
+				<Event Id="1636597489" Name="Event_Attaque_Coup_Direct" ObjectPath="\Events\Default Work Unit\Folder_Attaque_Guerrier\Event_Attaque_Coup_Direct" DurationType="OneShot" DurationMin="0.375624" DurationMax="0.516508">
 					<IncludedMemoryFiles>
 						<File Id="249120498" Language="SFX">
 							<ShortName>Attaque\Coup_direct\coup_7.wav</ShortName>
@@ -76,7 +76,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3412755326" Name="Event_Attaque_Mouvement_Epee" ObjectPath="\Events\Default Work Unit\Attaque\Event_Attaque_Mouvement_Epee" DurationType="OneShot" DurationMin="0.805229" DurationMax="0.913604">
+				<Event Id="3412755326" Name="Event_Attaque_Mouvement_Epee" ObjectPath="\Events\Default Work Unit\Folder_Attaque_Guerrier\Event_Attaque_Mouvement_Epee" DurationType="OneShot" DurationMin="0.805229" DurationMax="0.913604">
 					<IncludedMemoryFiles>
 						<File Id="97478536" Language="SFX">
 							<ShortName>Attaque\Mouvement_épée\SWSH_Whoosh 8 (ID 1801)_LS.wav</ShortName>
@@ -404,6 +404,30 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3437065663" Name="Event_Mage_Attaque_Canalisation" ObjectPath="\Events\Default Work Unit\Folder_Attaque_Mage\Event_Mage_Attaque_Canalisation" DurationType="OneShot" DurationMin="1.186667" DurationMax="1.186667">
+					<IncludedMemoryFiles>
+						<File Id="763585390" Language="SFX">
+							<ShortName>Canalisation 2.wav</ShortName>
+							<Path>SFX\Canalisation 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2436459893" Name="Event_Mage_Attaque_Impact" ObjectPath="\Events\Default Work Unit\Folder_Attaque_Mage\Event_Mage_Attaque_Impact" DurationType="OneShot" DurationMin="0.859773" DurationMax="0.859773">
+					<IncludedMemoryFiles>
+						<File Id="958076938" Language="SFX">
+							<ShortName>Impact_Boule-de-Feu_V2.wav</ShortName>
+							<Path>SFX\Impact_Boule-de-Feu_V2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1165136094" Name="Event_Mage_Attaque_Lancer" ObjectPath="\Events\Default Work Unit\Folder_Attaque_Mage\Event_Mage_Attaque_Lancer" DurationType="OneShot" DurationMin="3.227211" DurationMax="3.227211">
+					<IncludedMemoryFiles>
+						<File Id="229683490" Language="SFX">
+							<ShortName>Boule-de-Feu_Mouvement.wav</ShortName>
+							<Path>SFX\Boule-de-Feu_Mouvement_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1699538348" Name="Event_Mort" ObjectPath="\Events\Default Work Unit\Event_Mort" DurationType="OneShot" DurationMin="0.366893" DurationMax="1.449524">
 					<IncludedMemoryFiles>
 						<File Id="89893094" Language="SFX">
@@ -636,6 +660,58 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="559458864" Name="Event_ReussiteCrit_Mage_Canalisation" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Crit_Mage\Event_ReussiteCrit_Mage_Canalisation" DurationType="OneShot" DurationMin="1.186667" DurationMax="1.186667">
+					<IncludedMemoryFiles>
+						<File Id="153342988" Language="SFX">
+							<ShortName>Canalisation_Foudre.wav</ShortName>
+							<Path>SFX\Canalisation_Foudre_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1023378237" Name="Event_ReussiteCrit_Mage_Grondement" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Crit_Mage\Event_ReussiteCrit_Mage_Grondement" DurationType="OneShot" DurationMin="11.716984" DurationMax="11.716984">
+					<IncludedMemoryFiles>
+						<File Id="750115350" Language="SFX">
+							<ShortName>colère des cieux.wav</ShortName>
+							<Path>SFX\colère des cieux_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1568167342" Name="Event_ReussiteCrit_Mage_Impact" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Crit_Mage\Event_ReussiteCrit_Mage_Impact" DurationType="OneShot" DurationMin="3.307007" DurationMax="3.307007">
+					<IncludedMemoryFiles>
+						<File Id="225037763" Language="SFX">
+							<ShortName>Chute_Attaque_Foudre.wav</ShortName>
+							<Path>SFX\Chute_Attaque_Foudre_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2740265642" Name="Event_ReussiteCrit_Mage_Paralysis" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Crit_Mage\Event_ReussiteCrit_Mage_Paralysis" DurationType="OneShot" DurationMin="0.487075" DurationMax="0.560091">
+					<IncludedMemoryFiles>
+						<File Id="135196807" Language="SFX">
+							<ShortName>Paralysie_2.wav</ShortName>
+							<Path>SFX\Paralysie_2_10C4C929.wem</Path>
+						</File>
+						<File Id="517029243" Language="SFX">
+							<ShortName>Paralysie_4.wav</ShortName>
+							<Path>SFX\Paralysie_4_10C4C929.wem</Path>
+						</File>
+						<File Id="534967858" Language="SFX">
+							<ShortName>Paralysie_3.wav</ShortName>
+							<Path>SFX\Paralysie_3_10C4C929.wem</Path>
+						</File>
+						<File Id="963270697" Language="SFX">
+							<ShortName>Paralysie_1.wav</ShortName>
+							<Path>SFX\Paralysie_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="324288311" Name="Event_ReussiteCrit_Mage_PreBurst" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Crit_Mage\Event_ReussiteCrit_Mage_PreBurst" DurationType="OneShot" DurationMin="1.908481" DurationMax="1.908481">
+					<IncludedMemoryFiles>
+						<File Id="302844446" Language="SFX">
+							<ShortName>Pré-burst_Orage.wav</ShortName>
+							<Path>SFX\Pré-burst_Orage_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="349269192" Name="Event_UI_Bandeau_Fidele_Lefttoright" ObjectPath="\Events\Default Work Unit\Event_UI_Bandeau_Fidele_Lefttoright" DurationType="OneShot" DurationMin="2.036191" DurationMax="2.036191">
 					<IncludedMemoryFiles>
 						<File Id="307925096" Language="SFX">
@@ -660,11 +736,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2283136221" Name="Event_UI_Cadena_Territoire" ObjectPath="\Events\Default Work Unit\Event_UI_Cadena_Territoire" DurationType="OneShot" DurationMin="0.969333" DurationMax="0.969333">
+				<Event Id="2283136221" Name="Event_UI_Cadena_Territoire" ObjectPath="\Events\Default Work Unit\Event_UI_Cadena_Territoire" DurationType="OneShot" DurationMin="1.450292" DurationMax="1.450292">
 					<IncludedMemoryFiles>
-						<File Id="142458830" Language="SFX">
-							<ShortName>Cadena Territoire.wav</ShortName>
-							<Path>SFX\Cadena Territoire_10C4C929.wem</Path>
+						<File Id="1021016572" Language="SFX">
+							<ShortName>Cadena Territoire 2.wav</ShortName>
+							<Path>SFX\Cadena Territoire 2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -692,27 +768,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3776204507" Name="Event_UI_Gain_Charisme" ObjectPath="\Events\Default Work Unit\Event_UI_Gain_Charisme" DurationType="OneShot" DurationMin="0.941146" DurationMax="0.941146">
+				<Event Id="3776204507" Name="Event_UI_Gain_Charisme" ObjectPath="\Events\Default Work Unit\Event_UI_Gain_Charisme" DurationType="OneShot" DurationMin="1.469184" DurationMax="1.469184">
 					<IncludedMemoryFiles>
-						<File Id="53900135" Language="SFX">
-							<ShortName>Gain_Charisme_v2.wav</ShortName>
-							<Path>SFX\Gain_Charisme_v2_10C4C929.wem</Path>
+						<File Id="318337255" Language="SFX">
+							<ShortName>Gain_Charisme.wav</ShortName>
+							<Path>SFX\Gain_Charisme_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2059410396" Name="Event_UI_Obtention_Quete" ObjectPath="\Events\Default Work Unit\Event_UI_Obtention_Quete" DurationType="OneShot" DurationMin="2.753167" DurationMax="2.753167">
+				<Event Id="2059410396" Name="Event_UI_Obtention_quete" ObjectPath="\Events\Default Work Unit\Event_UI_Obtention_quete" DurationType="OneShot" DurationMin="1.200000" DurationMax="1.200000">
 					<IncludedMemoryFiles>
-						<File Id="16541006" Language="SFX">
-							<ShortName>Obtention quête v2.wav</ShortName>
-							<Path>SFX\Obtention quête v2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2534332070" Name="Event_UI_Perte_Charisme" ObjectPath="\Events\Default Work Unit\Event_UI_Perte_Charisme" DurationType="OneShot" DurationMin="1.015354" DurationMax="1.015354">
-					<IncludedMemoryFiles>
-						<File Id="1059629775" Language="SFX">
-							<ShortName>Perte_Charisme.wav</ShortName>
-							<Path>SFX\Perte_Charisme_10C4C929.wem</Path>
+						<File Id="1012457160" Language="SFX">
+							<ShortName>Obtention_Quête_2.wav</ShortName>
+							<Path>SFX\Obtention_Quête_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -724,19 +792,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="552716342" Name="Event_UI_Quete_Termine" ObjectPath="\Events\Default Work Unit\Event_UI_Quete_Termine" DurationType="OneShot" DurationMin="1.507417" DurationMax="1.507417">
+				<Event Id="552716342" Name="Event_UI_Quete_Termine" ObjectPath="\Events\Default Work Unit\Event_UI_Quete_Termine" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000">
 					<IncludedMemoryFiles>
-						<File Id="114572867" Language="SFX">
-							<ShortName>Quête terminée v2.wav</ShortName>
-							<Path>SFX\Quête terminée v2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3401590952" Name="Event_UI_Survol_Territoire" ObjectPath="\Events\Default Work Unit\Event_UI_Survol_Territoire" DurationType="OneShot" DurationMin="1.986667" DurationMax="1.986667">
-					<IncludedMemoryFiles>
-						<File Id="406540450" Language="SFX">
-							<ShortName>Survole_Territoire.wav</ShortName>
-							<Path>SFX\Survole_Territoire_10C4C929.wem</Path>
+						<File Id="543626787" Language="SFX">
+							<ShortName>Quête_terminée_2.wav</ShortName>
+							<Path>SFX\Quête_terminée_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -753,14 +813,6 @@
 						<File Id="565371858" Language="SFX">
 							<ShortName>Victoire_Confettis.wav</ShortName>
 							<Path>SFX\Victoire_Confettis_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="4098473549" Name="Event_Victoire_Roulement" ObjectPath="\Events\Default Work Unit\Folder_Victoire\Event_Victoire_Roulement" DurationType="OneShot" DurationMin="3.880250" DurationMax="3.880250">
-					<IncludedMemoryFiles>
-						<File Id="728304187" Language="SFX">
-							<ShortName>Victoire_Roulement_Tambour.wav</ShortName>
-							<Path>SFX\Victoire_Roulement_Tambour_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
