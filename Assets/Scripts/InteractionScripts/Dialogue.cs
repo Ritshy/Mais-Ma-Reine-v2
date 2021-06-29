@@ -27,4 +27,6 @@ public class Dialogue
     public GameObject cameraEndPos;
 
     public List<FideleManager> unitsToSpawn;
+
+    public Sprite myCharacterEmotionImage;
 }

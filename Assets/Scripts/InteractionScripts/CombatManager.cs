@@ -17,6 +17,19 @@ public class CombatManager : MonoBehaviour
     public float criticalMultiplier;
     public float missMultiplier;
 
+    public Sprite reineCampBG;
+    public Sprite roiCampBG;
+    public Sprite banditCampBG;
+
+    public Sprite epeisteIcone;
+    public Sprite magicianIcone;
+    public Sprite lancierIcone;
+
+    public Sprite avantageIcone;
+    public Sprite desavantageIcone;
+
+    public Image iconeModificateurCombat;
+
     [Header("Sounds Interface")]
 
     public AK.Wwise.Event uiBoutonBastonSFX;
@@ -59,6 +72,7 @@ public class CombatManager : MonoBehaviour
 
     public TextMeshProUGUI attaquantName;
     public Image attaquantIcone;
+    public Image attaquantClasseIcone;
 
     private FideleManager attaquantFM;
     private AnimationManager attaquantAM;
@@ -70,6 +84,7 @@ public class CombatManager : MonoBehaviour
 
     public TextMeshProUGUI defenseurName;
     public Image defenseurIcone;
+    public Image defenseurClasseIcone;
 
     private FideleManager defenseurFM;
     private AnimationManager defenseurAM;
@@ -146,6 +161,90 @@ public class CombatManager : MonoBehaviour
         defenseurAM = defenseurFM.GetComponentInParent<AnimationManager>();
 
         DetermineVulnerability(atkFM, defFM);
+
+        switch (attaquantFM.myCamp)
+        {
+            case GameCamps.Fidele:
+                attaquantIcone.sprite = reineCampBG;
+                break;
+            case GameCamps.Roi:
+                attaquantIcone.sprite = roiCampBG;
+                break;
+            case GameCamps.Bandit:
+                attaquantIcone.sprite = banditCampBG;
+                break;
+            case GameCamps.BanditCalamiteux:
+                attaquantIcone.sprite = banditCampBG;
+                break;
+            default:
+                break;
+        }
+
+        switch (defenseurFM.myCamp)
+        {
+            case GameCamps.Fidele:
+                defenseurIcone.sprite = reineCampBG;
+                break;
+            case GameCamps.Roi:
+                defenseurIcone.sprite = roiCampBG;
+                break;
+            case GameCamps.Bandit:
+                defenseurIcone.sprite = banditCampBG;
+                break;
+            case GameCamps.BanditCalamiteux:
+                defenseurIcone.sprite = banditCampBG;
+                break;
+            default:
+                break;
+        }
+
+        switch (attaquantFM.fideleClasse)
+        {
+            case Classes.Epeiste:
+                attaquantClasseIcone.sprite = epeisteIcone;
+                break;
+            case Classes.Magicien:
+                attaquantClasseIcone.sprite = magicianIcone;
+                break;
+            case Classes.Lancier:
+                attaquantClasseIcone.sprite = lancierIcone;
+                break;
+            default:
+                break;
+        }
+
+        switch (defenseurFM.fideleClasse)
+        {
+            case Classes.Epeiste:
+                defenseurClasseIcone.sprite = epeisteIcone;
+                break;
+            case Classes.Magicien:
+                defenseurClasseIcone.sprite = magicianIcone;
+                break;
+            case Classes.Lancier:
+                defenseurClasseIcone.sprite = lancierIcone;
+                break;
+            default:
+                break;
+        }
+
+        switch (attaquantVulnerability)
+        {
+            case Vulnerability.Faible:
+                iconeModificateurCombat.sprite = desavantageIcone;
+                iconeModificateurCombat.color = new Color(1, 1, 1, 1);
+                break;
+            case Vulnerability.Neutre:
+                iconeModificateurCombat.sprite = null;
+                iconeModificateurCombat.color = new Color(1, 1, 1, 0);
+                break;
+            case Vulnerability.Resistant:
+                iconeModificateurCombat.sprite = avantageIcone;
+                iconeModificateurCombat.color = new Color(1, 1, 1, 1);
+                break;
+            default:
+                break;
+        }
 
         myAnim.SetBool("OpenCombatWindow", true);
 
@@ -239,6 +338,8 @@ public class CombatManager : MonoBehaviour
         defenseurAM = defenseurFM.GetComponentInParent<AnimationManager>();
 
         attaquantFM.hasFought = true;
+
+        DetermineVulnerability(atkFM, defFM);
 
         if (attaquantFM.isAlive && defenseurFM.isAlive)
         {
@@ -429,7 +530,7 @@ public class CombatManager : MonoBehaviour
 
                         yield return new WaitForSeconds(.5f);
 
-                        myAnim.SetTrigger("LaunchAttack");
+                        myAnim.SetTrigger("EPLaunchAttack");
 
                         StartCoroutine(EffectManager.Instance.PlayEpeisteAttackEffect());
 
@@ -453,7 +554,9 @@ public class CombatManager : MonoBehaviour
 
                         yield return new WaitForSeconds(.5f);
 
-                        //myAnim.SetTrigger("LaunchAttack");
+                        myAnim.SetTrigger("MALaunchAttack");
+
+                        yield return new WaitForSeconds(.1f);
 
                         StartCoroutine(EffectManager.Instance.PlayMagicianAttackEffect());
 
@@ -469,9 +572,9 @@ public class CombatManager : MonoBehaviour
 
                         yield return new WaitForSeconds(.5f);
 
-                        myAnim.SetTrigger("LaunchAttack");
+                        myAnim.SetTrigger("LALaunchAttack");
 
-                        StartCoroutine(EffectManager.Instance.PlayMagicianAttackEffect());
+                        //StartCoroutine(EffectManager.Instance.PlayMagicianAttackEffect());
 
                         yield return new WaitForSeconds(3.2f);
 
@@ -573,26 +676,83 @@ public class CombatManager : MonoBehaviour
 
             EffectManager.Instance.counterAttackTextEffect.Play();
 
-            yield return new WaitForSeconds(.5f);
+            switch (defenseurFM.fideleClasse)
+            {
+                case Classes.Epeiste:
 
-            myAnim.SetTrigger("LaunchCounterAttack");
+                    yield return new WaitForSeconds(.5f);
 
-            StartCoroutine(EffectManager.Instance.PlayEpeisteCounterAttackEffect());
+                    myAnim.SetTrigger("EPLaunchCounterAttack");
 
-            yield return new WaitForSeconds(0.7f);
+                    StartCoroutine(EffectManager.Instance.PlayEpeisteCounterAttackEffect());
 
-            attaqueSimpleSlashSFX.Post(gameObject);
+                    yield return new WaitForSeconds(0.7f);
 
-            yield return new WaitForSeconds(.5f);
+                    attaqueSimpleSlashSFX.Post(gameObject);
 
-            attaqueSimpleImpactSFX.Post(gameObject);
+                    yield return new WaitForSeconds(.5f);
 
-            yield return new WaitForSeconds(.15f);
+                    attaqueSimpleImpactSFX.Post(gameObject);
 
-            criSFX.Post(gameObject);
-            CameraZooming.Instance.ShakeScreen();
+                    yield return new WaitForSeconds(.15f);
 
-            myAnim.SetTrigger("AttaquantReceiveDamage");
+                    criSFX.Post(gameObject);
+                    CameraZooming.Instance.ShakeScreen();
+
+                    myAnim.SetTrigger("AttaquantReceiveDamage");
+
+                    break;
+                case Classes.Magicien:
+
+                    yield return new WaitForSeconds(.5f);
+
+                    myAnim.SetTrigger("MALaunchCounterAttack");
+
+                    StartCoroutine(EffectManager.Instance.PlayMagicianCounterAttackEffect());
+
+                    yield return new WaitForSeconds(0.7f);
+
+                    //attaqueSimpleSlashSFX.Post(gameObject);
+
+                    yield return new WaitForSeconds(.5f);
+
+                    //attaqueSimpleImpactSFX.Post(gameObject);
+
+                    yield return new WaitForSeconds(.15f);
+
+                    criSFX.Post(gameObject);
+                    CameraZooming.Instance.ShakeScreen();
+
+                    myAnim.SetTrigger("AttaquantReceiveDamage");
+
+                    break;
+                case Classes.Lancier:
+
+                    yield return new WaitForSeconds(.5f);
+
+                    myAnim.SetTrigger("LALaunchCounterAttack");
+
+                    //StartCoroutine(EffectManager.Instance.PlayMagicianCounterAttackEffect());
+
+                    yield return new WaitForSeconds(0.7f);
+
+                    //attaqueSimpleSlashSFX.Post(gameObject);
+
+                    yield return new WaitForSeconds(.5f);
+
+                    //attaqueSimpleImpactSFX.Post(gameObject);
+
+                    yield return new WaitForSeconds(.15f);
+
+                    criSFX.Post(gameObject);
+                    CameraZooming.Instance.ShakeScreen();
+
+                    myAnim.SetTrigger("AttaquantReceiveDamage");
+
+                    break;
+                default:
+                    break;
+            }
 
             //defenseurDamageEffect.Play();
 
@@ -706,7 +866,7 @@ public class CombatManager : MonoBehaviour
                     yield return new WaitForSeconds(.4f);
 
                     myAnim.SetTrigger("DefenseurReceiveDamage");
-                    myAnim.SetTrigger("LaunchCoupCritique");
+                    myAnim.SetTrigger("EPLaunchCoupCritique");
 
                     samuraiSlashSFX.Post(gameObject);
 
@@ -730,6 +890,7 @@ public class CombatManager : MonoBehaviour
                     yield return new WaitForSeconds(.4f);
 
                     myAnim.SetTrigger("DefenseurReceiveDamage");
+                    myAnim.SetTrigger("MALaunchCoupCritique");
 
                     yield return new WaitForSeconds(.5f);
 
@@ -738,7 +899,7 @@ public class CombatManager : MonoBehaviour
 
                     yield return new WaitForSeconds(.5f);
 
-                    StartCoroutine(EffectManager.Instance.PlayMagicianCriticalEffect());
+                    //StartCoroutine(EffectManager.Instance.PlayMagicianCriticalEffect());
 
                     yield return new WaitForSeconds(.4f);
 

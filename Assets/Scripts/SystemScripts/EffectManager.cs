@@ -56,10 +56,17 @@ public class EffectManager : MonoBehaviour
 
     public ParticleSystem fireballImpact;
 
+    [Header("CounterAttack Effects")]
+
+    public ParticleSystem counterAttackBonk;
+
     [Header("Critical Effects")]
 
     public ParticleSystem lightningFalling;
     public ParticleSystem staticElectricity;
+
+    public ParticleSystem spellCanalisation;
+    public ParticleSystem electricRay;
 
     #region Singleton
 
@@ -181,8 +188,23 @@ public class EffectManager : MonoBehaviour
         fireballImpact.Play();
     }
 
+    public IEnumerator PlayMagicianCounterAttackEffect()
+    {
+        yield return new WaitForSeconds(.5f);
+
+        counterAttackBonk.Play();
+    }
+
     public IEnumerator PlayMagicianCriticalEffect()
     {
+        spellCanalisation.Play();
+
+        yield return new WaitForSeconds(2f);
+
+        electricRay.Play();
+
+        yield return new WaitForSeconds(1.5f);
+
         lightningFalling.Play();
 
         yield return new WaitForSeconds(1f);

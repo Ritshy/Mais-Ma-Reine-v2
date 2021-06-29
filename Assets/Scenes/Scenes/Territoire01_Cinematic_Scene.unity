@@ -20353,6 +20353,7 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   - characterName: La Reine
     myDialogue:
     - Elya !!
@@ -20371,6 +20372,7 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   - characterName: Elya
     myDialogue:
     - Mes excuses.
@@ -20393,6 +20395,7 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   - characterName: La Reine
     myDialogue:
     - Ce sera plus simple ainsi.
@@ -20411,6 +20414,7 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   - characterName: Elya
     myDialogue:
     - "Mais il aurait pu avoir une r\xE9action au moins\u2026 Des remords ? Ou de
@@ -20430,6 +20434,7 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   - characterName: La Reine
     myDialogue:
     - "Elya\u2026 Je sais que tu te fais du souci, mais j\u2019ai pris ma d\xE9cision."
@@ -20452,6 +20457,7 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   - characterName: Elya
     myDialogue:
     - "J\u2019admire votre force Ma reine !"
@@ -20470,6 +20476,7 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   isStartDialogueExisting: 0
   levelDesignAnimator: {fileID: 677626972}
   firstCharacter: {fileID: 647270899}

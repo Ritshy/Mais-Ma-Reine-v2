@@ -71,18 +71,21 @@ public class CinematicDialogue : MonoBehaviour
 
         if (currentDialogue.characterName == "La Reine")
         {
+            firstCharacter.sprite = currentDialogue.myCharacterEmotionImage;
             firstCharacter.color = new Color(1, 1, 1, 1);
 
             secondCharacter.color = new Color(.5f, .5f, .5f, 1);
         }
         else if(currentDialogue.characterName == "Elya")
         {
+            secondCharacter.sprite = currentDialogue.myCharacterEmotionImage;
             secondCharacter.color = new Color(1, 1, 1, 1);
 
             firstCharacter.color = new Color(.5f, .5f, .5f, 1);
         }
         else if (currentDialogue.characterName == "Humbre")
         {
+            secondCharacter.sprite = currentDialogue.myCharacterEmotionImage;
             secondCharacter.color = new Color(1, 1, 1, 1);
 
             firstCharacter.color = new Color(.5f, .5f, .5f, 1);
