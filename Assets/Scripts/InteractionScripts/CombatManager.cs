@@ -885,12 +885,12 @@ public class CombatManager : MonoBehaviour
 
                     yield return new WaitForSeconds(.5f);
 
+                    myAnim.SetTrigger("MALaunchCoupCritique");
                     StartCoroutine(EffectManager.Instance.PlayMagicianCriticalEffect());
 
                     yield return new WaitForSeconds(.4f);
 
                     myAnim.SetTrigger("DefenseurReceiveDamage");
-                    myAnim.SetTrigger("MALaunchCoupCritique");
 
                     yield return new WaitForSeconds(4f);
 
@@ -1027,7 +1027,7 @@ public class CombatManager : MonoBehaviour
 
                     yield return new WaitForSeconds(.5f);
 
-                    StartCoroutine(EffectManager.Instance.PlayMagicianCriticalEffect());
+                    StartCoroutine(EffectManager.Instance.PlayMagicianMissEffect());
 
                     yield return new WaitForSeconds(.4f);
 

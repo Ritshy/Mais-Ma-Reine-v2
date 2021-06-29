@@ -68,6 +68,12 @@ public class EffectManager : MonoBehaviour
     public ParticleSystem spellCanalisation;
     public ParticleSystem electricRay;
 
+    [Header("Miss Effects")]
+
+    public ParticleSystem missingCanalisation;
+    public ParticleSystem missBoom;
+    public ParticleSystem missSmokeEffect;
+
     #region Singleton
 
     public static EffectManager Instance;
@@ -199,7 +205,7 @@ public class EffectManager : MonoBehaviour
     {
         spellCanalisation.Play();
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2.2f);
 
         electricRay.Play();
 
@@ -211,6 +217,19 @@ public class EffectManager : MonoBehaviour
 
         staticElectricity.Play();
     }
+
+    public IEnumerator PlayMagicianMissEffect()
+    {
+        missingCanalisation.Play();
+
+        yield return new WaitForSeconds(2f);
+
+        missBoom.Play();
+        missSmokeEffect.Play();
+
+        yield return new WaitForSeconds(1.2f);
+    }
+
 
     #endregion
 }
