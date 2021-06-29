@@ -892,7 +892,7 @@ public class CombatManager : MonoBehaviour
 
                     myAnim.SetTrigger("DefenseurReceiveDamage");
 
-                    yield return new WaitForSeconds(4f);
+                    yield return new WaitForSeconds(6f);
 
                     break;
                 case Classes.Lancier:
@@ -906,7 +906,7 @@ public class CombatManager : MonoBehaviour
                     myAnim.SetTrigger("DefenseurReceiveDamage");
                     myAnim.SetTrigger("LALaunchCoupCritique");
 
-                    yield return new WaitForSeconds(.5f);
+                    yield return new WaitForSeconds(3.5f);
 
                     break;
                 default:
@@ -1048,7 +1048,7 @@ public class CombatManager : MonoBehaviour
                     myAnim.SetTrigger("DefenseurReceiveDamage");
                     myAnim.SetTrigger("LALaunchEchecCritique");
 
-                    yield return new WaitForSeconds(.5f);
+                    yield return new WaitForSeconds(.3f);
 
                     break;
                 default:

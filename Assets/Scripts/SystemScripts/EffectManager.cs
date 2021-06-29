@@ -65,6 +65,8 @@ public class EffectManager : MonoBehaviour
     public ParticleSystem lightningFalling;
     public ParticleSystem staticElectricity;
 
+    public ParticleSystem cloudAccumulation;
+
     public ParticleSystem spellCanalisation;
     public ParticleSystem electricRay;
 
@@ -208,6 +210,10 @@ public class EffectManager : MonoBehaviour
         yield return new WaitForSeconds(2.2f);
 
         electricRay.Play();
+
+        yield return new WaitForSeconds(.5f);
+
+        cloudAccumulation.Play();
 
         yield return new WaitForSeconds(2f);
 
