@@ -32,6 +32,9 @@ namespace AK
         static const AkUniqueID EVENT_ECHEC_VIRAGE_EPEE = 3142964213U;
         static const AkUniqueID EVENT_FIDELE_SANS_ACTION = 965117638U;
         static const AkUniqueID EVENT_INTERACTION_RECRUTEMENT = 4092098687U;
+        static const AkUniqueID EVENT_MAGE_ATTAQUE_CANALISATION = 3437065663U;
+        static const AkUniqueID EVENT_MAGE_ATTAQUE_IMPACT = 2436459893U;
+        static const AkUniqueID EVENT_MAGE_ATTAQUE_LANCER = 1165136094U;
         static const AkUniqueID EVENT_MORT = 1699538348U;
         static const AkUniqueID EVENT_MOUV_FIDELE_ATTRAPE = 489201999U;
         static const AkUniqueID EVENT_MOUV_FIDELE_CHUTE = 2880414047U;
@@ -44,6 +47,11 @@ namespace AK
         static const AkUniqueID EVENT_REUSSITE_BACKDASH = 540293294U;
         static const AkUniqueID EVENT_REUSSITE_DEGATSENNEMI = 3702005869U;
         static const AkUniqueID EVENT_REUSSITE_SLASH = 4292435174U;
+        static const AkUniqueID EVENT_REUSSITECRIT_MAGE_CANALISATION = 559458864U;
+        static const AkUniqueID EVENT_REUSSITECRIT_MAGE_GRONDEMENT = 1023378237U;
+        static const AkUniqueID EVENT_REUSSITECRIT_MAGE_IMPACT = 1568167342U;
+        static const AkUniqueID EVENT_REUSSITECRIT_MAGE_PARALYSIS = 2740265642U;
+        static const AkUniqueID EVENT_REUSSITECRIT_MAGE_PREBURST = 324288311U;
         static const AkUniqueID EVENT_UI_BANDEAU_FIDELE_LEFTTORIGHT = 349269192U;
         static const AkUniqueID EVENT_UI_BANDEAU_FIDELE_RIGHTTOLEFT = 694759564U;
         static const AkUniqueID EVENT_UI_BOUTON_JOUER = 2850458628U;
@@ -53,13 +61,10 @@ namespace AK
         static const AkUniqueID EVENT_UI_DEFAITE = 2023487047U;
         static const AkUniqueID EVENT_UI_GAIN_CHARISME = 3776204507U;
         static const AkUniqueID EVENT_UI_OBTENTION_QUETE = 2059410396U;
-        static const AkUniqueID EVENT_UI_PERTE_CHARISME = 2534332070U;
         static const AkUniqueID EVENT_UI_PNJ_RECRUTE = 777863556U;
         static const AkUniqueID EVENT_UI_QUETE_TERMINE = 552716342U;
-        static const AkUniqueID EVENT_UI_SURVOL_TERRITOIRE = 3401590952U;
         static const AkUniqueID EVENT_UI_SURVOLE_BOUTON = 3384763883U;
         static const AkUniqueID EVENT_VICTOIRE_CONFETTIS = 3729609441U;
-        static const AkUniqueID EVENT_VICTOIRE_ROULEMENT = 4098473549U;
         static const AkUniqueID EVENT_VICTOIRE_TROMPETTE = 3917464674U;
         static const AkUniqueID EVENT_YAOURT_BANDIT = 4256429855U;
         static const AkUniqueID EVENT_YAOURT_ELYA = 1791947516U;
