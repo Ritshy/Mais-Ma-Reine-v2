@@ -20353,7 +20353,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: 730ef301f4f865640b675ebdacd75ff1,
+      type: 3}
   - characterName: La Reine
     myDialogue:
     - Elya !!
@@ -20372,14 +20373,11 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: 6ba3f53f5ce29284e93611c98c110a6c,
+      type: 3}
   - characterName: Elya
     myDialogue:
     - Mes excuses.
-    - "Nous arrivons \xE0 l\u2019\xEEle du c\u0153ur et aucun fid\xE8le du Roi n'est
-      \xE0 nos trousses."
-    - "On a l\u2019impression qu'il n'a m\xEAme pas remarqu\xE9 votre disparition,
-      Ma Reine..."
     isStartingQuest: 0
     questIndexToStart: 
     isStartingADialogue: 1
@@ -20395,35 +20393,17 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
-  - characterName: La Reine
+    myCharacterEmotionImage: {fileID: 21300000, guid: b5722f89282897a439ca25edc3a1d76b,
+      type: 3}
+  - characterName: Elya
     myDialogue:
-    - Ce sera plus simple ainsi.
+    - "Nous arrivons \xE0 l\u2019\xEEle du c\u0153ur et aucun fid\xE8le du Roi n'est
+      \xE0 nos trousses."
     isStartingQuest: 0
     questIndexToStart: 
     isStartingADialogue: 1
     dialogueIndexToStart: 4
     particleToPlay: {fileID: 0}
-    characterVoiceSFX:
-      idInternal: 0
-      valueGuidInternal: 
-      WwiseObjectReference: {fileID: 11400000, guid: 885c78f41dcc1144aa259143379ff50a,
-        type: 2}
-    isPlayingFinTerritoireAnimation: 0
-    nextInteractionType: 0
-    cameraStartPos: {fileID: 0}
-    cameraEndPos: {fileID: 0}
-    unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
-  - characterName: Elya
-    myDialogue:
-    - "Mais il aurait pu avoir une r\xE9action au moins\u2026 Des remords ? Ou de
-      l'urticaire... Enfin quelque chose quoi !"
-    isStartingQuest: 0
-    questIndexToStart: 
-    isStartingADialogue: 1
-    dialogueIndexToStart: 5
-    particleToPlay: {fileID: 917845677}
     characterVoiceSFX:
       idInternal: 0
       valueGuidInternal: 
@@ -20434,14 +20414,32 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: 9529947196eb375419feb16d5e51174f,
+      type: 3}
+  - characterName: Elya
+    myDialogue:
+    - "On a l\u2019impression qu'il n'a m\xEAme pas remarqu\xE9 votre disparition,
+      Ma Reine..."
+    isStartingQuest: 0
+    questIndexToStart: 
+    isStartingADialogue: 1
+    dialogueIndexToStart: 5
+    particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 1b06ade9c40ea374fad8fa9731722e1b,
+        type: 2}
+    isPlayingFinTerritoireAnimation: 0
+    nextInteractionType: 0
+    cameraStartPos: {fileID: 0}
+    cameraEndPos: {fileID: 0}
+    unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 21300000, guid: 6f5db2e333ed9ef43b7f7c60317f7a92,
+      type: 3}
   - characterName: La Reine
     myDialogue:
-    - "Elya\u2026 Je sais que tu te fais du souci, mais j\u2019ai pris ma d\xE9cision."
-    - "Je vais prouver \xE0 ce bon Roi qui je suis ! Et pour \xE7a, il me faut une
-      arm\xE9e."
-    - "Malheureusement, mes fid\xE8les Aaron et Humbre ne suffiront pas, aussi braves
-      soient-ils."
+    - Ce sera plus simple ainsi.
     isStartingQuest: 0
     questIndexToStart: 
     isStartingADialogue: 1
@@ -20457,7 +20455,91 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: 490ab5d7f5529aa49bd5a74a4acddd04,
+      type: 3}
+  - characterName: Elya
+    myDialogue:
+    - "Mais il aurait pu avoir une r\xE9action au moins\u2026 Des remords ? Ou de
+      l'urticaire... Enfin quelque chose quoi !"
+    isStartingQuest: 0
+    questIndexToStart: 
+    isStartingADialogue: 1
+    dialogueIndexToStart: 7
+    particleToPlay: {fileID: 917845677}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 1b06ade9c40ea374fad8fa9731722e1b,
+        type: 2}
+    isPlayingFinTerritoireAnimation: 0
+    nextInteractionType: 0
+    cameraStartPos: {fileID: 0}
+    cameraEndPos: {fileID: 0}
+    unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 21300000, guid: bd8f7ea7131a1834db9be8bc4b867740,
+      type: 3}
+  - characterName: La Reine
+    myDialogue:
+    - "Elya\u2026 Je sais que tu te fais du souci, mais j\u2019ai pris ma d\xE9cision."
+    isStartingQuest: 0
+    questIndexToStart: 
+    isStartingADialogue: 1
+    dialogueIndexToStart: 8
+    particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 885c78f41dcc1144aa259143379ff50a,
+        type: 2}
+    isPlayingFinTerritoireAnimation: 0
+    nextInteractionType: 0
+    cameraStartPos: {fileID: 0}
+    cameraEndPos: {fileID: 0}
+    unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 21300000, guid: 992224d36cf28de4f87388bfaef13586,
+      type: 3}
+  - characterName: La Reine
+    myDialogue:
+    - "Je vais prouver \xE0 ce bon Roi qui je suis ! Et pour \xE7a, il me faut une
+      arm\xE9e."
+    isStartingQuest: 0
+    questIndexToStart: 
+    isStartingADialogue: 1
+    dialogueIndexToStart: 9
+    particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 885c78f41dcc1144aa259143379ff50a,
+        type: 2}
+    isPlayingFinTerritoireAnimation: 0
+    nextInteractionType: 0
+    cameraStartPos: {fileID: 0}
+    cameraEndPos: {fileID: 0}
+    unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 21300000, guid: 1b04a2e0e7a666e469ae3f2053f904ca,
+      type: 3}
+  - characterName: La Reine
+    myDialogue:
+    - "Malheureusement, mes fid\xE8les Aaron et Humbre ne suffiront pas, aussi braves
+      soient-ils."
+    isStartingQuest: 0
+    questIndexToStart: 
+    isStartingADialogue: 1
+    dialogueIndexToStart: 10
+    particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 885c78f41dcc1144aa259143379ff50a,
+        type: 2}
+    isPlayingFinTerritoireAnimation: 0
+    nextInteractionType: 0
+    cameraStartPos: {fileID: 0}
+    cameraEndPos: {fileID: 0}
+    unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 21300000, guid: 2eeab4feb6fa9cb41aa500fcd0c89aad,
+      type: 3}
   - characterName: Elya
     myDialogue:
     - "J\u2019admire votre force Ma reine !"
@@ -20476,7 +20558,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: f93279597ccddcf45bb9a5a97a2332b3,
+      type: 3}
   isStartDialogueExisting: 0
   levelDesignAnimator: {fileID: 677626972}
   firstCharacter: {fileID: 647270899}
