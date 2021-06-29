@@ -892,7 +892,7 @@ public class CombatManager : MonoBehaviour
                     myAnim.SetTrigger("DefenseurReceiveDamage");
                     myAnim.SetTrigger("MALaunchCoupCritique");
 
-                    yield return new WaitForSeconds(.5f);
+                    yield return new WaitForSeconds(4f);
 
                     break;
                 case Classes.Lancier:
@@ -904,6 +904,7 @@ public class CombatManager : MonoBehaviour
                     yield return new WaitForSeconds(.4f);
 
                     myAnim.SetTrigger("DefenseurReceiveDamage");
+                    myAnim.SetTrigger("LALaunchCoupCritique");
 
                     yield return new WaitForSeconds(.5f);
 
@@ -978,43 +979,81 @@ public class CombatManager : MonoBehaviour
             //myDamageFeedback.text = "-" + defenseurFM.maxCounterAttackRange.ToString() + " !!";
             //defenseurDamageEffect.Play();
 
-            yield return new WaitForSeconds(.7f);
+            switch (attaquantFM.fideleClasse)
+            {
+                case Classes.Epeiste:
 
-            EffectManager.Instance.echecTextEffect.Play();
-            publicChocSFX.Post(gameObject);
+                    yield return new WaitForSeconds(.7f);
 
-            yield return new WaitForSeconds(.5f);
+                    EffectManager.Instance.echecTextEffect.Play();
+                    publicChocSFX.Post(gameObject);
 
-            StartCoroutine(EffectManager.Instance.PlayEpeisteMissEffect());
+                    yield return new WaitForSeconds(.5f);
 
-            yield return new WaitForSeconds(.4f);
+                    StartCoroutine(EffectManager.Instance.PlayEpeisteMissEffect());
 
-            myAnim.SetTrigger("AttaquantReceiveDamage");
-            myAnim.SetTrigger("LaunchEchecCritique");
+                    yield return new WaitForSeconds(.4f);
 
-            yield return new WaitForSeconds(.1f);
+                    myAnim.SetTrigger("AttaquantReceiveDamage");
+                    myAnim.SetTrigger("EPLaunchEchecCritique");
 
-            lancementEpeeSFX.Post(gameObject);
+                    yield return new WaitForSeconds(.1f);
 
-            yield return new WaitForSeconds(.3f);
+                    lancementEpeeSFX.Post(gameObject);
 
-            freinageEpeeSFX.Post(gameObject);
+                    yield return new WaitForSeconds(.3f);
 
-            yield return new WaitForSeconds(.6f);
+                    freinageEpeeSFX.Post(gameObject);
 
-            virageEpeeSFX.Post(gameObject);
+                    yield return new WaitForSeconds(.6f);
 
-            yield return new WaitForSeconds(.3f);
+                    virageEpeeSFX.Post(gameObject);
 
-            virageEpeeSFX.Post(gameObject);
+                    yield return new WaitForSeconds(.3f);
 
-            yield return new WaitForSeconds(.3f);
+                    virageEpeeSFX.Post(gameObject);
 
-            virageEpeeSFX.Post(gameObject);
+                    yield return new WaitForSeconds(.3f);
 
-            yield return new WaitForSeconds(1f);
+                    virageEpeeSFX.Post(gameObject);
 
-            degatsSubitsSFX.Post(gameObject);
+                    yield return new WaitForSeconds(1f);
+
+                    degatsSubitsSFX.Post(gameObject);
+
+
+                    break;
+                case Classes.Magicien:
+
+                    yield return new WaitForSeconds(.5f);
+
+                    StartCoroutine(EffectManager.Instance.PlayMagicianCriticalEffect());
+
+                    yield return new WaitForSeconds(.4f);
+
+                    myAnim.SetTrigger("DefenseurReceiveDamage");
+                    myAnim.SetTrigger("MALaunchEchecCritique");
+
+                    yield return new WaitForSeconds(.5f);
+
+                    break;
+                case Classes.Lancier:
+
+                    yield return new WaitForSeconds(.5f);
+
+                    //StartCoroutine(EffectManager.Instance.PlayMagicianCriticalEffect());
+
+                    yield return new WaitForSeconds(.4f);
+
+                    myAnim.SetTrigger("DefenseurReceiveDamage");
+                    myAnim.SetTrigger("LALaunchEchecCritique");
+
+                    yield return new WaitForSeconds(.5f);
+
+                    break;
+                default:
+                    break;
+            }
 
             // ICI jouer Anim dégâts reçus sur attaquant
             renderTextCombat.text = "- " + currentAttackValue.ToString();
