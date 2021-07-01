@@ -209,7 +209,7 @@ public class DialogueManager : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
             GameManager.Instance.isGamePaused = false;
-            SceneSwitcher.Instance.SwitchToMenuTerritoire();
+            SceneSwitcher.Instance.SwitchToScene(GetComponent<ScenePicker>().scenePath);
         }
         else
         {

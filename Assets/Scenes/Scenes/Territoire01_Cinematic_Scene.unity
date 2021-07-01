@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -20207,6 +20207,7 @@ GameObject:
   - component: {fileID: 677626969}
   - component: {fileID: 677626968}
   - component: {fileID: 677626973}
+  - component: {fileID: 677626974}
   - component: {fileID: 677626972}
   m_Layer: 5
   m_Name: CameraCanvas
@@ -20564,6 +20565,19 @@ MonoBehaviour:
   levelDesignAnimator: {fileID: 677626972}
   firstCharacter: {fileID: 647270899}
   secondCharacter: {fileID: 790708659}
+--- !u!114 &677626974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677626967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca2b552f05ff334495a0d3cb6d799b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenePath: Assets/Scenes/Scenes/Territoire01_Scene.unity
 --- !u!1 &717076266
 GameObject:
   m_ObjectHideFlags: 0

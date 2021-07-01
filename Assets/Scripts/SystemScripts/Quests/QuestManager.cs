@@ -75,10 +75,14 @@ public class QuestManager : MonoBehaviour
     public struct QuestSubObjectives
     {
         public int specificUnitToReachLeft;
+        public int unitsToReachByAmountLeft;
+
         public int specificUnitsToRecruitLeft;
         public int unitsToRecruitByAmountLeft;
+
         public int specificUnitsToKillLeft;
         public int unitsToKillByAmountLeft;
+
         public int specificUnitsToTalkToLeft;
         public int unitsToTalkToByAmountLeft;
     }
@@ -200,6 +204,14 @@ public class QuestManager : MonoBehaviour
                     questsSubObjectivesLeft[i] = qsoTmp;
                 }
             }
+            foreach (UnitByAmount uba in mapQuests[i].unitsToReachByAmount) //modif ici
+            {
+                if (uba.unitCamp == unitToReach.GetComponentInParent<FideleManager>().myCamp)
+                {
+                    qsoTmp.unitsToReachByAmountLeft--; //modif ici
+                    questsSubObjectivesLeft[i] = qsoTmp;
+                }
+            }
             CheckQuestsTasksLeft();
         }
     }
@@ -288,7 +300,8 @@ public class QuestManager : MonoBehaviour
         {
             QuestSubObjectives qsoTmp = new QuestSubObjectives();
             qsoTmp = questsSubObjectivesLeft[i];
-            if (qsoTmp.specificUnitsToKillLeft == 0 && qsoTmp.specificUnitsToRecruitLeft == 0 && qsoTmp.specificUnitsToTalkToLeft == 0 && qsoTmp.unitsToKillByAmountLeft == 0 && qsoTmp.unitsToRecruitByAmountLeft == 0 && qsoTmp.unitsToTalkToByAmountLeft == 0)
+            if (qsoTmp.specificUnitsToKillLeft == 0 && qsoTmp.specificUnitsToRecruitLeft == 0 && qsoTmp.specificUnitsToTalkToLeft == 0 && qsoTmp.specificUnitToReachLeft == 0 && qsoTmp.unitsToKillByAmountLeft == 0 
+                && qsoTmp.unitsToRecruitByAmountLeft == 0 && qsoTmp.unitsToTalkToByAmountLeft == 0 && qsoTmp.unitsToReachByAmountLeft == 0)
             {
                 ValidateQuest(i);
             }

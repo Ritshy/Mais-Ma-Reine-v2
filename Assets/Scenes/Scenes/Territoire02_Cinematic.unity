@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -15069,6 +15069,7 @@ GameObject:
   - component: {fileID: 1219162532}
   - component: {fileID: 1219162531}
   - component: {fileID: 1219162530}
+  - component: {fileID: 1219162536}
   m_Layer: 5
   m_Name: UIManager
   m_TagString: Untagged
@@ -15107,7 +15108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0256055200b37604caefdd9d79f6e157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentTerritoire: 1
   characterName: {fileID: 929746064}
   characterLines: {fileID: 1850632663}
   dialogueScenario:
@@ -15115,7 +15115,7 @@ MonoBehaviour:
     myDialogue:
     - Vous avez fait du bon travail Aaron et toi ! Bravo.
     isStartingQuest: 0
-    questIndexToStart: 0
+    questIndexToStart: 
     isStartingADialogue: 1
     dialogueIndexToStart: 1
     particleToPlay: {fileID: 0}
@@ -15129,11 +15129,12 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   - characterName: Humbre
     myDialogue:
     - Merci, Ma Reine.
     isStartingQuest: 0
-    questIndexToStart: 0
+    questIndexToStart: 
     isStartingADialogue: 1
     dialogueIndexToStart: 2
     particleToPlay: {fileID: 0}
@@ -15147,12 +15148,13 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   - characterName: La Reine
     myDialogue:
     - Mais je vais devoir vous demander de redoubler de vigilance. Le Roi est lent,
       mais pas stupide. Il va sans doute envoyer ses soldats.
     isStartingQuest: 0
-    questIndexToStart: 0
+    questIndexToStart: 
     isStartingADialogue: 1
     dialogueIndexToStart: 3
     particleToPlay: {fileID: 0}
@@ -15166,12 +15168,13 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   - characterName: Humbre
     myDialogue:
     - "Nous sommes pr\xE9par\xE9s \xE0 \xE7a, Ma Reine. D\xE8s l\u2019instant o\xF9
       nous vous avons jur\xE9 all\xE9geance, notre vie est devenue v\xF4tre."
     isStartingQuest: 0
-    questIndexToStart: 0
+    questIndexToStart: 
     isStartingADialogue: 1
     dialogueIndexToStart: 4
     particleToPlay: {fileID: 0}
@@ -15185,13 +15188,14 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   - characterName: La Reine
     myDialogue:
     - "Je suis honor\xE9e d'avoir de si bons chevaliers \xE0 mes c\xF4t\xE9s. Je
       compte sur vous pour mener \xE0 bien notre mission."
     - Je vous ordonne donc de ne pas mourir !
     isStartingQuest: 0
-    questIndexToStart: 0
+    questIndexToStart: 
     isStartingADialogue: 1
     dialogueIndexToStart: 5
     particleToPlay: {fileID: 0}
@@ -15205,11 +15209,12 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   - characterName: Humbre
     myDialogue:
     - A vos ordres, Ma Reine !
     isStartingQuest: 0
-    questIndexToStart: 0
+    questIndexToStart: 
     isStartingADialogue: 0
     dialogueIndexToStart: 0
     particleToPlay: {fileID: 0}
@@ -15223,6 +15228,7 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
   isStartDialogueExisting: 0
   levelDesignAnimator: {fileID: 1450074713}
   firstCharacter: {fileID: 678330669}
@@ -15310,6 +15316,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1219162536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219162529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca2b552f05ff334495a0d3cb6d799b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenePath: Assets/Scenes/Scenes/Territoire02_Scene.unity
 --- !u!1001 &1245801069
 PrefabInstance:
   m_ObjectHideFlags: 0

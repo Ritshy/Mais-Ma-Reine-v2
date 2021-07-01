@@ -4,12 +4,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum territoireMarkers { Territoire01, territoire02 }
-
 public class CinematicDialogue : MonoBehaviour
 {
-    public territoireMarkers currentTerritoire;
-
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI characterLines;
 
@@ -159,17 +155,7 @@ public class CinematicDialogue : MonoBehaviour
         myAnim.SetTrigger("triggerEndCinematic");
 
         yield return new WaitForSeconds(2f);
-
-        switch (currentTerritoire)
-        {
-            case territoireMarkers.Territoire01:
-                SceneSwitcher.Instance.SwitchToTerritoire01();
-                break;
-            case territoireMarkers.territoire02:
-                SceneSwitcher.Instance.SwitchToTerritoire02();
-                break;
-            default:
-                break;
-        }
+        
+        SceneSwitcher.Instance.SwitchToScene(GetComponent<ScenePicker>().scenePath);
     }
 }
