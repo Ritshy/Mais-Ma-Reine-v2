@@ -23,22 +23,26 @@ public class InfoCharacter : MonoBehaviour
 
     public TextMeshProUGUI characterNameText;
     public Image characterCamp;
+    public Image characterClass;
     public Image characterCampColor;
+    public Image characterCircleBGColor;
 
     [Space]
-    [Header("Image and Color")]
+    [Header("Classe and Color")]
 
-    public Sprite roiCampIcon;
+    public Sprite lancierIcon;
+    public Sprite magicienIcon;
+    public Sprite epeisteIcon;
+
     public Color roiCampColor;
-
-    public Sprite reineCampIcon;
     public Color reineCampColor;
-
-    public Sprite banditCampIcon;
     public Color banditCampColor;
-
-    public Sprite villageoisCampIcon;
     public Color villageoisCampColor;
+
+    public Sprite roiCampSprite;
+    public Sprite reineCampSprite;
+    public Sprite banditCampSprite;
+    public Sprite villageoisCampSprite;
 
     private bool isInformationDisplayed;
 
@@ -91,24 +95,39 @@ public class InfoCharacter : MonoBehaviour
         switch (fmToDisplay.myCamp)
         {
             case GameCamps.Fidele:
-                characterCamp.sprite = reineCampIcon;
+                characterCircleBGColor.sprite = reineCampSprite;
                 characterCampColor.color = reineCampColor;
                 break;
             case GameCamps.Roi:
-                characterCamp.sprite = roiCampIcon;
+                characterCircleBGColor.sprite = roiCampSprite;
                 characterCampColor.color = roiCampColor;
                 break;
             case GameCamps.Bandit:
-                characterCamp.sprite = banditCampIcon;
+                characterCircleBGColor.sprite = banditCampSprite;
                 characterCampColor.color = banditCampColor;
                 break;
             case GameCamps.BanditCalamiteux:
-                characterCamp.sprite = banditCampIcon;
+                characterCircleBGColor.sprite = banditCampSprite;
                 characterCampColor.color = banditCampColor;
                 break;
             case GameCamps.Villageois:
-                characterCamp.sprite = villageoisCampIcon;
+                characterCircleBGColor.sprite = villageoisCampSprite;
                 characterCampColor.color = villageoisCampColor;
+                break;
+            default:
+                break;
+        }
+
+        switch (fmToDisplay.fideleClasse)
+        {
+            case Classes.Epeiste:
+                characterClass.sprite = epeisteIcon;
+                break;
+            case Classes.Magicien:
+                characterClass.sprite = magicienIcon;
+                break;
+            case Classes.Lancier:
+                characterClass.sprite = lancierIcon;
                 break;
             default:
                 break;
