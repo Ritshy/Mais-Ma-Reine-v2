@@ -19,6 +19,12 @@ public class RecrutementManager : MonoBehaviour
     
     public TextMeshProUGUI characterNom;
 
+    public Image classeImage;
+
+    public Sprite epeisteIcone;
+    public Sprite magicianIcone;
+    public Sprite lancierIcone;
+
     #region Caractéristiques
     [Header("Caractéristiques")]
     public TextMeshProUGUI hpValue;
@@ -133,6 +139,21 @@ public class RecrutementManager : MonoBehaviour
             {
                 cancelRecruitButton.interactable = true;
             }
+        }
+
+        switch (fmToRecruit.fideleClasse)
+        {
+            case Classes.Epeiste:
+                classeImage.sprite = epeisteIcone;
+                break;
+            case Classes.Magicien:
+                classeImage.sprite = magicianIcone;
+                break;
+            case Classes.Lancier:
+                classeImage.sprite = lancierIcone;
+                break;
+            default:
+                break;
         }
 
         idleRecruitedSprite = fmtrIdleSprite;

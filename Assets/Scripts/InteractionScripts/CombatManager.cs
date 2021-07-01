@@ -11,6 +11,7 @@ public class CombatManager : MonoBehaviour
     private Animator myAnim;
     public bool isInFight = false;
     public TextMeshProUGUI renderTextCombat;
+    public List<CanvasGroup> objectsToDisableWhileInFight;
 
     public int vulnerabilityMultiplier;
 
@@ -36,32 +37,10 @@ public class CombatManager : MonoBehaviour
 
     [Header("Sounds Combat")]
 
-    public AK.Wwise.Event attaqueSimpleImpactSFX;
-    public AK.Wwise.Event attaqueSimpleSlashSFX;
-
     public AK.Wwise.Event criSFX;
     public AK.Wwise.Event mortSFX;
 
     [Space]
-
-    public AK.Wwise.Event samuraiSlashSFX;
-    public AK.Wwise.Event sautArriereSFX;
-    public AK.Wwise.Event explosionEnnemiSFX;
-
-    [Space]
-
-    public AK.Wwise.Event publicChocSFX;
-    public AK.Wwise.Event degatsSubitsSFX;
-
-    public AK.Wwise.Event freinageEpeeSFX;
-    public AK.Wwise.Event lancementEpeeSFX;
-    public AK.Wwise.Event virageEpeeSFX;
-
-    [Space]
-
-    [Header("Particles")]
-
-    public ParticleSystem fireballCanalisation;
 
     [Header("Attaquant Fenetre")]
 
@@ -93,7 +72,7 @@ public class CombatManager : MonoBehaviour
 
     public Image attaquantFideleSprite;
     public TextMeshProUGUI attaquantHP;
-    public ParticleSystem attaquantDamageTextPS;
+    public ParticleSystem attaquantDamagePS;
 
     public Image attaquantBrasImage;
 
@@ -101,7 +80,7 @@ public class CombatManager : MonoBehaviour
 
     public Image defenseurFideleSprite;
     public TextMeshProUGUI defenseurHP;
-    public ParticleSystem defenseurDamageTextPS;
+    public ParticleSystem defenseurDamagePS;
 
     public Image defenseurBrasImage;
 
@@ -278,6 +257,11 @@ public class CombatManager : MonoBehaviour
 
         myAnim.SetBool("OpenCombatBandeau", true);
 
+        for (int i = 0; i < objectsToDisableWhileInFight.Count; i++)
+        {
+            objectsToDisableWhileInFight[i].alpha = 0;
+        }
+
         CameraZooming.Instance.ShakeScreen();
 
         attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
@@ -346,6 +330,11 @@ public class CombatManager : MonoBehaviour
             GameManager.Instance.isGamePaused = true;
 
             myAnim.SetBool("OpenCombatBandeau", true);
+
+            for (int i = 0; i < objectsToDisableWhileInFight.Count; i++)
+            {
+                objectsToDisableWhileInFight[i].alpha = 0;
+            }
 
             attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
             defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;
@@ -534,14 +523,6 @@ public class CombatManager : MonoBehaviour
 
                         StartCoroutine(EffectManager.Instance.PlayEpeisteAttackEffect());
 
-                        yield return new WaitForSeconds(0.7f);
-
-                        attaqueSimpleSlashSFX.Post(gameObject);
-
-                        yield return new WaitForSeconds(.6f);
-
-                        attaqueSimpleImpactSFX.Post(gameObject);
-
                         yield return new WaitForSeconds(.15f);
 
                         criSFX.Post(gameObject);
@@ -594,21 +575,24 @@ public class CombatManager : MonoBehaviour
                 // Ici jouer Anim dégâts reçus sur defenseur
 
                 renderTextCombat.text = "- " + currentAttackValue.ToString();
-                defenseurDamageTextPS.gameObject.SetActive(true);
                 defenseurAM.ReceiveDamage();
                 defenseurAM.FillAmountHealth();
 
                 attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
                 defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;
 
+
+                myAnim.SetTrigger("PanneauTrigger");
+
+                yield return new WaitForSeconds(1.5f);
+
+                defenseurDamagePS.Play();
                 defenseurHP.text = defenseurFM.currentHP.ToString();
+                CheckHP();
 
                 yield return new WaitForSeconds(1f);
-                
-                CheckHP();
-                yield return new WaitForSeconds(0.5f);
 
-                defenseurDamageTextPS.gameObject.SetActive(false);
+                myAnim.SetTrigger("PanneauTrigger");
 
                 if (attaquantFM != null && defenseurFM != null)
                 {
@@ -686,14 +670,6 @@ public class CombatManager : MonoBehaviour
 
                     StartCoroutine(EffectManager.Instance.PlayEpeisteCounterAttackEffect());
 
-                    yield return new WaitForSeconds(0.7f);
-
-                    attaqueSimpleSlashSFX.Post(gameObject);
-
-                    yield return new WaitForSeconds(.5f);
-
-                    attaqueSimpleImpactSFX.Post(gameObject);
-
                     yield return new WaitForSeconds(.15f);
 
                     criSFX.Post(gameObject);
@@ -761,7 +737,6 @@ public class CombatManager : MonoBehaviour
             // Ici jouer Anim dégâts reçus sur attaquant
 
             renderTextCombat.text = "- " + currentAttackValue.ToString();
-            attaquantDamageTextPS.gameObject.SetActive(true);
 
             attaquantAM.ReceiveDamage();
             attaquantAM.FillAmountHealth();
@@ -769,15 +744,18 @@ public class CombatManager : MonoBehaviour
             attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
             defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;
 
-            attaquantHP.text = attaquantFM.currentHP.ToString();
 
-            yield return new WaitForSeconds(1f);
-            
+            myAnim.SetTrigger("PanneauTrigger");
+
+            yield return new WaitForSeconds(1.5f);
+
+            attaquantDamagePS.Play();
+            attaquantHP.text = attaquantFM.currentHP.ToString();
             CheckHP();
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
 
-            attaquantDamageTextPS.gameObject.SetActive(false);
+            myAnim.SetTrigger("PanneauTrigger");
 
             if (attaquantFM != null && defenseurFM != null)
             {
@@ -868,16 +846,6 @@ public class CombatManager : MonoBehaviour
                     myAnim.SetTrigger("DefenseurReceiveDamage");
                     myAnim.SetTrigger("EPLaunchCoupCritique");
 
-                    samuraiSlashSFX.Post(gameObject);
-
-                    yield return new WaitForSeconds(1f);
-
-                    sautArriereSFX.Post(gameObject);
-
-                    yield return new WaitForSeconds(.5f);
-
-                    explosionEnnemiSFX.Post(gameObject);
-
                     yield return new WaitForSeconds(.5f);
 
                     break;
@@ -922,22 +890,24 @@ public class CombatManager : MonoBehaviour
 
             // ICI jouer Anim dégâts reçus sur defenseur
             renderTextCombat.text = "- " + currentAttackValue.ToString();
-            defenseurDamageTextPS.gameObject.SetActive(true);
             defenseurAM.ReceiveDamage();
             defenseurAM.FillAmountHealth();
 
             attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
             defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;
 
+
+            myAnim.SetTrigger("PanneauTrigger");
+
+            yield return new WaitForSeconds(1.5f);
+
+            defenseurDamagePS.Play();
             defenseurHP.text = defenseurFM.currentHP.ToString();
+            CheckHP();
 
             yield return new WaitForSeconds(1f);
 
-            CheckHP();
-
-            yield return new WaitForSeconds(0.5f);
-
-            defenseurDamageTextPS.gameObject.SetActive(false);
+            myAnim.SetTrigger("PanneauTrigger");
 
             if (attaquantFM != null && defenseurFM != null)
             {
@@ -979,14 +949,13 @@ public class CombatManager : MonoBehaviour
             //myDamageFeedback.text = "-" + defenseurFM.maxCounterAttackRange.ToString() + " !!";
             //defenseurDamageEffect.Play();
 
+            yield return new WaitForSeconds(.7f);
+
+            EffectManager.Instance.echecTextEffect.Play();
+
             switch (attaquantFM.fideleClasse)
             {
                 case Classes.Epeiste:
-
-                    yield return new WaitForSeconds(.7f);
-
-                    EffectManager.Instance.echecTextEffect.Play();
-                    publicChocSFX.Post(gameObject);
 
                     yield return new WaitForSeconds(.5f);
 
@@ -996,30 +965,6 @@ public class CombatManager : MonoBehaviour
 
                     myAnim.SetTrigger("AttaquantReceiveDamage");
                     myAnim.SetTrigger("EPLaunchEchecCritique");
-
-                    yield return new WaitForSeconds(.1f);
-
-                    lancementEpeeSFX.Post(gameObject);
-
-                    yield return new WaitForSeconds(.3f);
-
-                    freinageEpeeSFX.Post(gameObject);
-
-                    yield return new WaitForSeconds(.6f);
-
-                    virageEpeeSFX.Post(gameObject);
-
-                    yield return new WaitForSeconds(.3f);
-
-                    virageEpeeSFX.Post(gameObject);
-
-                    yield return new WaitForSeconds(.3f);
-
-                    virageEpeeSFX.Post(gameObject);
-
-                    yield return new WaitForSeconds(1f);
-
-                    degatsSubitsSFX.Post(gameObject);
 
 
                     break;
@@ -1057,7 +1002,6 @@ public class CombatManager : MonoBehaviour
 
             // ICI jouer Anim dégâts reçus sur attaquant
             renderTextCombat.text = "- " + currentAttackValue.ToString();
-            attaquantDamageTextPS.gameObject.SetActive(true);
 
             attaquantAM.ReceiveDamage();
             attaquantAM.FillAmountHealth();
@@ -1065,14 +1009,17 @@ public class CombatManager : MonoBehaviour
             attaquantBrasImage.fillAmount = attaquantFM.currentHP * 1f / attaquantFM.maxHp * 1f;
             defenseurBrasImage.fillAmount = defenseurFM.currentHP * 1f / defenseurFM.maxHp * 1f;
 
+            myAnim.SetTrigger("PanneauTrigger");
+
+            yield return new WaitForSeconds(1.5f);
+
+            attaquantDamagePS.Play();
             attaquantHP.text = attaquantFM.currentHP.ToString();
-
-            yield return new WaitForSeconds(2f);           
-
             CheckHP();
-            yield return new WaitForSeconds(0.5f);
 
-            attaquantDamageTextPS.gameObject.SetActive(false);
+            yield return new WaitForSeconds(1f);
+
+            myAnim.SetTrigger("PanneauTrigger");
 
             if (attaquantFM != null && defenseurFM != null)
             {
@@ -1092,6 +1039,11 @@ public class CombatManager : MonoBehaviour
     {
         //Debug.Log("On Tue quelqu'un");
         myAnim.SetBool("OpenCombatBandeau", false);
+
+        for (int i = 0; i < objectsToDisableWhileInFight.Count; i++)
+        {
+            objectsToDisableWhileInFight[i].alpha = 1;
+        }
 
         //myDamageFeedback.text = "";
         //myDamageFeedback = null;
@@ -1219,7 +1171,12 @@ public class CombatManager : MonoBehaviour
 
         //Debug.Log("Combat terminé");
         myAnim.SetBool("OpenCombatBandeau", false);
-        
+
+        for (int i = 0; i < objectsToDisableWhileInFight.Count; i++)
+        {
+            objectsToDisableWhileInFight[i].alpha = 1;
+        }
+
         attaquantAM.CheckActionsLeftAmout();
 
         attaquantFM.GetComponentInChildren<Interaction>().OtherCampDisplayInteractionFeedbacks();

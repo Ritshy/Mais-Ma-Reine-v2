@@ -9,7 +9,10 @@ public class StatTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        tooltip.SetActive(true);
+        if (DialogueManager.Instance.isInDialogue == false)
+        {
+            tooltip.SetActive(true);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)

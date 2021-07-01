@@ -11,6 +11,7 @@ public class EffectManager : MonoBehaviour
     public AK.Wwise.Event lancementDeplacementSFX;
     public AK.Wwise.Event finDeplacementSFX;
 
+
     [Header("Launching Combat Effect")]
 
     public ParticleSystem versusEffect;
@@ -31,14 +32,32 @@ public class EffectManager : MonoBehaviour
     public ParticleSystem coupCritiqueSlashEffect;
     public ParticleSystem coupCritiqueImpactEffect;
 
+    [Space]
+
+    public AK.Wwise.Event samuraiSlashSFX;
+    public AK.Wwise.Event sautArriereSFX;
+    public AK.Wwise.Event explosionEnnemiSFX;
+
     [Header("Miss Effects")]
 
     public ParticleSystem echecEpeeFreineEffect;
     public ParticleSystem echecImpactEffect;
 
+    [Space]
+
+    public AK.Wwise.Event publicChocSFX;
+    public AK.Wwise.Event degatsSubitsSFX;
+
+    public AK.Wwise.Event freinageEpeeSFX;
+    public AK.Wwise.Event lancementEpeeSFX;
+    public AK.Wwise.Event virageEpeeSFX;
+
     [Header("Attack Effects")]
 
     public ParticleSystem attackEpeeSlashEffect;
+
+    public AK.Wwise.Event attaqueSimpleImpactSFX;
+    public AK.Wwise.Event attaqueSimpleSlashSFX;
 
     [Header("CounterAttack Effects")]
 
@@ -141,7 +160,17 @@ public class EffectManager : MonoBehaviour
 
         coupCritiqueSlashEffect.Play();
 
-        yield return new WaitForSeconds(2.1f);
+        samuraiSlashSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(1f);
+
+        sautArriereSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.5f);
+
+        explosionEnnemiSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(1f);
 
         coupCritiqueImpactEffect.Play();
         CameraZooming.Instance.ShakeScreen();
@@ -149,7 +178,31 @@ public class EffectManager : MonoBehaviour
 
     public IEnumerator PlayEpeisteMissEffect()
     {
-        //echecTextEffect.Play();
+        publicChocSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(1f);
+
+        lancementEpeeSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.3f);
+
+        freinageEpeeSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.6f);
+
+        virageEpeeSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.3f);
+
+        virageEpeeSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.3f);
+
+        virageEpeeSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(1f);
+
+        degatsSubitsSFX.Post(gameObject);
 
         yield return new WaitForSeconds(1.1f);
 
@@ -163,11 +216,12 @@ public class EffectManager : MonoBehaviour
 
     public IEnumerator PlayEpeisteAttackEffect()
     {
-        //attackTextEffect.Play();
-
         yield return new WaitForSeconds(1.2f);
 
         attackEpeeSlashEffect.Play();
+
+        attaqueSimpleImpactSFX.Post(gameObject);
+        attaqueSimpleSlashSFX.Post(gameObject);
     }
 
     public IEnumerator PlayEpeisteCounterAttackEffect()
@@ -177,6 +231,14 @@ public class EffectManager : MonoBehaviour
         yield return new WaitForSeconds(1.7f);
 
         counterAttackEpeeSlashEffect.Play();
+
+        yield return new WaitForSeconds(0.7f);
+
+        attaqueSimpleSlashSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.5f);
+
+        attaqueSimpleImpactSFX.Post(gameObject);
     }
     #endregion
 
