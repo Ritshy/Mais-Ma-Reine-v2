@@ -1,0 +1,346 @@
+fileFormatVersion: 2
+guid: 00c7132d0a199a240bcb33728b64b3a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1420942502148768405
+    second: Mort_Fantome_0
+  - first:
+      213: -2063351298001765471
+    second: Mort_Fantome_1
+  - first:
+      213: 4317328430363221378
+    second: Mort_Fantome_2
+  - first:
+      213: 1975041629279458156
+    second: Mort_Fantome_3
+  - first:
+      213: 5466046028798642061
+    second: Mort_Fantome_4
+  - first:
+      213: 1170931512243237054
+    second: Mort_Fantome_5
+  - first:
+      213: -2222626684442837
+    second: Mort_Fantome_6
+  - first:
+      213: -2863124689969668789
+    second: Mort_Fantome_7
+  - first:
+      213: -2150852327545165983
+    second: Mort_Fantome_8
+  - first:
+      213: -6939109619521889574
+    second: Mort_Fantome_9
+  - first:
+      213: 2615523727552454635
+    second: Mort_Fantome_10
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mort_Fantome_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 188
+        width: 173
+        height: 173
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59205de5da338b310800000000000000
+      internalID: 1420942502148768405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort_Fantome_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 188
+        width: 173
+        height: 173
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab73c33de08d53e0800000000000000
+      internalID: -2063351298001765471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort_Fantome_2
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 188
+        width: 173
+        height: 173
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d9e7e455b3aeb30800000000000000
+      internalID: 4317328430363221378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort_Fantome_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 185
+        width: 173
+        height: 176
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c639fc9c5e1c86b10800000000000000
+      internalID: 1975041629279458156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort_Fantome_4
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 183
+        width: 173
+        height: 178
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d874a7027eb4bdb40800000000000000
+      internalID: 5466046028798642061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort_Fantome_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 173
+        height: 188
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0b19ba10cff3010800000000000000
+      internalID: 1170931512243237054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort_Fantome_6
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 173
+        height: 188
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b276106688a18fff0800000000000000
+      internalID: -2222626684442837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort_Fantome_7
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 0
+        width: 173
+        height: 188
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d15b293432448d0800000000000000
+      internalID: -2863124689969668789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort_Fantome_8
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 0
+        width: 173
+        height: 188
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167295c2433a622e0800000000000000
+      internalID: -2150852327545165983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mort_Fantome_9
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 173
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adad6e6e09453bf90800000000000000
+      internalID: -6939109619521889574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

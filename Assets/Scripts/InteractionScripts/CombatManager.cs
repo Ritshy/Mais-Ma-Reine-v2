@@ -44,6 +44,8 @@ public class CombatManager : MonoBehaviour
 
     [Header("Attaquant Fenetre")]
 
+    public ParticleSystem deadEffect;
+
     public TextMeshProUGUI atkHP;
     public TextMeshProUGUI atkRange;
     public TextMeshProUGUI atkCriticChance;
@@ -1064,6 +1066,8 @@ public class CombatManager : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
 
+            deadEffect.transform.position = deadFM.transform.position;
+            deadEffect.Play();
 
             if (deadFM.myCamp == GameCamps.Fidele)
             {

@@ -30,6 +30,12 @@ public class DialogueManager : MonoBehaviour
 
     public bool isInDialogue = false;
 
+    [Space]
+    [Header("Fin de Territoire")]
+
+    public List<ParticleSystem> confetisEffects;
+    public List<ParticleSystem> trompetteEffects;
+
     public AK.Wwise.Event territoireWinTrompettesfx;
     public AK.Wwise.Event territoireWinConfetisfx;
 
@@ -222,10 +228,18 @@ public class DialogueManager : MonoBehaviour
     public IEnumerator PlayWinSFX()
     {
         territoireWinConfetisfx.Post(gameObject);
+        foreach (ParticleSystem vfx in confetisEffects)
+        {
+            vfx.Play();
+        }
 
         yield return new WaitForSeconds(1.5f);
 
         territoireWinTrompettesfx.Post(gameObject);
+        foreach (ParticleSystem vfx in trompetteEffects)
+        {
+            vfx.Play();
+        }
     }
 
     public void PlayLooseSFX()
