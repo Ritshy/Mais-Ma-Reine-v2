@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="114580352">
+		<SoundBank Id="393239870" Language="SFX" Hash="1902792729">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -40,7 +40,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1636597489" Name="Event_Attaque_Coup_Direct" ObjectPath="\Events\Default Work Unit\Folder_Attaque_Guerrier\Event_Attaque_Coup_Direct" DurationType="OneShot" DurationMin="0.375624" DurationMax="0.516508">
+				<Event Id="1636597489" Name="Event_Attaque_Coup_Direct" ObjectPath="\Events\Default Work Unit\Folder_Guerrier\Attaque\Event_Attaque_Coup_Direct" DurationType="OneShot" DurationMin="0.375624" DurationMax="0.516508">
 					<IncludedMemoryFiles>
 						<File Id="249120498" Language="SFX">
 							<ShortName>Attaque\Coup_direct\coup_7.wav</ShortName>
@@ -76,7 +76,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3412755326" Name="Event_Attaque_Mouvement_Epee" ObjectPath="\Events\Default Work Unit\Folder_Attaque_Guerrier\Event_Attaque_Mouvement_Epee" DurationType="OneShot" DurationMin="0.805229" DurationMax="0.913604">
+				<Event Id="3412755326" Name="Event_Attaque_Mouvement_Epee" ObjectPath="\Events\Default Work Unit\Folder_Guerrier\Attaque\Event_Attaque_Mouvement_Epee" DurationType="OneShot" DurationMin="0.805229" DurationMax="0.913604">
 					<IncludedMemoryFiles>
 						<File Id="97478536" Language="SFX">
 							<ShortName>Attaque\Mouvement_épée\SWSH_Whoosh 8 (ID 1801)_LS.wav</ShortName>
@@ -300,7 +300,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1024705842" Name="Event_Echec_Choque" ObjectPath="\Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Choque" DurationType="OneShot" DurationMin="1.101995" DurationMax="1.101995">
+				<Event Id="1024705842" Name="Event_Echec_Choque" ObjectPath="\Events\Default Work Unit\Folder_Guerrier\Folder_Echec_Critique\Event_Echec_Choque" DurationType="OneShot" DurationMin="1.101995" DurationMax="1.101995">
 					<IncludedMemoryFiles>
 						<File Id="331702358" Language="SFX">
 							<ShortName>Choqué.wav</ShortName>
@@ -308,7 +308,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2334563671" Name="Event_Echec_Degats" ObjectPath="\Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Degats" DurationType="OneShot" DurationMin="0.504399" DurationMax="1.321179">
+				<Event Id="2334563671" Name="Event_Echec_Degats" ObjectPath="\Events\Default Work Unit\Folder_Guerrier\Folder_Echec_Critique\Event_Echec_Degats" DurationType="OneShot" DurationMin="0.504399" DurationMax="1.321179">
 					<IncludedMemoryFiles>
 						<File Id="93719553" Language="SFX">
 							<ShortName>Attaque-Critique_5.wav</ShortName>
@@ -336,7 +336,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2292456063" Name="Event_Echec_Frein" ObjectPath="\Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Frein" DurationType="OneShot" DurationMin="0.652993" DurationMax="0.652993">
+				<Event Id="2292456063" Name="Event_Echec_Frein" ObjectPath="\Events\Default Work Unit\Folder_Guerrier\Folder_Echec_Critique\Event_Echec_Frein" DurationType="OneShot" DurationMin="0.652993" DurationMax="0.652993">
 					<IncludedMemoryFiles>
 						<File Id="246005697" Language="SFX">
 							<ShortName>frein.wav</ShortName>
@@ -344,7 +344,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1411219000" Name="Event_Echec_Lancement_Epee" ObjectPath="\Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Lancement_Epee" DurationType="OneShot" DurationMin="0.420045" DurationMax="0.420045">
+				<Event Id="1411219000" Name="Event_Echec_Lancement_Epee" ObjectPath="\Events\Default Work Unit\Folder_Guerrier\Folder_Echec_Critique\Event_Echec_Lancement_Epee" DurationType="OneShot" DurationMin="0.420045" DurationMax="0.420045">
 					<IncludedMemoryFiles>
 						<File Id="498663839" Language="SFX">
 							<ShortName>Lancement_Epee.wav</ShortName>
@@ -352,7 +352,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3142964213" Name="Event_Echec_Virage_Epee" ObjectPath="\Events\Default Work Unit\Folder_Echec_Critique\Event_Echec_Virage_Epee" DurationType="OneShot" DurationMin="0.407347" DurationMax="0.407347">
+				<Event Id="3142964213" Name="Event_Echec_Virage_Epee" ObjectPath="\Events\Default Work Unit\Folder_Guerrier\Folder_Echec_Critique\Event_Echec_Virage_Epee" DurationType="OneShot" DurationMin="0.407347" DurationMax="0.407347">
 					<IncludedMemoryFiles>
 						<File Id="783263973" Language="SFX">
 							<ShortName>Virages_Epee.wav</ShortName>
@@ -404,27 +404,95 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3437065663" Name="Event_Mage_Attaque_Canalisation" ObjectPath="\Events\Default Work Unit\Folder_Attaque_Mage\Event_Mage_Attaque_Canalisation" DurationType="OneShot" DurationMin="1.186667" DurationMax="1.186667">
+				<Event Id="2608421264" Name="Event_Lancier_Coup" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_Attaque\Event_Lancier_Coup" DurationType="OneShot" DurationMin="0.253175" DurationMax="0.253175">
 					<IncludedMemoryFiles>
-						<File Id="763585390" Language="SFX">
-							<ShortName>Canalisation 2.wav</ShortName>
-							<Path>SFX\Canalisation 2_10C4C929.wem</Path>
+						<File Id="527389323" Language="SFX">
+							<ShortName>lance_Coup.wav</ShortName>
+							<Path>SFX\lance_Coup_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2436459893" Name="Event_Mage_Attaque_Impact" ObjectPath="\Events\Default Work Unit\Folder_Attaque_Mage\Event_Mage_Attaque_Impact" DurationType="OneShot" DurationMin="0.859773" DurationMax="0.859773">
+				<Event Id="2178918028" Name="Event_Lancier_CoupCrit" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_CoupCrit" DurationType="OneShot" DurationMin="0.369977" DurationMax="0.483243">
 					<IncludedMemoryFiles>
-						<File Id="958076938" Language="SFX">
-							<ShortName>Impact_Boule-de-Feu_V2.wav</ShortName>
-							<Path>SFX\Impact_Boule-de-Feu_V2_10C4C929.wem</Path>
+						<File Id="115389240" Language="SFX">
+							<ShortName>Empalement\Coup_Crit_Lancier_4.wav</ShortName>
+							<Path>SFX\Empalement\Coup_Crit_Lancier_4_10C4C929.wem</Path>
+						</File>
+						<File Id="133356740" Language="SFX">
+							<ShortName>Empalement\Coup_Crit_Lancier_1.wav</ShortName>
+							<Path>SFX\Empalement\Coup_Crit_Lancier_1_10C4C929.wem</Path>
+						</File>
+						<File Id="216100257" Language="SFX">
+							<ShortName>Empalement\Coup_Crit_Lancier_2.wav</ShortName>
+							<Path>SFX\Empalement\Coup_Crit_Lancier_2_10C4C929.wem</Path>
+						</File>
+						<File Id="363443734" Language="SFX">
+							<ShortName>Empalement\Coup_Crit_Lancier_3.wav</ShortName>
+							<Path>SFX\Empalement\Coup_Crit_Lancier_3_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1165136094" Name="Event_Mage_Attaque_Lancer" ObjectPath="\Events\Default Work Unit\Folder_Attaque_Mage\Event_Mage_Attaque_Lancer" DurationType="OneShot" DurationMin="3.227211" DurationMax="3.227211">
+				<Event Id="2399027911" Name="Event_Lancier_disparition" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_EchecCrit\Event_Lancier_disparition" DurationType="OneShot" DurationMin="2.630998" DurationMax="2.630998">
 					<IncludedMemoryFiles>
-						<File Id="229683490" Language="SFX">
-							<ShortName>Boule-de-Feu_Mouvement.wav</ShortName>
-							<Path>SFX\Boule-de-Feu_Mouvement_10C4C929.wem</Path>
+						<File Id="51288759" Language="SFX">
+							<ShortName>Echec_TeamRocket.wav</ShortName>
+							<Path>SFX\Echec_TeamRocket_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3241757576" Name="Event_Lancier_Envole" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_EchecCrit\Event_Lancier_Envole" DurationType="OneShot" DurationMin="0.860998" DurationMax="0.860998">
+					<IncludedMemoryFiles>
+						<File Id="596684151" Language="SFX">
+							<ShortName>Echec_envole.wav</ShortName>
+							<Path>SFX\Echec_envole_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="910006524" Name="Event_Lancier_Lancer" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_Attaque\Event_Lancier_Lancer" DurationType="OneShot" DurationMin="0.538186" DurationMax="0.538186">
+					<IncludedMemoryFiles>
+						<File Id="930427764" Language="SFX">
+							<ShortName>Lancer_Lance.wav</ShortName>
+							<Path>SFX\Lancer_Lance_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3661350892" Name="Event_Lancier_Perche" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_EchecCrit\Event_Lancier_Perche" DurationType="OneShot" DurationMin="1.441996" DurationMax="1.441996">
+					<IncludedMemoryFiles>
+						<File Id="915875593" Language="SFX">
+							<ShortName>Echec_plantage.wav</ShortName>
+							<Path>SFX\Echec_plantage_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="137124609" Name="Event_Lancier_Rocket" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_Rocket" DurationType="OneShot" DurationMin="0.873991" DurationMax="0.873991">
+					<IncludedMemoryFiles>
+						<File Id="339115037" Language="SFX">
+							<ShortName>Rocket_Lancier.wav</ShortName>
+							<Path>SFX\Rocket_Lancier_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3926879247" Name="Event_Lancier_RocketLanch" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_RocketLanch" DurationType="OneShot" DurationMin="0.873991" DurationMax="0.873991">
+					<IncludedMemoryFiles>
+						<File Id="272846394" Language="SFX">
+							<ShortName>Launch_Rocket_Lancier.wav</ShortName>
+							<Path>SFX\Launch_Rocket_Lancier_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1453704403" Name="Event_Lancier_woosh" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_woosh" DurationType="OneShot" DurationMin="0.542993" DurationMax="0.542993">
+					<IncludedMemoryFiles>
+						<File Id="729508648" Language="SFX">
+							<ShortName>woosh_Lancier.wav</ShortName>
+							<Path>SFX\woosh_Lancier_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1877693936" Name="Event_Mage_Contre" ObjectPath="\Events\Default Work Unit\Folder_Mage\Event_Mage_Contre" DurationType="OneShot" DurationMin="0.441565" DurationMax="0.441565">
+					<IncludedMemoryFiles>
+						<File Id="437869471" Language="SFX">
+							<ShortName>Contre_CoupdeCanne.wav</ShortName>
+							<Path>SFX\Contre_CoupdeCanne_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -636,7 +704,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="540293294" Name="Event_Reussite_BackDash" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_BackDash" DurationType="OneShot" DurationMin="0.140998" DurationMax="0.140998">
+				<Event Id="540293294" Name="Event_Reussite_BackDash" ObjectPath="\Events\Default Work Unit\Folder_Guerrier\Folder_Reussite_Critique\Event_Reussite_BackDash" DurationType="OneShot" DurationMin="0.140998" DurationMax="0.140998">
 					<IncludedMemoryFiles>
 						<File Id="35933807" Language="SFX">
 							<ShortName>ReussiteCritique_BackDash.wav</ShortName>
@@ -644,7 +712,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3702005869" Name="Event_Reussite_DegatsEnnemi" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_DegatsEnnemi" DurationType="OneShot" DurationMin="2.671995" DurationMax="2.671995">
+				<Event Id="3702005869" Name="Event_Reussite_DegatsEnnemi" ObjectPath="\Events\Default Work Unit\Folder_Guerrier\Folder_Reussite_Critique\Event_Reussite_DegatsEnnemi" DurationType="OneShot" DurationMin="2.671995" DurationMax="2.671995">
 					<IncludedMemoryFiles>
 						<File Id="517059369" Language="SFX">
 							<ShortName>ReussiteCritique_DegatsEnnemi.wav</ShortName>
@@ -652,63 +720,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4292435174" Name="Event_Reussite_Slash" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_Slash" DurationType="OneShot" DurationMin="0.878005" DurationMax="0.878005">
+				<Event Id="4292435174" Name="Event_Reussite_Slash" ObjectPath="\Events\Default Work Unit\Folder_Guerrier\Folder_Reussite_Critique\Event_Reussite_Slash" DurationType="OneShot" DurationMin="0.878005" DurationMax="0.878005">
 					<IncludedMemoryFiles>
 						<File Id="1068584603" Language="SFX">
 							<ShortName>ReussiteCritique_slash.wav</ShortName>
 							<Path>SFX\ReussiteCritique_slash_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="559458864" Name="Event_ReussiteCrit_Mage_Canalisation" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Crit_Mage\Event_ReussiteCrit_Mage_Canalisation" DurationType="OneShot" DurationMin="1.186667" DurationMax="1.186667">
-					<IncludedMemoryFiles>
-						<File Id="153342988" Language="SFX">
-							<ShortName>Canalisation_Foudre.wav</ShortName>
-							<Path>SFX\Canalisation_Foudre_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1023378237" Name="Event_ReussiteCrit_Mage_Grondement" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Crit_Mage\Event_ReussiteCrit_Mage_Grondement" DurationType="OneShot" DurationMin="11.716984" DurationMax="11.716984">
-					<IncludedMemoryFiles>
-						<File Id="750115350" Language="SFX">
-							<ShortName>colère des cieux.wav</ShortName>
-							<Path>SFX\colère des cieux_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1568167342" Name="Event_ReussiteCrit_Mage_Impact" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Crit_Mage\Event_ReussiteCrit_Mage_Impact" DurationType="OneShot" DurationMin="3.307007" DurationMax="3.307007">
-					<IncludedMemoryFiles>
-						<File Id="225037763" Language="SFX">
-							<ShortName>Chute_Attaque_Foudre.wav</ShortName>
-							<Path>SFX\Chute_Attaque_Foudre_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2740265642" Name="Event_ReussiteCrit_Mage_Paralysis" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Crit_Mage\Event_ReussiteCrit_Mage_Paralysis" DurationType="OneShot" DurationMin="0.487075" DurationMax="0.560091">
-					<IncludedMemoryFiles>
-						<File Id="135196807" Language="SFX">
-							<ShortName>Paralysie_2.wav</ShortName>
-							<Path>SFX\Paralysie_2_10C4C929.wem</Path>
-						</File>
-						<File Id="517029243" Language="SFX">
-							<ShortName>Paralysie_4.wav</ShortName>
-							<Path>SFX\Paralysie_4_10C4C929.wem</Path>
-						</File>
-						<File Id="534967858" Language="SFX">
-							<ShortName>Paralysie_3.wav</ShortName>
-							<Path>SFX\Paralysie_3_10C4C929.wem</Path>
-						</File>
-						<File Id="963270697" Language="SFX">
-							<ShortName>Paralysie_1.wav</ShortName>
-							<Path>SFX\Paralysie_1_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="324288311" Name="Event_ReussiteCrit_Mage_PreBurst" ObjectPath="\Events\Default Work Unit\Folder_Reussite_Crit_Mage\Event_ReussiteCrit_Mage_PreBurst" DurationType="OneShot" DurationMin="1.908481" DurationMax="1.908481">
-					<IncludedMemoryFiles>
-						<File Id="302844446" Language="SFX">
-							<ShortName>Pré-burst_Orage.wav</ShortName>
-							<Path>SFX\Pré-burst_Orage_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

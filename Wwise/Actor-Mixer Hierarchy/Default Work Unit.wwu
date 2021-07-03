@@ -4901,6 +4901,654 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Lancier_EchecCrit" ID="{E2C0A9C9-D5E6-47D5-A444-F65EF5D9ED27}" ShortID="692412402">
+					<ChildrenList>
+						<Sound Name="Echec_envole" ID="{0C27AD6A-CDBA-4D44-8C9B-CB75A0971517}" ShortID="452723607">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Echec_envole" ID="{C1C0B06C-ABD5-4CB1-9EF0-488D3ABBB77E}">
+									<Language>SFX</Language>
+									<AudioFile>Echec_envole.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="596684151"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Echec_envole" ID="{C1C0B06C-ABD5-4CB1-9EF0-488D3ABBB77E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Echec_plantage" ID="{7863862C-B6D7-43C8-88E6-A4AA05CDA667}" ShortID="218740183">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Echec_plantage" ID="{7E748D71-626D-4A28-9C02-B0815A5A513D}">
+									<Language>SFX</Language>
+									<AudioFile>Echec_plantage.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="915875593"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Echec_plantage" ID="{7E748D71-626D-4A28-9C02-B0815A5A513D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Echec_TeamRocket" ID="{1CA6C0A6-E1EC-4A48-BFE1-47D264D5714E}" ShortID="258168035">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Echec_TeamRocket" ID="{FA0E12A1-2176-4556-993B-DE1B0DD1525F}">
+									<Language>SFX</Language>
+									<AudioFile>Echec_TeamRocket.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="51288759"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Echec_TeamRocket" ID="{FA0E12A1-2176-4556-993B-DE1B0DD1525F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Lancier_ReussiteCrit" ID="{CCB2377C-9549-46D6-8C96-5613ED6EC481}" ShortID="364455085">
+					<ChildrenList>
+						<Sound Name="Launch_Rocket_Lancier" ID="{57777F04-6AA5-4270-A0ED-191B9DD799D4}" ShortID="460071240">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Launch_Rocket_Lancier" ID="{877CCC69-C98F-4E06-BB09-0E2600A63C50}">
+									<Language>SFX</Language>
+									<AudioFile>Launch_Rocket_Lancier.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="272846394"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Launch_Rocket_Lancier" ID="{877CCC69-C98F-4E06-BB09-0E2600A63C50}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Rocket_Lancier" ID="{E99FE5D2-4ECD-4523-988C-02DC8080814C}" ShortID="759703908">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rocket_Lancier" ID="{136BC262-FBFB-47B4-91F4-913292EE8D07}">
+									<Language>SFX</Language>
+									<AudioFile>Rocket_Lancier.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="339115037"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Rocket_Lancier" ID="{136BC262-FBFB-47B4-91F4-913292EE8D07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="woosh_Lancier" ID="{DB80C2B4-08E1-4AB0-BCFA-FB613A4F8119}" ShortID="101041280">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="woosh_Lancier" ID="{7332C91E-373A-4EAA-9049-78790628E80B}">
+									<Language>SFX</Language>
+									<AudioFile>woosh_Lancier.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="729508648"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="woosh_Lancier" ID="{7332C91E-373A-4EAA-9049-78790628E80B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="CoupCrit_Lancier" ID="{0560D40B-7A08-49F5-BACB-94BBF8A82C74}" ShortID="46401854">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Coup_Crit_Lancier_2" ID="{BA530705-FE1E-4510-A560-7D8C4F552E09}" ShortID="177529101">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Coup_Crit_Lancier_2" ID="{11172748-3196-4BDB-9289-A5F613C7DFBE}">
+											<Language>SFX</Language>
+											<AudioFile>Empalement\Coup_Crit_Lancier_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="216100257"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Coup_Crit_Lancier_2" ID="{11172748-3196-4BDB-9289-A5F613C7DFBE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Coup_Crit_Lancier_3" ID="{8965E3E3-3FFA-4B88-93E1-8748C59FB424}" ShortID="991482156">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Coup_Crit_Lancier_3" ID="{CD3C73ED-9C51-4D89-97F4-DD631102AFEB}">
+											<Language>SFX</Language>
+											<AudioFile>Empalement\Coup_Crit_Lancier_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="363443734"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Coup_Crit_Lancier_3" ID="{CD3C73ED-9C51-4D89-97F4-DD631102AFEB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Coup_Crit_Lancier_1" ID="{44DF00C6-B263-4D26-B859-AF62D56856D1}" ShortID="598524114">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Coup_Crit_Lancier_1" ID="{25409209-30DA-4D45-9BA0-8C26D96E3A2B}">
+											<Language>SFX</Language>
+											<AudioFile>Empalement\Coup_Crit_Lancier_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="133356740"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Coup_Crit_Lancier_1" ID="{25409209-30DA-4D45-9BA0-8C26D96E3A2B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Coup_Crit_Lancier_4" ID="{F43E8285-7FAE-42BC-B08F-B8667B0CBEDE}" ShortID="15429087">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Coup_Crit_Lancier_4" ID="{AA64F842-6EFC-4396-A511-98C038F7D73A}">
+											<Language>SFX</Language>
+											<AudioFile>Empalement\Coup_Crit_Lancier_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="115389240"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Coup_Crit_Lancier_4" ID="{AA64F842-6EFC-4396-A511-98C038F7D73A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Lancier_Attaque" ID="{344A64F1-7AA9-4070-AECE-9D6649726871}" ShortID="132077769">
+					<ChildrenList>
+						<Sound Name="lance_Coup" ID="{F8C4A1D7-C19F-45E9-92DF-B2DFAF17A8A8}" ShortID="187420107">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="lance_Coup" ID="{8E79ADA5-EDDA-4124-9219-81B0BDA6A1DA}">
+									<Language>SFX</Language>
+									<AudioFile>lance_Coup.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="527389323"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="lance_Coup" ID="{8E79ADA5-EDDA-4124-9219-81B0BDA6A1DA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Lancer_Lance" ID="{A3A5ABA5-7947-40FE-A863-48625CBA049A}" ShortID="836542980">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lancer_Lance" ID="{09112A42-07E5-4506-BE72-F714FD4CEC94}">
+									<Language>SFX</Language>
+									<AudioFile>Lancer_Lance.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="930427764"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Lancer_Lance" ID="{09112A42-07E5-4506-BE72-F714FD4CEC94}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Mage_Attaque" ID="{4EF08C59-AF48-4E29-832B-C52809FD766A}" ShortID="679118305">
+					<ChildrenList>
+						<Sound Name="Boule-de-Feu_Mouvement" ID="{FE9432E5-0C78-4785-A63E-381D9F27C52C}" ShortID="727278247">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Boule-de-Feu_Mouvement" ID="{FDDC7297-EF0B-4D1D-96BA-72B63718AA7C}">
+									<Language>SFX</Language>
+									<AudioFile>Boule-de-Feu_Mouvement.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1016277149"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Boule-de-Feu_Mouvement" ID="{FDDC7297-EF0B-4D1D-96BA-72B63718AA7C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Canalisation 2" ID="{EBAFEEEC-2978-484C-A945-8985BA3E68B3}" ShortID="968033038">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Canalisation 2" ID="{D619ED9C-319E-4E7A-8B7C-B973810C42E5}">
+									<Language>SFX</Language>
+									<AudioFile>Canalisation 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1038348841"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Canalisation 2" ID="{D619ED9C-319E-4E7A-8B7C-B973810C42E5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Impact_Boule-de-Feu_V2" ID="{262DDFFD-14A5-4CAE-AC21-60DCC2A0809C}" ShortID="724883652">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Impact_Boule-de-Feu_V2" ID="{4F279EEC-B97A-4687-89CC-099950D4DCE2}">
+									<Language>SFX</Language>
+									<AudioFile>Impact_Boule-de-Feu_V2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="907797850"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Impact_Boule-de-Feu_V2" ID="{4F279EEC-B97A-4687-89CC-099950D4DCE2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Contre_CoupdeCanne" ID="{F58DE5DD-D941-47BB-9897-95FDD0CCAF83}" ShortID="717507647">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Contre_CoupdeCanne" ID="{7A249D75-4230-4A1D-8F70-0C728BB0E918}">
+									<Language>SFX</Language>
+									<AudioFile>Contre_CoupdeCanne.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="437869471"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Contre_CoupdeCanne" ID="{7A249D75-4230-4A1D-8F70-0C728BB0E918}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Mage_ReussiteCrit" ID="{D557708F-2D6B-4E88-9A87-3B6808D240AD}" ShortID="1066105811">
+					<ChildrenList>
+						<Sound Name="Canalisation_Foudre" ID="{82F7AA09-29CD-40D6-A239-F6A08620C3CD}" ShortID="51156666">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Canalisation_Foudre" ID="{4CE61B69-C8C4-4656-8245-65752808F790}">
+									<Language>SFX</Language>
+									<AudioFile>Canalisation_Foudre.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="709817187"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Canalisation_Foudre" ID="{4CE61B69-C8C4-4656-8245-65752808F790}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Chute_Attaque_Foudre" ID="{9C1B26B4-2186-459E-B431-439F7925DF6A}" ShortID="605330890">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Chute_Attaque_Foudre" ID="{4CE3E55D-10B2-4E85-BE10-FED4E8D618D9}">
+									<Language>SFX</Language>
+									<AudioFile>Chute_Attaque_Foudre.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="760331239"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Chute_Attaque_Foudre" ID="{4CE3E55D-10B2-4E85-BE10-FED4E8D618D9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="colère des cieux" ID="{DBEA3920-CD68-4B8E-9940-9F535C8B1362}" ShortID="655096216">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="colère des cieux" ID="{C6491C04-243A-48B0-90CC-0ABF3FDD06CB}">
+									<Language>SFX</Language>
+									<AudioFile>colère des cieux.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="772271067"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="colère des cieux" ID="{C6491C04-243A-48B0-90CC-0ABF3FDD06CB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pré-burst_Orage" ID="{DC3C0AB4-6D92-4A1B-A857-CCEBEB710A03}" ShortID="730415584">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pré-burst_Orage" ID="{F7261E79-34F4-4F80-B8AB-CC253822C140}">
+									<Language>SFX</Language>
+									<AudioFile>Pré-burst_Orage.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="145314472"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Pré-burst_Orage" ID="{F7261E79-34F4-4F80-B8AB-CC253822C140}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Paralysie" ID="{1C914D13-2E4F-45D9-B6FA-EAE96EF39452}" ShortID="271252990">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Paralysie_1" ID="{36B27976-DCBE-4B75-91BF-D15807CA1022}" ShortID="850374420">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Paralysie_1" ID="{2BAEC765-EB9E-468C-8C14-6A6180A3E807}">
+											<Language>SFX</Language>
+											<AudioFile>Paralysie_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="573913617"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Paralysie_1" ID="{2BAEC765-EB9E-468C-8C14-6A6180A3E807}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Paralysie_2" ID="{AD9CD080-F947-46C2-B305-3EEE4C275DCE}" ShortID="331506147">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Paralysie_2" ID="{C342FA3F-3D0C-4879-82C0-68C8A19FFFD8}">
+											<Language>SFX</Language>
+											<AudioFile>Paralysie_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="492732724"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Paralysie_2" ID="{C342FA3F-3D0C-4879-82C0-68C8A19FFFD8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Paralysie_3" ID="{8B797EF9-57BC-4CAD-8C6C-495B8FD5E3F4}" ShortID="498919650">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Paralysie_3" ID="{4E495B5B-8609-4BBA-8E68-2509B0C8A4D1}">
+											<Language>SFX</Language>
+											<AudioFile>Paralysie_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="302497226"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Paralysie_3" ID="{4E495B5B-8609-4BBA-8E68-2509B0C8A4D1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Paralysie_4" ID="{B133D83A-E43E-46F0-84D3-06013C11E7EB}" ShortID="704559446">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Paralysie_4" ID="{F12E27CB-7F1C-4A29-9EC2-FD3E696DC2FD}">
+											<Language>SFX</Language>
+											<AudioFile>Paralysie_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="667833240"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Paralysie_4" ID="{F12E27CB-7F1C-4A29-9EC2-FD3E696DC2FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Mage_EchecCrit" ID="{63CF4324-D180-4115-A5FE-57A5755D2FAC}" ShortID="534897768">
+					<ChildrenList>
+						<Sound Name="Echec_Canalisation" ID="{7D4DEC50-FB1E-4366-96BE-4BA4B87A243C}" ShortID="409288280">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Echec_Canalisation" ID="{317A1F3F-E81E-450A-BB55-ECA5AB407BE9}">
+									<Language>SFX</Language>
+									<AudioFile>Echec_Canalisation.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="891442018"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Echec_Canalisation" ID="{317A1F3F-E81E-450A-BB55-ECA5AB407BE9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Echec_Explosion" ID="{15870628-6F87-4263-A022-8EC665A27F4C}" ShortID="405708746">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Echec_Explosion" ID="{E08F8097-BD93-4705-96C8-D89D44DB2758}">
+									<Language>SFX</Language>
+									<AudioFile>Echec_Explosion.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="349879677"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Echec_Explosion" ID="{E08F8097-BD93-4705-96C8-D89D44DB2758}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
