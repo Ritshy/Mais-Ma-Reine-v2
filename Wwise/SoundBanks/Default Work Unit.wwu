@@ -8,8 +8,10 @@
 						<ObjectRef Name="Event_Mouv_Fidele_Chute" ID="{3A171EC5-569D-4015-9A9B-66B815C23A61}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Clique_Territoire" ID="{65B96822-F0FC-401D-82A3-C2532FD03FB7}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Attaque_Mouvement_Epee" ID="{8371E24C-9F31-4082-A8BF-83F739511EF3}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Mage_BdF_Mouvement" ID="{49A2A3C0-E386-409C-87B4-359CD96D39FE}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Bandeau_Fidele_Lefttoright" ID="{A232F933-FD18-40A7-8217-37F0D0DC6927}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Yaourt_Reine" ID="{FF094CCF-D73C-4124-A90C-66796AB47813}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Mage_ReussiteCrit_Paralysie" ID="{5681E547-13EB-4131-A6E4-6D8F4449A5B5}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Obtention_quete" ID="{B6FCAC04-2F90-414D-8114-6B360ABFD444}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Yaourt_Elya" ID="{D4847D0D-0FC6-41D0-9193-A9BFE018735F}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Reussite_DegatsEnnemi" ID="{65D40FD4-CF48-41E4-B1DC-E68382615A5D}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
@@ -17,6 +19,7 @@
 						<ObjectRef Name="Event_Recrutement_Refuse" ID="{6C4F71BB-2E9A-4261-9905-01D137039D3C}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Clique_Bouton" ID="{F7D0FA07-5A35-4264-903B-7A4B34CD2418}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Bouton_Jouer" ID="{7F011BF8-A72E-4297-9F1E-B16E6CC6B436}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Lancier_Envole" ID="{E1663B87-A7FB-42AC-B361-D00F81A36A84}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Contre_Attaque_Epee" ID="{EB563D33-34A2-432E-9F5C-962D15179D6F}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Quete_Termine" ID="{4F1C34AE-68FE-4394-AB00-AD381BBF6A33}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Victoire_Confettis" ID="{774B20E6-4B30-43A1-AE33-A1B2A1E1FBC7}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
@@ -24,16 +27,27 @@
 						<ObjectRef Name="Event_Pause_Vent" ID="{D6E3D597-03A4-441F-B7B5-DC841AA69099}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Defaite" ID="{6945E875-269B-4421-BCBF-EB701EFBCF5E}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Gain_Charisme" ID="{4657E1C7-D933-4442-B168-794C8116455C}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Lancier_RocketLanch" ID="{A3FDC843-6730-44DF-B4B6-54C69B0D1F44}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Mage_EchecCrit_Canalisation" ID="{F319FF0A-D9FD-4500-B910-17AA2E4EB7A5}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Echec_Choque" ID="{247F8AE7-6B8E-4504-A5D1-DF6C66925E2D}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Yaourt_Soldat" ID="{716B7D1A-37B0-4514-8318-FB11356FB9E2}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Lancier_woosh" ID="{FA53198F-6B92-4596-8965-06E194D53B5A}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Mage_ReussiteCrit_Attaque" ID="{8D654013-2E2C-46C9-9391-FFAA10EC1B72}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Survole_Bouton" ID="{3C2E71C9-B65C-4726-B518-DE6121E59E35}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Mage_ReussiteCrit_Nuages" ID="{C1726CEC-4CC6-473B-88F5-8D164729C7D8}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Reussite_BackDash" ID="{F9404DCF-0B75-4743-8CD9-9D6A0C9C982F}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Mage_ReussiteCrit_PreBurst" ID="{AC403589-3F4A-474B-BF58-18BD032CAC3A}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Deplacement_Bandit" ID="{FFA57FB7-E24D-4751-9EBE-D4CD7BB8511D}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Mouv_Fidele_Attrape" ID="{79D7091C-FE68-488B-A733-81DF59A15DA3}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Lancier_Lancer" ID="{616779A1-4F1F-489B-BA34-C149E3374FFF}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Mage_ReussiteCrit_Canalisation" ID="{15E94FEE-51C1-48A6-B480-6B065D1AD05B}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Interaction_Recrutement" ID="{FA66F64F-6EFC-4907-AE67-CBC5D059538D}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Clique_Bouton_Baston" ID="{0FE63E99-B5A7-4916-A347-E9A2E7F4DE3B}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Clique_Fidele_Bandeau" ID="{9F8E87B3-15F1-4957-89C1-41DAC347AD4C}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Clique_Fidele_Dialogue" ID="{247BB2C0-EFBC-4995-AEA8-65666304D342}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Lancier_Perche" ID="{197EE408-226D-49C4-9A02-F84AD1520F21}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Mage_BdF_Impact" ID="{5483848E-4E17-49E2-8F15-B437A2A69469}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Mage_BdF_Canalisation" ID="{1BC9627C-91EC-4A27-A734-339B16D3184B}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Echec_Frein" ID="{8A97A302-1FE8-4A33-AEEB-6FDC197B017E}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Victoire_Trompette" ID="{AA60573E-F38E-4A71-9178-83929C6CD0B2}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Echec_Lancement_Epee" ID="{011F5493-F227-4B53-9BD6-855843C021AE}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
@@ -42,17 +56,22 @@
 						<ObjectRef Name="Event_Attaque_Coup_Direct" ID="{30763E44-6AD4-4BCC-AEA0-F8796B4EDE88}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Recrutement_Accepte" ID="{F2EF7302-65FA-4C2F-9747-FC30E7B712BA}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_PNJ_Recrute" ID="{23AF503C-DC6C-4C5F-9FCD-E26B52D58EE5}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Lancier_Coup" ID="{5A786489-ADD2-4CB0-9D6D-24659AC468BC}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Degats_Bandits" ID="{3BA3BFEE-BDE4-4CC8-801C-0E605FF07ED5}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Mage_Contre" ID="{5F2F09D8-F9CB-4CE1-867C-C1D48C5480EA}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Fidele_Sans_Action" ID="{5216333F-8CC4-4D10-BD05-787D5C0EA839}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Lancier_disparition" ID="{3E6AC290-C22E-4D26-B164-9B6EDCB8795C}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Lancier_CoupCrit" ID="{91B2E787-31FD-4D42-8896-C2E513AE8A1D}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Cadena_Territoire" ID="{E8CD6A11-1D44-4D6E-A944-3E0898B580FC}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Reussite_Slash" ID="{29BFA543-919C-4DB2-A316-87081F4AA57E}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Lancier_Rocket" ID="{B1261CCD-2BC0-4DCA-A451-084377BDDE20}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_UI_Bandeau_Fidele_Righttoleft" ID="{B195C971-5B7C-4E6D-9329-9E57A1A7AF24}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Mage_EchecCrit_Explision" ID="{EFDB3335-BE08-4EA7-BDB3-F54DF60B8EEA}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Clique_Fidele_Combat" ID="{2C5EB5A9-C76E-4EB3-A246-2952446B7E4A}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Dialogue_To_Jeu" ID="{97207710-0139-4EBA-8779-CFE354561768}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Echec_Virage_Epee" ID="{29DF61DE-AD47-4F3B-A2EC-06D8822637BD}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Deplacement_Soldat" ID="{628FD362-90C6-4F64-9B3C-CB0373B36474}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Echec_Degats" ID="{E277D438-A25F-4F66-842D-3C7861B1BCAA}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Event_Attaque_Epee" ID="{07ED981D-448E-4FAA-8FF4-FF0421DE8FE7}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

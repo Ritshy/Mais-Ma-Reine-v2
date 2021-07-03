@@ -491,9 +491,128 @@
 				</Event>
 				<Folder Name="Folder_Mage" ID="{B8F31A51-1518-4D94-A2D2-E0CD4C0AB266}" ShortID="804597501">
 					<ChildrenList>
-						<Folder Name="Folder_Mage_ReussiteCrit" ID="{5699EDC1-B6AF-4529-92ED-A3EDE3DB9A07}" ShortID="1002240078"/>
-						<Folder Name="Folder_Mage_EchecCrit" ID="{000E3227-C830-458B-960C-F6539156025C}" ShortID="784382558"/>
-						<Folder Name="Folder_Mage_Attaque" ID="{3C748CB9-B2ED-4133-A184-5836F9278773}" ShortID="391026066"/>
+						<Folder Name="Folder_Mage_ReussiteCrit" ID="{5699EDC1-B6AF-4529-92ED-A3EDE3DB9A07}" ShortID="1002240078">
+							<ChildrenList>
+								<Event Name="Event_Mage_ReussiteCrit_Nuages" ID="{C1726CEC-4CC6-473B-88F5-8D164729C7D8}">
+									<ChildrenList>
+										<Action Name="" ID="{4703DBB5-E893-4873-977A-35D281FFA4DA}" ShortID="728044648">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="colère des cieux" ID="{DBEA3920-CD68-4B8E-9940-9F535C8B1362}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Mage_ReussiteCrit_PreBurst" ID="{AC403589-3F4A-474B-BF58-18BD032CAC3A}">
+									<ChildrenList>
+										<Action Name="" ID="{F389B7BB-6064-479D-BEA1-53117407FF36}" ShortID="1037633397">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Pré-burst_Orage" ID="{DC3C0AB4-6D92-4A1B-A857-CCEBEB710A03}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Mage_ReussiteCrit_Attaque" ID="{8D654013-2E2C-46C9-9391-FFAA10EC1B72}">
+									<ChildrenList>
+										<Action Name="" ID="{421C1FC8-1F83-47F1-A30F-CF6523457A80}" ShortID="159621523">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Chute_Attaque_Foudre" ID="{9C1B26B4-2186-459E-B431-439F7925DF6A}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Mage_ReussiteCrit_Canalisation" ID="{15E94FEE-51C1-48A6-B480-6B065D1AD05B}">
+									<ChildrenList>
+										<Action Name="" ID="{3E92D53F-63F7-4E82-8E2A-EA698294C965}" ShortID="641597884">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Canalisation_Foudre" ID="{82F7AA09-29CD-40D6-A239-F6A08620C3CD}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Mage_ReussiteCrit_Paralysie" ID="{5681E547-13EB-4131-A6E4-6D8F4449A5B5}">
+									<ChildrenList>
+										<Action Name="" ID="{94A0AB1A-822E-4B13-B88F-504ABF6CCA12}" ShortID="709780973">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Paralysie" ID="{1C914D13-2E4F-45D9-B6FA-EAE96EF39452}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Folder_Mage_EchecCrit" ID="{000E3227-C830-458B-960C-F6539156025C}" ShortID="784382558">
+							<ChildrenList>
+								<Event Name="Event_Mage_EchecCrit_Canalisation" ID="{F319FF0A-D9FD-4500-B910-17AA2E4EB7A5}">
+									<ChildrenList>
+										<Action Name="" ID="{58D264B5-02A5-4ECA-AF2A-6D5DD8AFC303}" ShortID="248914175">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Echec_Canalisation" ID="{7D4DEC50-FB1E-4366-96BE-4BA4B87A243C}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Mage_EchecCrit_Explision" ID="{EFDB3335-BE08-4EA7-BDB3-F54DF60B8EEA}">
+									<ChildrenList>
+										<Action Name="" ID="{59BBFAE9-5C56-48E2-9BEB-F2F298BDE9A4}" ShortID="231924887">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Echec_Explosion" ID="{15870628-6F87-4263-A022-8EC665A27F4C}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Folder_Mage_Attaque" ID="{3C748CB9-B2ED-4133-A184-5836F9278773}" ShortID="391026066">
+							<ChildrenList>
+								<Event Name="Event_Mage_BdF_Mouvement" ID="{49A2A3C0-E386-409C-87B4-359CD96D39FE}">
+									<ChildrenList>
+										<Action Name="" ID="{00DD46E0-56F6-45D6-8EA6-DC1E20755D09}" ShortID="1018694431">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boule-de-Feu_Mouvement" ID="{FE9432E5-0C78-4785-A63E-381D9F27C52C}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Mage_BdF_Canalisation" ID="{1BC9627C-91EC-4A27-A734-339B16D3184B}">
+									<ChildrenList>
+										<Action Name="" ID="{F4A60246-FBD5-46D3-A0CB-1AF676F783DE}" ShortID="557120066">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Canalisation 2" ID="{EBAFEEEC-2978-484C-A945-8985BA3E68B3}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Mage_BdF_Impact" ID="{5483848E-4E17-49E2-8F15-B437A2A69469}">
+									<ChildrenList>
+										<Action Name="" ID="{76D9074F-23C8-4E6D-B796-08A772CC43BD}" ShortID="572256899">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Impact_Boule-de-Feu_V2" ID="{262DDFFD-14A5-4CAE-AC21-60DCC2A0809C}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 						<Event Name="Event_Mage_Contre" ID="{5F2F09D8-F9CB-4CE1-867C-C1D48C5480EA}">
 							<ChildrenList>
 								<Action Name="" ID="{AC131F6E-0C9B-4639-8857-F90EEA93E0C0}" ShortID="366348806">

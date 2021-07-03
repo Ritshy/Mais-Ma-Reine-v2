@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="1902792729">
+		<SoundBank Id="393239870" Language="SFX" Hash="4285797391">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -488,11 +488,103 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2715006224" Name="Event_Mage_BdF_Canalisation" ObjectPath="\Events\Default Work Unit\Folder_Mage\Folder_Mage_Attaque\Event_Mage_BdF_Canalisation" DurationType="OneShot" DurationMin="1.186667" DurationMax="1.186667">
+					<IncludedMemoryFiles>
+						<File Id="1038348841" Language="SFX">
+							<ShortName>Canalisation 2.wav</ShortName>
+							<Path>SFX\Canalisation 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2262971534" Name="Event_Mage_BdF_Impact" ObjectPath="\Events\Default Work Unit\Folder_Mage\Folder_Mage_Attaque\Event_Mage_BdF_Impact" DurationType="OneShot" DurationMin="0.859773" DurationMax="0.859773">
+					<IncludedMemoryFiles>
+						<File Id="907797850" Language="SFX">
+							<ShortName>Impact_Boule-de-Feu_V2.wav</ShortName>
+							<Path>SFX\Impact_Boule-de-Feu_V2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3276751534" Name="Event_Mage_BdF_Mouvement" ObjectPath="\Events\Default Work Unit\Folder_Mage\Folder_Mage_Attaque\Event_Mage_BdF_Mouvement" DurationType="OneShot" DurationMin="3.227211" DurationMax="3.227211">
+					<IncludedMemoryFiles>
+						<File Id="1016277149" Language="SFX">
+							<ShortName>Boule-de-Feu_Mouvement.wav</ShortName>
+							<Path>SFX\Boule-de-Feu_Mouvement_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1877693936" Name="Event_Mage_Contre" ObjectPath="\Events\Default Work Unit\Folder_Mage\Event_Mage_Contre" DurationType="OneShot" DurationMin="0.441565" DurationMax="0.441565">
 					<IncludedMemoryFiles>
 						<File Id="437869471" Language="SFX">
 							<ShortName>Contre_CoupdeCanne.wav</ShortName>
 							<Path>SFX\Contre_CoupdeCanne_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="545978252" Name="Event_Mage_EchecCrit_Canalisation" ObjectPath="\Events\Default Work Unit\Folder_Mage\Folder_Mage_EchecCrit\Event_Mage_EchecCrit_Canalisation" DurationType="OneShot" DurationMin="0.886984" DurationMax="0.886984">
+					<IncludedMemoryFiles>
+						<File Id="891442018" Language="SFX">
+							<ShortName>Echec_Canalisation.wav</ShortName>
+							<Path>SFX\Echec_Canalisation_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3284592455" Name="Event_Mage_EchecCrit_Explision" ObjectPath="\Events\Default Work Unit\Folder_Mage\Folder_Mage_EchecCrit\Event_Mage_EchecCrit_Explision" DurationType="OneShot" DurationMin="0.319093" DurationMax="0.319093">
+					<IncludedMemoryFiles>
+						<File Id="349879677" Language="SFX">
+							<ShortName>Echec_Explosion.wav</ShortName>
+							<Path>SFX\Echec_Explosion_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2369274989" Name="Event_Mage_ReussiteCrit_Attaque" ObjectPath="\Events\Default Work Unit\Folder_Mage\Folder_Mage_ReussiteCrit\Event_Mage_ReussiteCrit_Attaque" DurationType="OneShot" DurationMin="3.307007" DurationMax="3.307007">
+					<IncludedMemoryFiles>
+						<File Id="760331239" Language="SFX">
+							<ShortName>Chute_Attaque_Foudre.wav</ShortName>
+							<Path>SFX\Chute_Attaque_Foudre_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="779434720" Name="Event_Mage_ReussiteCrit_Canalisation" ObjectPath="\Events\Default Work Unit\Folder_Mage\Folder_Mage_ReussiteCrit\Event_Mage_ReussiteCrit_Canalisation" DurationType="OneShot" DurationMin="1.186667" DurationMax="1.186667">
+					<IncludedMemoryFiles>
+						<File Id="709817187" Language="SFX">
+							<ShortName>Canalisation_Foudre.wav</ShortName>
+							<Path>SFX\Canalisation_Foudre_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4040917455" Name="Event_Mage_ReussiteCrit_Nuages" ObjectPath="\Events\Default Work Unit\Folder_Mage\Folder_Mage_ReussiteCrit\Event_Mage_ReussiteCrit_Nuages" DurationType="OneShot" DurationMin="11.716984" DurationMax="11.716984">
+					<IncludedMemoryFiles>
+						<File Id="772271067" Language="SFX">
+							<ShortName>colère des cieux.wav</ShortName>
+							<Path>SFX\colère des cieux_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1640427980" Name="Event_Mage_ReussiteCrit_Paralysie" ObjectPath="\Events\Default Work Unit\Folder_Mage\Folder_Mage_ReussiteCrit\Event_Mage_ReussiteCrit_Paralysie" DurationType="OneShot" DurationMin="0.487075" DurationMax="0.560091">
+					<IncludedMemoryFiles>
+						<File Id="302497226" Language="SFX">
+							<ShortName>Paralysie_3.wav</ShortName>
+							<Path>SFX\Paralysie_3_10C4C929.wem</Path>
+						</File>
+						<File Id="492732724" Language="SFX">
+							<ShortName>Paralysie_2.wav</ShortName>
+							<Path>SFX\Paralysie_2_10C4C929.wem</Path>
+						</File>
+						<File Id="573913617" Language="SFX">
+							<ShortName>Paralysie_1.wav</ShortName>
+							<Path>SFX\Paralysie_1_10C4C929.wem</Path>
+						</File>
+						<File Id="667833240" Language="SFX">
+							<ShortName>Paralysie_4.wav</ShortName>
+							<Path>SFX\Paralysie_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3670916903" Name="Event_Mage_ReussiteCrit_PreBurst" ObjectPath="\Events\Default Work Unit\Folder_Mage\Folder_Mage_ReussiteCrit\Event_Mage_ReussiteCrit_PreBurst" DurationType="OneShot" DurationMin="1.908481" DurationMax="1.908481">
+					<IncludedMemoryFiles>
+						<File Id="145314472" Language="SFX">
+							<ShortName>Pré-burst_Orage.wav</ShortName>
+							<Path>SFX\Pré-burst_Orage_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
