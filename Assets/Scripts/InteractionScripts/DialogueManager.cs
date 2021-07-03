@@ -233,7 +233,7 @@ public class DialogueManager : MonoBehaviour
             vfx.Play();
         }
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(.5f);
 
         territoireWinTrompettesfx.Post(gameObject);
         foreach (ParticleSystem vfx in trompetteEffects)

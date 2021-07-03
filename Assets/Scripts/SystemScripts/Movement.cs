@@ -128,7 +128,8 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                transform.localPosition = Vector3.zero; if (GameManager.Instance.isMapTuto)
+                transform.localPosition = Vector3.zero;
+                if (GameManager.Instance.isMapTuto)
                 {
                     myFM.GetComponent<AnimationManager>().DesactivateCursorIndicator();
                 }
@@ -240,44 +241,74 @@ public class Movement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (GameManager.Instance.isMapTuto)
+        if (isMoving)
         {
-            if (GameManager.Instance.firstFideleToMoveHasMoved == false)
+            if (GameManager.Instance.isMapTuto)
             {
-                if (collision.tag == ("TutoZone"))
+                if (GameManager.Instance.firstFideleToMoveHasMoved == false)
                 {
-                    isInTutoZone = true;
-                    //myAnimationManager.AbleToLand();
+                    if (collision.tag == ("TutoZone"))
+                    {
+                        isInTutoZone = true;
+                        //myAnimationManager.AbleToLand();
+                    }
                 }
             }
-        }
-        else
-        {
-            if (collision.GetComponent<EnemyZone>() != null)
+            else
             {
-                collidingEnemyZone = collision.GetComponent<EnemyZone>();
+                if (collision.GetComponent<EnemyZone>() != null)
+                {
+                    collidingEnemyZone = collision.GetComponent<EnemyZone>();
+                }
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (GameManager.Instance.isMapTuto)
+        if (isMoving)
         {
-            if (GameManager.Instance.firstFideleToMoveHasMoved == false)
+            if (GameManager.Instance.isMapTuto)
             {
-                isLanbable = false;
-                myAnimationManager.UnableToLand();
-                if (collision.tag == ("TutoZone"))
+                if (GameManager.Instance.firstFideleToMoveHasMoved == false)
                 {
-                    isInTutoZone = false;
                     isLanbable = false;
                     myAnimationManager.UnableToLand();
+                    if (collision.tag == ("TutoZone"))
+                    {
+                        isInTutoZone = false;
+                        isLanbable = false;
+                        myAnimationManager.UnableToLand();
+                    }
+                    if (collision.gameObject == myMoveZone)
+                    {
+                        isLanbable = false;
+                        myAnimationManager.UnableToLand();
+                    }
                 }
-                if (collision.gameObject == myMoveZone)
+                else
                 {
-                    isLanbable = false;
-                    myAnimationManager.UnableToLand();
+                    if (collision.GetComponent<EnemyZone>() != null)
+                    {
+                        isInEnemyZone = false;
+                    }
+                    if (collision.gameObject == myMoveZone)
+                    {
+                        isLanbable = false;
+                        myAnimationManager.UnableToLand();
+                    }
+                    if (collision.gameObject == myDeadZone)
+                    {
+                        isInDeadZone = false;
+                    }
+                    if (collision.tag == ("Obstacle"))
+                    {
+                        isInAnObstacle = false;
+                    }
+                    if (collision.tag == ("MapLimit"))
+                    {
+                        isInsideMapLimits = true;
+                    }
                 }
             }
             else
@@ -285,6 +316,7 @@ public class Movement : MonoBehaviour
                 if (collision.GetComponent<EnemyZone>() != null)
                 {
                     isInEnemyZone = false;
+                    collidingEnemyZone = null;
                 }
                 if (collision.gameObject == myMoveZone)
                 {
@@ -305,44 +337,52 @@ public class Movement : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            if (collision.GetComponent<EnemyZone>() != null)
-            {
-                isInEnemyZone = false;
-                collidingEnemyZone = null;
-            }
-            if (collision.gameObject == myMoveZone)
-            {
-                isLanbable = false;
-                myAnimationManager.UnableToLand();
-            }
-            if (collision.gameObject == myDeadZone)
-            {
-                isInDeadZone = false;
-            }
-            if (collision.tag == ("Obstacle"))
-            {
-                isInAnObstacle = false;
-            }
-            if (collision.tag == ("MapLimit"))
-            {
-                isInsideMapLimits = true;
-            }
-        }
-
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (GameManager.Instance.isMapTuto)
+        if (isMoving)
         {
-            if (GameManager.Instance.firstFideleToMoveHasMoved == false)
+            if (GameManager.Instance.isMapTuto)
             {
-                if (collision.gameObject == myMoveZone && isInTutoZone)
+                if (GameManager.Instance.firstFideleToMoveHasMoved == false)
                 {
-                    isLanbable = true;
-                    myAnimationManager.AbleToLand();
+                    if (collision.gameObject == myMoveZone && isInTutoZone)
+                    {
+                        isLanbable = true;
+                        myAnimationManager.AbleToLand();
+                    }
+                }
+                else
+                {
+                    if (collision.GetComponent<EnemyZone>() != null)
+                    {
+                        isInEnemyZone = true;
+                    }
+                    if (collision.tag == ("Obstacle"))
+                    {
+                        isInAnObstacle = true;
+                        //isLanbable = false;
+                        myAnimationManager.UnableToLand();
+                    }
+                    if (collision.tag == ("MapLimit"))
+                    {
+                        isInsideMapLimits = false;
+                        //isLanbable = false;
+                        myAnimationManager.UnableToLand();
+                    }
+                    if (collision.gameObject == myDeadZone)
+                    {
+                        isInDeadZone = true;
+                        //isLanbable = false;
+                        myAnimationManager.UnableToLand();
+                    }
+
+                    if (collision.gameObject == myMoveZone && isInAnObstacle == false && isInsideMapLimits && isInDeadZone == false)
+                    {
+                        isLanbable = true;
+                        myAnimationManager.AbleToLand();
+                    }
                 }
             }
             else
@@ -354,57 +394,26 @@ public class Movement : MonoBehaviour
                 if (collision.tag == ("Obstacle"))
                 {
                     isInAnObstacle = true;
-                    isLanbable = false;
+                    //isLanbable = false;
                     myAnimationManager.UnableToLand();
                 }
                 if (collision.tag == ("MapLimit"))
                 {
                     isInsideMapLimits = false;
-                    isLanbable = false;
+                    //isLanbable = false;
                     myAnimationManager.UnableToLand();
                 }
                 if (collision.gameObject == myDeadZone)
                 {
                     isInDeadZone = true;
-                    isLanbable = false;
+                    //isLanbable = false;
                     myAnimationManager.UnableToLand();
                 }
-
                 if (collision.gameObject == myMoveZone && isInAnObstacle == false && isInsideMapLimits && isInDeadZone == false)
                 {
                     isLanbable = true;
                     myAnimationManager.AbleToLand();
                 }
-            }
-        }
-        else
-        {
-            if (collision.GetComponent<EnemyZone>() != null)
-            {
-                isInEnemyZone = true;
-            }
-            if (collision.tag == ("Obstacle"))
-            {
-                isInAnObstacle = true;
-                isLanbable = false;
-                myAnimationManager.UnableToLand();
-            }
-            if (collision.tag == ("MapLimit"))
-            {
-                isInsideMapLimits = false;
-                isLanbable = false;
-                myAnimationManager.UnableToLand();
-            }
-            if (collision.gameObject == myDeadZone)
-            {
-                isInDeadZone = true;
-                isLanbable = false;
-                myAnimationManager.UnableToLand();
-            }
-            if (collision.gameObject == myMoveZone && isInAnObstacle == false && isInsideMapLimits && isInDeadZone == false)
-            {
-                isLanbable = true;
-                myAnimationManager.AbleToLand();
             }
         }
     }

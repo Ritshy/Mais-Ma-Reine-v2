@@ -121,14 +121,14 @@ public class CombatManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isInFight && Input.GetMouseButton(0))
+        /*if (isInFight && Input.GetMouseButton(0))
         {
             Time.timeScale = 3;
         }
         else
         {
             Time.timeScale = 1;
-        }
+        }*/
     }
 
     public void OpenCombatWindow(FideleManager atkFM, FideleManager defFM)
