@@ -32,6 +32,16 @@ namespace AK
         static const AkUniqueID EVENT_ECHEC_VIRAGE_EPEE = 3142964213U;
         static const AkUniqueID EVENT_FIDELE_SANS_ACTION = 965117638U;
         static const AkUniqueID EVENT_INTERACTION_RECRUTEMENT = 4092098687U;
+        static const AkUniqueID EVENT_LANCIER_COUP = 2608421264U;
+        static const AkUniqueID EVENT_LANCIER_COUPCRIT = 2178918028U;
+        static const AkUniqueID EVENT_LANCIER_DISPARITION = 2399027911U;
+        static const AkUniqueID EVENT_LANCIER_ENVOLE = 3241757576U;
+        static const AkUniqueID EVENT_LANCIER_LANCER = 910006524U;
+        static const AkUniqueID EVENT_LANCIER_PERCHE = 3661350892U;
+        static const AkUniqueID EVENT_LANCIER_ROCKET = 137124609U;
+        static const AkUniqueID EVENT_LANCIER_ROCKETLANCH = 3926879247U;
+        static const AkUniqueID EVENT_LANCIER_WOOSH = 1453704403U;
+        static const AkUniqueID EVENT_MAGE_CONTRE = 1877693936U;
         static const AkUniqueID EVENT_MORT = 1699538348U;
         static const AkUniqueID EVENT_MOUV_FIDELE_ATTRAPE = 489201999U;
         static const AkUniqueID EVENT_MOUV_FIDELE_CHUTE = 2880414047U;

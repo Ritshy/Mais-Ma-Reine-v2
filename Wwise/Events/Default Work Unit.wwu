@@ -434,102 +434,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Folder_Reussite_Critique" ID="{B9AFE591-F94C-4B6C-B645-184F4C7EEE64}" ShortID="262087587">
-					<ChildrenList>
-						<Event Name="Event_Reussite_BackDash" ID="{F9404DCF-0B75-4743-8CD9-9D6A0C9C982F}">
-							<ChildrenList>
-								<Action Name="" ID="{3F573C7C-B86B-430D-811F-8EE6B125C9BA}" ShortID="887549695">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="ReussiteCritique_BackDash" ID="{4169DA83-8D0B-4C98-9547-5D3290C9FB4F}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Event_Reussite_Slash" ID="{29BFA543-919C-4DB2-A316-87081F4AA57E}">
-							<ChildrenList>
-								<Action Name="" ID="{28597D39-F1EB-4829-BAF4-F3F57442F776}" ShortID="569868372">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="ReussiteCritique_slash" ID="{D7F3173C-987A-4727-B35A-5DB751564647}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Event_Reussite_DegatsEnnemi" ID="{65D40FD4-CF48-41E4-B1DC-E68382615A5D}">
-							<ChildrenList>
-								<Action Name="" ID="{6ED3488C-A166-4939-BBCD-57C914E1EA1B}" ShortID="345959011">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="ReussiteCritique_DegatsEnnemi" ID="{A4A4FEC5-5C68-4819-A59D-7DD85E2881FB}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Folder_Echec_Critique" ID="{A459E19A-7DFC-46BE-A887-E7F240EB60FD}" ShortID="851829963">
-					<ChildrenList>
-						<Event Name="Event_Echec_Frein" ID="{8A97A302-1FE8-4A33-AEEB-6FDC197B017E}">
-							<ChildrenList>
-								<Action Name="" ID="{1FA594F3-919E-430E-B6A3-49D80FA30AC6}" ShortID="649915872">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="frein" ID="{1B7D9224-3606-46E0-ACF6-BE7059C89B1B}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Event_Echec_Choque" ID="{247F8AE7-6B8E-4504-A5D1-DF6C66925E2D}">
-							<ChildrenList>
-								<Action Name="" ID="{796C8116-04D9-4C3C-A702-D4AB653E9B40}" ShortID="288960898">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Choqué" ID="{1F8E3260-52C9-4B91-9DAE-1BB41EBF0BA4}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Event_Echec_Lancement_Epee" ID="{011F5493-F227-4B53-9BD6-855843C021AE}">
-							<ChildrenList>
-								<Action Name="" ID="{0FC46C43-1551-45DB-9B47-597008D83F3C}" ShortID="886478279">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Lancement_Epee" ID="{8AD587F2-045F-4985-B5B5-4D9E2462A646}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Event_Echec_Virage_Epee" ID="{29DF61DE-AD47-4F3B-A2EC-06D8822637BD}">
-							<ChildrenList>
-								<Action Name="" ID="{4F6C5B7C-E3E5-4B95-A4FC-3EE0F69BCA62}" ShortID="29107301">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Virages_Epee" ID="{0EF53A84-0AF7-4443-B806-346F7088FFBD}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Event_Echec_Degats" ID="{E277D438-A25F-4F66-842D-3C7861B1BCAA}">
-							<ChildrenList>
-								<Action Name="" ID="{3F697674-E7CB-4913-B7B9-84AE97AED563}" ShortID="172868991">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Degats_Critique" ID="{6B37C61C-DAC5-4CA6-9600-4A16BF87EE7A}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Event Name="Event_Yaourt_Elya" ID="{D4847D0D-0FC6-41D0-9193-A9BFE018735F}">
 					<ChildrenList>
 						<Action Name="" ID="{A1500F6D-548C-4482-8F27-F61D96DB6BFC}" ShortID="280813087">
@@ -585,30 +489,263 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Folder Name="Attaque" ID="{4514D2ED-76FC-43AB-AA6B-4BFC89952563}" ShortID="108069233">
+				<Folder Name="Folder_Mage" ID="{B8F31A51-1518-4D94-A2D2-E0CD4C0AB266}" ShortID="804597501">
 					<ChildrenList>
-						<Event Name="Event_Attaque_Mouvement_Epee" ID="{8371E24C-9F31-4082-A8BF-83F739511EF3}">
+						<Folder Name="Folder_Mage_ReussiteCrit" ID="{5699EDC1-B6AF-4529-92ED-A3EDE3DB9A07}" ShortID="1002240078"/>
+						<Folder Name="Folder_Mage_EchecCrit" ID="{000E3227-C830-458B-960C-F6539156025C}" ShortID="784382558"/>
+						<Folder Name="Folder_Mage_Attaque" ID="{3C748CB9-B2ED-4133-A184-5836F9278773}" ShortID="391026066"/>
+						<Event Name="Event_Mage_Contre" ID="{5F2F09D8-F9CB-4CE1-867C-C1D48C5480EA}">
 							<ChildrenList>
-								<Action Name="" ID="{79472FE4-E417-42A1-9369-39D5382599D9}" ShortID="118299798">
+								<Action Name="" ID="{AC131F6E-0C9B-4639-8857-F90EEA93E0C0}" ShortID="366348806">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Mouvement_Epee" ID="{DCFFB6AD-4D6B-497F-8158-BB2DC6A19F4D}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+											<ObjectRef Name="Contre_CoupdeCanne" ID="{F58DE5DD-D941-47BB-9897-95FDD0CCAF83}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Event_Attaque_Coup_Direct" ID="{30763E44-6AD4-4BCC-AEA0-F8796B4EDE88}">
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Folder_Lancier" ID="{05801AED-5766-496A-A7B8-9C186F07E942}" ShortID="145800879">
+					<ChildrenList>
+						<Folder Name="Folder_Lancier_ReussiteCrit" ID="{DEBFEBD8-DDE7-49E4-B6E5-36AC5A91E8CB}" ShortID="1031601050">
 							<ChildrenList>
-								<Action Name="" ID="{2BD534E5-793F-4432-9178-43E3A9BE217C}" ShortID="351332849">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Coup_Direct" ID="{43C1A6EC-0D7A-4926-A32F-66CDC7119E91}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Event_Lancier_CoupCrit" ID="{91B2E787-31FD-4D42-8896-C2E513AE8A1D}">
+									<ChildrenList>
+										<Action Name="" ID="{A5E28822-B29F-4A5C-9365-3A9C520B4FE7}" ShortID="637810644">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CoupCrit_Lancier" ID="{0560D40B-7A08-49F5-BACB-94BBF8A82C74}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Lancier_Rocket" ID="{B1261CCD-2BC0-4DCA-A451-084377BDDE20}">
+									<ChildrenList>
+										<Action Name="" ID="{99FC4721-0672-4B18-9F1C-B2FBD03A241C}" ShortID="1036690403">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Rocket_Lancier" ID="{E99FE5D2-4ECD-4523-988C-02DC8080814C}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Lancier_RocketLanch" ID="{A3FDC843-6730-44DF-B4B6-54C69B0D1F44}">
+									<ChildrenList>
+										<Action Name="" ID="{EA0C987C-F6C7-4B2B-9556-918741918FF2}" ShortID="99797940">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Launch_Rocket_Lancier" ID="{57777F04-6AA5-4270-A0ED-191B9DD799D4}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Lancier_woosh" ID="{FA53198F-6B92-4596-8965-06E194D53B5A}">
+									<ChildrenList>
+										<Action Name="" ID="{74D53323-36AE-4DDA-A130-E6F416EB30A1}" ShortID="246359589">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="woosh_Lancier" ID="{DB80C2B4-08E1-4AB0-BCFA-FB613A4F8119}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
+						</Folder>
+						<Folder Name="Folder_Lancier_EchecCrit" ID="{B074446D-B7A1-4220-900A-76D83B07A085}" ShortID="1036569332">
+							<ChildrenList>
+								<Event Name="Event_Lancier_Perche" ID="{197EE408-226D-49C4-9A02-F84AD1520F21}">
+									<ChildrenList>
+										<Action Name="" ID="{7BC6DC9A-9351-489C-80FD-D1568AB5C47B}" ShortID="103874488">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Echec_plantage" ID="{7863862C-B6D7-43C8-88E6-A4AA05CDA667}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Lancier_Envole" ID="{E1663B87-A7FB-42AC-B361-D00F81A36A84}">
+									<ChildrenList>
+										<Action Name="" ID="{2F2A218A-FFD9-4756-B286-D3CDDB77F484}" ShortID="1039471433">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Echec_envole" ID="{0C27AD6A-CDBA-4D44-8C9B-CB75A0971517}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Lancier_disparition" ID="{3E6AC290-C22E-4D26-B164-9B6EDCB8795C}">
+									<ChildrenList>
+										<Action Name="" ID="{0A4464C9-F5C7-4459-BFA8-17687A2695EB}" ShortID="599216884">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Echec_TeamRocket" ID="{1CA6C0A6-E1EC-4A48-BFE1-47D264D5714E}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Folder_Lancier_Attaque" ID="{96C42807-D7C1-444F-B34A-D83347A894A1}" ShortID="100568726">
+							<ChildrenList>
+								<Event Name="Event_Lancier_Lancer" ID="{616779A1-4F1F-489B-BA34-C149E3374FFF}">
+									<ChildrenList>
+										<Action Name="" ID="{E9540DC7-66C5-463E-B5BE-479E6246C623}" ShortID="144324078">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Lancer_Lance" ID="{A3A5ABA5-7947-40FE-A863-48625CBA049A}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Lancier_Coup" ID="{5A786489-ADD2-4CB0-9D6D-24659AC468BC}">
+									<ChildrenList>
+										<Action Name="" ID="{84EAE3D9-90E6-490A-8B7F-C1250FBF8839}" ShortID="299730002">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="lance_Coup" ID="{F8C4A1D7-C19F-45E9-92DF-B2DFAF17A8A8}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Folder_Guerrier" ID="{84F29187-1409-46EF-80DC-173F207B8253}" ShortID="223029716">
+					<ChildrenList>
+						<Folder Name="Folder_Reussite_Critique" ID="{B9AFE591-F94C-4B6C-B645-184F4C7EEE64}" ShortID="262087587">
+							<ChildrenList>
+								<Event Name="Event_Reussite_BackDash" ID="{F9404DCF-0B75-4743-8CD9-9D6A0C9C982F}">
+									<ChildrenList>
+										<Action Name="" ID="{3F573C7C-B86B-430D-811F-8EE6B125C9BA}" ShortID="887549695">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ReussiteCritique_BackDash" ID="{4169DA83-8D0B-4C98-9547-5D3290C9FB4F}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Reussite_Slash" ID="{29BFA543-919C-4DB2-A316-87081F4AA57E}">
+									<ChildrenList>
+										<Action Name="" ID="{28597D39-F1EB-4829-BAF4-F3F57442F776}" ShortID="569868372">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ReussiteCritique_slash" ID="{D7F3173C-987A-4727-B35A-5DB751564647}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Reussite_DegatsEnnemi" ID="{65D40FD4-CF48-41E4-B1DC-E68382615A5D}">
+									<ChildrenList>
+										<Action Name="" ID="{6ED3488C-A166-4939-BBCD-57C914E1EA1B}" ShortID="345959011">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ReussiteCritique_DegatsEnnemi" ID="{A4A4FEC5-5C68-4819-A59D-7DD85E2881FB}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Attaque" ID="{4514D2ED-76FC-43AB-AA6B-4BFC89952563}" ShortID="108069233">
+							<ChildrenList>
+								<Event Name="Event_Attaque_Mouvement_Epee" ID="{8371E24C-9F31-4082-A8BF-83F739511EF3}">
+									<ChildrenList>
+										<Action Name="" ID="{79472FE4-E417-42A1-9369-39D5382599D9}" ShortID="118299798">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Mouvement_Epee" ID="{DCFFB6AD-4D6B-497F-8158-BB2DC6A19F4D}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Attaque_Coup_Direct" ID="{30763E44-6AD4-4BCC-AEA0-F8796B4EDE88}">
+									<ChildrenList>
+										<Action Name="" ID="{2BD534E5-793F-4432-9178-43E3A9BE217C}" ShortID="351332849">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Coup_Direct" ID="{43C1A6EC-0D7A-4926-A32F-66CDC7119E91}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Folder_Echec_Critique" ID="{A459E19A-7DFC-46BE-A887-E7F240EB60FD}" ShortID="851829963">
+							<ChildrenList>
+								<Event Name="Event_Echec_Frein" ID="{8A97A302-1FE8-4A33-AEEB-6FDC197B017E}">
+									<ChildrenList>
+										<Action Name="" ID="{1FA594F3-919E-430E-B6A3-49D80FA30AC6}" ShortID="649915872">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="frein" ID="{1B7D9224-3606-46E0-ACF6-BE7059C89B1B}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Echec_Choque" ID="{247F8AE7-6B8E-4504-A5D1-DF6C66925E2D}">
+									<ChildrenList>
+										<Action Name="" ID="{796C8116-04D9-4C3C-A702-D4AB653E9B40}" ShortID="288960898">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Choqué" ID="{1F8E3260-52C9-4B91-9DAE-1BB41EBF0BA4}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Echec_Lancement_Epee" ID="{011F5493-F227-4B53-9BD6-855843C021AE}">
+									<ChildrenList>
+										<Action Name="" ID="{0FC46C43-1551-45DB-9B47-597008D83F3C}" ShortID="886478279">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Lancement_Epee" ID="{8AD587F2-045F-4985-B5B5-4D9E2462A646}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Echec_Virage_Epee" ID="{29DF61DE-AD47-4F3B-A2EC-06D8822637BD}">
+									<ChildrenList>
+										<Action Name="" ID="{4F6C5B7C-E3E5-4B95-A4FC-3EE0F69BCA62}" ShortID="29107301">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Virages_Epee" ID="{0EF53A84-0AF7-4443-B806-346F7088FFBD}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Echec_Degats" ID="{E277D438-A25F-4F66-842D-3C7861B1BCAA}">
+									<ChildrenList>
+										<Action Name="" ID="{3F697674-E7CB-4913-B7B9-84AE97AED563}" ShortID="172868991">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Degats_Critique" ID="{6B37C61C-DAC5-4CA6-9600-4A16BF87EE7A}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

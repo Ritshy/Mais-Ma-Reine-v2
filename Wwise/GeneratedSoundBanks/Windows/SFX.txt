@@ -1,41 +1,50 @@
 Event	ID	Name			Wwise Object Path	Notes
+	137124609	Event_Lancier_Rocket			\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_Rocket	
 	164432226	Event_Pause_Vent			\Default Work Unit\Event_Pause_Vent	
 	184803725	Event_Deplacement_Bandit			\Default Work Unit\Event_Deplacement_Bandit	
 	349269192	Event_UI_Bandeau_Fidele_Lefttoright			\Default Work Unit\Event_UI_Bandeau_Fidele_Lefttoright	
 	489201999	Event_Mouv_Fidele_Attrape			\Default Work Unit\Event_Mouv_Fidele_Attrape	
-	540293294	Event_Reussite_BackDash			\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_BackDash	
+	540293294	Event_Reussite_BackDash			\Default Work Unit\Folder_Guerrier\Folder_Reussite_Critique\Event_Reussite_BackDash	
 	552716342	Event_UI_Quete_Termine			\Default Work Unit\Event_UI_Quete_Termine	
 	694759564	Event_UI_Bandeau_Fidele_Righttoleft			\Default Work Unit\Event_UI_Bandeau_Fidele_Righttoleft	
 	756834820	Event_Clique_Fidele_Combat			\Default Work Unit\Event_Clique_Fidele_Combat	
 	777863556	Event_UI_PNJ_Recrute			\Default Work Unit\Event_UI_PNJ_Recrute	
+	910006524	Event_Lancier_Lancer			\Default Work Unit\Folder_Lancier\Folder_Lancier_Attaque\Event_Lancier_Lancer	
 	965117638	Event_Fidele_Sans_Action			\Default Work Unit\Event_Fidele_Sans_Action	
-	1024705842	Event_Echec_Choque			\Default Work Unit\Folder_Echec_Critique\Event_Echec_Choque	
+	1024705842	Event_Echec_Choque			\Default Work Unit\Folder_Guerrier\Folder_Echec_Critique\Event_Echec_Choque	
 	1051972340	Event_UI_Clique_Territoire			\Default Work Unit\Event_UI_Clique_Territoire	
 	1117462416	Event_Clique_Fidele_Recrutement			\Default Work Unit\Event_Clique_Fidele_Recrutement	
 	1161747339	Degats_Bandits			\Default Work Unit\Degats_Bandits	
 	1261669237	Event_Dialogue_To_Jeu			\Default Work Unit\Event_Dialogue_To_Jeu	
 	1268849612	Event_Yaourt_Soldat			\Default Work Unit\Event_Yaourt_Soldat	
-	1411219000	Event_Echec_Lancement_Epee			\Default Work Unit\Folder_Echec_Critique\Event_Echec_Lancement_Epee	
+	1411219000	Event_Echec_Lancement_Epee			\Default Work Unit\Folder_Guerrier\Folder_Echec_Critique\Event_Echec_Lancement_Epee	
+	1453704403	Event_Lancier_woosh			\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_woosh	
 	1488930380	Event_Clique_Fidele_Bandeau			\Default Work Unit\Event_Clique_Fidele_Bandeau	
-	1636597489	Event_Attaque_Coup_Direct			\Default Work Unit\Attaque\Event_Attaque_Coup_Direct	
+	1636597489	Event_Attaque_Coup_Direct			\Default Work Unit\Folder_Guerrier\Attaque\Event_Attaque_Coup_Direct	
 	1699538348	Event_Mort			\Default Work Unit\Event_Mort	
 	1791947516	Event_Yaourt_Elya			\Default Work Unit\Event_Yaourt_Elya	
 	1826551178	Event_Yaourt_Fidele			\Default Work Unit\Event_Yaourt_Fidele	
+	1877693936	Event_Mage_Contre			\Default Work Unit\Folder_Mage\Event_Mage_Contre	
 	1968642834	Event_Recrutement_Accepte			\Default Work Unit\Event_Recrutement_Accepte	
 	2023487047	Event_UI_Defaite			\Default Work Unit\Event_UI_Defaite	
 	2059410396	Event_UI_Obtention_quete			\Default Work Unit\Event_UI_Obtention_quete	
+	2178918028	Event_Lancier_CoupCrit			\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_CoupCrit	
 	2283136221	Event_UI_Cadena_Territoire			\Default Work Unit\Event_UI_Cadena_Territoire	
-	2292456063	Event_Echec_Frein			\Default Work Unit\Folder_Echec_Critique\Event_Echec_Frein	
-	2334563671	Event_Echec_Degats			\Default Work Unit\Folder_Echec_Critique\Event_Echec_Degats	
+	2292456063	Event_Echec_Frein			\Default Work Unit\Folder_Guerrier\Folder_Echec_Critique\Event_Echec_Frein	
+	2334563671	Event_Echec_Degats			\Default Work Unit\Folder_Guerrier\Folder_Echec_Critique\Event_Echec_Degats	
+	2399027911	Event_Lancier_disparition			\Default Work Unit\Folder_Lancier\Folder_Lancier_EchecCrit\Event_Lancier_disparition	
+	2608421264	Event_Lancier_Coup			\Default Work Unit\Folder_Lancier\Folder_Lancier_Attaque\Event_Lancier_Coup	
 	2630947717	Event_Contre_Attaque_Epee			\Default Work Unit\Event_Contre_Attaque_Epee	
 	2644997053	Event_Recrutement_Refuse			\Default Work Unit\Event_Recrutement_Refuse	
 	2839960383	Event_Clique_Bouton_Baston			\Default Work Unit\Event_Clique_Bouton_Baston	
 	2850458628	Event_UI_Bouton_Jouer			\Default Work Unit\Event_UI_Bouton_Jouer	
 	2880414047	Event_Mouv_Fidele_Chute			\Default Work Unit\Event_Mouv_Fidele_Chute	
-	3142964213	Event_Echec_Virage_Epee			\Default Work Unit\Folder_Echec_Critique\Event_Echec_Virage_Epee	
+	3142964213	Event_Echec_Virage_Epee			\Default Work Unit\Folder_Guerrier\Folder_Echec_Critique\Event_Echec_Virage_Epee	
+	3241757576	Event_Lancier_Envole			\Default Work Unit\Folder_Lancier\Folder_Lancier_EchecCrit\Event_Lancier_Envole	
 	3384763883	Event_UI_Survole_Bouton			\Default Work Unit\Event_UI_Survole_Bouton	
-	3412755326	Event_Attaque_Mouvement_Epee			\Default Work Unit\Attaque\Event_Attaque_Mouvement_Epee	
-	3702005869	Event_Reussite_DegatsEnnemi			\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_DegatsEnnemi	
+	3412755326	Event_Attaque_Mouvement_Epee			\Default Work Unit\Folder_Guerrier\Attaque\Event_Attaque_Mouvement_Epee	
+	3661350892	Event_Lancier_Perche			\Default Work Unit\Folder_Lancier\Folder_Lancier_EchecCrit\Event_Lancier_Perche	
+	3702005869	Event_Reussite_DegatsEnnemi			\Default Work Unit\Folder_Guerrier\Folder_Reussite_Critique\Event_Reussite_DegatsEnnemi	
 	3702838202	Event_Deplacement_Soldat			\Default Work Unit\Event_Deplacement_Soldat	
 	3729609441	Event_Victoire_Confettis			\Default Work Unit\Folder_Victoire\Event_Victoire_Confettis	
 	3768621174	Event_Clique_Fidele_Dialogue			\Default Work Unit\Event_Clique_Fidele_Dialogue	
@@ -43,9 +52,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	3804404592	Event_UI_Clique_Bouton			\Default Work Unit\Event_UI_Clique_Bouton	
 	3810860044	Event_Yaourt_Reine			\Default Work Unit\Event_Yaourt_Reine	
 	3917464674	Event_Victoire_Trompette			\Default Work Unit\Folder_Victoire\Event_Victoire_Trompette	
+	3926879247	Event_Lancier_RocketLanch			\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_RocketLanch	
 	4092098687	Event_Interaction_Recrutement			\Default Work Unit\Event_Interaction_Recrutement	
 	4256429855	Event_Yaourt_Bandit			\Default Work Unit\Event_Yaourt_Bandit	
-	4292435174	Event_Reussite_Slash			\Default Work Unit\Folder_Reussite_Critique\Event_Reussite_Slash	
+	4292435174	Event_Reussite_Slash			\Default Work Unit\Folder_Guerrier\Folder_Reussite_Critique\Event_Reussite_Slash	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	2081404	Nt nt nt_4	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_4		147520
@@ -53,6 +63,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	28146187	Déplacement_Solda_5	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Déplacement_Solda_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_5		77888
 	35933807	ReussiteCritique_BackDash	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\ReussiteCritique_BackDash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Reussite_Critique\ReussiteCritique_BackDash		24936
 	42566363	Yeh_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Dialogue\Yeh_3		125068
+	51288759	Echec_TeamRocket	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Echec_TeamRocket_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_EchecCrit\Echec_TeamRocket		232118
 	51439636	Okay_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle en action\Okay_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Bandeau\Okay_2		134812
 	62618195	Interaction_recrutement	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Interaction_recrutement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction_recrutement		65784
 	65992091	Déplacement_Soldat	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Déplacement_Soldat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Soldat		75840
@@ -65,9 +76,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	104075332	Ouh_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Ouh_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Ouh\Ouh_3		76796
 	104179137	Nt nt nt_6	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_6		139328
 	111717080	Attaque-Critique_6	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Attaque-Critique_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Echec_Critique\Degats_Critique\Attaque-Critique_6		233120
+	115389240	Coup_Crit_Lancier_4	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Empalement\Coup_Crit_Lancier_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_ReussiteCrit\CoupCrit_Lancier\Coup_Crit_Lancier_4		83196
 	117796181	Cris_11	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_11		194728
 	129428457	Yaourt_Fidele_4	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Fidele_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Fidele\Yaourt_Fidele_4		256152
 	131443977	Okay_1	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle en action\Okay_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Bandeau\Okay_1		243776
+	133356740	Coup_Crit_Lancier_1	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Empalement\Coup_Crit_Lancier_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_ReussiteCrit\CoupCrit_Lancier\Coup_Crit_Lancier_1		82332
 	137939270	Kiap_8	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Combat\Kiap_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_8		53568
 	142978168	Cris_22	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_22_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_22		120964
 	158599574	Cris_15	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_15		255760
@@ -78,6 +91,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	196553810	Yaourt_Elya_5	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Elya_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Elya\Yaourt_Elya_5		407224
 	210736807	Déplacement_Solda_4	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Déplacement_Solda_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_4		89152
 	214736096	Yaourt_Fidele_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Fidele_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Fidele\Yaourt_Fidele_2		176084
+	216100257	Coup_Crit_Lancier_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Empalement\Coup_Crit_Lancier_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_ReussiteCrit\CoupCrit_Lancier\Coup_Crit_Lancier_2		85308
 	218474570	Survol_Bouton	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Survol_Bouton_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Survol_Bouton		176464
 	219315311	Yaourt_Bandit_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Bandit_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Bandit\Yaourt_Bandit_2		290880
 	224137409	Kiap_14	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Combat\Kiap_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_14		55360
@@ -90,6 +104,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	249120498	coup_7	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Attaque\Coup_direct\coup_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Attaque\Coup_Direct\coup_7		88412
 	264055602	Non_8	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle sans action\Non_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sans_action\Non_8		124992
 	267852050	Yaourt_Reine_4	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Reine_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Reine\Yaourt_Reine_4		266244
+	272846394	Launch_Rocket_Lancier	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Launch_Rocket_Lancier_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_ReussiteCrit\Launch_Rocket_Lancier		154236
 	274923845	Cris_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_2		114028
 	288790028	bodyfallMED	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\bodyfallMED_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Chute\bodyfallMED		17824
 	293727232	click_bouton_Jouer	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\click_bouton_Jouer_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\click_bouton_Jouer		389980
@@ -104,11 +119,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	327101926	swoosh 2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Contre-attaque\swoosh 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Contre_Attaque\swoosh 2		4976
 	331702358	Choqué	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Choqué_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Echec_Critique\Choqué		194456
 	333123384	Kiap_13	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Combat\Kiap_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_13		55616
+	339115037	Rocket_Lancier	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Rocket_Lancier_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_ReussiteCrit\Rocket_Lancier		154236
 	343104562	Kiap_12	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Combat\Kiap_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_12		76608
 	343252937	Cris_13	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_13_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_13		83364
 	346599077	Nt nt nt_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_2		145472
 	356655443	Cris_6	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_6		71796
 	358868356	Yaourt_Soldat_1	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Soldat_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Soldat\Yaourt_Soldat_1		231500
+	363443734	Coup_Crit_Lancier_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Empalement\Coup_Crit_Lancier_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_ReussiteCrit\CoupCrit_Lancier\Coup_Crit_Lancier_3		65328
 	381637317	Bandeau_fidele_righttoleft	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Bandeau_fidele_righttoleft_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bandeau_fidele_righttoleft		359248
 	399042507	Déplacement_Bandit	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Déplacement_Bandit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Bandit\Déplacement_Bandit		512144
 	400437196	Yaourt_Bandit_4	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Bandit_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Bandit\Yaourt_Bandit_4		210020
@@ -118,6 +135,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	420858714	Cris_12	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_12		112004
 	428292818	Interaction_Combat	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Interaction_Combat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interaction_Combat		123956
 	429559082	Défaite	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Défaite_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Défaite		453312
+	437869471	Contre_CoupdeCanne	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Contre_CoupdeCanne_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mage_Attaque\Contre_CoupdeCanne		77956
 	441120118	Attaque-Critique_1	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Attaque-Critique_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Echec_Critique\Degats_Critique\Attaque-Critique_1		170432
 	443914185	coup_8	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Attaque\Coup_direct\coup_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Attaque\Coup_Direct\coup_8		91176
 	447113972	Cris_16	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_16_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_16		223076
@@ -132,6 +150,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	517059369	ReussiteCritique_DegatsEnnemi	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\ReussiteCritique_DegatsEnnemi_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Reussite_Critique\ReussiteCritique_DegatsEnnemi		471404
 	525439974	SWSH_Whoosh 3 (ID 1795)_LS	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Attaque\Mouvement_épée\SWSH_Whoosh 3 (ID 1795)_LS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Attaque\Mouvement_Epee\SWSH_Whoosh 3 (ID 1795)_LS		175476
 	525452010	Déplacement_Solda_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Déplacement_Solda_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_3		96320
+	527389323	lance_Coup	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\lance_Coup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_Attaque\lance_Coup		44724
 	543626787	Quête_terminée_2	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Quête_terminée_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Quête_terminée_2		176464
 	551908250	Dégats_bandit_5	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Dégats_bandit_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Degats_Bandits\Dégats_bandit_5		75840
 	556261491	Vent_Pause	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Vent_Pause_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Vent_Pause		14692860
@@ -142,6 +161,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	584103997	Attaque-Critique_4	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Attaque-Critique_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Echec_Critique\Degats_Critique\Attaque-Critique_4		89040
 	595473903	Nt nt nt_1	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Fidèle non recrutable\Nt nt nt_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_recrutable\Nt nt nt_1		178240
 	596590025	Kiap_10	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Combat\Kiap_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Combat\Kiap_10		55872
+	596684151	Echec_envole	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Echec_envole_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_EchecCrit\Echec_envole		151944
 	598799149	Yaourt_Elya_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Elya_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Elya\Yaourt_Elya_3		407224
 	611543906	Dégats_bandit_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Dégats_bandit_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Degats_Bandits\Dégats_bandit_3		96624
 	624355959	Dégats_bandit_4	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Dégats_bandit_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Degats_Bandits\Dégats_bandit_4		80468
@@ -157,6 +177,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	704709977	Ouh_1	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Ouh_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mouv_Ouh\Ouh_1		48008
 	713865844	Déplacement_Solda_6	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Déplacement_Solda_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Soldat\Déplacement_Solda_6		70720
 	721737697	Yaourt_Fidele_5	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Fidele_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Fidele\Yaourt_Fidele_5		272168
+	729508648	woosh_Lancier	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\woosh_Lancier_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_ReussiteCrit\woosh_Lancier		95848
 	750295643	Cris_10	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_10		81052
 	771884519	Ahyo_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Clique sur fidèle\ahyo\Ahyo_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Recrutement\Ahyo_3		247872
 	783263973	Virages_Epee	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Virages_Epee_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Echec_Critique\Virages_Epee		18028
@@ -188,11 +209,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	898465481	coup_1	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Attaque\Coup_direct\coup_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Attaque\Coup_Direct\coup_1		66324
 	913603227	Cris_17	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_17		94360
 	914380911	Cris_9	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_9		64784
+	915875593	Echec_plantage	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Echec_plantage_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_EchecCrit\Echec_plantage		254432
 	916223357	Déplacement_Bandit_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Déplacement_Bandit_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Deplacement_Bandit\Déplacement_Bandit_3		336696
 	916249214	Yaourt_Elya_4	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Elya_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Elya\Yaourt_Elya_4		438552
 	923200957	coup_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Attaque\Coup_direct\coup_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Attaque\Coup_Direct\coup_3		74612
 	928171190	Yaourt_Bandit_1	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Yaourt_Bandit_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Yaourt\Bandit\Yaourt_Bandit_1		274712
 	928828322	Yeh_1	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Clique sur fidèle\Yeh\Yeh_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clique_Fidele_Dialogue\Yeh_1		141500
+	930427764	Lancer_Lance	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Lancer_Lance_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lancier_Attaque\Lancer_Lance		95000
 	939575509	Cris_3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_3		127616
 	941062096	Cris_21	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Mort\Cris_21_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mort\Cris_21		74112
 	946976605	swoosh 3	C:\Users\Burea\OneDrive\Documents\Mais-Ma-Reine-v2\Wwise\.cache\Windows\SFX\Contre-attaque\swoosh 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Contre_Attaque\swoosh 3		8178
