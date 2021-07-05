@@ -867,6 +867,61 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Event_Yaourt_Pretre" ID="{BBD2D6B9-5948-4FBC-A386-31492238FE73}">
+					<ChildrenList>
+						<Action Name="" ID="{7A939A4E-9409-41E5-98D3-C80B718B2460}" ShortID="606965903">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Prêtre" ID="{68143EE1-77B8-4DEA-82C2-9A49AF14A30A}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Yaourt_Biblio" ID="{A089CB97-773F-4DED-B8C2-4D1AB97B4C85}">
+					<ChildrenList>
+						<Action Name="" ID="{0C9C619C-2B01-4A77-BAA2-9FB7CE7450F5}" ShortID="835757966">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bibliothéquaire" ID="{1BB77464-5342-4247-803A-519B1777974D}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Yaourt_Boucher" ID="{E522D32B-512C-4568-AA59-93EDFCC0A27D}">
+					<ChildrenList>
+						<Action Name="" ID="{BA79FB31-A7A7-48D7-9C48-809911E596E2}" ShortID="442341458">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Boucher" ID="{2EA53203-0C11-40FD-A9BC-046CCC6F1626}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Yaourt_Pecheur" ID="{7F3795E5-A2C4-4CE1-A62E-8FE9E1418DE8}">
+					<ChildrenList>
+						<Action Name="" ID="{3C586A4B-FCB2-48BA-8D67-976CCD0D5D09}" ShortID="1033163918">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pêcheur" ID="{760419C4-7547-465D-A189-A1732E9FD1FA}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Event_Yaourt_Roi" ID="{AC8EABBC-EFC5-45E8-BF63-43FCFF897180}">
+					<ChildrenList>
+						<Action Name="" ID="{F4508C1D-0307-4423-B01A-74E6B48A61D3}" ShortID="422778412">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Roi" ID="{F31A754F-C95D-42BB-B66F-A39DC9910318}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

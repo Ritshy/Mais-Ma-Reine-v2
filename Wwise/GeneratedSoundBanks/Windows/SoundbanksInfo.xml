@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3968015930">
+		<SoundBank Id="393239870" Language="SFX" Hash="1193595418">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -1044,7 +1044,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3684287441" Name="Event_Yaourt_Roi" ObjectPath="\Events\Default Work Unit\Event_Yaourt_Roi" DurationType="OneShot" DurationMin="1.461565" DurationMax="1.543991">
+				<Event Id="3684287441" Name="Event_Yaourt_Roi" ObjectPath="\Events\Default Work Unit\Event_Yaourt_Roi" DurationType="OneShot" DurationMin="1.504392" DurationMax="1.589233">
 					<IncludedMemoryFiles>
 						<File Id="125045585" Language="SFX">
 							<ShortName>Yaourt_Roi_2.wav</ShortName>
