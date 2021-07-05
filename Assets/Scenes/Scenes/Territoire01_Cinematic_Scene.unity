@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -20558,7 +20558,7 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 21300000, guid: 992224d36cf28de4f87388bfaef13586,
+    myCharacterEmotionImage: {fileID: 21300000, guid: 667a146f86d861544a4f6e15a437a96f,
       type: 3}
   - characterName: Elya
     myDialogue:
