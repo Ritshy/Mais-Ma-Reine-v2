@@ -72,7 +72,7 @@ public class CinematicDialogue : MonoBehaviour
 
             secondCharacter.color = new Color(.5f, .5f, .5f, 1);
         }
-        else if(currentDialogue.characterName == "Elya")
+        else if (currentDialogue.characterName == "Elya")
         {
             secondCharacter.sprite = currentDialogue.myCharacterEmotionImage;
             secondCharacter.color = new Color(1, 1, 1, 1);
@@ -85,6 +85,20 @@ public class CinematicDialogue : MonoBehaviour
             secondCharacter.color = new Color(1, 1, 1, 1);
 
             firstCharacter.color = new Color(.5f, .5f, .5f, 1);
+        }
+        else if (currentDialogue.characterName == "Le Roi")
+        {
+            firstCharacter.sprite = currentDialogue.myCharacterEmotionImage;
+            firstCharacter.color = new Color(1, 1, 1, 1);
+
+            secondCharacter.color = new Color(.5f, .5f, .5f, .5f);
+        }
+        else if (currentDialogue.characterName == "Archibald")
+        {
+            secondCharacter.sprite = currentDialogue.myCharacterEmotionImage;
+            secondCharacter.color = new Color(1, 1, 1, 1);
+
+            firstCharacter.color = new Color(.5f, .5f, .5f, .5f);
         }
 
         lines.Clear();
