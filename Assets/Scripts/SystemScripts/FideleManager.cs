@@ -46,8 +46,11 @@ public class FideleManager : MonoBehaviour
     public FidelePeuple fidelePeuple;
 
     public SpriteRenderer currentFideleSprite;
+
     public Sprite movingFideleSprite;
     public Sprite idleFideleSprite;
+    public Sprite inFightSprite;
+
     public SpriteRenderer questIcon;
 
     //[HideInInspector]

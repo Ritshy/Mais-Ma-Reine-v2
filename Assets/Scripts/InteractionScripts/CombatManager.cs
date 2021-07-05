@@ -251,8 +251,8 @@ public class CombatManager : MonoBehaviour
 
         CameraZooming.Instance.ShakeScreen();
 
-        attaquantFideleSprite.sprite = attaquantFM.currentFideleSprite.sprite;
-        defenseurFideleSprite.sprite = defenseurFM.currentFideleSprite.sprite;
+        attaquantFideleSprite.sprite = attaquantFM.inFightSprite;
+        defenseurFideleSprite.sprite = defenseurFM.inFightSprite;
 
         attaquantHP.text = attaquantFM.currentHP.ToString();
         defenseurHP.text = defenseurFM.currentHP.ToString();
@@ -346,8 +346,8 @@ public class CombatManager : MonoBehaviour
 
             isInFight = true;
 
-            attaquantFideleSprite.sprite = attaquantFM.currentFideleSprite.sprite;
-            defenseurFideleSprite.sprite = defenseurFM.currentFideleSprite.sprite;
+            attaquantFideleSprite.sprite = attaquantFM.inFightSprite;
+            defenseurFideleSprite.sprite = defenseurFM.inFightSprite;
 
             attaquantHP.text = attaquantFM.currentHP.ToString();
             defenseurHP.text = defenseurFM.currentHP.ToString();

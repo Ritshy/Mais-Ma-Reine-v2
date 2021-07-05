@@ -46,9 +46,7 @@ public class StatRandomizer : MonoBehaviour
 
     [Space]
     [Header("Randomizer Results")]
-
-    public Classes finalClass;
-
+    
     public int finalHP;
 
     public int finalMinAtkRange;
@@ -82,25 +80,6 @@ public class StatRandomizer : MonoBehaviour
 
     public void GenerateStatistics(FideleManager receivingStatFM)
     {
-        /*int rnd = Random.Range(0, 3);
-
-        switch (rnd)
-        {
-            case 0:
-                finalClass = Classes.Epeiste;
-                break;
-            case 1:
-                finalClass = Classes.Lancier;
-                break;
-            case 2:
-                finalClass = Classes.Magicien;
-                break;
-            default:
-                break;
-        }*/
-
-        finalClass = (Classes)Random.Range(0, 3);
-
         finalHP = RandomizeStat(minRandomHp, maxRandomHp);
 
         finalMinAtkRange = RandomizeStat(minRandomLowAttackRange, maxRandomLowAttackRange);
@@ -113,8 +92,7 @@ public class StatRandomizer : MonoBehaviour
         finalMissChance = RandomizeStat(minRandomMissChances, maxRandomMissChances);
 
         finalCharismaCost = RandomizeStat(minRandomCharismaCost, maxRandomCharismaCost);
-
-        receivingStatFM.fideleClasse = finalClass;
+        
         receivingStatFM.maxHp = finalHP;
         receivingStatFM.minAttackRange = finalMinAtkRange;
         receivingStatFM.maxAttackRange = finalMaxAtkRange;

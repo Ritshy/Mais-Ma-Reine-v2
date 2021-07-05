@@ -14,6 +14,7 @@ public class Recrutement : MonoBehaviour
     public struct RecrutementSprites
     {
         public Sprite idleSprite;
+        public Sprite inFightSprite;
         public Sprite movingSprite;
     }
 
