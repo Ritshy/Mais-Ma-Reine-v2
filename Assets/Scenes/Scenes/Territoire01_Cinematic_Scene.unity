@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -20332,7 +20332,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0256055200b37604caefdd9d79f6e157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentTerritoire: 0
   characterName: {fileID: 1932990895}
   characterLines: {fileID: 1123131567}
   dialogueScenario:
@@ -20540,6 +20539,26 @@ MonoBehaviour:
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
     myCharacterEmotionImage: {fileID: 21300000, guid: 2eeab4feb6fa9cb41aa500fcd0c89aad,
+      type: 3}
+  - characterName: La Reine
+    myDialogue:
+    - "Pr\xE9parez l'amarrage, nous allons bient\xF4t atterrir !"
+    isStartingQuest: 0
+    questIndexToStart: 
+    isStartingADialogue: 1
+    dialogueIndexToStart: 11
+    particleToPlay: {fileID: 0}
+    characterVoiceSFX:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 885c78f41dcc1144aa259143379ff50a,
+        type: 2}
+    isPlayingFinTerritoireAnimation: 0
+    nextInteractionType: 0
+    cameraStartPos: {fileID: 0}
+    cameraEndPos: {fileID: 0}
+    unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 21300000, guid: 992224d36cf28de4f87388bfaef13586,
       type: 3}
   - characterName: Elya
     myDialogue:
