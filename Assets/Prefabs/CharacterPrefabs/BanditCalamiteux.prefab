@@ -313,6 +313,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &5564402708574438900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3926152927419873174}
+  m_Layer: 2
+  m_Name: SpriteHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3926152927419873174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5564402708574438900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6686063715713900131}
+  m_Father: {fileID: 6686063715921227792}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5855213184492896026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,6 +1190,7 @@ MonoBehaviour:
   fideleNom: Meil
   fidelePrenom: LeFou
   isStatRandomize: 0
+  fideleClasse: 0
   maxHp: 12
   currentHP: 0
   isAlive: 0
@@ -1175,6 +1207,7 @@ MonoBehaviour:
   currentFideleSprite: {fileID: 6686063715713900133}
   movingFideleSprite: {fileID: 0}
   idleFideleSprite: {fileID: 0}
+  inFightSprite: {fileID: 0}
   questIcon: {fileID: 1469716729567008251}
   myTarget: {fileID: 0}
   isAllActionsDone: 0
@@ -1541,6 +1574,7 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
+    myCharacterEmotionImage: {fileID: 0}
 --- !u!1 &6686063715713900128
 GameObject:
   m_ObjectHideFlags: 0
@@ -1570,8 +1604,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6686063715353288584}
-  m_Father: {fileID: 6686063715921227792}
-  m_RootOrder: 2
+  m_Father: {fileID: 3926152927419873174}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6686063715713900133
 SpriteRenderer:
@@ -1736,7 +1770,7 @@ Transform:
   m_Children:
   - {fileID: 6686063713909756732}
   - {fileID: 6686063715571587151}
-  - {fileID: 6686063715713900131}
+  - {fileID: 3926152927419873174}
   - {fileID: 1798901435256354364}
   m_Father: {fileID: 6686063715388596369}
   m_RootOrder: 1

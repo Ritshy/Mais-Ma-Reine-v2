@@ -73,6 +73,37 @@ MonoBehaviour:
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &551581785394732933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5818730591709266483}
+  m_Layer: 2
+  m_Name: SpriteHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5818730591709266483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551581785394732933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3843901938318471920}
+  m_Father: {fileID: 3843901936728755198}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1397461879576948784
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +133,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3843901936728755198}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4075859208481304456
 SpriteRenderer:
@@ -623,8 +654,8 @@ Transform:
   m_Children:
   - {fileID: 3843901936851923674}
   - {fileID: 3843901938566347532}
-  - {fileID: 3843901938318471920}
   - {fileID: 7628502855883739262}
+  - {fileID: 5818730591709266483}
   m_Father: {fileID: 3843901937326453857}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1080,6 +1111,7 @@ MonoBehaviour:
   fideleNom: Aaron
   fidelePrenom: 
   isStatRandomize: 0
+  fideleClasse: 0
   maxHp: 20
   currentHP: 20
   isAlive: 0
@@ -1096,6 +1128,7 @@ MonoBehaviour:
   currentFideleSprite: {fileID: 3843901938318471922}
   movingFideleSprite: {fileID: 21300000, guid: a648d89f93d35b84794448efbef8c003, type: 3}
   idleFideleSprite: {fileID: 21300000, guid: be873047e1e6cf048baef89d7fc5f414, type: 3}
+  inFightSprite: {fileID: 0}
   questIcon: {fileID: 2439286679429829499}
   myTarget: {fileID: 0}
   isAllActionsDone: 0
@@ -1494,8 +1527,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3843901936782151185}
-  m_Father: {fileID: 3843901936728755198}
-  m_RootOrder: 2
+  m_Father: {fileID: 5818730591709266483}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3843901938318471922
 SpriteRenderer:
@@ -1544,7 +1577,7 @@ SpriteRenderer:
   m_Size: {x: 2.78, y: 3.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &3843901938405189153
@@ -7092,15 +7125,15 @@ PrefabInstance:
     - {fileID: 8480950293069420726, guid: ce50f8a19712bdf40a52008031135cbf, type: 3}
     - {fileID: 8480950293069420721, guid: ce50f8a19712bdf40a52008031135cbf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ce50f8a19712bdf40a52008031135cbf, type: 3}
---- !u!1 &4677598621730332552 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8480950293069420727, guid: ce50f8a19712bdf40a52008031135cbf,
-    type: 3}
-  m_PrefabInstance: {fileID: 3843901937803200319}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4677598621730332559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8480950293069420720, guid: ce50f8a19712bdf40a52008031135cbf,
+    type: 3}
+  m_PrefabInstance: {fileID: 3843901937803200319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4677598621730332552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8480950293069420727, guid: ce50f8a19712bdf40a52008031135cbf,
     type: 3}
   m_PrefabInstance: {fileID: 3843901937803200319}
   m_PrefabAsset: {fileID: 0}

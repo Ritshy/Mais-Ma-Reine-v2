@@ -22,7 +22,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.43137255
+        value: 0.47058824
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -33,7 +33,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Color.a
-    path: MovementCollider/Fidele_Sprite
+    path: MovementCollider/SpriteHolder/Fidele_Sprite
     classID: 212
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -45,7 +45,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3057015290
+      path: 4011696727
       attribute: 304273561
       script: {fileID: 0}
       typeID: 212
@@ -78,7 +78,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.43137255
+        value: 0.47058824
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -89,7 +89,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Color.a
-    path: MovementCollider/Fidele_Sprite
+    path: MovementCollider/SpriteHolder/Fidele_Sprite
     classID: 212
     script: {fileID: 0}
   m_EulerEditorCurves: []

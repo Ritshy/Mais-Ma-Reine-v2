@@ -4955,6 +4955,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1911824455650092847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4338103301932695528}
+  m_Layer: 2
+  m_Name: SpriteHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4338103301932695528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911824455650092847}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9036168572895459299}
+  m_Father: {fileID: 9036168571305348845}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2249249189955964789
 GameObject:
   m_ObjectHideFlags: 0
@@ -6173,7 +6204,7 @@ Transform:
   m_Children:
   - {fileID: 9036168571124561865}
   - {fileID: 9036168572706864671}
-  - {fileID: 9036168572895459299}
+  - {fileID: 4338103301932695528}
   - {fileID: 3947377935226221584}
   m_Father: {fileID: 9036168571735273842}
   m_RootOrder: 1
@@ -6383,6 +6414,7 @@ MonoBehaviour:
   fideleNom: Humbre
   fidelePrenom: 
   isStatRandomize: 0
+  fideleClasse: 0
   maxHp: 16
   currentHP: 16
   isAlive: 0
@@ -6399,6 +6431,7 @@ MonoBehaviour:
   currentFideleSprite: {fileID: 9036168572895459297}
   movingFideleSprite: {fileID: 21300000, guid: 77b0621932d41fd4ba05d04b9b81fc72, type: 3}
   idleFideleSprite: {fileID: 21300000, guid: 31b25143608a21f4caf95c804a74d70b, type: 3}
+  inFightSprite: {fileID: 0}
   questIcon: {fileID: 7630423011758364264}
   myTarget: {fileID: 0}
   isAllActionsDone: 0
@@ -7012,8 +7045,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9036168571189005058}
-  m_Father: {fileID: 9036168571305348845}
-  m_RootOrder: 2
+  m_Father: {fileID: 4338103301932695528}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9036168572895459297
 SpriteRenderer:
@@ -7062,7 +7095,7 @@ SpriteRenderer:
   m_Size: {x: 2.78, y: 3.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &9036168572377825836

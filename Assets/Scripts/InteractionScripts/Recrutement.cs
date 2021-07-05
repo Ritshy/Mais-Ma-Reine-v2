@@ -52,6 +52,6 @@ public class Recrutement : MonoBehaviour
             default:
                 break;
         }
-        RecrutementManager.Instance.OpenRecruitementWindow(fmToRecruit, myRecruitedSprites[idleSpriteIndex].idleSprite, myRecruitedSprites[idleSpriteIndex].movingSprite, recruiterFM);
+        RecrutementManager.Instance.OpenRecruitementWindow(fmToRecruit, myRecruitedSprites[idleSpriteIndex].idleSprite, myRecruitedSprites[idleSpriteIndex].movingSprite, myRecruitedSprites[idleSpriteIndex].inFightSprite, recruiterFM);
     }
 }

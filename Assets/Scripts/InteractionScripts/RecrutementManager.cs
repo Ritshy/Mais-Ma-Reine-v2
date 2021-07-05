@@ -43,6 +43,7 @@ public class RecrutementManager : MonoBehaviour
 
     private Sprite idleRecruitedSprite;
     private Sprite movingRecruitedSprite;
+    private Sprite fightRecruitedSprite;
     #endregion
 
     [Header("Feedbacks et Charisme")]
@@ -124,7 +125,7 @@ public class RecrutementManager : MonoBehaviour
         gainCharismePS.gameObject.SetActive(false);
     }
 
-    public void OpenRecruitementWindow(FideleManager fmToRecruit, Sprite fmtrIdleSprite, Sprite fmtrMovingSprite, FideleManager recruiterFM)
+    public void OpenRecruitementWindow(FideleManager fmToRecruit, Sprite fmtrIdleSprite, Sprite fmtrMovingSprite, Sprite fmtrFightSprite, FideleManager recruiterFM)
     {
         myAnim.SetBool("isOpen", true);
 
@@ -158,6 +159,7 @@ public class RecrutementManager : MonoBehaviour
 
         idleRecruitedSprite = fmtrIdleSprite;
         movingRecruitedSprite = fmtrMovingSprite;
+        fightRecruitedSprite = fmtrFightSprite;
 
         characterNom.text = fmToRecruit.fidelePrenom + " " + fmToRecruit.fideleNom;
 
@@ -204,6 +206,7 @@ public class RecrutementManager : MonoBehaviour
             myFMToRecruit = null;
             idleRecruitedSprite = null;
             movingRecruitedSprite = null;
+            fightRecruitedSprite = null;
 
             //ICI jouer le clignottement de l'icône de charisme
             //ICI jouer SFX d'impossibilité de recruter le personnage
@@ -228,6 +231,7 @@ public class RecrutementManager : MonoBehaviour
                 myFMToRecruit = null;
                 idleRecruitedSprite = null;
                 movingRecruitedSprite = null;
+                fightRecruitedSprite = null;
             }
         }
         else
@@ -244,6 +248,7 @@ public class RecrutementManager : MonoBehaviour
             myFMToRecruit = null;
             idleRecruitedSprite = null;
             movingRecruitedSprite = null;
+            fightRecruitedSprite = null;
         }
     }
 
@@ -290,6 +295,7 @@ public class RecrutementManager : MonoBehaviour
         myFMToRecruit.GetComponentInChildren<Interaction>().myInteractionIcon.sprite = null;
         myFMToRecruit.idleFideleSprite = idleRecruitedSprite;
         myFMToRecruit.movingFideleSprite = movingRecruitedSprite;
+        myFMToRecruit.inFightSprite = fightRecruitedSprite;
 
         myFMToRecruit.currentFideleSprite.sprite = myFMToRecruit.idleFideleSprite;
 
