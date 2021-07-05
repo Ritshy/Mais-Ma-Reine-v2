@@ -3977,6 +3977,13 @@
 				<Folder Name="Yaourt" ID="{C0740D1B-9956-4D94-A437-C3D67DFB6399}" ShortID="746229956">
 					<ChildrenList>
 						<RandomSequenceContainer Name="Elya" ID="{7DE1FE88-3C70-4376-BA4C-C9F8819EC2CB}" ShortID="325882133">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
@@ -4466,6 +4473,13 @@
 							<ObjectLists/>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Fidele" ID="{D79D0510-5820-44CD-8597-5942ABEEFD6E}" ShortID="101862062">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
@@ -4588,6 +4602,561 @@
 									<ObjectLists/>
 									<ActiveSourceList>
 										<ActiveSource Name="Yaourt_Fidele_5" ID="{E6767270-3227-4966-AE8D-CFEDFB864C15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Roi" ID="{F31A754F-C95D-42BB-B66F-A39DC9910318}" ShortID="104745661">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-50</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Yaourt_Roi_1" ID="{6066F986-A5A4-41D5-A5D9-039D57F5B7C7}" ShortID="84184154">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Roi_1" ID="{8696B603-73B3-495C-B938-B7AA55B62F7F}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Roi_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="334375646"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Roi_1" ID="{8696B603-73B3-495C-B938-B7AA55B62F7F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Roi_2" ID="{1466BD2B-BFD3-4EE2-A55E-7C6FB0B0792C}" ShortID="1007541807">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Roi_2" ID="{4FC2CDDF-416F-478F-97BF-18E73C724A2B}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Roi_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="125045585"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Roi_2" ID="{4FC2CDDF-416F-478F-97BF-18E73C724A2B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Roi_3" ID="{B9A297BB-78C9-4DCC-878C-A7DADE11B651}" ShortID="613740938">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Roi_3" ID="{DCF428F8-D5BC-4E7B-9076-2A2952056338}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Roi_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="467006614"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Roi_3" ID="{DCF428F8-D5BC-4E7B-9076-2A2952056338}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Roi_4" ID="{E7D9F2A9-E6B0-425E-8F5A-F6990E108E9E}" ShortID="348326011">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Roi_4" ID="{9A2F4DE3-A866-40B5-89D8-349A85732268}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Roi_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="761343784"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Roi_4" ID="{9A2F4DE3-A866-40B5-89D8-349A85732268}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Pêcheur" ID="{760419C4-7547-465D-A189-A1732E9FD1FA}" ShortID="11281263">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Yaourt_Pecheur_1" ID="{288E4F48-A733-4BD3-8C81-5C53F6C8BC7F}" ShortID="435023538">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Pecheur_1" ID="{239F0301-5FF8-476A-8E7D-A546BF440C1C}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Pecheur_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="490158401"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Pecheur_1" ID="{239F0301-5FF8-476A-8E7D-A546BF440C1C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Pecheur_2" ID="{FF956E88-9A77-4245-82BE-1DCB44A43998}" ShortID="178723493">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Pecheur_2" ID="{F2413FA0-0835-4E11-A438-0E6673464177}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Pecheur_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="946676855"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Pecheur_2" ID="{F2413FA0-0835-4E11-A438-0E6673464177}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Pecheur_3" ID="{6E11B69E-F29E-4CCE-9D4F-DD1499EC103F}" ShortID="67221813">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Pecheur_3" ID="{5BA7CFAD-9288-4F62-8A29-96CF1BB798F0}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Pecheur_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="149334388"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Pecheur_3" ID="{5BA7CFAD-9288-4F62-8A29-96CF1BB798F0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Pecheur_4" ID="{9297F776-A68D-4B73-B508-376E3313199A}" ShortID="99287264">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Pecheur_4" ID="{E145D13F-7F12-4522-BEBC-0B2E66479A0D}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Pecheur_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="848253198"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Pecheur_4" ID="{E145D13F-7F12-4522-BEBC-0B2E66479A0D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Boucher" ID="{2EA53203-0C11-40FD-A9BC-046CCC6F1626}" ShortID="755229399">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Yaourt_Boucher_1" ID="{79496698-1F2F-47E1-B7CA-D07A6D688AEF}" ShortID="820847624">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Boucher_1" ID="{F6A775FE-F5C9-4B88-B181-80B53F16A4AE}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Boucher_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="624694034"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Boucher_1" ID="{F6A775FE-F5C9-4B88-B181-80B53F16A4AE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Boucher_2" ID="{94BE472B-FA78-47B9-95FF-C637F8C3C616}" ShortID="699525430">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Boucher_2" ID="{960DDBBC-5A29-4F84-AEBD-C2ABACA52F0C}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Boucher_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1042866045"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Boucher_2" ID="{960DDBBC-5A29-4F84-AEBD-C2ABACA52F0C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Boucher_3" ID="{0AE1658E-6287-4AAC-886F-1C5ED6668ACC}" ShortID="703292093">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Boucher_3" ID="{6D569499-6A7A-4D2F-982D-2E9A1DE5C002}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Boucher_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="506671661"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Boucher_3" ID="{6D569499-6A7A-4D2F-982D-2E9A1DE5C002}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Boucher_4" ID="{A155D95E-C21F-4B57-B28C-7FE36B9339FC}" ShortID="626036062">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Boucher_4" ID="{7211FE4B-D393-4A27-B1A3-E7795C7911F2}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Boucher_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="981872367"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Boucher_4" ID="{7211FE4B-D393-4A27-B1A3-E7795C7911F2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Boucher_5" ID="{92589701-E580-455C-8934-B7197E799AC5}" ShortID="465866845">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Boucher_5" ID="{DC264519-FEB6-4311-824F-A03C29EF0E95}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Boucher_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="577324888"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Boucher_5" ID="{DC264519-FEB6-4311-824F-A03C29EF0E95}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Bibliothéquaire" ID="{1BB77464-5342-4247-803A-519B1777974D}" ShortID="292367005">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Yaourt_Biblio_1" ID="{BAB7AE3A-D2F0-47A2-9772-783B64635E8D}" ShortID="418396312">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Biblio_1" ID="{17B169F9-0E87-4AD2-BC2A-E6179AFBFA8B}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Biblio_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="727924249"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Biblio_1" ID="{17B169F9-0E87-4AD2-BC2A-E6179AFBFA8B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Biblio_2" ID="{83102CC5-E7A6-4D40-9B3D-401FFCBCD564}" ShortID="252109971">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Biblio_2" ID="{CE3BA29B-5F8F-42FD-BCC6-C4A2F8099B10}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Biblio_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="624369280"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Biblio_2" ID="{CE3BA29B-5F8F-42FD-BCC6-C4A2F8099B10}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Biblio_3" ID="{F85367E4-260B-4D19-A0BF-87B3C2FF4F49}" ShortID="916530816">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Biblio_3" ID="{14E4C950-9A71-4C22-8C68-ABA4A396F669}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Biblio_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="615692240"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Biblio_3" ID="{14E4C950-9A71-4C22-8C68-ABA4A396F669}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Biblio_4" ID="{33896782-3B90-4633-985E-EF0A255439AB}" ShortID="741965471">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Biblio_4" ID="{0514A393-A652-4708-BA3A-3813AB5A3F4C}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Biblio_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="759132030"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Biblio_4" ID="{0514A393-A652-4708-BA3A-3813AB5A3F4C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Biblio_5" ID="{8A0943FA-E488-4724-BD95-80C61D0C79E6}" ShortID="965426804">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Biblio_5" ID="{513D6FBA-B221-412C-8802-BBADC3F42C11}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Biblio_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="183444672"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Biblio_5" ID="{513D6FBA-B221-412C-8802-BBADC3F42C11}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Prêtre" ID="{68143EE1-77B8-4DEA-82C2-9A49AF14A30A}" ShortID="314650090">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Yaourt_Pretre_1" ID="{91E45F6B-E2EA-46DA-9943-B74D70A8CE41}" ShortID="900425811">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Pretre_1" ID="{EAB5B609-9507-49CA-8676-FC5413D8000F}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Pretre_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="387066749"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Pretre_1" ID="{EAB5B609-9507-49CA-8676-FC5413D8000F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Pretre_2" ID="{8DD70EB0-9101-41DE-9E31-08436427A628}" ShortID="612619254">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Pretre_2" ID="{0362FD87-00F1-4B0C-A6EA-29521A5999CA}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Pretre_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="624958692"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Pretre_2" ID="{0362FD87-00F1-4B0C-A6EA-29521A5999CA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Yaourt_Pretre_3" ID="{A098678D-54AE-4D66-8C3B-82713E18D705}" ShortID="376973080">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Yaourt_Pretre_3" ID="{98BBFFEC-5C49-40D2-B76A-5D8EB42B9D6F}">
+											<Language>SFX</Language>
+											<AudioFile>Yaourt_Pretre_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="49830458"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Yaourt_Pretre_3" ID="{98BBFFEC-5C49-40D2-B76A-5D8EB42B9D6F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

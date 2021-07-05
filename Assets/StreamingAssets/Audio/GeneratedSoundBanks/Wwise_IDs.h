@@ -81,7 +81,9 @@ namespace AK
         static const AkUniqueID EVENT_YAOURT_BANDIT = 4256429855U;
         static const AkUniqueID EVENT_YAOURT_ELYA = 1791947516U;
         static const AkUniqueID EVENT_YAOURT_FIDELE = 1826551178U;
+        static const AkUniqueID EVENT_YAOURT_PRETRE = 2627245191U;
         static const AkUniqueID EVENT_YAOURT_REINE = 3810860044U;
+        static const AkUniqueID EVENT_YAOURT_ROI = 3684287441U;
         static const AkUniqueID EVENT_YAOURT_SOLDAT = 1268849612U;
     } // namespace EVENTS
 

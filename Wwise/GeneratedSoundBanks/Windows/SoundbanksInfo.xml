@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="4285797391">
+		<SoundBank Id="393239870" Language="SFX" Hash="1193595418">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -1004,6 +1004,22 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2627245191" Name="Event_Yaourt_Pretre" ObjectPath="\Events\Default Work Unit\Event_Yaourt_Pretre" DurationType="OneShot" DurationMin="4.051875" DurationMax="5.201271">
+					<IncludedMemoryFiles>
+						<File Id="49830458" Language="SFX">
+							<ShortName>Yaourt_Pretre_3.wav</ShortName>
+							<Path>SFX\Yaourt_Pretre_3_10C4C929.wem</Path>
+						</File>
+						<File Id="387066749" Language="SFX">
+							<ShortName>Yaourt_Pretre_1.wav</ShortName>
+							<Path>SFX\Yaourt_Pretre_1_10C4C929.wem</Path>
+						</File>
+						<File Id="624958692" Language="SFX">
+							<ShortName>Yaourt_Pretre_2.wav</ShortName>
+							<Path>SFX\Yaourt_Pretre_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3810860044" Name="Event_Yaourt_Reine" ObjectPath="\Events\Default Work Unit\Event_Yaourt_Reine" DurationType="OneShot" DurationMin="1.064943" DurationMax="1.864150">
 					<IncludedMemoryFiles>
 						<File Id="26331471" Language="SFX">
@@ -1025,6 +1041,26 @@
 						<File Id="981145953" Language="SFX">
 							<ShortName>Yaourt_Reine_5.wav</ShortName>
 							<Path>SFX\Yaourt_Reine_5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3684287441" Name="Event_Yaourt_Roi" ObjectPath="\Events\Default Work Unit\Event_Yaourt_Roi" DurationType="OneShot" DurationMin="1.504392" DurationMax="1.589233">
+					<IncludedMemoryFiles>
+						<File Id="125045585" Language="SFX">
+							<ShortName>Yaourt_Roi_2.wav</ShortName>
+							<Path>SFX\Yaourt_Roi_2_10C4C929.wem</Path>
+						</File>
+						<File Id="334375646" Language="SFX">
+							<ShortName>Yaourt_Roi_1.wav</ShortName>
+							<Path>SFX\Yaourt_Roi_1_10C4C929.wem</Path>
+						</File>
+						<File Id="467006614" Language="SFX">
+							<ShortName>Yaourt_Roi_3.wav</ShortName>
+							<Path>SFX\Yaourt_Roi_3_10C4C929.wem</Path>
+						</File>
+						<File Id="761343784" Language="SFX">
+							<ShortName>Yaourt_Roi_4.wav</ShortName>
+							<Path>SFX\Yaourt_Roi_4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
