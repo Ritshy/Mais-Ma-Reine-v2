@@ -47,11 +47,6 @@ public class CameraZooming : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ShakeScreen();
-        }
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (mapScreenPause == false)
