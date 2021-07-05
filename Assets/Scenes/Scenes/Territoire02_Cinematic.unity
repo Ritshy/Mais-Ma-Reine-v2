@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -8603,8 +8603,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 195, y: 2.4}
-  m_SizeDelta: {x: 355, y: 522}
+  m_AnchoredPosition: {x: 126, y: 206}
+  m_SizeDelta: {x: 739.7, y: 795}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1001 &634084669
 PrefabInstance:
@@ -9075,7 +9075,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -195, y: 40}
+  m_AnchoredPosition: {x: -43, y: 127}
   m_SizeDelta: {x: 355, y: 580}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &678330668
@@ -15149,7 +15149,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: 0a65f8281e5a1f749b8a368aed026ae8,
+      type: 3}
   - characterName: La Reine
     myDialogue:
     - Mais je vais devoir vous demander de redoubler de vigilance. Le Roi est lent,
@@ -15190,7 +15191,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: e4be5545f9e0a1f4fbf288304587a35e,
+      type: 3}
   - characterName: La Reine
     myDialogue:
     - "Je suis honor\xE9e d'avoir de si bons chevaliers \xE0 mes c\xF4t\xE9s. Je
@@ -15231,7 +15233,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: 0931bea43da49ee448dd7865d68912db,
+      type: 3}
   isStartDialogueExisting: 0
   levelDesignAnimator: {fileID: 1450074713}
   firstCharacter: {fileID: 678330669}

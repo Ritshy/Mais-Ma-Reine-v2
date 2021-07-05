@@ -10335,7 +10335,7 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 21300000, guid: b5722f89282897a439ca25edc3a1d76b,
+    myCharacterEmotionImage: {fileID: 21300000, guid: daaba61562886284d8917fbe501a9a6a,
       type: 3}
   - characterName: La Reine
     myDialogue:

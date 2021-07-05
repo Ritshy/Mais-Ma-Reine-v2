@@ -15313,8 +15313,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 61}
-  m_SizeDelta: {x: 291.7, y: 562}
+  m_AnchoredPosition: {x: 67, y: 153}
+  m_SizeDelta: {x: 373.3, y: 680.3}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &517654216
 GameObject:
@@ -36168,8 +36168,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -127, y: 93.5}
-  m_SizeDelta: {x: 286.2, y: 565.7}
+  m_AnchoredPosition: {x: -113.7, y: 81}
+  m_SizeDelta: {x: 363, y: 569.2}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1973749609
 CanvasRenderer:
@@ -36281,7 +36281,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: d4eacd2a0d0ef16458d4a9d1c4df7b16,
+      type: 3}
   - characterName: Archibald
     myDialogue:
     - Toujours rien mon bon Roi.
@@ -36300,7 +36301,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: 84b55fb7cea98ef439fd0714b9c37bad,
+      type: 3}
   - characterName: Le Roi
     myDialogue:
     - "Mais o\xF9 a-t-elle pu passer !?"
@@ -36319,7 +36321,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: 3137c40ddeea78c498fc9db5e5fe39e0,
+      type: 3}
   - characterName: Archibald
     myDialogue:
     - "Ah ! On vient de me dire dans mon oreillette qu\u2019elle vient de partir
@@ -36339,7 +36342,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: cf69e4e02c657df48b152989ce2143ba,
+      type: 3}
   - characterName: Le Roi
     myDialogue:
     - "L\u2019\xCEle du C\u0153ur !!!! Cela veut dire qu\u2019elle va retourner sur
@@ -36360,7 +36364,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: 7a4032a47fd820d4f92b617379bb0043,
+      type: 3}
   - characterName: Le Roi
     myDialogue:
     - Elle veut jouer, on va jouer !
@@ -36379,7 +36384,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: 468a84c4aeb275b45a46e880f9e0c432,
+      type: 3}
   - characterName: Archibald
     myDialogue:
     - "\u2026 Vous faites peur mon Roi !"
@@ -36398,7 +36404,8 @@ MonoBehaviour:
     cameraStartPos: {fileID: 0}
     cameraEndPos: {fileID: 0}
     unitsToSpawn: []
-    myCharacterEmotionImage: {fileID: 0}
+    myCharacterEmotionImage: {fileID: 21300000, guid: 788b69ffc7243d843a86bd4412480dda,
+      type: 3}
   isStartDialogueExisting: 0
   levelDesignAnimator: {fileID: 2001003336}
   firstCharacter: {fileID: 1973749610}
