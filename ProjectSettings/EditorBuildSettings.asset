@@ -18,9 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Scenes/Territoire01_Scene.unity
     guid: 2634c87bc18f51c448c6f7c9bb6eab61
   - enabled: 1
+    path: Assets/Scenes/Scenes/Territoire01_EndCinematic_Scene.unity
+    guid: d82068f52d612c94abc2db9101adf9ab
+  - enabled: 1
     path: Assets/Scenes/Scenes/Territoire02_Cinematic.unity
     guid: 56060cfa47a9a7343a37fe1848f6826b
   - enabled: 1
     path: Assets/Scenes/Scenes/Territoire02_Scene.unity
     guid: be46ad9b0f3e2a24c8b330aaa62cc8fe
+  - enabled: 1
+    path: Assets/Scenes/Scenes/Territoire02_EndCinematic_Scene.unity
+    guid: 78916656b283e944ba34ced1c9d4c752
   m_configObjects: {}
