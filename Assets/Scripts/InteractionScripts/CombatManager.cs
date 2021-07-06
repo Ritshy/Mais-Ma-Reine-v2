@@ -869,7 +869,7 @@ public class CombatManager : MonoBehaviour
 
                     yield return new WaitForSeconds(.5f);
 
-                    //StartCoroutine(EffectManager.Instance.PlayMagicianCriticalEffect());
+                    StartCoroutine(EffectManager.Instance.PlayLancierCriticalEffect());
 
                     yield return new WaitForSeconds(.4f);
 
@@ -991,7 +991,7 @@ public class CombatManager : MonoBehaviour
 
                     yield return new WaitForSeconds(.5f);
 
-                    //StartCoroutine(EffectManager.Instance.PlayMagicianCriticalEffect());
+                    StartCoroutine(EffectManager.Instance.PlayLancierMissEffect());
 
                     yield return new WaitForSeconds(.4f);
 

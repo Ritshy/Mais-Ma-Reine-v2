@@ -152,6 +152,7 @@ public class EffectManager : MonoBehaviour
     public AK.Wwise.Event lanceFlySlashSFX;
 
     public AK.Wwise.Event lanceFlyReacteurSFX;
+    public AK.Wwise.Event lanceFlyProjectionSFX;
 
     [Header("Miss Effects")]
 
@@ -415,13 +416,44 @@ public class EffectManager : MonoBehaviour
 
     public IEnumerator PlayLancierCriticalEffect()
     {
+        yield return new WaitForSeconds(.55f);
+
+        lanceFlyReacteurSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(1f);
+
+        //lanceFlyProjectionSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.2f);
+
+        lanceFlySlashSFX.Post(gameObject);
+        lanceFlyHitSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.8f);
+
+        lanceFlySlashSFX.Post(gameObject);
+        lanceFlyHitSFX.Post(gameObject);
+
         yield return new WaitForSeconds(.3f);
 
-        lanceFlyingSFX.Post(gameObject);
+        lanceFlySlashSFX.Post(gameObject);
+        lanceFlyHitSFX.Post(gameObject);
+    }
 
-        yield return new WaitForSeconds(.4f);
+    public IEnumerator PlayLancierMissEffect()
+    {
+        yield return new WaitForSeconds(.6f);
 
-        lanceFlyingCounterHit.Post(gameObject);
+        lancePlanteSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.8f);
+
+        lanceDecollageSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.8f);
+
+        lanceSkyStarSFX.Post(gameObject);
+        lanceSkyStarEffect.Play();
     }
 
     #endregion
