@@ -74,10 +74,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(2))
-        {
-            myAnim.SetTrigger("triggerDefaiteFin");
-        }
+
     }
 
     public void OpenDialogueWindow(Dialogue dialogue, FideleManager talkedFM)
