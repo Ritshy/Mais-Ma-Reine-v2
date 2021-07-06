@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3413096353">
+		<SoundBank Id="393239870" Language="SFX" Hash="54984640">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -461,6 +461,14 @@
 						<File Id="915875593" Language="SFX">
 							<ShortName>Echec_plantage.wav</ShortName>
 							<Path>SFX\Echec_plantage_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="137124609" Name="Event_Lancier_Rocket" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_Rocket" DurationType="OneShot" DurationMin="0.873991" DurationMax="0.873991">
+					<IncludedMemoryFiles>
+						<File Id="272846394" Language="SFX">
+							<ShortName>Launch_Rocket_Lancier.wav</ShortName>
+							<Path>SFX\Launch_Rocket_Lancier_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

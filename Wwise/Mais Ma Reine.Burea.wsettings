@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{8E5E977B-6239-40B8-8993-D4766F615EC6}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Burea\OneDrive\Bureau\Mais Ma Reine\Sons\Finaux\Yaourt Prêtre\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Burea\OneDrive\Bureau\Mais Ma Reine\Sons\Finaux\Lancier\RéussiteCrit_Lancier_Coup\"/>
 				<Property Name="Event Action List\{011F5493-F227-4B53-9BD6-855843C021AE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{01C9CE98-A258-4BFF-BC40-7DE4BC182D54}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{07ED981D-448E-4FAA-8FF4-FF0421DE8FE7}\x64_Expand States" Type="string" Value=""/>
@@ -24,6 +24,7 @@
 				<Property Name="Event Action List\{29DF61DE-AD47-4F3B-A2EC-06D8822637BD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2C5EB5A9-C76E-4EB3-A246-2952446B7E4A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{30763E44-6AD4-4BCC-AEA0-F8796B4EDE88}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{33AA8376-66D9-47E0-A541-A1CEA38B9264}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3A171EC5-569D-4015-9A9B-66B815C23A61}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3BA3BFEE-BDE4-4CC8-801C-0E605FF07ED5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3C2E71C9-B65C-4726-B518-DE6121E59E35}\x64_Expand States" Type="string" Value=""/>

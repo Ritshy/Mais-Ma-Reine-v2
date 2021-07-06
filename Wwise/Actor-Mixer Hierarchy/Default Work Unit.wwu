@@ -1468,36 +1468,6 @@
 								<ActiveSource Name="Cris_12" ID="{3C51EE5D-D287-4B29-A402-065BE864687E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Cris_15" ID="{F723901F-0CD0-4E09-B8EC-049923ABDA57}" ShortID="518923060">
-							<PropertyList>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Cris_15" ID="{B7322BF8-FAC6-4674-BC37-31217FA37887}">
-									<Language>SFX</Language>
-									<AudioFile>Mort\Cris_15.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="158599574"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Cris_15" ID="{B7322BF8-FAC6-4674-BC37-31217FA37887}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Cris_11" ID="{953644B1-48E4-480F-B1F4-6BC44E940F8C}" ShortID="248248683">
 							<PropertyList>
 								<Property Name="MakeUpGain" Type="Real64">
@@ -1766,36 +1736,6 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Cris_9" ID="{6C0B19BF-A4A2-4B72-89A1-F5B6BB4D8BDF}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Cris_23" ID="{864BFAFF-6995-465F-89C0-B57EE98D3A1B}" ShortID="375857730">
-							<PropertyList>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Cris_23" ID="{DFB0149B-0C8C-43EE-9C0C-D30F9A9F75C8}">
-									<Language>SFX</Language>
-									<AudioFile>Mort\Cris_23.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="476125705"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Cris_23" ID="{DFB0149B-0C8C-43EE-9C0C-D30F9A9F75C8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Cris_4" ID="{09CCF311-0F9C-4AB4-98D4-C11F7046E3B6}" ShortID="689202379">
@@ -5519,6 +5459,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Echec_TeamRocket" ID="{1CA6C0A6-E1EC-4A48-BFE1-47D264D5714E}" ShortID="258168035">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-22</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
@@ -5566,29 +5513,6 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Launch_Rocket_Lancier" ID="{877CCC69-C98F-4E06-BB09-0E2600A63C50}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Rocket_Lancier" ID="{E99FE5D2-4ECD-4523-988C-02DC8080814C}" ShortID="759703908">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Rocket_Lancier" ID="{136BC262-FBFB-47B4-91F4-913292EE8D07}">
-									<Language>SFX</Language>
-									<AudioFile>Rocket_Lancier.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="339115037"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Rocket_Lancier" ID="{136BC262-FBFB-47B4-91F4-913292EE8D07}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="woosh_Lancier" ID="{DB80C2B4-08E1-4AB0-BCFA-FB613A4F8119}" ShortID="101041280">
@@ -5719,6 +5643,29 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<Sound Name="Launch_Rocket_Lancier_v2" ID="{546F1EF1-6596-4CB4-825F-1E6F099E0EA5}" ShortID="528387780">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B46421AE-3385-4820-898C-253ACADCEBF1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{091001EB-4621-4454-BD80-6681E533C65E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Launch_Rocket_Lancier_v2" ID="{EE8EF226-B013-498A-9D19-BE65386D72F2}">
+									<Language>SFX</Language>
+									<AudioFile>Launch_Rocket_Lancier_v2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="61932295"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Launch_Rocket_Lancier_v2" ID="{EE8EF226-B013-498A-9D19-BE65386D72F2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Lancier_Attaque" ID="{344A64F1-7AA9-4070-AECE-9D6649726871}" ShortID="132077769">

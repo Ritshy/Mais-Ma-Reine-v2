@@ -39,6 +39,7 @@
 						<ObjectRef Name="Event_Reussite_BackDash" ID="{F9404DCF-0B75-4743-8CD9-9D6A0C9C982F}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Mage_ReussiteCrit_PreBurst" ID="{AC403589-3F4A-474B-BF58-18BD032CAC3A}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Deplacement_Bandit" ID="{FFA57FB7-E24D-4751-9EBE-D4CD7BB8511D}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Event_Lancier_Rocket" ID="{33AA8376-66D9-47E0-A541-A1CEA38B9264}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Mouv_Fidele_Attrape" ID="{79D7091C-FE68-488B-A733-81DF59A15DA3}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Lancier_Lancer" ID="{616779A1-4F1F-489B-BA34-C149E3374FFF}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Event_Mage_ReussiteCrit_Canalisation" ID="{15E94FEE-51C1-48A6-B480-6B065D1AD05B}" WorkUnitID="{C02546AF-E9E4-43ED-A628-73AEC7C92B52}" Origin="Manual" Filter="7"/>

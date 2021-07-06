@@ -38,6 +38,7 @@ namespace AK
         static const AkUniqueID EVENT_LANCIER_ENVOLE = 3241757576U;
         static const AkUniqueID EVENT_LANCIER_LANCER = 910006524U;
         static const AkUniqueID EVENT_LANCIER_PERCHE = 3661350892U;
+        static const AkUniqueID EVENT_LANCIER_ROCKET = 137124609U;
         static const AkUniqueID EVENT_LANCIER_ROCKETLANCH = 3926879247U;
         static const AkUniqueID EVENT_LANCIER_WOOSH = 1453704403U;
         static const AkUniqueID EVENT_MAGE_BDF_CANALISATION = 2715006224U;

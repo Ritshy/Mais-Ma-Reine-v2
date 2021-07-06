@@ -641,23 +641,12 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Event_Lancier_Rocket" ID="{B1261CCD-2BC0-4DCA-A451-084377BDDE20}">
-									<ChildrenList>
-										<Action Name="" ID="{99FC4721-0672-4B18-9F1C-B2FBD03A241C}" ShortID="1036690403">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Rocket_Lancier" ID="{E99FE5D2-4ECD-4523-988C-02DC8080814C}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="Event_Lancier_RocketLanch" ID="{A3FDC843-6730-44DF-B4B6-54C69B0D1F44}">
 									<ChildrenList>
-										<Action Name="" ID="{EA0C987C-F6C7-4B2B-9556-918741918FF2}" ShortID="99797940">
+										<Action Name="" ID="{13DE0A2B-4589-4579-A942-64D7CA505F2E}" ShortID="216581148">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Launch_Rocket_Lancier" ID="{57777F04-6AA5-4270-A0ED-191B9DD799D4}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+													<ObjectRef Name="Launch_Rocket_Lancier_v2" ID="{546F1EF1-6596-4CB4-825F-1E6F099E0EA5}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -669,6 +658,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="woosh_Lancier" ID="{DB80C2B4-08E1-4AB0-BCFA-FB613A4F8119}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Event_Lancier_Rocket" ID="{33AA8376-66D9-47E0-A541-A1CEA38B9264}">
+									<ChildrenList>
+										<Action Name="" ID="{40D9EE98-DF7B-40BE-BBF1-FF239501B772}" ShortID="465374980">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Launch_Rocket_Lancier" ID="{57777F04-6AA5-4270-A0ED-191B9DD799D4}" WorkUnitID="{961EADD6-4800-4D30-B7C5-4203C2A7B882}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
