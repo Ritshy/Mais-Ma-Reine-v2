@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class EffectManager : MonoBehaviour
 {
+    #region movement effects
     [Header ("Movement Effects")]
     public List<ParticleSystem> launchDeplacementPS;
     public List<ParticleSystem> endDeplacementPS;
 
     public AK.Wwise.Event lancementDeplacementSFX;
     public AK.Wwise.Event finDeplacementSFX;
+    #endregion
 
-
+    #region combat effects
     [Header("Launching Combat Effect")]
 
     public ParticleSystem versusEffect;
@@ -25,6 +27,7 @@ public class EffectManager : MonoBehaviour
 
     public ParticleSystem coupCritiqueTextEffect;
 
+    #region epeiste effects
     [Header("Epeiste Effects")]
 
     [Header("Critical Effects")]
@@ -63,8 +66,11 @@ public class EffectManager : MonoBehaviour
 
     public ParticleSystem counterAttackEpeeSlashEffect;
 
+    #endregion
+
     [Space]
 
+    #region magician effects
     [Header("Magician Effects")]
 
     [Header("Attack Effects")]
@@ -75,9 +81,19 @@ public class EffectManager : MonoBehaviour
 
     public ParticleSystem fireballImpact;
 
+    [Space]
+
+    public AK.Wwise.Event canalisationBdFSFX;
+    public AK.Wwise.Event mouvementBdFSFX;
+    public AK.Wwise.Event impactBdFSFX;
+
     [Header("CounterAttack Effects")]
 
     public ParticleSystem counterAttackBonk;
+
+    [Space]
+
+    public AK.Wwise.Event bonkCounterSFX;
 
     [Header("Critical Effects")]
 
@@ -89,11 +105,68 @@ public class EffectManager : MonoBehaviour
     public ParticleSystem spellCanalisation;
     public ParticleSystem electricRay;
 
+    [Space]
+
+    public AK.Wwise.Event canalisationThunderSFX;
+    public AK.Wwise.Event electricParalysisSFX;
+
+    public AK.Wwise.Event cloudAccumulationSFX;
+    public AK.Wwise.Event thunderPreBurstSFX;
+    public AK.Wwise.Event thunderChocSFX;
+
     [Header("Miss Effects")]
 
     public ParticleSystem missingCanalisation;
     public ParticleSystem missBoom;
     public ParticleSystem missSmokeEffect;
+
+    [Space]
+
+    public AK.Wwise.Event canalisationFailSFX;
+    public AK.Wwise.Event explosionFailSFX;
+
+    #endregion
+
+    #region lancier effects
+
+    [Header ("Attack Effects")]
+
+    public ParticleSystem lanceBonkEffect;
+
+    [Space]
+
+    public AK.Wwise.Event lanceBonkSFX;
+
+    [Header ("CounterAttack Effects")]
+
+    public AK.Wwise.Event lanceFlyingSFX;
+    public AK.Wwise.Event lanceFlyingCounterHit;
+
+    [Header("Critical Effects")]
+
+    public ParticleSystem lanceHitImpactEffect;
+
+    [Space]
+
+    public AK.Wwise.Event lanceFlyHitSFX;
+    public AK.Wwise.Event lanceFlySlashSFX;
+
+    public AK.Wwise.Event lanceFlyReacteurSFX;
+
+    [Header("Miss Effects")]
+
+    public ParticleSystem lanceSkyStarEffect;
+
+    [Space]
+
+    public AK.Wwise.Event lanceSkyStarSFX;
+    public AK.Wwise.Event lancePlanteSFX;
+
+    public AK.Wwise.Event lanceDecollageSFX;
+
+    #endregion
+
+    #endregion
 
     #region Singleton
 
@@ -249,28 +322,38 @@ public class EffectManager : MonoBehaviour
         fireballSpinningCanalisation.Play();
         fireballInitialBall.Play();
 
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(1.5f);
+        canalisationBdFSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(1f);
 
         fireballThrowing.Play();
+        mouvementBdFSFX.Post(gameObject);
 
         yield return new WaitForSeconds(.5f);
 
         fireballImpact.Play();
+        impactBdFSFX.Post(gameObject);
     }
 
     public IEnumerator PlayMagicianCounterAttackEffect()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.2f);
 
         counterAttackBonk.Play();
+        yield return new WaitForSeconds(.4f);
+        bonkCounterSFX.Post(gameObject);
     }
 
     public IEnumerator PlayMagicianCriticalEffect()
     {
         spellCanalisation.Play();
+        yield return new WaitForSeconds(1.4f);
+        canalisationThunderSFX.Post(gameObject);
 
-        yield return new WaitForSeconds(2.2f);
+        yield return new WaitForSeconds(.2f);
 
+        cloudAccumulationSFX.Post(gameObject);
         electricRay.Play();
 
         yield return new WaitForSeconds(.5f);
@@ -280,24 +363,66 @@ public class EffectManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         lightningFalling.Play();
+        thunderChocSFX.Post(gameObject);
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(.3f);
+
+        thunderPreBurstSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(1.5f);
 
         staticElectricity.Play();
+        electricParalysisSFX.Post(gameObject);
     }
 
     public IEnumerator PlayMagicianMissEffect()
     {
         missingCanalisation.Play();
+        yield return new WaitForSeconds(1f);
 
-        yield return new WaitForSeconds(2f);
+        canalisationFailSFX.Post(gameObject);
+        yield return new WaitForSeconds(.5f);
 
         missBoom.Play();
         missSmokeEffect.Play();
 
-        yield return new WaitForSeconds(1.2f);
+        explosionFailSFX.Post(gameObject);
     }
 
+    #endregion
+
+    #region Combat Lancier Effects
+
+    public IEnumerator PlayLancierAttackEffect()
+    {
+        yield return new WaitForSeconds(1.1f);
+
+        lanceBonkEffect.Play();
+
+        lanceBonkSFX.Post(gameObject);
+    }
+
+    public IEnumerator PlayLancierCounterAttackkEffect()
+    {
+        yield return new WaitForSeconds(.3f);
+
+        lanceFlyingSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.4f);
+
+        lanceFlyingCounterHit.Post(gameObject);
+    }
+
+    public IEnumerator PlayLancierCriticalEffect()
+    {
+        yield return new WaitForSeconds(.3f);
+
+        lanceFlyingSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.4f);
+
+        lanceFlyingCounterHit.Post(gameObject);
+    }
 
     #endregion
 }
