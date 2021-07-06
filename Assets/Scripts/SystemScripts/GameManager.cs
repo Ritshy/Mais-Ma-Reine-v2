@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
                 }                
             }
         }
-        SwitchTurn();
+        StartCoroutine(SwitchTurn());
     }
 
     public void LoadCharismeValueBetweenScenes()
@@ -148,19 +148,19 @@ public class GameManager : MonoBehaviour
         {
             if (isMapTuto == false)
             {
-                SwitchTurn();
+                StartCoroutine(SwitchTurn());
             }
             else
             {
                 if (firstFideleToInteractWithHasInteracted)
                 {
-                    SwitchTurn();
+                    StartCoroutine(SwitchTurn());
                 }
             }
         }
     }
 
-    public void SwitchTurn()
+    public IEnumerator SwitchTurn()
     {
         for (int i = 0; i < allMapUnits.Count; i++)
         {
@@ -193,12 +193,12 @@ public class GameManager : MonoBehaviour
 
             if (cclfm.Count == 0)
             {
-                SwitchTurn();
+                StartCoroutine(SwitchTurn());
             }
         }
         else
         {
-            SwitchTurn();
+            StartCoroutine(SwitchTurn());
         }
 
         ResetTurn();
@@ -227,7 +227,7 @@ public class GameManager : MonoBehaviour
                 if (allMapUnits[i].myCamp == GameCamps.Fidele)
                 {
                     StartCoroutine(DragCamera2D.Instance.FollowTargetCamera(allMapUnits[i].gameObject));
-                    return;
+                    yield return null;
                 }
             }
         }
@@ -246,6 +246,7 @@ public class GameManager : MonoBehaviour
                     fm.hasFought = false;
                 }
             }
+            yield return new WaitForSeconds(2f);
             MoveUnit();
         }
     }
@@ -299,7 +300,7 @@ public class GameManager : MonoBehaviour
         {
             if (allMapUnits[i].myCamp == currentCampTurn && allMapUnits[i].myCamp != GameCamps.Fidele)
             {
-                if (allMapUnits[i].GetComponentInChildren<MovementEnemy>() != null)
+                if (allMapUnits[i].GetComponentInChildren<MovementEnemy>() != null && CombatManager.Instance.isInFight == false)
                 {
                     if (allMapUnits[i].waitForUnitToEnterZone)
                     {
@@ -317,30 +318,6 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
-    public IEnumerator MoveBandit()
-    {
-        for (int i = 0; i < allMapUnits.Count; i++)
-        {
-            if (allMapUnits[i].myCamp == GameCamps.Bandit)
-            {
-                allMapUnits[i].GetComponentInChildren<MovementEnemy>().MoveToTarget();
-                yield return new WaitForSeconds(timeValue);
-            }
-        }
-    }
-
-    public IEnumerator MoveCalamite()
-    {
-        for (int i = 0; i < allMapUnits.Count; i++)
-        {
-            if (allMapUnits[i].myCamp == GameCamps.Calamite)
-            {
-                allMapUnits[i].GetComponentInChildren<MovementEnemy>().MoveToTarget();
-                yield return new WaitForSeconds(timeValue);
-            }
-        }
-    }    
 
     public void LowerOpacityFeedback()
     {

@@ -557,7 +557,7 @@ public class CombatManager : MonoBehaviour
 
                         myAnim.SetTrigger("LALaunchAttack");
 
-                        //StartCoroutine(EffectManager.Instance.PlayMagicianAttackEffect());
+                        StartCoroutine(EffectManager.Instance.PlayLancierAttackEffect());
 
                         yield return new WaitForSeconds(3.2f);
 
@@ -572,7 +572,7 @@ public class CombatManager : MonoBehaviour
 
                 //attaquantDamageEffect.Play();
 
-                yield return new WaitForSeconds(1.2f);
+                yield return new WaitForSeconds(.5f);
 
                 // Ici jouer Anim dégâts reçus sur defenseur
 
@@ -710,7 +710,7 @@ public class CombatManager : MonoBehaviour
 
                     myAnim.SetTrigger("LALaunchCounterAttack");
 
-                    //StartCoroutine(EffectManager.Instance.PlayMagicianCounterAttackEffect());
+                    StartCoroutine(EffectManager.Instance.PlayLancierCounterAttackkEffect());
 
                     yield return new WaitForSeconds(0.7f);
 
@@ -734,7 +734,7 @@ public class CombatManager : MonoBehaviour
 
             //defenseurDamageEffect.Play();
 
-            yield return new WaitForSeconds(1.2f);
+            yield return new WaitForSeconds(.5f);
 
             // Ici jouer Anim dégâts reçus sur attaquant
 
@@ -891,6 +891,9 @@ public class CombatManager : MonoBehaviour
 
 
             // ICI jouer Anim dégâts reçus sur defenseur
+
+            yield return new WaitForSeconds(.5f);
+
             renderTextCombat.text = "- " + currentAttackValue.ToString();
             defenseurAM.ReceiveDamage();
             defenseurAM.FillAmountHealth();
@@ -1003,6 +1006,9 @@ public class CombatManager : MonoBehaviour
             }
 
             // ICI jouer Anim dégâts reçus sur attaquant
+
+            yield return new WaitForSeconds(.5f);
+
             renderTextCombat.text = "- " + currentAttackValue.ToString();
 
             attaquantAM.ReceiveDamage();
