@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="1193595418">
+		<SoundBank Id="393239870" Language="SFX" Hash="3413096353">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -464,19 +464,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="137124609" Name="Event_Lancier_Rocket" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_Rocket" DurationType="OneShot" DurationMin="0.873991" DurationMax="0.873991">
+				<Event Id="3926879247" Name="Event_Lancier_RocketLanch" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_RocketLanch" DurationType="OneShot" DurationMin="1.326485" DurationMax="1.326485">
 					<IncludedMemoryFiles>
-						<File Id="339115037" Language="SFX">
-							<ShortName>Rocket_Lancier.wav</ShortName>
-							<Path>SFX\Rocket_Lancier_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3926879247" Name="Event_Lancier_RocketLanch" ObjectPath="\Events\Default Work Unit\Folder_Lancier\Folder_Lancier_ReussiteCrit\Event_Lancier_RocketLanch" DurationType="OneShot" DurationMin="0.873991" DurationMax="0.873991">
-					<IncludedMemoryFiles>
-						<File Id="272846394" Language="SFX">
-							<ShortName>Launch_Rocket_Lancier.wav</ShortName>
-							<Path>SFX\Launch_Rocket_Lancier_10C4C929.wem</Path>
+						<File Id="61932295" Language="SFX">
+							<ShortName>Launch_Rocket_Lancier_v2.wav</ShortName>
+							<Path>SFX\Launch_Rocket_Lancier_v2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -588,7 +580,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1699538348" Name="Event_Mort" ObjectPath="\Events\Default Work Unit\Event_Mort" DurationType="OneShot" DurationMin="0.366893" DurationMax="1.449524">
+				<Event Id="1699538348" Name="Event_Mort" ObjectPath="\Events\Default Work Unit\Event_Mort" DurationType="OneShot" DurationMin="0.366893" DurationMax="1.264240">
 					<IncludedMemoryFiles>
 						<File Id="89893094" Language="SFX">
 							<ShortName>Mort\Cris_1.wav</ShortName>
@@ -601,10 +593,6 @@
 						<File Id="142978168" Language="SFX">
 							<ShortName>Mort\Cris_22.wav</ShortName>
 							<Path>SFX\Mort\Cris_22_10C4C929.wem</Path>
-						</File>
-						<File Id="158599574" Language="SFX">
-							<ShortName>Mort\Cris_15.wav</ShortName>
-							<Path>SFX\Mort\Cris_15_10C4C929.wem</Path>
 						</File>
 						<File Id="237506436" Language="SFX">
 							<ShortName>Mort\Cris_8.wav</ShortName>
@@ -637,10 +625,6 @@
 						<File Id="447113972" Language="SFX">
 							<ShortName>Mort\Cris_16.wav</ShortName>
 							<Path>SFX\Mort\Cris_16_10C4C929.wem</Path>
-						</File>
-						<File Id="476125705" Language="SFX">
-							<ShortName>Mort\Cris_23.wav</ShortName>
-							<Path>SFX\Mort\Cris_23_10C4C929.wem</Path>
 						</File>
 						<File Id="579661265" Language="SFX">
 							<ShortName>Mort\Cris_24.wav</ShortName>
@@ -857,6 +841,14 @@
 						<File Id="874339176" Language="SFX">
 							<ShortName>click_bouton.wav</ShortName>
 							<Path>SFX\click_bouton_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1041178781" Name="Event_UI_Clique_Discussion" ObjectPath="\Events\Default Work Unit\Event_UI_Clique_Discussion" DurationType="OneShot" DurationMin="0.232979" DurationMax="0.232979">
+					<IncludedMemoryFiles>
+						<File Id="200426078" Language="SFX">
+							<ShortName>Clique_Discu.wav</ShortName>
+							<Path>SFX\Clique_Discu_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
