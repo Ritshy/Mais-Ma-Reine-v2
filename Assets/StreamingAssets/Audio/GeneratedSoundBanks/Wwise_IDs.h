@@ -69,6 +69,7 @@ namespace AK
         static const AkUniqueID EVENT_UI_BOUTON_JOUER = 2850458628U;
         static const AkUniqueID EVENT_UI_CADENA_TERRITOIRE = 2283136221U;
         static const AkUniqueID EVENT_UI_CLIQUE_BOUTON = 3804404592U;
+        static const AkUniqueID EVENT_UI_CLIQUE_DISCUSSION = 1041178781U;
         static const AkUniqueID EVENT_UI_CLIQUE_TERRITOIRE = 1051972340U;
         static const AkUniqueID EVENT_UI_DEFAITE = 2023487047U;
         static const AkUniqueID EVENT_UI_GAIN_CHARISME = 3776204507U;
