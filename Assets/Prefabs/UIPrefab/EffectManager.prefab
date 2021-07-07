@@ -1,0 +1,246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3047111688448403580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3047111688448403522}
+  - component: {fileID: 3047111688448403581}
+  m_Layer: 0
+  m_Name: EffectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3047111688448403522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3047111688448403580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3047111688448403581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3047111688448403580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80302e3e64e52f4e85666dc43524e4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchDeplacementPS:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  endDeplacementPS:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  lancementDeplacementSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 759b221203c990d4a8cd4d224dded5a0,
+      type: 2}
+  finDeplacementSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f1c5aad6758500a4cb387b69696f3feb,
+      type: 2}
+  versusEffect: {fileID: 0}
+  attackTextEffect: {fileID: 0}
+  counterAttackTextEffect: {fileID: 0}
+  echecTextEffect: {fileID: 0}
+  coupCritiqueTextEffect: {fileID: 0}
+  coupCritiqueSlashEffect: {fileID: 0}
+  coupCritiqueImpactEffect: {fileID: 0}
+  samuraiSlashSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fcafc25c84ea50e4fabca4c1cd3cc6a1,
+      type: 2}
+  sautArriereSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a0dba1dc472c18d45930430c32326bfa,
+      type: 2}
+  explosionEnnemiSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 447ae1d2e4fb9cd428943118836b4a16,
+      type: 2}
+  echecEpeeFreineEffect: {fileID: 0}
+  echecImpactEffect: {fileID: 0}
+  publicChocSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5bd3fc8ef7f9c2a44acb27008262048e,
+      type: 2}
+  degatsSubitsSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 72e54f407ce8cd04aa2cbb5d3ea536ac,
+      type: 2}
+  freinageEpeeSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c8a82d09a5321b44ab677c5981bb5127,
+      type: 2}
+  lancementEpeeSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 918dd33b05f11c84bb613c35242f4bc5,
+      type: 2}
+  virageEpeeSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2460d6912db26a746b4fe5c1e304cc88,
+      type: 2}
+  attackEpeeSlashEffect: {fileID: 0}
+  attaqueSimpleImpactSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6538c74a068dcf9469b8548403ab444d,
+      type: 2}
+  attaqueSimpleSlashSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cc5d20c1450500d42a800f41780b7697,
+      type: 2}
+  counterAttackEpeeSlashEffect: {fileID: 0}
+  fireballSpinningCanalisation: {fileID: 0}
+  fireballInitialBall: {fileID: 0}
+  fireballThrowing: {fileID: 0}
+  fireballImpact: {fileID: 0}
+  canalisationBdFSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fbe36929d717a5f4fa480a9dda9b542a,
+      type: 2}
+  mouvementBdFSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a6a0b6fe8adbf2543a590d45271ae617,
+      type: 2}
+  impactBdFSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fc1b6c2af0db281468d554417d1c936a,
+      type: 2}
+  counterAttackBonk: {fileID: 0}
+  bonkCounterSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0758a92f8da3a7a4cb9de1201e8e0d83,
+      type: 2}
+  lightningFalling: {fileID: 0}
+  staticElectricity: {fileID: 0}
+  cloudAccumulation: {fileID: 0}
+  spellCanalisation: {fileID: 0}
+  electricRay: {fileID: 0}
+  canalisationThunderSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7a38571272bf592429b35310506ec054,
+      type: 2}
+  electricParalysisSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 183ad880a2fdf37489ca520e1f475616,
+      type: 2}
+  cloudAccumulationSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ed3e925e6d9fde4439725ccfb07c98eb,
+      type: 2}
+  thunderPreBurstSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 449bd9d31ab5be2479ff4713833dc857,
+      type: 2}
+  thunderChocSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7779a31bad23fce43b4999c3cfcb053b,
+      type: 2}
+  missingCanalisation: {fileID: 0}
+  missBoom: {fileID: 0}
+  missSmokeEffect: {fileID: 0}
+  canalisationFailSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 817dfcb1a3be1d6449ea99fe62fb55a8,
+      type: 2}
+  explosionFailSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3ffa73e9f45ed8c4aadccb611bdb1493,
+      type: 2}
+  lanceBonkEffect: {fileID: 0}
+  lanceBonkSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0758a92f8da3a7a4cb9de1201e8e0d83,
+      type: 2}
+  lanceFlyingSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d280a6a12d6b4b34baed3827b4e4fff1,
+      type: 2}
+  lanceFlyingCounterHit:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 925a38181fc787348a34aa64661a66a7,
+      type: 2}
+  lanceHitImpactEffect: {fileID: 0}
+  lanceFlyHitSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: abaf072db2b35344eaea1a93f76bc044,
+      type: 2}
+  lanceFlySlashSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5f4a1bedfd628904f9af5b0c349b1b34,
+      type: 2}
+  lanceFlyReacteurSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5c466c969b8cf064498ce57ba76be3c7,
+      type: 2}
+  lanceFlyProjectionSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 805b67289fef7b949b0944266e24e512,
+      type: 2}
+  lanceSkyStarEffect: {fileID: 0}
+  lanceSkyStarSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 47f36c8e7ca11e743a442787e7eb4c7b,
+      type: 2}
+  lancePlanteSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 78d7ecf3a3368674181967e8b6dcc7b4,
+      type: 2}
+  lanceDecollageSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: eead1400d3098f0419f4f12c397c2510,
+      type: 2}

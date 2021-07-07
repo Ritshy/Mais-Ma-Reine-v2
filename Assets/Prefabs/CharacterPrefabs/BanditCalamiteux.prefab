@@ -103,7 +103,7 @@ Transform:
   m_GameObject: {fileID: 2142881297488458528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 0.79999995}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 6686063714155347798}
   m_RootOrder: 1
@@ -337,7 +337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5564402708574438900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6686063715713900131}
@@ -770,7 +770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6686063713943200717
 Transform:
   m_ObjectHideFlags: 0
@@ -863,7 +863,7 @@ Transform:
   m_GameObject: {fileID: 6686063714155347794}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1.25, z: 0}
-  m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 6686063715410890038}
   - {fileID: 1595565654023188173}
@@ -992,7 +992,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6686063714384676319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 6686063715388596369}
@@ -1036,13 +1036,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 999
+  m_SortingOrder: 900
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 1.29, y: 0.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1144,6 +1144,7 @@ GameObject:
   - component: {fileID: 6686063715388596371}
   - component: {fileID: 6686063715388596368}
   - component: {fileID: 7924461990606825508}
+  - component: {fileID: 239577223}
   m_Layer: 0
   m_Name: BanditCalamiteux
   m_TagString: Obstacle
@@ -1158,7 +1159,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6686063715388596382}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1189,25 +1190,25 @@ MonoBehaviour:
   hasFought: 0
   fideleNom: Meil
   fidelePrenom: LeFou
-  isStatRandomize: 0
+  isStatRandomize: 1
   fideleClasse: 0
-  maxHp: 12
+  maxHp: 0
   currentHP: 0
   isAlive: 0
   moveZoneValue: 0
-  maxAttackRange: 5
-  minAttackRange: 2
-  maxCounterAttackRange: 4
-  minCounterAttackRange: 2
+  maxAttackRange: 0
+  minAttackRange: 0
+  maxCounterAttackRange: 0
+  minCounterAttackRange: 0
   isInteracting: 0
-  criticChances: 5
-  missChances: 15
-  charismaCost: 20
+  criticChances: 0
+  missChances: 0
+  charismaCost: 0
   fidelePeuple: 0
   currentFideleSprite: {fileID: 6686063715713900133}
   movingFideleSprite: {fileID: 0}
-  idleFideleSprite: {fileID: 0}
-  inFightSprite: {fileID: 0}
+  idleFideleSprite: {fileID: 21300000, guid: f07edecd920a90943bbe56702e1f8e29, type: 3}
+  inFightSprite: {fileID: 21300000, guid: 5129dfab46eb09c4c8fb84ec2bc32606, type: 3}
   questIcon: {fileID: 1469716729567008251}
   myTarget: {fileID: 0}
   isAllActionsDone: 0
@@ -1264,8 +1265,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
-  m_Size: {x: 3, y: 4.25}
+  m_Offset: {x: 0, y: -0.9}
+  m_Size: {x: 3.35, y: 4.5}
   m_Direction: 0
 --- !u!95 &6686063715388596368
 Animator:
@@ -1299,7 +1300,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 3.5}
+  m_Offset: {x: 0, y: 4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1310,8 +1311,44 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 1.5}
+  m_Size: {x: 2, y: 1.75}
   m_EdgeRadius: 0
+--- !u!114 &239577223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6686063715388596382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5369810f1b30e74086b48645b9b40b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minRandomHp: 12
+  maxRandomHp: 21
+  minRandomLowAttackRange: 2
+  maxRandomLowAttackRange: 5
+  minRandomHighAttackRange: 5
+  maxRandomHighAttackRange: 8
+  minRandomLowCounterAttackRange: 1
+  maxRandomLowCounterAttackRange: 3
+  minRandomHighCounterAttackRange: 3
+  maxRandomHighCounterAttackRange: 5
+  minRandomCriticChances: 15
+  maxRandomCriticChances: 45
+  minRandomMissChances: 25
+  maxRandomMissChances: 60
+  minRandomCharismaCost: 0
+  maxRandomCharismaCost: 0
+  finalHP: 0
+  finalMinAtkRange: 0
+  finalMaxAtkRange: 0
+  finalMinCounterAtkRange: 0
+  finalMaxCounterAtkRange: 0
+  finalCritChance: 0
+  finalMissChance: 0
+  finalCharismaCost: 0
 --- !u!1 &6686063715410890039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,12 +1562,14 @@ MonoBehaviour:
   myCollideAnimationManagerList: []
   alreadyInteractedList: []
   myFideleManager: {fileID: 0}
-  combatIconWhite: {fileID: 0}
-  combatIconDark: {fileID: 0}
-  dialogueIconWhite: {fileID: 0}
-  dialogueIconDark: {fileID: 0}
-  recrutementIconWhite: {fileID: 0}
-  recrutementIconDark: {fileID: 0}
+  combatIconWhite: {fileID: 21300000, guid: c31cf3c11d78a754ba2dc909d9177ce1, type: 3}
+  combatIconDark: {fileID: 21300000, guid: b4b35a49c4a63df4ab9701ac00fc578e, type: 3}
+  dialogueIconWhite: {fileID: 21300000, guid: 2c9bbbe85a836c743aa9a7d41f6e7566, type: 3}
+  dialogueIconDark: {fileID: 21300000, guid: f1e5d249e7347b8449219771c092b6c7, type: 3}
+  recrutementIconWhite: {fileID: 21300000, guid: c911a639eacfe0d4f9c9b639f7f0d761,
+    type: 3}
+  recrutementIconDark: {fileID: 21300000, guid: 1cda25e9cdf5bae41b681ed4c432f818,
+    type: 3}
   myInteractionIcon: {fileID: 6686063714384676305}
 --- !u!114 &3265836105905722979
 MonoBehaviour:
@@ -1646,7 +1685,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 73
-  m_Sprite: {fileID: 21300000, guid: 6fbb6cffa99f0d44c97b7802e85b20b6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f07edecd920a90943bbe56702e1f8e29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1861,7 +1900,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.25}
+  m_Size: {x: 2, y: 0.25}
   m_EdgeRadius: 0
 --- !u!1 &7710860216522304862
 GameObject:
@@ -1901,7 +1940,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7710860216522304862}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1932,7 +1971,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 3d164196e1434a845a648a55443c3433, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.64705884}
   m_FlipX: 0
