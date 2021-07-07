@@ -295,7 +295,7 @@ public class EffectManager : MonoBehaviour
 
     public IEnumerator PlayEpeisteCounterAttackEffect()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
 
         counterAttackEpeeSlashEffect.Play();
         attaqueSimpleSlashSFX.Post(gameObject);
