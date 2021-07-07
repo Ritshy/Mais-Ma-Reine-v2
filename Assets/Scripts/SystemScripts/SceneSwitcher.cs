@@ -82,6 +82,13 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void SwitchToCreditScene()
+    {
+        akAmbient.Stop(0);
+        GameManager.Instance.LoadCharismeValueBetweenScenes();
+        SceneManager.LoadScene("CreditScene");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
