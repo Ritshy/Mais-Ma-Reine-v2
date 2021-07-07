@@ -228,8 +228,6 @@ public class EffectManager : MonoBehaviour
     #region Combat Epeiste Effects
     public IEnumerator PlayEpeisteCriticalEffect()
     {
-        //coupCritiqueTextEffect.Play();
-
         yield return new WaitForSeconds(.8f);
 
         coupCritiqueSlashEffect.Play();
@@ -254,13 +252,22 @@ public class EffectManager : MonoBehaviour
     {
         publicChocSFX.Post(gameObject);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
 
         lancementEpeeSFX.Post(gameObject);
 
         yield return new WaitForSeconds(.3f);
 
+        echecEpeeFreineEffect.Play();
         freinageEpeeSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.6f);
+
+        virageEpeeSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.6f);
+
+        virageEpeeSFX.Post(gameObject);
 
         yield return new WaitForSeconds(.6f);
 
@@ -268,21 +275,7 @@ public class EffectManager : MonoBehaviour
 
         yield return new WaitForSeconds(.3f);
 
-        virageEpeeSFX.Post(gameObject);
-
-        yield return new WaitForSeconds(.3f);
-
-        virageEpeeSFX.Post(gameObject);
-
-        yield return new WaitForSeconds(1f);
-
         degatsSubitsSFX.Post(gameObject);
-
-        yield return new WaitForSeconds(1.1f);
-
-        echecEpeeFreineEffect.Play();
-
-        yield return new WaitForSeconds(1.8f);
 
         echecImpactEffect.Play();
         CameraZooming.Instance.ShakeScreen();
@@ -296,23 +289,19 @@ public class EffectManager : MonoBehaviour
 
         attaqueSimpleImpactSFX.Post(gameObject);
         attaqueSimpleSlashSFX.Post(gameObject);
+
+        CameraZooming.Instance.ShakeScreen();
     }
 
     public IEnumerator PlayEpeisteCounterAttackEffect()
     {
-        //counterAttackTextEffect.Play();
-
-        yield return new WaitForSeconds(1.7f);
+        yield return new WaitForSeconds(1.5f);
 
         counterAttackEpeeSlashEffect.Play();
-
-        yield return new WaitForSeconds(0.7f);
-
         attaqueSimpleSlashSFX.Post(gameObject);
 
-        yield return new WaitForSeconds(.5f);
-
         attaqueSimpleImpactSFX.Post(gameObject);
+        CameraZooming.Instance.ShakeScreen();
     }
     #endregion
 
@@ -335,24 +324,25 @@ public class EffectManager : MonoBehaviour
 
         fireballImpact.Play();
         impactBdFSFX.Post(gameObject);
+        CameraZooming.Instance.ShakeScreen();
     }
 
     public IEnumerator PlayMagicianCounterAttackEffect()
     {
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSeconds(.6f);
 
         counterAttackBonk.Play();
-        yield return new WaitForSeconds(.4f);
         bonkCounterSFX.Post(gameObject);
+        CameraZooming.Instance.ShakeScreen();
     }
 
     public IEnumerator PlayMagicianCriticalEffect()
     {
         spellCanalisation.Play();
-        yield return new WaitForSeconds(1.4f);
+        yield return new WaitForSeconds(1.5f);
         canalisationThunderSFX.Post(gameObject);
 
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSeconds(.9f);
 
         cloudAccumulationSFX.Post(gameObject);
         electricRay.Play();
@@ -369,6 +359,10 @@ public class EffectManager : MonoBehaviour
         yield return new WaitForSeconds(.3f);
 
         thunderPreBurstSFX.Post(gameObject);
+
+        yield return new WaitForSeconds(.2f);
+
+        CameraZooming.Instance.ShakeScreen();
 
         yield return new WaitForSeconds(1.5f);
 
@@ -387,6 +381,8 @@ public class EffectManager : MonoBehaviour
         missBoom.Play();
         missSmokeEffect.Play();
 
+        CameraZooming.Instance.ShakeScreen();
+
         explosionFailSFX.Post(gameObject);
     }
 
@@ -401,6 +397,7 @@ public class EffectManager : MonoBehaviour
         lanceBonkEffect.Play();
 
         lanceBonkSFX.Post(gameObject);
+        CameraZooming.Instance.ShakeScreen();
     }
 
     public IEnumerator PlayLancierCounterAttackkEffect()
@@ -409,9 +406,10 @@ public class EffectManager : MonoBehaviour
 
         lanceFlyingSFX.Post(gameObject);
 
-        yield return new WaitForSeconds(.4f);
+        yield return new WaitForSeconds(.8f);
 
         lanceFlyingCounterHit.Post(gameObject);
+        CameraZooming.Instance.ShakeScreen();
     }
 
     public IEnumerator PlayLancierCriticalEffect()
@@ -428,16 +426,19 @@ public class EffectManager : MonoBehaviour
 
         lanceFlySlashSFX.Post(gameObject);
         lanceFlyHitSFX.Post(gameObject);
+        CameraZooming.Instance.ShakeScreen();
 
         yield return new WaitForSeconds(.8f);
 
         lanceFlySlashSFX.Post(gameObject);
         lanceFlyHitSFX.Post(gameObject);
+        CameraZooming.Instance.ShakeScreen();
 
         yield return new WaitForSeconds(.3f);
 
         lanceFlySlashSFX.Post(gameObject);
         lanceFlyHitSFX.Post(gameObject);
+        CameraZooming.Instance.ShakeScreen();
     }
 
     public IEnumerator PlayLancierMissEffect()
@@ -454,6 +455,7 @@ public class EffectManager : MonoBehaviour
 
         lanceSkyStarSFX.Post(gameObject);
         lanceSkyStarEffect.Play();
+        CameraZooming.Instance.ShakeScreen();
     }
 
     #endregion

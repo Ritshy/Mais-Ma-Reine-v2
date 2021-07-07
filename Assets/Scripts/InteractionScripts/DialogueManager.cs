@@ -26,7 +26,7 @@ public class DialogueManager : MonoBehaviour
 
     public Image myTalkingCharacter;
 
-    public Sprite elyaSprite;
+    public Sprite characterPortrait;
 
     public bool isInDialogue = false;
 
@@ -95,16 +95,7 @@ public class DialogueManager : MonoBehaviour
         currentDialogue = dialogue;
         characterName.text = currentDialogue.characterName;
 
-        if (currentDialogue.characterName == "Elya")
-        {
-            myTalkingCharacter.color = new Color(1, 1, 1, 1);
-            myTalkingCharacter.sprite = elyaSprite;
-        }
-        else
-        {
-            myTalkingCharacter.color = new Color(0, 0, 0, 0);
-            myTalkingCharacter.sprite = null;
-        }
+        myTalkingCharacter.sprite = dialogue.myCharacterEmotionImage;
 
         if (currentDialogue.cameraStartPos != null)
         {

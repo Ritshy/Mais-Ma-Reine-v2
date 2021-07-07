@@ -528,7 +528,6 @@ public class CombatManager : MonoBehaviour
                         yield return new WaitForSeconds(.15f);
 
                         criSFX.Post(gameObject);
-                        CameraZooming.Instance.ShakeScreen();
 
                         myAnim.SetTrigger("DefenseurReceiveDamage");
 
@@ -546,7 +545,6 @@ public class CombatManager : MonoBehaviour
                         yield return new WaitForSeconds(3.2f);
 
                         criSFX.Post(gameObject);
-                        CameraZooming.Instance.ShakeScreen();
 
                         myAnim.SetTrigger("DefenseurReceiveDamage");
 
@@ -562,9 +560,9 @@ public class CombatManager : MonoBehaviour
                         yield return new WaitForSeconds(3.2f);
 
                         criSFX.Post(gameObject);
-                        CameraZooming.Instance.ShakeScreen();
 
                         myAnim.SetTrigger("DefenseurReceiveDamage");
+
                         break;
                     default:
                         break;
@@ -675,7 +673,6 @@ public class CombatManager : MonoBehaviour
                     yield return new WaitForSeconds(.15f);
 
                     criSFX.Post(gameObject);
-                    CameraZooming.Instance.ShakeScreen();
 
                     myAnim.SetTrigger("AttaquantReceiveDamage");
 
@@ -699,7 +696,6 @@ public class CombatManager : MonoBehaviour
                     yield return new WaitForSeconds(.15f);
 
                     criSFX.Post(gameObject);
-                    CameraZooming.Instance.ShakeScreen();
 
                     myAnim.SetTrigger("AttaquantReceiveDamage");
 
@@ -723,7 +719,6 @@ public class CombatManager : MonoBehaviour
                     yield return new WaitForSeconds(.15f);
 
                     criSFX.Post(gameObject);
-                    CameraZooming.Instance.ShakeScreen();
 
                     myAnim.SetTrigger("AttaquantReceiveDamage");
 
@@ -855,12 +850,12 @@ public class CombatManager : MonoBehaviour
 
                     yield return new WaitForSeconds(.5f);
 
-                    myAnim.SetTrigger("MALaunchCoupCritique");
                     StartCoroutine(EffectManager.Instance.PlayMagicianCriticalEffect());
 
                     yield return new WaitForSeconds(.4f);
 
                     myAnim.SetTrigger("DefenseurReceiveDamage");
+                    myAnim.SetTrigger("MALaunchCoupCritique");
 
                     yield return new WaitForSeconds(6f);
 
@@ -971,6 +966,7 @@ public class CombatManager : MonoBehaviour
                     myAnim.SetTrigger("AttaquantReceiveDamage");
                     myAnim.SetTrigger("EPLaunchEchecCritique");
 
+                    yield return new WaitForSeconds(.5f);
 
                     break;
                 case Classes.Magicien:
@@ -984,7 +980,7 @@ public class CombatManager : MonoBehaviour
                     myAnim.SetTrigger("DefenseurReceiveDamage");
                     myAnim.SetTrigger("MALaunchEchecCritique");
 
-                    yield return new WaitForSeconds(.5f);
+                    yield return new WaitForSeconds(.8f);
 
                     break;
                 case Classes.Lancier:
@@ -1046,6 +1042,9 @@ public class CombatManager : MonoBehaviour
     public IEnumerator Die(FideleManager deadFM, FideleManager winFM)
     {
         //Debug.Log("On Tue quelqu'un");
+
+        yield return new WaitForSeconds(1.5f);
+
         myAnim.SetBool("OpenCombatBandeau", false);
 
         for (int i = 0; i < objectsToDisableWhileInFight.Count; i++)
